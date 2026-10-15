@@ -1,0 +1,47 @@
+# FAPT-Guard - U-EPPC optimiser configuration
+#
+#   J(a) = w1*ResidualAttackRisk + w2*EvidenceLoss + w3*BusinessImpact
+#        + w4*ResponseCost + w5*PredictionUncertainty + w6*ForensicOpportunityCost
+#
+weights:
+  attack_risk: 0.40
+  evidence_loss: 0.20
+  business_impact: 0.15
+  response_cost: 0.05
+  uncertainty: 0.10
+  opportunity_cost: 0.10
+
+constraints:
+  # Hard security constraints: actions violating these are infeasible.
+  max_expected_attack_risk: 0.30
+  max_worst_case_attack_risk: 0.35
+  # Forensic constraint: soft (reported) unless `enforce_min_ers` is true.
+  min_worst_case_ers: 0.50
+  enforce_min_ers: false
+  # EOC tie-break: among feasible actions whose objective is within this margin,
+  # prefer the one losing least future investigative opportunity.
+  eoc_tie_margin: 0.01
+
+# Progression probability of the attack if nothing is done within the horizon.
+progression:
+  horizon_minutes: 15
+  base_progression_probability: 0.90
+
+candidate_actions:
+  # Subset evaluated by default for an active incident. OBSERVE is always
+  # evaluated as the "no action" counterfactual.
+  active_incident:
+    - OBSERVE
+    - INCREASE_MONITORING
+    - BLOCK_SOURCE
+    - DISABLE_ACCOUNT
+    - NETWORK_ISOLATE
+    - KILL_PROCESS
+    - SHUTDOWN_HOST
+    - REIMAGE_HOST
+  pre_attack:
+    - OBSERVE
+    - INCREASE_MONITORING
+    - FORCE_MFA
+    - BLOCK_SOURCE
+    - RESTRICT_SERVICE

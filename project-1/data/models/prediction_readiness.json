@@ -1,0 +1,2948 @@
+{
+  "audited_at": "2026-10-02T16:00:02.483223+00:00",
+  "status": "insufficient_observed_sequences",
+  "reason": "Insufficient observed sequential ATT&CK-labelled training/evaluation data. Dataset 11 has synthetic next-stage labels and no event timestamps; datasets 10/12/13 are response alternatives, unordered quality rows and benchmark descriptors. OpTC ground-truth sequences are not supplied.",
+  "datasets": [
+    {
+      "id": "10",
+      "name": "FAPT-Guard Cyber-Forensic Response Dataset",
+      "source": "User-supplied research CSV",
+      "version": null,
+      "description": "Action-conditioned response outcomes and artifact utility; generation provenance not supplied.",
+      "filename": "10_fapt_guard_cyber_forensic_response.csv",
+      "sha256": "60c1bc983c16ff35c644b525b14298c40b129a6aa92c542a8d1cb0495eeb6462",
+      "rows": 7700,
+      "schema": [
+        "incident_id",
+        "timestamp",
+        "host",
+        "attack_stage",
+        "technique_id",
+        "technique_name",
+        "attacker_intent",
+        "asset_criticality",
+        "baseline_attack_risk",
+        "evidence_trust",
+        "anti_forensic_risk",
+        "prediction_uncertainty",
+        "action",
+        "residual_attack_risk",
+        "evidence_loss_cost",
+        "evidence_retention_score",
+        "business_impact",
+        "response_cost",
+        "evidence_opportunity_cost",
+        "objective_score",
+        "optimal_action",
+        "fu_memory",
+        "survival_memory",
+        "fu_process_state",
+        "survival_process_state",
+        "fu_active_connections",
+        "survival_active_connections",
+        "fu_sysmon_logs",
+        "survival_sysmon_logs",
+        "fu_security_logs",
+        "survival_security_logs",
+        "fu_powershell_history",
+        "survival_powershell_history",
+        "fu_registry",
+        "survival_registry",
+        "fu_disk_artifacts",
+        "survival_disk_artifacts",
+        "fu_dns_logs",
+        "survival_dns_logs",
+        "fu_auth_logs",
+        "survival_auth_logs",
+        "fu_network_flows",
+        "survival_network_flows"
+      ],
+      "unique_values": {
+        "incident_id": 700,
+        "host": 80,
+        "technique_id": 13
+      },
+      "timestamps": {
+        "present": true,
+        "min": "2026-01-01T10:15:00",
+        "max": "2026-10-05T17:44:00"
+      },
+      "identifiers": {
+        "incident_id": true,
+        "sequence_id": false,
+        "evidence_id": false,
+        "host": true,
+        "user": false,
+        "process_id": false,
+        "source_ip": false,
+        "scenario": false
+      },
+      "label_sources": null,
+      "max_distinct_current_states_per_incident": 1,
+      "full_row_duplicates": 0,
+      "genuine_future_outcomes": false,
+      "future_prediction_readiness": "NOT AVAILABLE",
+      "reason": "Current-state response alternatives; each incident repeats across actions, not future events"
+    },
+    {
+      "id": "11",
+      "name": "FAPT Anti-Forensic Dataset",
+      "source": "User-supplied synthetic_rule_based CSV",
+      "version": null,
+      "description": "Synthetic anti-forensic labels and predicted_next_stage labels; not observed attack futures.",
+      "filename": "11_fapt_anti_forensic.csv",
+      "sha256": "f9851b4cc3e98ffdd46da6a4e88cadea9437a2c316561df88ce4e5ab0edb241c",
+      "rows": 5000,
+      "schema": [
+        "sequence_id",
+        "observed_prev_stage",
+        "observed_current_stage",
+        "current_technique_id",
+        "current_technique_name",
+        "predicted_next_stage",
+        "attacker_intent",
+        "evidence_trust",
+        "graph_integrity_score",
+        "anti_forensic_present",
+        "anti_forensic_behavior",
+        "anti_forensic_probability",
+        "target_evidence",
+        "target_evidence_utility",
+        "target_evidence_volatility",
+        "preservation_urgency",
+        "recommended_preservation_action",
+        "preserve_before_response",
+        "label_source"
+      ],
+      "unique_values": {
+        "sequence_id": 5000,
+        "current_technique_id": 13,
+        "label_source": 1
+      },
+      "timestamps": {
+        "present": false,
+        "min": null,
+        "max": null
+      },
+      "identifiers": {
+        "incident_id": false,
+        "sequence_id": true,
+        "evidence_id": false,
+        "host": false,
+        "user": false,
+        "process_id": false,
+        "source_ip": false,
+        "scenario": false
+      },
+      "label_sources": {
+        "synthetic_rule_based": 5000
+      },
+      "max_distinct_current_states_per_incident": null,
+      "full_row_duplicates": 0,
+      "genuine_future_outcomes": false,
+      "future_prediction_readiness": "NOT AVAILABLE",
+      "reason": "Synthetic rule-based next-stage labels; unique row IDs, no timestamps or observed future events"
+    },
+    {
+      "id": "12",
+      "name": "FAPT Evidence Trust & Poisoning Dataset",
+      "source": "User-supplied research CSV",
+      "version": null,
+      "description": "Trust targets and corruption indicators; upstream indicators can reveal generated labels.",
+      "filename": "12_fapt_evidence_trust_poisoning.csv",
+      "sha256": "0ed157d55a32bccfbf72ce287f00dfdb0b7c703a71fd4045e3dcf123954b3e32",
+      "rows": 8000,
+      "schema": [
+        "evidence_id",
+        "incident_id",
+        "source",
+        "attack_stage",
+        "technique_id",
+        "technique_name",
+        "scenario",
+        "poisoning_label",
+        "corruption_severity",
+        "missing_ratio",
+        "timestamp_shift_seconds",
+        "edge_deleted",
+        "fake_node",
+        "fake_edge",
+        "sensor_spoof",
+        "duplicate_event",
+        "contradiction_count",
+        "corroboration_count",
+        "source_reliability",
+        "integrity_hash_valid",
+        "sensor_health",
+        "temporal_consistency",
+        "graph_consistency",
+        "corroboration_score",
+        "calculated_evidence_trust",
+        "graph_integrity_score",
+        "recommended_handling"
+      ],
+      "unique_values": {
+        "evidence_id": 8000,
+        "incident_id": 700,
+        "source": 10,
+        "technique_id": 13,
+        "scenario": 10
+      },
+      "timestamps": {
+        "present": false,
+        "min": null,
+        "max": null
+      },
+      "identifiers": {
+        "incident_id": true,
+        "sequence_id": false,
+        "evidence_id": true,
+        "host": false,
+        "user": false,
+        "process_id": false,
+        "source_ip": false,
+        "scenario": true
+      },
+      "label_sources": null,
+      "max_distinct_current_states_per_incident": 12,
+      "full_row_duplicates": 0,
+      "genuine_future_outcomes": false,
+      "future_prediction_readiness": "NOT AVAILABLE",
+      "reason": "Unordered evidence-quality/corruption rows; no event timestamps or future outcomes"
+    },
+    {
+      "id": "13",
+      "name": "FAPT-Bench 2.0",
+      "source": "User-supplied synthetic evaluation CSV",
+      "version": "2.0",
+      "description": "Scenario descriptors and expected synthetic scores. No observed replay ground truth.",
+      "filename": "13_fapt_bench_2_0.csv",
+      "sha256": "64664b417d796723c123b57156bb67095264143bb21034a49f79eb7ea2a32773",
+      "rows": 1890,
+      "schema": [
+        "benchmark_id",
+        "dataset_source",
+        "scenario_name",
+        "attack_stage",
+        "technique_id",
+        "technique_name",
+        "missing_event_ratio",
+        "fake_event_ratio",
+        "timestamp_shift_seconds",
+        "sensor_disabled",
+        "poisoning_type",
+        "poisoning_enabled",
+        "concept_drift_or_unseen",
+        "response_action",
+        "expected_evidence_trust",
+        "expected_graph_integrity",
+        "expected_ers",
+        "expected_conformal_coverage",
+        "expected_unsafe_action_risk",
+        "expected_quality_band",
+        "purpose",
+        "synthetic_ground_truth"
+      ],
+      "unique_values": {
+        "benchmark_id": 1890,
+        "dataset_source": 5,
+        "scenario_name": 14,
+        "technique_id": 13
+      },
+      "timestamps": {
+        "present": false,
+        "min": null,
+        "max": null
+      },
+      "identifiers": {
+        "incident_id": false,
+        "sequence_id": false,
+        "evidence_id": false,
+        "host": false,
+        "user": false,
+        "process_id": false,
+        "source_ip": false,
+        "scenario": false
+      },
+      "label_sources": null,
+      "max_distinct_current_states_per_incident": null,
+      "full_row_duplicates": 0,
+      "genuine_future_outcomes": false,
+      "future_prediction_readiness": "NOT AVAILABLE",
+      "reason": "Synthetic benchmark descriptors and expected scores; no observed event sequences"
+    }
+  ],
+  "optc": {
+    "status": "not_imported",
+    "events": 0,
+    "tc_fapn": "not_trained"
+  },
+  "synthetic_demonstration": {
+    "status": "evaluated",
+    "prediction_mode": "synthetic_next_stage",
+    "label": "Dataset Demonstration Scenario \u2014 synthetic next-stage prediction; not validated future ATT&CK technique prediction",
+    "model": {
+      "model_name": "progression",
+      "algorithm": "RandomForestClassifier",
+      "dataset": "11",
+      "training_dataset": "11_fapt_anti_forensic.csv",
+      "source_sha256": "f9851b4cc3e98ffdd46da6a4e88cadea9437a2c316561df88ce4e5ab0edb241c",
+      "features": [
+        "observed_prev_stage",
+        "observed_current_stage",
+        "current_technique_id"
+      ],
+      "targets": [
+        "predicted_next_stage"
+      ],
+      "training_timestamp": "2026-09-29T06:46:58.050830+00:00",
+      "random_seed": 42,
+      "sklearn_version": "1.9.1",
+      "feature_version": "research-v2",
+      "hyperparameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 4,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 80,
+        "n_jobs": 2,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "group_key": "sequence_id",
+      "train_rows": 3000,
+      "validation_rows": 1000,
+      "test_rows": 1000,
+      "validation_method": "GroupShuffleSplit; fixed hyperparameters; reported scores are held-out synthetic/research-label agreement",
+      "group_overlap": 0,
+      "duplicate_records": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": [],
+      "metrics": {
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "Collection": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 82.0
+          },
+          "Command and Control": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 75.0
+          },
+          "Credential Access": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 67.0
+          },
+          "Defense Evasion": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 70.0
+          },
+          "Discovery": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 85.0
+          },
+          "Execution": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 77.0
+          },
+          "Exfiltration": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 88.0
+          },
+          "Impact": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 172.0
+          },
+          "Initial Access": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 79.0
+          },
+          "Lateral Movement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 80.0
+          },
+          "Persistence": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 61.0
+          },
+          "Privilege Escalation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 64.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1000.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            82,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            67,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            70,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            85,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            77,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            88,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            172,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            79,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            80,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            61,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64
+          ]
+        ],
+        "class_order": [
+          "Collection",
+          "Command and Control",
+          "Credential Access",
+          "Defense Evasion",
+          "Discovery",
+          "Execution",
+          "Exfiltration",
+          "Impact",
+          "Initial Access",
+          "Lateral Movement",
+          "Persistence",
+          "Privilege Escalation"
+        ],
+        "actual_distribution": {
+          "Exfiltration": 88,
+          "Execution": 77,
+          "Collection": 82,
+          "Impact": 172,
+          "Lateral Movement": 80,
+          "Defense Evasion": 70,
+          "Privilege Escalation": 64,
+          "Discovery": 85,
+          "Initial Access": 79,
+          "Persistence": 61,
+          "Credential Access": 67,
+          "Command and Control": 75
+        },
+        "predicted_distribution": {
+          "Exfiltration": 88,
+          "Execution": 77,
+          "Collection": 82,
+          "Impact": 172,
+          "Lateral Movement": 80,
+          "Defense Evasion": 70,
+          "Privilege Escalation": 64,
+          "Discovery": 85,
+          "Initial Access": 79,
+          "Persistence": 61,
+          "Credential Access": 67,
+          "Command and Control": 75
+        }
+      },
+      "validation_metrics": {
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "Collection": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 73.0
+          },
+          "Command and Control": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 86.0
+          },
+          "Credential Access": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 94.0
+          },
+          "Defense Evasion": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 53.0
+          },
+          "Discovery": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 74.0
+          },
+          "Execution": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 87.0
+          },
+          "Exfiltration": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 64.0
+          },
+          "Impact": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 158.0
+          },
+          "Initial Access": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 74.0
+          },
+          "Lateral Movement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 78.0
+          },
+          "Persistence": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 88.0
+          },
+          "Privilege Escalation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 71.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1000.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            73,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            86,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            94,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            53,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            74,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            87,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            158,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            74,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            78,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            88,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            71
+          ]
+        ],
+        "class_order": [
+          "Collection",
+          "Command and Control",
+          "Credential Access",
+          "Defense Evasion",
+          "Discovery",
+          "Execution",
+          "Exfiltration",
+          "Impact",
+          "Initial Access",
+          "Lateral Movement",
+          "Persistence",
+          "Privilege Escalation"
+        ],
+        "actual_distribution": {
+          "Impact": 158,
+          "Defense Evasion": 53,
+          "Execution": 87,
+          "Lateral Movement": 78,
+          "Collection": 73,
+          "Initial Access": 74,
+          "Discovery": 74,
+          "Persistence": 88,
+          "Command and Control": 86,
+          "Privilege Escalation": 71,
+          "Credential Access": 94,
+          "Exfiltration": 64
+        },
+        "predicted_distribution": {
+          "Impact": 158,
+          "Defense Evasion": 53,
+          "Execution": 87,
+          "Lateral Movement": 78,
+          "Collection": 73,
+          "Initial Access": 74,
+          "Discovery": 74,
+          "Persistence": 88,
+          "Command and Control": 86,
+          "Privilege Escalation": 71,
+          "Credential Access": 94,
+          "Exfiltration": 64
+        }
+      },
+      "split_indices_sha256": "a1ab0d2d74c24583ebb22975618e40a5c7f570d4d1c1405d35af9c17294eef6b",
+      "majority_baseline": {
+        "accuracy": 0.172,
+        "macro_precision": 0.014333333333333332,
+        "macro_recall": 0.08333333333333333,
+        "macro_f1": 0.02445961319681456,
+        "weighted_f1": 0.050484641638225254,
+        "per_class": {
+          "Collection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 82.0
+          },
+          "Command and Control": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 75.0
+          },
+          "Credential Access": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 67.0
+          },
+          "Defense Evasion": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 70.0
+          },
+          "Discovery": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 85.0
+          },
+          "Execution": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 77.0
+          },
+          "Exfiltration": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 88.0
+          },
+          "Impact": {
+            "precision": 0.172,
+            "recall": 1.0,
+            "f1-score": 0.2935153583617747,
+            "support": 172.0
+          },
+          "Initial Access": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 79.0
+          },
+          "Lateral Movement": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 80.0
+          },
+          "Persistence": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 61.0
+          },
+          "Privilege Escalation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 64.0
+          },
+          "accuracy": 0.172,
+          "macro avg": {
+            "precision": 0.014333333333333332,
+            "recall": 0.08333333333333333,
+            "f1-score": 0.02445961319681456,
+            "support": 1000.0
+          },
+          "weighted avg": {
+            "precision": 0.029583999999999996,
+            "recall": 0.172,
+            "f1-score": 0.050484641638225254,
+            "support": 1000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            82,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            67,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            70,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            85,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            77,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            88,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            172,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            79,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            80,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            61,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "class_order": [
+          "Collection",
+          "Command and Control",
+          "Credential Access",
+          "Defense Evasion",
+          "Discovery",
+          "Execution",
+          "Exfiltration",
+          "Impact",
+          "Initial Access",
+          "Lateral Movement",
+          "Persistence",
+          "Privilege Escalation"
+        ],
+        "actual_distribution": {
+          "Exfiltration": 88,
+          "Execution": 77,
+          "Collection": 82,
+          "Impact": 172,
+          "Lateral Movement": 80,
+          "Defense Evasion": 70,
+          "Privilege Escalation": 64,
+          "Discovery": 85,
+          "Initial Access": 79,
+          "Persistence": 61,
+          "Credential Access": 67,
+          "Command and Control": 75
+        },
+        "predicted_distribution": {
+          "Impact": 1000
+        }
+      },
+      "label_limitation": "Target is dataset 11's synthetic predicted_next_stage, not an observed future stage. Future technique labels are unavailable.",
+      "model_version": "801abb77371bb1d937b5e63972180f7abeac228b27616c60d8d0626300d6ff39"
+    },
+    "dataset_version": null,
+    "split_sizes": {
+      "training": 3000,
+      "validation": 1000,
+      "holdout": 1000
+    },
+    "evaluation_timestamp": "2026-10-02T16:00:04.844569+00:00",
+    "evaluation": {
+      "validation": {
+        "model": {
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "weighted_f1": 1.0,
+          "per_class": {
+            "Collection": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 73.0
+            },
+            "Command and Control": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 86.0
+            },
+            "Credential Access": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 94.0
+            },
+            "Defense Evasion": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 53.0
+            },
+            "Discovery": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 74.0
+            },
+            "Execution": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 87.0
+            },
+            "Exfiltration": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 64.0
+            },
+            "Impact": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 158.0
+            },
+            "Initial Access": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 74.0
+            },
+            "Lateral Movement": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 78.0
+            },
+            "Persistence": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 88.0
+            },
+            "Privilege Escalation": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 71.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1000.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1000.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              73,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              86,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              94,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              53,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              74,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              87,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              64,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              158,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              74,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              78,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              88,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              71
+            ]
+          ],
+          "class_order": [
+            "Collection",
+            "Command and Control",
+            "Credential Access",
+            "Defense Evasion",
+            "Discovery",
+            "Execution",
+            "Exfiltration",
+            "Impact",
+            "Initial Access",
+            "Lateral Movement",
+            "Persistence",
+            "Privilege Escalation"
+          ],
+          "actual_distribution": {
+            "Impact": 158,
+            "Defense Evasion": 53,
+            "Execution": 87,
+            "Lateral Movement": 78,
+            "Collection": 73,
+            "Initial Access": 74,
+            "Discovery": 74,
+            "Persistence": 88,
+            "Command and Control": 86,
+            "Privilege Escalation": 71,
+            "Credential Access": 94,
+            "Exfiltration": 64
+          },
+          "predicted_distribution": {
+            "Impact": 158,
+            "Defense Evasion": 53,
+            "Execution": 87,
+            "Lateral Movement": 78,
+            "Collection": 73,
+            "Initial Access": 74,
+            "Discovery": 74,
+            "Persistence": 88,
+            "Command and Control": 86,
+            "Privilege Escalation": 71,
+            "Credential Access": 94,
+            "Exfiltration": 64
+          },
+          "top_1_accuracy": 1.0,
+          "top_3_accuracy": 1.0,
+          "top_5_accuracy": 1.0,
+          "top_k_reason": "Top-k is NOT MEASURED when fewer than k trained classes exist",
+          "mean_reciprocal_rank": 1.0,
+          "multiclass_brier_score": 0.0,
+          "expected_calibration_error": 0.0,
+          "reliability_bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 1000,
+              "mean_confidence": 1.0,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "majority_baseline": {
+          "accuracy": 0.158,
+          "macro_precision": 0.013166666666666667,
+          "macro_recall": 0.08333333333333333,
+          "macro_f1": 0.02274035693724813,
+          "weighted_f1": 0.043115716753022455,
+          "per_class": {
+            "Collection": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 73.0
+            },
+            "Command and Control": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 86.0
+            },
+            "Credential Access": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 94.0
+            },
+            "Defense Evasion": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 53.0
+            },
+            "Discovery": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 74.0
+            },
+            "Execution": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 87.0
+            },
+            "Exfiltration": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 64.0
+            },
+            "Impact": {
+              "precision": 0.158,
+              "recall": 1.0,
+              "f1-score": 0.27288428324697755,
+              "support": 158.0
+            },
+            "Initial Access": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 74.0
+            },
+            "Lateral Movement": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 78.0
+            },
+            "Persistence": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 88.0
+            },
+            "Privilege Escalation": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 71.0
+            },
+            "accuracy": 0.158,
+            "macro avg": {
+              "precision": 0.013166666666666667,
+              "recall": 0.08333333333333333,
+              "f1-score": 0.02274035693724813,
+              "support": 1000.0
+            },
+            "weighted avg": {
+              "precision": 0.024964,
+              "recall": 0.158,
+              "f1-score": 0.043115716753022455,
+              "support": 1000.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              73,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              86,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              94,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              53,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              74,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              87,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              64,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              158,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              74,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              78,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              88,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              71,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "Collection",
+            "Command and Control",
+            "Credential Access",
+            "Defense Evasion",
+            "Discovery",
+            "Execution",
+            "Exfiltration",
+            "Impact",
+            "Initial Access",
+            "Lateral Movement",
+            "Persistence",
+            "Privilege Escalation"
+          ],
+          "actual_distribution": {
+            "Impact": 158,
+            "Defense Evasion": 53,
+            "Execution": 87,
+            "Lateral Movement": 78,
+            "Collection": 73,
+            "Initial Access": 74,
+            "Discovery": 74,
+            "Persistence": 88,
+            "Command and Control": 86,
+            "Privilege Escalation": 71,
+            "Credential Access": 94,
+            "Exfiltration": 64
+          },
+          "predicted_distribution": {
+            "Impact": 1000
+          },
+          "top_1_accuracy": 0.158,
+          "top_3_accuracy": 0.317,
+          "top_5_accuracy": 0.464,
+          "top_k_reason": "Top-k is NOT MEASURED when fewer than k trained classes exist",
+          "mean_reciprocal_rank": 0.3199674603174603,
+          "multiclass_brier_score": 1.684,
+          "expected_calibration_error": 0.842,
+          "reliability_bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 1000,
+              "mean_confidence": 1.0,
+              "accuracy": 0.158
+            }
+          ]
+        }
+      },
+      "holdout": {
+        "model": {
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "weighted_f1": 1.0,
+          "per_class": {
+            "Collection": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 82.0
+            },
+            "Command and Control": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 75.0
+            },
+            "Credential Access": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 67.0
+            },
+            "Defense Evasion": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 70.0
+            },
+            "Discovery": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 85.0
+            },
+            "Execution": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 77.0
+            },
+            "Exfiltration": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 88.0
+            },
+            "Impact": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 172.0
+            },
+            "Initial Access": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 79.0
+            },
+            "Lateral Movement": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 80.0
+            },
+            "Persistence": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 61.0
+            },
+            "Privilege Escalation": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 64.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1000.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1000.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              82,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              75,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              67,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              70,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              85,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              77,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              88,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              172,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              79,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              80,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              61,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              64
+            ]
+          ],
+          "class_order": [
+            "Collection",
+            "Command and Control",
+            "Credential Access",
+            "Defense Evasion",
+            "Discovery",
+            "Execution",
+            "Exfiltration",
+            "Impact",
+            "Initial Access",
+            "Lateral Movement",
+            "Persistence",
+            "Privilege Escalation"
+          ],
+          "actual_distribution": {
+            "Exfiltration": 88,
+            "Execution": 77,
+            "Collection": 82,
+            "Impact": 172,
+            "Lateral Movement": 80,
+            "Defense Evasion": 70,
+            "Privilege Escalation": 64,
+            "Discovery": 85,
+            "Initial Access": 79,
+            "Persistence": 61,
+            "Credential Access": 67,
+            "Command and Control": 75
+          },
+          "predicted_distribution": {
+            "Exfiltration": 88,
+            "Execution": 77,
+            "Collection": 82,
+            "Impact": 172,
+            "Lateral Movement": 80,
+            "Defense Evasion": 70,
+            "Privilege Escalation": 64,
+            "Discovery": 85,
+            "Initial Access": 79,
+            "Persistence": 61,
+            "Credential Access": 67,
+            "Command and Control": 75
+          },
+          "top_1_accuracy": 1.0,
+          "top_3_accuracy": 1.0,
+          "top_5_accuracy": 1.0,
+          "top_k_reason": "Top-k is NOT MEASURED when fewer than k trained classes exist",
+          "mean_reciprocal_rank": 1.0,
+          "multiclass_brier_score": 0.0,
+          "expected_calibration_error": 0.0,
+          "reliability_bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 1000,
+              "mean_confidence": 1.0,
+              "accuracy": 1.0
+            }
+          ]
+        },
+        "majority_baseline": {
+          "accuracy": 0.172,
+          "macro_precision": 0.014333333333333332,
+          "macro_recall": 0.08333333333333333,
+          "macro_f1": 0.02445961319681456,
+          "weighted_f1": 0.050484641638225254,
+          "per_class": {
+            "Collection": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 82.0
+            },
+            "Command and Control": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 75.0
+            },
+            "Credential Access": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 67.0
+            },
+            "Defense Evasion": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 70.0
+            },
+            "Discovery": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 85.0
+            },
+            "Execution": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 77.0
+            },
+            "Exfiltration": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 88.0
+            },
+            "Impact": {
+              "precision": 0.172,
+              "recall": 1.0,
+              "f1-score": 0.2935153583617747,
+              "support": 172.0
+            },
+            "Initial Access": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 79.0
+            },
+            "Lateral Movement": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 80.0
+            },
+            "Persistence": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 61.0
+            },
+            "Privilege Escalation": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 64.0
+            },
+            "accuracy": 0.172,
+            "macro avg": {
+              "precision": 0.014333333333333332,
+              "recall": 0.08333333333333333,
+              "f1-score": 0.02445961319681456,
+              "support": 1000.0
+            },
+            "weighted avg": {
+              "precision": 0.029583999999999996,
+              "recall": 0.172,
+              "f1-score": 0.050484641638225254,
+              "support": 1000.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              82,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              75,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              67,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              70,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              85,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              77,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              88,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              172,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              79,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              80,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              61,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              64,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "Collection",
+            "Command and Control",
+            "Credential Access",
+            "Defense Evasion",
+            "Discovery",
+            "Execution",
+            "Exfiltration",
+            "Impact",
+            "Initial Access",
+            "Lateral Movement",
+            "Persistence",
+            "Privilege Escalation"
+          ],
+          "actual_distribution": {
+            "Exfiltration": 88,
+            "Execution": 77,
+            "Collection": 82,
+            "Impact": 172,
+            "Lateral Movement": 80,
+            "Defense Evasion": 70,
+            "Privilege Escalation": 64,
+            "Discovery": 85,
+            "Initial Access": 79,
+            "Persistence": 61,
+            "Credential Access": 67,
+            "Command and Control": 75
+          },
+          "predicted_distribution": {
+            "Impact": 1000
+          },
+          "top_1_accuracy": 0.172,
+          "top_3_accuracy": 0.329,
+          "top_5_accuracy": 0.466,
+          "top_k_reason": "Top-k is NOT MEASURED when fewer than k trained classes exist",
+          "mean_reciprocal_rank": 0.3325732323232323,
+          "multiclass_brier_score": 1.656,
+          "expected_calibration_error": 0.8280000000000001,
+          "reliability_bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 0,
+              "mean_confidence": null,
+              "accuracy": null
+            },
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 1000,
+              "mean_confidence": 1.0,
+              "accuracy": 0.172
+            }
+          ]
+        }
+      }
+    },
+    "error_analysis": [
+      {
+        "partition": "validation",
+        "examples": {
+          "correct": [
+            {
+              "sequence_id": "AFSEQ-000001",
+              "features": {
+                "observed_prev_stage": "Command and Control",
+                "observed_current_stage": "Exfiltration",
+                "current_technique_id": "T1041"
+              },
+              "actual_synthetic_stage": "Impact",
+              "predicted_stage": "Impact",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000006",
+              "features": {
+                "observed_prev_stage": "Persistence",
+                "observed_current_stage": "Privilege Escalation",
+                "current_technique_id": "T1068"
+              },
+              "actual_synthetic_stage": "Defense Evasion",
+              "predicted_stage": "Defense Evasion",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000008",
+              "features": {
+                "observed_prev_stage": "Exfiltration",
+                "observed_current_stage": "Impact",
+                "current_technique_id": "T1486"
+              },
+              "actual_synthetic_stage": "Impact",
+              "predicted_stage": "Impact",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000022",
+              "features": {
+                "observed_prev_stage": "Reconnaissance",
+                "observed_current_stage": "Initial Access",
+                "current_technique_id": "T1190"
+              },
+              "actual_synthetic_stage": "Execution",
+              "predicted_stage": "Execution",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000023",
+              "features": {
+                "observed_prev_stage": "Credential Access",
+                "observed_current_stage": "Discovery",
+                "current_technique_id": "T1087"
+              },
+              "actual_synthetic_stage": "Lateral Movement",
+              "predicted_stage": "Lateral Movement",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            }
+          ]
+        },
+        "reason": "Empty categories mean no such examples in this evaluation; no examples are invented",
+        "unsupported": "No observed future-technique targets; temporal errors cannot be assessed"
+      },
+      {
+        "partition": "holdout",
+        "examples": {
+          "correct": [
+            {
+              "sequence_id": "AFSEQ-000009",
+              "features": {
+                "observed_prev_stage": "Collection",
+                "observed_current_stage": "Command and Control",
+                "current_technique_id": "T1071.001"
+              },
+              "actual_synthetic_stage": "Exfiltration",
+              "predicted_stage": "Exfiltration",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000013",
+              "features": {
+                "observed_prev_stage": "Reconnaissance",
+                "observed_current_stage": "Initial Access",
+                "current_technique_id": "T1190"
+              },
+              "actual_synthetic_stage": "Execution",
+              "predicted_stage": "Execution",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000018",
+              "features": {
+                "observed_prev_stage": "Discovery",
+                "observed_current_stage": "Lateral Movement",
+                "current_technique_id": "T1021.002"
+              },
+              "actual_synthetic_stage": "Collection",
+              "predicted_stage": "Collection",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000020",
+              "features": {
+                "observed_prev_stage": "Command and Control",
+                "observed_current_stage": "Exfiltration",
+                "current_technique_id": "T1041"
+              },
+              "actual_synthetic_stage": "Impact",
+              "predicted_stage": "Impact",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            },
+            {
+              "sequence_id": "AFSEQ-000024",
+              "features": {
+                "observed_prev_stage": "Credential Access",
+                "observed_current_stage": "Discovery",
+                "current_technique_id": "T1087"
+              },
+              "actual_synthetic_stage": "Lateral Movement",
+              "predicted_stage": "Lateral Movement",
+              "probability": 1.0,
+              "uncertainty": -0.0,
+              "cutoff_timestamp": null
+            }
+          ]
+        },
+        "reason": "Empty categories mean no such examples in this evaluation; no examples are invented",
+        "unsupported": "No observed future-technique targets; temporal errors cannot be assessed"
+      }
+    ],
+    "leakage_checks": {
+      "training/validation": {
+        "sequence_id_overlap": 0,
+        "duplicate_feature_target_patterns": 13
+      },
+      "training/holdout": {
+        "sequence_id_overlap": 0,
+        "duplicate_feature_target_patterns": 13
+      },
+      "validation/holdout": {
+        "sequence_id_overlap": 0,
+        "duplicate_feature_target_patterns": 13
+      },
+      "feature_target_overlap": [],
+      "scenario_overlap": null,
+      "source_overlap": [
+        "synthetic_rule_based"
+      ],
+      "temporal_leakage_check": "NOT AVAILABLE \u2014 no event timestamps",
+      "warning": "Unique sequence IDs are row IDs, not independent campaigns. Repeated feature/target patterns and deterministic stage rules mean perfect holdout scores do not establish forecasting."
+    },
+    "calibration_status": "Brier/ECE diagnostics measured on synthetic labels; no calibration fitted",
+    "coverage": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-10-03T21:18:52.908741+00:00",
+  "status": {
+    "GROUND_TRUTH": "READY",
+    "SUPPLEMENTARY_LABELS": "READY_FOR_ANALYSIS",
+    "OFFICIAL_RAW_TELEMETRY": "BLOCKED_BY_GOOGLE_QUOTA",
+    "CURRENT_NETWORK_ACCESS": "CORPORATE_NETWORK_BLOCKED",
+    "ACQUISITION_STATUS": "OFFICIAL_RAW_TELEMETRY_UNAVAILABLE_QUOTA",
+    "REAL_PREDICTION": "NOT_READY",
+    "REAL_CALIBRATION": "NOT_READY",
+    "REAL_CONFORMAL_EVALUATION": "NOT_READY",
+    "REAL_HOLDOUT_EVALUATION": "NOT_READY",
+    "REAL_WORLD_VALIDATION": "NOT_COMPLETED"
+  },
+  "quota_status_basis": "Prior observed failures retained; current quota state unknown because current content filtering blocks the listing. No raw retry performed.",
+  "ground_truth_ready_scope": "Official PDF/documentation available for analysis; NOT reviewed machine-readable technique targets."
+}

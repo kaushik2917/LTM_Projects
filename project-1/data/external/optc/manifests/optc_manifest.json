@@ -1,0 +1,522 @@
+{
+  "dataset_name": "DARPA Operationally Transparent Cyber (OpTC)",
+  "dataset_type": "real_collected_cybersecurity_telemetry",
+  "official_source": "https://github.com/FiveDirections/OpTC-data",
+  "ground_truth_source": "OpTCRedTeamGroundTruth.pdf",
+  "supplementary_label_source": "AT03380/optc-labels",
+  "supplementary_label_status": "third_party_research",
+  "supplementary_git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+  "download_timestamp": "2026-10-03T17:08:33.984767+00:00",
+  "download_timestamp_meaning": "Acquisition report completion; individual file timestamps in files",
+  "files": [
+    {
+      "path": "data/external/optc/official/ground_truth/OpTCRedTeamGroundTruth.pdf",
+      "url": "https://raw.githubusercontent.com/FiveDirections/OpTC-data/master/OpTCRedTeamGroundTruth.pdf",
+      "size_bytes": 453244,
+      "sha256": "5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567",
+      "downloaded_at": "2026-10-03T16:42:22.001999+00:00",
+      "source_type": "official",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/official/documentation/README.md",
+      "url": "https://raw.githubusercontent.com/FiveDirections/OpTC-data/master/README.md",
+      "size_bytes": 4681,
+      "sha256": "bbbeca5d5a861ffc765a6d42ddd19cb84acb93861226b4b93887bb950e121074",
+      "downloaded_at": "2026-10-03T16:42:22.396686+00:00",
+      "source_type": "official",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/official/documentation/ecar.md",
+      "url": "https://raw.githubusercontent.com/FiveDirections/OpTC-data/master/ecar.md",
+      "size_bytes": 2336,
+      "sha256": "1df4539c49963cc49b783580033fe1ec68bbae68434abf29da83c47b5d26d16b",
+      "downloaded_at": "2026-10-03T16:42:22.788514+00:00",
+      "source_type": "official",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/official/documentation/errata.md",
+      "url": "https://raw.githubusercontent.com/FiveDirections/OpTC-data/master/errata.md",
+      "size_bytes": 722,
+      "sha256": "4044970eae0db4f67055fa2c0e5bb99824628c13d991fcef01dcc5ec06e8d062",
+      "downloaded_at": "2026-10-03T16:42:23.246873+00:00",
+      "source_type": "official",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/images/labeler-ui.png",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/images/labeler-ui.png",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 127222,
+      "sha256": "50d3cc11faf9bc60f817f52fdfda5bac4854bdc06a264edcbf188df10d2c8043",
+      "downloaded_at": "2026-10-03T16:46:54.919277+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/.gitignore",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/.gitignore",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 8,
+      "sha256": "231603bda32a6de12ecd228babd9d1809207d80b633e9fae814b8f32194d8ab1",
+      "downloaded_at": "2026-10-03T16:46:54.919277+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/confirm.go",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/confirm.go",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 1933,
+      "sha256": "9b64cc17c618f8883a49495910c966c62ed237881b2618eedbd05334abdccdf7",
+      "downloaded_at": "2026-10-03T16:46:54.919277+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/go.mod",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/go.mod",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 1156,
+      "sha256": "ad6c78eeb751e5068403869e6261b01b5a72f9700c47c2e7706ea896171a0130",
+      "downloaded_at": "2026-10-03T16:46:54.919277+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/go.sum",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/go.sum",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 4262,
+      "sha256": "8d289e2a0716ae332b16e80c998591e7fa190bcbd0067beed5ca340f18220149",
+      "downloaded_at": "2026-10-03T16:46:54.919277+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/lookup.go",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/lookup.go",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 3766,
+      "sha256": "58b6cefa503dbc77bb7f34d29a6e12c9bac620d4c57b0f5fb15a9c48eee0ed0e",
+      "downloaded_at": "2026-10-03T16:46:54.923740+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/main.go",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/main.go",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 28670,
+      "sha256": "e8cac449242b6f23b56087f3e4b9cab9e3321976dfe7bc5ab821a94736f76994",
+      "downloaded_at": "2026-10-03T16:46:54.924752+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/Makefile",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/Makefile",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 157,
+      "sha256": "7020f065245d5b5fc19c0e8c482e36ff64531f56f2368437972addf407e34e01",
+      "downloaded_at": "2026-10-03T16:46:54.919277+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/matcher/matcher.go",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/matcher/matcher.go",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 4289,
+      "sha256": "8b807af0468d91c729a69f04b6b115a5e8b9945771fafd91daac87ad98fd674b",
+      "downloaded_at": "2026-10-03T16:46:54.925966+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/tasks.go",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labeler/tasks.go",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 8200,
+      "sha256": "06c52cfbdab63ca0028cc657198e538bb1d20ac02bb7179ebd3e603b55c1b7d7",
+      "downloaded_at": "2026-10-03T16:46:54.925966+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/admin.zip",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labels/admin.zip",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 137492,
+      "sha256": "e4c459a2a8afbc86989bc17b3a369492fb06e061389f0b3fb799a082bbe97ab4",
+      "downloaded_at": "2026-10-03T16:46:54.927973+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": true
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/anomaly.zip",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labels/anomaly.zip",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 50929269,
+      "sha256": "5c3336f926fb081e76df892ce6cc75d9acfa5482317b24cfd73e14ff9a3806d7",
+      "downloaded_at": "2026-10-03T16:46:55.275261+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": true
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/ground.zip",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labels/ground.zip",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 50427842,
+      "sha256": "eda0114c1f85ab194baf3329b989f0a8848281fe34b27744122a0fbe2f9b22a8",
+      "downloaded_at": "2026-10-03T16:46:55.595619+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": true
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/malicious.zip",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labels/malicious.zip",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 52964839,
+      "sha256": "9feb73e29c07fd41bbe5670c111bd396bc101991beb39ca3721ddf6565650c2a",
+      "downloaded_at": "2026-10-03T16:46:55.933011+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": true
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/red.zip",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/labels/red.zip",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 52855002,
+      "sha256": "aec872135cf97581c595e15342df43613d4bbf81db70d17c63307e496900d7db",
+      "downloaded_at": "2026-10-03T16:46:56.371135+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": true
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/LICENSE",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/LICENSE",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+      "downloaded_at": "2026-10-03T16:46:54.915220+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/README.md",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/README.md",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 3665,
+      "sha256": "67e77cace093ff3822dc19ebbce0d42e563efb92ad6229d37db91bc2d287e6eb",
+      "downloaded_at": "2026-10-03T16:46:54.915220+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/article-appendix-A.pdf",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/supplementary/article-appendix-A.pdf",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 173339,
+      "sha256": "978dd17d72fd2fd4b25c12de9c191a519f0027fbcf286e43b720dff0ed8d1f24",
+      "downloaded_at": "2026-10-03T16:46:56.375728+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/errata.md",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/supplementary/errata.md",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 3386,
+      "sha256": "ee9b6bea423c45f8ddc831dfb650f0420f84b26cd2cefcd2bde5b4d5094760e3",
+      "downloaded_at": "2026-10-03T16:46:56.382237+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/ground-truth.md",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/supplementary/ground-truth.md",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 20768,
+      "sha256": "cfd786ff7e4f00c73381bb72ffc227e54e7e07da3835a5757a490de2ae994ee2",
+      "downloaded_at": "2026-10-03T16:46:56.385454+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/how-to.md",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/supplementary/how-to.md",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 3259,
+      "sha256": "7eb72619d237ba9df892c32c8ab29c2a6f998876eb031e87a299a6cb364e65f0",
+      "downloaded_at": "2026-10-03T16:46:56.387471+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/labels.md",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/supplementary/labels.md",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 3109,
+      "sha256": "c1066a524b11fd7767ce7e7e72cce9dda618870742aaf9d09937b8eac0569cc1",
+      "downloaded_at": "2026-10-03T16:46:56.388847+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/related.md",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/supplementary/related.md",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 1256,
+      "sha256": "d81e4e17cf46c31c162bfbcca30421bf7ed8c7400904aa6a575080867e85fb76",
+      "downloaded_at": "2026-10-03T16:46:56.392379+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": false
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/tasks/tasks.zip",
+      "url": "https://github.com/AT03380/optc-labels/blob/64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa/tasks/tasks.zip",
+      "source_type": "supplementary_research",
+      "source_repository": "AT03380/optc-labels",
+      "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "size_bytes": 12293620,
+      "sha256": "b8ddd6d2d82ebbdc637f158cb7e7537c808ddd6968079653405844e1efc83c77",
+      "downloaded_at": "2026-10-03T16:46:56.485917+00:00",
+      "timestamp_basis": "Local clone checkout file modification time; exact per-file network time not measured",
+      "contains_events": true
+    }
+  ],
+  "source_file_count": 28,
+  "total_size_bytes": 220492676,
+  "total_size_scope": "Official PDF/documentation plus supplementary repository working-tree files, excluding .git, tools, manifests and derived outputs.",
+  "total_events": null,
+  "hosts": [],
+  "time_range": {
+    "start": null,
+    "end": null
+  },
+  "event_coverage_scope": "Complete official raw telemetry; NOT AVAILABLE. Supplementary event subsets reported separately below.",
+  "official_raw_files_acquired": 0,
+  "official_raw_bytes_acquired": 0,
+  "supplementary_event_subset": {
+    "archive": "malicious.zip",
+    "event_count": 313018,
+    "unique_event_ids": 313018,
+    "hosts": [
+      "SysClient0005.systemia.com",
+      "SysClient0010.systemia.com",
+      "SysClient0051.systemia.com",
+      "SysClient0069.systemia.com",
+      "SysClient0104.systemia.com",
+      "SysClient0123.systemia.com",
+      "SysClient0124.systemia.com",
+      "SysClient0170.systemia.com",
+      "SysClient0201.systemia.com",
+      "SysClient0203.systemia.com",
+      "SysClient0205.systemia.com",
+      "SysClient0255.systemia.com",
+      "SysClient0321.systemia.com",
+      "SysClient0351.systemia.com",
+      "SysClient0355.systemia.com",
+      "SysClient0358.systemia.com",
+      "SysClient0402.systemia.com",
+      "SysClient0419.systemia.com",
+      "SysClient0462.systemia.com",
+      "SysClient0501.systemia.com",
+      "SysClient0503.systemia.com",
+      "SysClient0559.systemia.com",
+      "SysClient0609.systemia.com",
+      "SysClient0618.systemia.com",
+      "SysClient0660.systemia.com",
+      "SysClient0771.systemia.com",
+      "SysClient0811.systemia.com",
+      "SysClient0851.systemia.com",
+      "SysClient0874.systemia.com",
+      "SysClient0955.systemia.com",
+      "SysClient0974.systemia.com"
+    ],
+    "time_range": {
+      "start": "2019-09-20T15:53:18.559000+00:00",
+      "end": "2019-09-25T18:35:04.555000+00:00"
+    },
+    "warning": "Research-selected events, not complete chronological or benign coverage. Do not add counts across overlapping label archives."
+  },
+  "sha256": [
+    {
+      "path": "data/external/optc/official/ground_truth/OpTCRedTeamGroundTruth.pdf",
+      "sha256": "5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567"
+    },
+    {
+      "path": "data/external/optc/official/documentation/README.md",
+      "sha256": "bbbeca5d5a861ffc765a6d42ddd19cb84acb93861226b4b93887bb950e121074"
+    },
+    {
+      "path": "data/external/optc/official/documentation/ecar.md",
+      "sha256": "1df4539c49963cc49b783580033fe1ec68bbae68434abf29da83c47b5d26d16b"
+    },
+    {
+      "path": "data/external/optc/official/documentation/errata.md",
+      "sha256": "4044970eae0db4f67055fa2c0e5bb99824628c13d991fcef01dcc5ec06e8d062"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/images/labeler-ui.png",
+      "sha256": "50d3cc11faf9bc60f817f52fdfda5bac4854bdc06a264edcbf188df10d2c8043"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/.gitignore",
+      "sha256": "231603bda32a6de12ecd228babd9d1809207d80b633e9fae814b8f32194d8ab1"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/confirm.go",
+      "sha256": "9b64cc17c618f8883a49495910c966c62ed237881b2618eedbd05334abdccdf7"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/go.mod",
+      "sha256": "ad6c78eeb751e5068403869e6261b01b5a72f9700c47c2e7706ea896171a0130"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/go.sum",
+      "sha256": "8d289e2a0716ae332b16e80c998591e7fa190bcbd0067beed5ca340f18220149"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/lookup.go",
+      "sha256": "58b6cefa503dbc77bb7f34d29a6e12c9bac620d4c57b0f5fb15a9c48eee0ed0e"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/main.go",
+      "sha256": "e8cac449242b6f23b56087f3e4b9cab9e3321976dfe7bc5ab821a94736f76994"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/Makefile",
+      "sha256": "7020f065245d5b5fc19c0e8c482e36ff64531f56f2368437972addf407e34e01"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/matcher/matcher.go",
+      "sha256": "8b807af0468d91c729a69f04b6b115a5e8b9945771fafd91daac87ad98fd674b"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/tasks.go",
+      "sha256": "06c52cfbdab63ca0028cc657198e538bb1d20ac02bb7179ebd3e603b55c1b7d7"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/admin.zip",
+      "sha256": "e4c459a2a8afbc86989bc17b3a369492fb06e061389f0b3fb799a082bbe97ab4"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/anomaly.zip",
+      "sha256": "5c3336f926fb081e76df892ce6cc75d9acfa5482317b24cfd73e14ff9a3806d7"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/ground.zip",
+      "sha256": "eda0114c1f85ab194baf3329b989f0a8848281fe34b27744122a0fbe2f9b22a8"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/malicious.zip",
+      "sha256": "9feb73e29c07fd41bbe5670c111bd396bc101991beb39ca3721ddf6565650c2a"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/red.zip",
+      "sha256": "aec872135cf97581c595e15342df43613d4bbf81db70d17c63307e496900d7db"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/LICENSE",
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/README.md",
+      "sha256": "67e77cace093ff3822dc19ebbce0d42e563efb92ad6229d37db91bc2d287e6eb"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/article-appendix-A.pdf",
+      "sha256": "978dd17d72fd2fd4b25c12de9c191a519f0027fbcf286e43b720dff0ed8d1f24"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/errata.md",
+      "sha256": "ee9b6bea423c45f8ddc831dfb650f0420f84b26cd2cefcd2bde5b4d5094760e3"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/ground-truth.md",
+      "sha256": "cfd786ff7e4f00c73381bb72ffc227e54e7e07da3835a5757a490de2ae994ee2"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/how-to.md",
+      "sha256": "7eb72619d237ba9df892c32c8ab29c2a6f998876eb031e87a299a6cb364e65f0"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/labels.md",
+      "sha256": "c1066a524b11fd7767ce7e7e72cce9dda618870742aaf9d09937b8eac0569cc1"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/related.md",
+      "sha256": "d81e4e17cf46c31c162bfbcca30421bf7ed8c7400904aa6a575080867e85fb76"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/tasks/tasks.zip",
+      "sha256": "b8ddd6d2d82ebbdc637f158cb7e7537c808ddd6968079653405844e1efc83c77"
+    }
+  ],
+  "license_or_release_information": {
+    "official": "Public domain, Distribution A; as-is without accuracy warranty (official README).",
+    "supplementary_code": "AGPL-3.0",
+    "supplementary_material": "CC BY-SA 4.0",
+    "supplementary_labels_and_tasks": "Public domain per repository README; third-party research, not official DARPA ground truth."
+  },
+  "processing_status": "PARTIAL_ACQUISITION_OFFICIAL_RAW_QUOTA_BLOCKED",
+  "ground_truth_status": "OFFICIAL_PDF_ACQUIRED_AND_EXTRACTED; SUPPLEMENTARY_LABELS_INSPECTED; INDEPENDENT_TECHNIQUE_TARGETS_NOT_READY",
+  "notes": [
+    "No application, frontend, model, database or schema changes. No training or host response actions.",
+    "OpTC is collected telemetry from a controlled red-team exercise, not operational production traffic.",
+    "Existing importer not executed; API only accepts files directly in data/optc.",
+    "pypdf 6.19.0 installed with approval only under data/external/optc/downloads/pdf_tools; no dependency manifests changed.",
+    "Both planned raw downloads returned Google quota pages, not a demonstrated corporate firewall block.",
+    "No real-data performance, uncertainty, calibration or holdout results have been calculated."
+  ]
+}

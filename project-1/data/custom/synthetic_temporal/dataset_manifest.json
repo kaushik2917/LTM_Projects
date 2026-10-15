@@ -1,0 +1,131 @@
+{
+  "dataset_id": "FAPT-GUARD-SYN-TEMPORAL-001",
+  "dataset_name": "FAPT-Guard Synthetic Temporal ATT&CK Sequence Dataset",
+  "version": "1.0.1",
+  "source": "Generated for FAPT-Guard research prototype",
+  "synthetic": true,
+  "real_world_validation": false,
+  "generation": {
+    "seed": 42,
+    "scenario_count": 600,
+    "event_count": 4175,
+    "next_technique_sample_count": 3575,
+    "technique_class_count": 20,
+    "templates": 10,
+    "generation_timestamp_utc": "2026-10-03T06:53:09.731551+00:00"
+  },
+  "splits": {
+    "train_scenarios": 480,
+    "validation_scenarios": 60,
+    "test_scenarios": 60,
+    "scenario_disjoint": true
+  },
+  "label_definition": "target_next_technique_id is the ATT&CK technique on the next chronological event within the same synthetic scenario.",
+  "files": {
+    "temporal_evidence_events.csv": {
+      "sha256": "711cb602c6f6d08a848568d32205d60c603b832ad742a22beaf9b8c7b6747cc9",
+      "bytes": 924149
+    },
+    "next_technique_samples.csv": {
+      "sha256": "9b41fd67bde391502d9e530f37a645aac9dd997595f6f743c3611d2cd09e837c",
+      "bytes": 1180172
+    },
+    "scenario_summary.csv": {
+      "sha256": "b43128f545cac5cb20311d5586b14ba2ed4b2031f2398172d29391f1c1c2c9e7",
+      "bytes": 79273
+    },
+    "transition_statistics.csv": {
+      "sha256": "ccf4fea3248a254adcf6056883071802559924cc9859d3db2c8bad2b8f439e47",
+      "bytes": 4319
+    },
+    "README.md": {
+      "sha256": "b15f49f06eb5d4f809556e7b8d9600c23bd923ebbbbf4f4c30c5ab438730feaf",
+      "bytes": 2357
+    }
+  },
+  "schema": {
+    "temporal_evidence_events.csv": [
+      "scenario_id",
+      "incident_id",
+      "event_id",
+      "timestamp",
+      "host",
+      "user",
+      "source",
+      "subject",
+      "action",
+      "object",
+      "tactic",
+      "technique_id",
+      "technique_name",
+      "mapping_status",
+      "mapping_confidence",
+      "observed",
+      "synthetic",
+      "split"
+    ],
+    "next_technique_samples.csv": [
+      "sample_id",
+      "scenario_id",
+      "incident_id",
+      "split",
+      "cutoff_timestamp",
+      "prefix_length",
+      "current_technique_id",
+      "current_technique_name",
+      "prefix_technique_ids",
+      "prefix_tactics",
+      "target_next_technique_id",
+      "target_next_technique_name",
+      "target_next_tactic",
+      "synthetic",
+      "prefix_event_ids",
+      "supporting_evidence_ids",
+      "target_event_id"
+    ]
+  },
+  "target_class_distribution": {
+    "T1003.001": 209,
+    "T1016.001": 104,
+    "T1021.002": 287,
+    "T1027": 163,
+    "T1041": 157,
+    "T1053.005": 54,
+    "T1057": 107,
+    "T1059.001": 420,
+    "T1059.003": 180,
+    "T1071.001": 240,
+    "T1077": 111,
+    "T1083": 230,
+    "T1087.001": 212,
+    "T1105": 165,
+    "T1204.002": 600,
+    "T1486": 120,
+    "T1547.001": 55,
+    "T1555.003": 106,
+    "T1562.001": 55
+  },
+  "event_class_distribution": {
+    "T1003.001": 209,
+    "T1016.001": 104,
+    "T1021.002": 287,
+    "T1027": 163,
+    "T1041": 157,
+    "T1053.005": 54,
+    "T1057": 107,
+    "T1059.001": 420,
+    "T1059.003": 180,
+    "T1071.001": 240,
+    "T1077": 111,
+    "T1083": 230,
+    "T1087.001": 212,
+    "T1105": 165,
+    "T1204.002": 600,
+    "T1486": 120,
+    "T1547.001": 55,
+    "T1555.003": 106,
+    "T1562.001": 55,
+    "T1566.001": 600
+  },
+  "transition_count": 56
+}

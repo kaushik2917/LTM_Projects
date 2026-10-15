@@ -1,0 +1,1092 @@
+{
+  "poisoning": {
+    "original_holdout": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "per_class": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 652.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 883.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1535.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1535.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          652,
+          0
+        ],
+        [
+          0,
+          883
+        ]
+      ],
+      "class_order": [
+        "0",
+        "1"
+      ],
+      "actual_distribution": {
+        "1": 883,
+        "0": 652
+      },
+      "predicted_distribution": {
+        "1": 883,
+        "0": 652
+      }
+    },
+    "checks": {
+      "duplicate_records": 0,
+      "duplicate_train_test_records": 0,
+      "group_overlap": 0,
+      "target_in_features": false,
+      "original_scenario_overlap": [
+        "clean",
+        "cross_sensor_contradiction",
+        "deleted_edge",
+        "duplicate_event",
+        "fake_edge",
+        "fake_event",
+        "fake_node",
+        "missing_event",
+        "sensor_spoof",
+        "timestamp_shift"
+      ]
+    },
+    "feature_label_cross_tabs": {
+      "edge_deleted": {
+        "0": {
+          "1": 4189,
+          "0": 3159
+        },
+        "1": {
+          "1": 652
+        }
+      },
+      "fake_node": {
+        "0": {
+          "1": 4398,
+          "0": 3159
+        },
+        "1": {
+          "1": 443
+        }
+      },
+      "fake_edge": {
+        "0": {
+          "1": 4445,
+          "0": 3159
+        },
+        "1": {
+          "1": 396
+        }
+      },
+      "sensor_spoof": {
+        "0": {
+          "1": 4286,
+          "0": 3159
+        },
+        "1": {
+          "1": 555
+        }
+      },
+      "duplicate_event": {
+        "0": {
+          "1": 4463,
+          "0": 3159
+        },
+        "1": {
+          "1": 378
+        }
+      },
+      "integrity_hash_valid": {
+        "0": {
+          "1": 871
+        },
+        "1": {
+          "1": 3970,
+          "0": 3159
+        }
+      }
+    },
+    "scenario_holdouts": [
+      {
+        "heldout_attack_scenario": "cross_sensor_contradiction",
+        "train_rows": 5994,
+        "test_rows": 759,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9881422924901185,
+          "macro_precision": 0.9612068965517242,
+          "macro_recall": 0.9930981595092024,
+          "macro_f1": 0.9763457243277871,
+          "weighted_f1": 0.9883403691943369,
+          "per_class": {
+            "0": {
+              "precision": 1.0,
+              "recall": 0.9861963190184049,
+              "f1-score": 0.993050193050193,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.9224137931034483,
+              "recall": 1.0,
+              "f1-score": 0.9596412556053812,
+              "support": 107.0
+            },
+            "accuracy": 0.9881422924901185,
+            "macro avg": {
+              "precision": 0.9612068965517242,
+              "recall": 0.9930981595092024,
+              "f1-score": 0.9763457243277871,
+              "support": 759.0
+            },
+            "weighted avg": {
+              "precision": 0.989062287038299,
+              "recall": 0.9881422924901185,
+              "f1-score": 0.9883403691943369,
+              "support": 759.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              643,
+              9
+            ],
+            [
+              0,
+              107
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 107
+          },
+          "predicted_distribution": {
+            "0": 643,
+            "1": 116
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "deleted_edge",
+        "train_rows": 5941,
+        "test_rows": 780,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9884615384615385,
+          "macro_precision": 0.9721386154722199,
+          "macro_recall": 0.9868194018404908,
+          "macro_f1": 0.9792944174563989,
+          "weighted_f1": 0.9885498536928018,
+          "per_class": {
+            "0": {
+              "precision": 0.9969088098918083,
+              "recall": 0.9892638036809815,
+              "f1-score": 0.9930715935334873,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.9473684210526315,
+              "recall": 0.984375,
+              "f1-score": 0.9655172413793104,
+              "support": 128.0
+            },
+            "accuracy": 0.9884615384615385,
+            "macro avg": {
+              "precision": 0.9721386154722199,
+              "recall": 0.9868194018404908,
+              "f1-score": 0.9792944174563989,
+              "support": 780.0
+            },
+            "weighted avg": {
+              "precision": 0.9887791050566614,
+              "recall": 0.9884615384615385,
+              "f1-score": 0.9885498536928018,
+              "support": 780.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              645,
+              7
+            ],
+            [
+              2,
+              126
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 128
+          },
+          "predicted_distribution": {
+            "0": 647,
+            "1": 133
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "duplicate_event",
+        "train_rows": 6166,
+        "test_rows": 731,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.8837209302325582,
+          "macro_precision": 0.44551724137931037,
+          "macro_recall": 0.495398773006135,
+          "macro_f1": 0.4691358024691358,
+          "weighted_f1": 0.8368715272500041,
+          "per_class": {
+            "0": {
+              "precision": 0.8910344827586207,
+              "recall": 0.99079754601227,
+              "f1-score": 0.9382716049382716,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 79.0
+            },
+            "accuracy": 0.8837209302325582,
+            "macro avg": {
+              "precision": 0.44551724137931037,
+              "recall": 0.495398773006135,
+              "f1-score": 0.4691358024691358,
+              "support": 731.0
+            },
+            "weighted avg": {
+              "precision": 0.7947393744987972,
+              "recall": 0.8837209302325582,
+              "f1-score": 0.8368715272500041,
+              "support": 731.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              646,
+              6
+            ],
+            [
+              79,
+              0
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 79
+          },
+          "predicted_distribution": {
+            "0": 725,
+            "1": 6
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "fake_edge",
+        "train_rows": 6138,
+        "test_rows": 721,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9875173370319001,
+          "macro_precision": 0.9423076923076923,
+          "macro_recall": 0.9930981595092024,
+          "macro_f1": 0.9659128516271374,
+          "weighted_f1": 0.9878560833187344,
+          "per_class": {
+            "0": {
+              "precision": 1.0,
+              "recall": 0.9861963190184049,
+              "f1-score": 0.993050193050193,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.8846153846153846,
+              "recall": 1.0,
+              "f1-score": 0.9387755102040817,
+              "support": 69.0
+            },
+            "accuracy": 0.9875173370319001,
+            "macro avg": {
+              "precision": 0.9423076923076923,
+              "recall": 0.9930981595092024,
+              "f1-score": 0.9659128516271374,
+              "support": 721.0
+            },
+            "weighted avg": {
+              "precision": 0.9889576442974501,
+              "recall": 0.9875173370319001,
+              "f1-score": 0.9878560833187344,
+              "support": 721.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              643,
+              9
+            ],
+            [
+              0,
+              69
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "1": 69,
+            "0": 652
+          },
+          "predicted_distribution": {
+            "1": 78,
+            "0": 643
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "fake_event",
+        "train_rows": 5974,
+        "test_rows": 766,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9908616187989556,
+          "macro_precision": 0.9710743801652892,
+          "macro_recall": 0.9946319018404908,
+          "macro_f1": 0.9824078478977674,
+          "weighted_f1": 0.9909730621065042,
+          "per_class": {
+            "0": {
+              "precision": 1.0,
+              "recall": 0.9892638036809815,
+              "f1-score": 0.9946029298380878,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.9421487603305785,
+              "recall": 1.0,
+              "f1-score": 0.9702127659574468,
+              "support": 114.0
+            },
+            "accuracy": 0.9908616187989556,
+            "macro avg": {
+              "precision": 0.9710743801652892,
+              "recall": 0.9946319018404908,
+              "f1-score": 0.9824078478977674,
+              "support": 766.0
+            },
+            "weighted avg": {
+              "precision": 0.9913902854800077,
+              "recall": 0.9908616187989556,
+              "f1-score": 0.9909730621065042,
+              "support": 766.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              645,
+              7
+            ],
+            [
+              0,
+              114
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 114
+          },
+          "predicted_distribution": {
+            "0": 645,
+            "1": 121
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "fake_node",
+        "train_rows": 6095,
+        "test_rows": 725,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9889655172413793,
+          "macro_precision": 0.9506172839506173,
+          "macro_recall": 0.9938650306748467,
+          "macro_f1": 0.9709395542728876,
+          "weighted_f1": 0.9892180701376103,
+          "per_class": {
+            "0": {
+              "precision": 1.0,
+              "recall": 0.9877300613496932,
+              "f1-score": 0.9938271604938271,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.9012345679012346,
+              "recall": 1.0,
+              "f1-score": 0.948051948051948,
+              "support": 73.0
+            },
+            "accuracy": 0.9889655172413793,
+            "macro avg": {
+              "precision": 0.9506172839506173,
+              "recall": 0.9938650306748467,
+              "f1-score": 0.9709395542728876,
+              "support": 725.0
+            },
+            "weighted avg": {
+              "precision": 0.9900553426990207,
+              "recall": 0.9889655172413793,
+              "f1-score": 0.9892180701376103,
+              "support": 725.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              644,
+              8
+            ],
+            [
+              0,
+              73
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 73
+          },
+          "predicted_distribution": {
+            "0": 644,
+            "1": 81
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "missing_event",
+        "train_rows": 5928,
+        "test_rows": 787,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9491740787801779,
+          "macro_precision": 0.9710982658959537,
+          "macro_recall": 0.8518518518518519,
+          "macro_f1": 0.8981625258799172,
+          "weighted_f1": 0.9455107715701052,
+          "per_class": {
+            "0": {
+              "precision": 0.9421965317919075,
+              "recall": 1.0,
+              "f1-score": 0.9702380952380952,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 1.0,
+              "recall": 0.7037037037037037,
+              "f1-score": 0.8260869565217391,
+              "support": 135.0
+            },
+            "accuracy": 0.9491740787801779,
+            "macro avg": {
+              "precision": 0.9710982658959537,
+              "recall": 0.8518518518518519,
+              "f1-score": 0.8981625258799172,
+              "support": 787.0
+            },
+            "weighted avg": {
+              "precision": 0.9521119933015549,
+              "recall": 0.9491740787801779,
+              "f1-score": 0.9455107715701052,
+              "support": 787.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              652,
+              0
+            ],
+            [
+              40,
+              95
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "1": 135,
+            "0": 652
+          },
+          "predicted_distribution": {
+            "1": 95,
+            "0": 692
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "sensor_spoof",
+        "train_rows": 6005,
+        "test_rows": 747,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9866131191432396,
+          "macro_precision": 0.9523809523809523,
+          "macro_recall": 0.9923312883435582,
+          "macro_f1": 0.9711360123647604,
+          "weighted_f1": 0.9868960644225537,
+          "per_class": {
+            "0": {
+              "precision": 1.0,
+              "recall": 0.9846625766871165,
+              "f1-score": 0.9922720247295209,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.9047619047619048,
+              "recall": 1.0,
+              "f1-score": 0.95,
+              "support": 95.0
+            },
+            "accuracy": 0.9866131191432396,
+            "macro avg": {
+              "precision": 0.9523809523809523,
+              "recall": 0.9923312883435582,
+              "f1-score": 0.9711360123647604,
+              "support": 747.0
+            },
+            "weighted avg": {
+              "precision": 0.9878880601772169,
+              "recall": 0.9866131191432396,
+              "f1-score": 0.9868960644225537,
+              "support": 747.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              642,
+              10
+            ],
+            [
+              0,
+              95
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 95
+          },
+          "predicted_distribution": {
+            "0": 642,
+            "1": 105
+          }
+        }
+      },
+      {
+        "heldout_attack_scenario": "timestamp_shift",
+        "train_rows": 5986,
+        "test_rows": 735,
+        "unseen_attack_scenario_overlap": 0,
+        "incident_overlap": 0,
+        "shared_baseline_scenario": "clean; separate incident groups",
+        "features": [
+          "source",
+          "source_reliability",
+          "integrity_hash_valid",
+          "sensor_health",
+          "temporal_consistency",
+          "graph_consistency",
+          "corroboration_score",
+          "contradiction_count",
+          "corroboration_count"
+        ],
+        "metrics": {
+          "accuracy": 0.9904761904761905,
+          "macro_precision": 0.9611111111111111,
+          "macro_recall": 0.9946319018404908,
+          "macro_f1": 0.9770702510462115,
+          "weighted_f1": 0.9906431683694463,
+          "per_class": {
+            "0": {
+              "precision": 1.0,
+              "recall": 0.9892638036809815,
+              "f1-score": 0.9946029298380878,
+              "support": 652.0
+            },
+            "1": {
+              "precision": 0.9222222222222223,
+              "recall": 1.0,
+              "f1-score": 0.9595375722543352,
+              "support": 83.0
+            },
+            "accuracy": 0.9904761904761905,
+            "macro avg": {
+              "precision": 0.9611111111111111,
+              "recall": 0.9946319018404908,
+              "f1-score": 0.9770702510462115,
+              "support": 735.0
+            },
+            "weighted avg": {
+              "precision": 0.9912169312169312,
+              "recall": 0.9904761904761905,
+              "f1-score": 0.9906431683694463,
+              "support": 735.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              645,
+              7
+            ],
+            [
+              0,
+              83
+            ]
+          ],
+          "class_order": [
+            "0",
+            "1"
+          ],
+          "actual_distribution": {
+            "0": 652,
+            "1": 83
+          },
+          "predicted_distribution": {
+            "0": 645,
+            "1": 90
+          }
+        }
+      }
+    ],
+    "findings": [
+      "Original inputs expose corruption flags; target is not named as a feature, but flags are label proxies.",
+      "Original random incident split shares synthetic scenario generators across train and test.",
+      "Stress evaluation removes explicit corruption flags and withholds each attack scenario and test incident groups.",
+      "Quality measurements can still encode synthetic generation rules; these results are not raw telemetry detection or real-world validation."
+    ]
+  },
+  "afip": {
+    "class_distribution": {
+      "clear_windows_event_logs": 238,
+      "none": 3168,
+      "disable_sysmon": 235,
+      "disable_monitoring_agent": 266,
+      "timestomp_files": 194,
+      "delete_malware_artifact": 229,
+      "fabricate_events": 248,
+      "delete_powershell_history": 219,
+      "wipe_files": 203
+    },
+    "holdout_prediction_distribution": {
+      "none": 987,
+      "fabricate_events": 2,
+      "disable_sysmon": 2,
+      "delete_powershell_history": 1,
+      "disable_monitoring_agent": 6,
+      "timestomp_files": 1,
+      "wipe_files": 1
+    },
+    "majority_baseline": {
+      "accuracy": 0.616,
+      "macro_precision": 0.06844444444444445,
+      "macro_recall": 0.1111111111111111,
+      "macro_f1": 0.08470847084708472,
+      "weighted_f1": 0.4696237623762376,
+      "per_class": {
+        "clear_windows_event_logs": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 49.0
+        },
+        "delete_malware_artifact": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 47.0
+        },
+        "delete_powershell_history": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 45.0
+        },
+        "disable_monitoring_agent": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 63.0
+        },
+        "disable_sysmon": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 39.0
+        },
+        "fabricate_events": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 52.0
+        },
+        "none": {
+          "precision": 0.616,
+          "recall": 1.0,
+          "f1-score": 0.7623762376237624,
+          "support": 616.0
+        },
+        "timestomp_files": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 41.0
+        },
+        "wipe_files": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 48.0
+        },
+        "accuracy": 0.616,
+        "macro avg": {
+          "precision": 0.06844444444444445,
+          "recall": 0.1111111111111111,
+          "f1-score": 0.08470847084708472,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.379456,
+          "recall": 0.616,
+          "f1-score": 0.4696237623762376,
+          "support": 1000.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          49,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          47,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          63,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          39,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          616,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          41,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          48,
+          0,
+          0
+        ]
+      ],
+      "class_order": [
+        "clear_windows_event_logs",
+        "delete_malware_artifact",
+        "delete_powershell_history",
+        "disable_monitoring_agent",
+        "disable_sysmon",
+        "fabricate_events",
+        "none",
+        "timestomp_files",
+        "wipe_files"
+      ],
+      "actual_distribution": {
+        "none": 616,
+        "timestomp_files": 41,
+        "delete_malware_artifact": 47,
+        "fabricate_events": 52,
+        "delete_powershell_history": 45,
+        "wipe_files": 48,
+        "disable_sysmon": 39,
+        "disable_monitoring_agent": 63,
+        "clear_windows_event_logs": 49
+      },
+      "predicted_distribution": {
+        "none": 1000
+      }
+    },
+    "findings": [
+      "Accuracy alone is insufficient for imbalanced anti-forensic classification.",
+      "Compare per-class recall and predicted class counts: a majority-only model can retain high accuracy.",
+      "Probability, presence, preservation targets/actions and future-stage labels are excluded from AFIP inputs.",
+      "Unique sequence IDs prevent row identity overlap but do not establish campaign/temporal generalization."
+    ]
+  },
+  "progression": {
+    "current_stage_to_target_labels": {
+      "Exfiltration": [
+        "Impact"
+      ],
+      "Execution": [
+        "Persistence"
+      ],
+      "Discovery": [
+        "Lateral Movement"
+      ],
+      "Privilege Escalation": [
+        "Defense Evasion"
+      ],
+      "Initial Access": [
+        "Execution"
+      ],
+      "Impact": [
+        "Impact"
+      ],
+      "Command and Control": [
+        "Exfiltration"
+      ],
+      "Reconnaissance": [
+        "Initial Access"
+      ],
+      "Credential Access": [
+        "Discovery"
+      ],
+      "Collection": [
+        "Command and Control"
+      ],
+      "Lateral Movement": [
+        "Collection"
+      ],
+      "Defense Evasion": [
+        "Credential Access"
+      ],
+      "Persistence": [
+        "Privilege Escalation"
+      ]
+    },
+    "deterministic_target_by_current_stage": true,
+    "finding": "A perfect synthetic-label holdout score can reflect the dataset generator's stage transition rule. It is not evidence of learned real-world attack forecasting."
+  }
+}

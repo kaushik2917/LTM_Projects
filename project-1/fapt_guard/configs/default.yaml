@@ -1,0 +1,94 @@
+# FAPT-Guard - core configuration
+project:
+  name: FAPT-Guard
+  version: 0.1.0
+  random_seed: 1337
+
+runtime:
+  # Safety default: no live disruptive action is ever executed unless this is
+  # explicitly set to false AND a non-simulation provider is registered.
+  simulation_mode: true
+  response_provider: simulation        # simulation
+  preservation_provider: simulation    # simulation | local_file | velociraptor (future)
+  graph_backend: networkx              # networkx | neo4j
+  protected_evidence_dir: data/protected_evidence
+  output_dir: data/output
+  max_voi_rounds: 2
+
+neo4j:
+  uri: bolt://localhost:7687
+  user: neo4j
+  password_env: FAPT_NEO4J_PASSWORD
+
+models:
+  preattack:
+    version: preattack-logit-v1
+    checkpoint: models/preattack_model.pkl     # used when trained via scripts/train_baselines.py
+  progression:
+    backend: auto                              # auto | baseline | tc_fapn
+    baseline_version: markov-trust-baseline-v1
+    tc_fapn_version: tc-fapn-v1
+    checkpoint: models/tc_fapn.pt
+  mitre_mapper:
+    version: mitre-rules-v1
+  trust:
+    version: detp-v1
+  integrity:
+    version: p3r-egis-v1
+  anti_forensic:
+    version: afip-rules-v1
+  utility:
+    version: cdfu-v1
+  survival:
+    backend: rules                             # rules | learned
+    version: aces-v1
+  calibration:
+    version: cser-v1
+    calibrator_file: models/cser_calibration.json
+  optimizer:
+    version: u-eppc-v1
+  autonomy:
+    version: aag-v1
+
+# Prior reliability of each telemetry source (DETP input, not the final trust).
+sources:
+  reliability:
+    sysmon: 0.95
+    edr: 0.95
+    windows_security: 0.93
+    authentication: 0.93
+    powershell: 0.90
+    network_flow: 0.92
+    dns: 0.90
+    firewall: 0.88
+    ids: 0.85
+    file_system: 0.88
+    registry: 0.90
+    memory: 0.90
+    forensic_collector: 0.97
+    threat_intel: 0.80
+    vulnerability_scanner: 0.90
+    asset_inventory: 0.95
+    unknown: 0.50
+  # Current sensor health in [0,1]; unlisted sensors default to `default`.
+  health:
+    default: 1.0
+
+# Dynamic Evidence Trust Propagation
+detp:
+  weights:                  # weights of the prior components (normalised internally)
+    source_reliability: 0.25
+    integrity: 0.25
+    temporal_consistency: 0.15
+    provenance_consistency: 0.10
+    sensor_health: 0.10
+    manipulation: 0.15
+  corroboration_window_seconds: 120
+  corroboration_bonus: 0.30        # max uplift toward 1.0 from independent corroboration
+  contradiction_penalty: 0.35      # multiplicative penalty per contradiction (saturating)
+  propagation_alpha: 0.25          # share of trust taken from graph neighbours
+  propagation_iterations: 5
+  integrity_failure_cap: 0.35      # trust ceiling for evidence whose hash does not verify
+
+assets:
+  default_criticality: 0.5

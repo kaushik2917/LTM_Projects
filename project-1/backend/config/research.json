@@ -1,0 +1,17 @@
+{
+  "preprocessing_version": "research-v2",
+  "datasets": {
+    "10": {"name": "FAPT-Guard Cyber-Forensic Response Dataset", "source": "User-supplied research CSV", "version": null, "description": "Action-conditioned response outcomes and artifact utility; generation provenance not supplied."},
+    "11": {"name": "FAPT Anti-Forensic Dataset", "source": "User-supplied synthetic_rule_based CSV", "version": null, "description": "Synthetic anti-forensic labels and predicted_next_stage labels; not observed attack futures."},
+    "12": {"name": "FAPT Evidence Trust & Poisoning Dataset", "source": "User-supplied research CSV", "version": null, "description": "Trust targets and corruption indicators; upstream indicators can reveal generated labels."},
+    "13": {"name": "FAPT-Bench 2.0", "source": "User-supplied synthetic evaluation CSV", "version": "2.0", "description": "Scenario descriptors and expected synthetic scores. No observed replay ground truth."}
+  },
+  "decision": {
+    "future_prediction_weight": 0.2,
+    "future_risk_assumption": "Use action-conditioned ACES estimates for techniques represented in dataset 10; for unsupported classes assume unchanged current-state residual risk. Expose unsupported probability mass. All effects are simulated, not measured causal effects.",
+    "profile": "Balanced",
+    "weights": {"risk": 0.4, "normalized_loss": 0.3, "business": 0.15, "cost": 0.1, "opportunity": 0.05},
+    "formula": "0.40 * residual_attack_risk + 0.30 * normalized_evidence_loss + 0.15 * business_impact + 0.10 * response_cost + 0.05 * evidence_opportunity_cost",
+    "uncertainty_use": "Context feature for response models; no separate objective term or measured action-induced uncertainty effect."
+  }
+}

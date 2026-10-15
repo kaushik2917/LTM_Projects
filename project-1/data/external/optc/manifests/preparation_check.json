@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-03T21:16:43.049457+00:00",
+  "status": "BLOCKED",
+  "training_authorized": false,
+  "source_integrity": "PASS",
+  "source_files_checked": 28,
+  "source_errors": [],
+  "missing_official_raw_files": [
+    "AIA-201-225.ecar-2019-12-08T11-05-10.046.json.gz",
+    "AIA-201-225.ecar-last.json.gz"
+  ],
+  "prerequisite_gates": {
+    "official_raw_validation": "NOT_AVAILABLE",
+    "independent_reviewed_targets": "NOT_AVAILABLE",
+    "reviewed_clock_alignment": "NOT_AVAILABLE",
+    "independent_split_review": "NOT_AVAILABLE",
+    "final_protocol_review": "NOT_AVAILABLE",
+    "event_level_leakage_checks": "NOT_AVAILABLE"
+  },
+  "event_level_leakage_validation": "NOT_RUN: no approved real experiment samples exist.",
+  "scope": "Preparation audit only; future artifacts require content validation and separate authorization. No training or import performed."
+}

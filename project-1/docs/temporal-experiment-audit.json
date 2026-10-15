@@ -1,0 +1,144 @@
+{
+  "experiments": {
+    "CHRONOLOGICAL-V2": {
+      "dataset_version": "2.0.0",
+      "dataset_hash": "8433855364724c70b147ee480e0e2eb739aa7ae26d3e590657754bb22aab7a6e",
+      "sequences": 1000,
+      "samples": 1000,
+      "classes": 19,
+      "split": {
+        "train": 700,
+        "validation": 100,
+        "calibration_probability": 50,
+        "calibration_conformal": 0,
+        "test": 150
+      },
+      "model": "FAPT-Guard ensemble 0.5 Markov + 0.25 RF + 0.25 Gradient Boosting",
+      "model_version": "chronological-synthetic-v2",
+      "model_hash": "32a942498ddbad5363d830488b13b54ada9d072e0e4f487f6d09caf9e265f18c",
+      "features": "future_prediction_v2: suffixes 1/2/3, counts/transitions, elapsed/last interval, source/action counts, recent3/repeats/last tactics; no identity or absolute dates",
+      "preprocessing": "Timestamp sorting, strict prefix whitelist and label availability; midpoint per scenario; exact path/identity rejection",
+      "calibration": "Temperature on 50 calibration sequences, selected T=1",
+      "conformal": "NOT MEASURED in this experiment",
+      "test_usage": "150 chronologically latest sequences; previously evaluated under v1 then expanded model search; all baseline rows identical",
+      "test_influenced_tuning": "Code selects on validation only. Prior test exposure means adaptive human influence cannot be excluded; exploratory, not confirmatory. Historical random experiment used some of these groups for training.",
+      "top1": 0.32666666666666666
+    },
+    "V2-RANDOM-TRANSITION": {
+      "dataset_version": "2.0.0",
+      "dataset_hash": "8433855364724c70b147ee480e0e2eb739aa7ae26d3e590657754bb22aab7a6e",
+      "sequences": 1000,
+      "samples": 5955,
+      "classes": 19,
+      "split": {
+        "train_sequences": 700,
+        "train_samples": 5655,
+        "validation": 0,
+        "calibration_probability": 75,
+        "calibration_conformal": 75,
+        "test": 150
+      },
+      "model": "transition_frequency",
+      "model_version": "b0a9b61c02871a72f3db945c14dac7bece5bc8b3dcf9dd23ba0a8183c30ecc93",
+      "model_hash": "b0a9b61c02871a72f3db945c14dac7bece5bc8b3dcf9dd23ba0a8183c30ecc93",
+      "features": "Existing sequence_features whitelist; selected model uses only last 3/2/1 mapped techniques, then global training prior. Unsmoothed raw counts; calibration floor applied separately.",
+      "preprocessing": "Source labels normalized via pinned ATT&CK; original shuffled whole-scenario split; all adjacent training prefixes, random stored cutoff for held-out groups",
+      "calibration": "75 probability-calibration rows; temperature 4.0, log probability floor 1e-6",
+      "conformal": "75 separate rows; LAC score 1-p(true), q=0.9885469306569868, target90%; test coverage89.3333%, average set11.4067",
+      "test_usage": "150 random-group test samples; calendar periods overlap partitions. Interactive demonstrations subsequently expose test labels.",
+      "test_influenced_tuning": "Training code fixes transition model and fits temperature on calibration only. No evidence of test-based parameter optimization; prior development history cannot be reconstructed solely from artifacts. Random group split is not chronological.",
+      "top1": 0.43333333333333335
+    },
+    "INC-00001-DEMO": {
+      "dataset_version": "2.0.0 trained model; separate incident fixture",
+      "sequences": 1,
+      "samples": 0,
+      "classes": 19,
+      "split": "No benchmark partition; same model/provenance as V2-RANDOM-TRANSITION",
+      "model": "transition_frequency",
+      "model_version": "b0a9b61c02871a72f3db945c14dac7bece5bc8b3dcf9dd23ba0a8183c30ecc93",
+      "model_hash": "b0a9b61c02871a72f3db945c14dac7bece5bc8b3dcf9dd23ba0a8183c30ecc93",
+      "features": {
+        "event_count": 6,
+        "mapped_count": 2,
+        "technique_suffix_1": "T1003.001",
+        "technique_suffix_2": "T1059.001|T1003.001",
+        "technique_suffix_3": "T1059.001|T1003.001",
+        "technique_count:T1059.001": 1,
+        "technique_count:T1003.001": 1,
+        "transition:T1059.001>T1003.001": 1,
+        "elapsed_seconds": 182.0,
+        "last_interval_seconds": 42.0,
+        "source_count:authentication": 1,
+        "source_count:process": 2,
+        "source_count:sysmon": 2,
+        "source_count:network": 1
+      },
+      "preprocessing": "Incident evidence prefix and candidate mapping; not independent target labels",
+      "calibration": "Same T=4 transform as V2-RANDOM-TRANSITION",
+      "conformal": "Same historical population calibration; no empirical incident coverage",
+      "test_usage": "Never count INC-00001 as test sample; PENDING_GROUND_TRUTH",
+      "test_influenced_tuning": "No fit or tuning performed by incident inference",
+      "probability": 0.6372633449255795,
+      "technique": "T1021.002",
+      "raw_support": {
+        "basis": "training suffix transition counts",
+        "suffix_feature_length": 3,
+        "matched_technique_suffix": [
+          "T1059.001",
+          "T1003.001"
+        ],
+        "target_counts": {
+          "T1021.002": 1
+        },
+        "total_training_samples": 1,
+        "training_sample_ids": [
+          "SYN2-00469-EV-002"
+        ],
+        "formula": "Model output probability = target count / total matching training samples"
+      }
+    },
+    "V1-TEMPLATE": {
+      "dataset_version": "1.0.1",
+      "dataset_hash": "9ebef685b77a26e91777259e2b6e302420b7314bb8a9c16ad98c1e2970e90352",
+      "sequences": 600,
+      "samples": 3575,
+      "classes": {
+        "event_classes": 19,
+        "target_classes": 18,
+        "trained_target_classes": 16
+      },
+      "split": {
+        "train_sequences": 480,
+        "validation_sequences": 60,
+        "test_sequences": 60,
+        "sample_counts": {
+          "train": 2855,
+          "test": 360,
+          "validation": 360
+        },
+        "calibration": 0
+      },
+      "model": "transition_frequency",
+      "model_version": "65e8aaf54884efe0ca75de124d734890a600831d16435ddc062fd3fa2dc67139",
+      "model_hash": "65e8aaf54884efe0ca75de124d734890a600831d16435ddc062fd3fa2dc67139",
+      "features": {
+        "available_features": "Last 1/2/3 mapped techniques, technique and transition counts, event/mapped counts, elapsed time, last interval, source counts",
+        "selected_model_features": [
+          "technique_suffix_3",
+          "technique_suffix_2",
+          "technique_suffix_1"
+        ],
+        "excluded": "Targets, future events, incident/scenario/template IDs, sample IDs and split"
+      },
+      "preprocessing": "Pinned STIX replacement normalization; preserve original CSV; supplied template split",
+      "calibration": "Uncalibrated; diagnostics only",
+      "conformal": "NOT MEASURED; insufficient independent sequence groups",
+      "test_usage": "360 adjacent prefixes from 60 test scenarios; repeated templates/full paths limit independence",
+      "test_influenced_tuning": "Highest validation macro-F1; ties favor transition frequency. Test never used for fitting or selection.",
+      "top1": 0.35
+    }
+  },
+  "cross_experiment_test_overlap": 16,
+  "chronological_test_in_historical_training": 113
+}

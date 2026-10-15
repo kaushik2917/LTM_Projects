@@ -1,0 +1,239 @@
+# FAPT-Guard - defensive action catalogue (digital-twin transitions + ACES expert matrix)
+#
+# base_business_impact : impact on a host of criticality 1.0 (scaled by asset criticality)
+# response_cost        : operational cost of executing the action
+# reversible           : whether the action can be cleanly undone
+# downtime_minutes     : expected service downtime on the target
+# attacker_control     : fraction of attacker control retained after the action
+#                        (drives attacker-caused evidence destruction and adaptation)
+# observability        : fraction of future attacker activity still observable
+#                        (drives Evidence Opportunity Cost)
+# effectiveness        : probability the action blocks the next step, by tactic
+#                        (`default` if tactic not listed); `techniques` overrides
+# survival             : ACES expert prior P(artifact class survives | action)
+#                        for artifacts located on the target host. Collector-side
+#                        artifacts (network_flow, dns_logs) are off-host.
+# adaptation           : predicted attacker adaptation if the action is taken
+
+artifact_classes:
+  memory:              {location: host,      volatility: 0.95, label: "Volatile memory"}
+  process_state:       {location: host,      volatility: 0.90, label: "Process state / tree"}
+  network_connections: {location: host,      volatility: 0.85, label: "Live network connections"}
+  network_flow:        {location: collector, volatility: 0.30, label: "Network flow records"}
+  dns_logs:            {location: collector, volatility: 0.35, label: "DNS logs"}
+  sysmon_logs:         {location: host,      volatility: 0.30, label: "Sysmon event log"}
+  authentication_logs: {location: host,      volatility: 0.30, label: "Authentication / Security log"}
+  powershell_logs:     {location: host,      volatility: 0.40, label: "PowerShell history & script-block log"}
+  disk_artifacts:      {location: host,      volatility: 0.15, label: "Disk artifacts (binaries, dumps)"}
+  registry:            {location: host,      volatility: 0.10, label: "Registry hives"}
+  threat_context:      {location: collector, volatility: 0.05, label: "Threat intel / asset context"}
+
+af_window_probability: 0.60   # P(attacker acts on anti-forensic intent within horizon | full control)
+
+actions:
+  OBSERVE:
+    label: Observe (no action)
+    base_business_impact: 0.0
+    response_cost: 0.0
+    reversible: true
+    downtime_minutes: 0
+    attacker_control: 1.0
+    observability: 1.0
+    effectiveness: {default: 0.0}
+    survival: {}
+    adaptation: "Attacker continues unimpeded along the predicted path."
+
+  INCREASE_MONITORING:
+    label: Increase monitoring
+    base_business_impact: 0.02
+    response_cost: 0.05
+    reversible: true
+    downtime_minutes: 0
+    attacker_control: 1.0
+    observability: 1.0
+    effectiveness: {default: 0.05}
+    survival: {}
+    adaptation: "No adaptation expected; attacker may notice additional telemetry agents."
+
+  FORCE_MFA:
+    label: Force MFA
+    base_business_impact: 0.10
+    response_cost: 0.10
+    reversible: true
+    downtime_minutes: 0
+    attacker_control: 0.90
+    observability: 0.95
+    effectiveness:
+      default: 0.05
+      Initial Access: 0.80
+      Lateral Movement: 0.45
+      techniques: {T1078: 0.70, T1110: 0.85}
+    survival: {}
+    adaptation: "Attacker pivots to token theft or pass-the-hash to bypass MFA."
+
+  RESTRICT_SERVICE:
+    label: Restrict exposed service
+    base_business_impact: 0.25
+    response_cost: 0.12
+    reversible: true
+    downtime_minutes: 5
+    attacker_control: 0.90
+    observability: 0.90
+    effectiveness:
+      default: 0.05
+      Initial Access: 0.75
+      Lateral Movement: 0.70
+      techniques: {T1190: 0.85, T1021.001: 0.80, T1021.002: 0.75, T1021.006: 0.75}
+    survival: {network_connections: 0.90, process_state: 0.97}
+    adaptation: "Attacker searches for an alternative remote-access protocol."
+
+  BLOCK_SOURCE:
+    label: Block malicious source / C2
+    base_business_impact: 0.05
+    response_cost: 0.05
+    reversible: true
+    downtime_minutes: 0
+    attacker_control: 0.50
+    observability: 0.60
+    effectiveness:
+      default: 0.05
+      Initial Access: 0.80
+      Command and Control: 0.85
+      Exfiltration: 0.85
+      Lateral Movement: 0.15
+      Reconnaissance: 0.70
+    survival: {network_connections: 0.55}
+    adaptation: "Attacker fails over to backup C2 infrastructure or internal pivots."
+
+  DISABLE_ACCOUNT:
+    label: Disable compromised account(s)
+    base_business_impact: 0.35
+    response_cost: 0.10
+    reversible: true
+    downtime_minutes: 0
+    attacker_control: 0.65
+    observability: 0.85
+    effectiveness:
+      default: 0.10
+      Lateral Movement: 0.70
+      Privilege Escalation: 0.40
+      Impact: 0.30
+      Initial Access: 0.80
+      techniques: {T1078: 0.90, T1021: 0.75, T1021.001: 0.80, T1021.002: 0.75, T1021.006: 0.75, T1550.002: 0.45}
+    survival: {process_state: 0.93, memory: 0.97, network_connections: 0.90}
+    adaptation: "Attacker reuses other harvested credentials or hashes."
+
+  NETWORK_ISOLATE:
+    label: Network isolation of host
+    base_business_impact: 0.42
+    response_cost: 0.15
+    reversible: true
+    downtime_minutes: 30
+    attacker_control: 0.15
+    observability: 0.55
+    effectiveness:
+      default: 0.30
+      Lateral Movement: 0.88
+      Command and Control: 0.95
+      Exfiltration: 0.97
+      Impact: 0.55
+      Discovery: 0.60
+      Initial Access: 0.90
+      Credential Access: 0.35
+      Defense Evasion: 0.20
+    survival:
+      memory: 0.98
+      process_state: 0.96
+      network_connections: 0.25
+      sysmon_logs: 0.99
+      authentication_logs: 0.99
+      powershell_logs: 0.99
+      disk_artifacts: 0.99
+      registry: 0.99
+    adaptation: "Locally running payload may attempt offline actions; remote operator loses access."
+
+  KILL_PROCESS:
+    label: Kill malicious process
+    base_business_impact: 0.19
+    response_cost: 0.08
+    reversible: false
+    downtime_minutes: 0
+    attacker_control: 0.50
+    observability: 0.70
+    effectiveness:
+      default: 0.60
+      Lateral Movement: 0.80
+      Command and Control: 0.80
+      Exfiltration: 0.80
+      Impact: 0.70
+      Credential Access: 0.80
+      Execution: 0.70
+      Discovery: 0.70
+      Collection: 0.70
+      Persistence: 0.30
+      Defense Evasion: 0.50
+      Initial Access: 0.20
+    survival:
+      memory: 0.30
+      process_state: 0.15
+      network_connections: 0.30
+      sysmon_logs: 0.99
+      powershell_logs: 0.97
+      disk_artifacts: 0.95
+    adaptation: "Attacker re-spawns payload via persistence or re-enters with stolen credentials."
+
+  STOP_SERVICE:
+    label: Stop service
+    base_business_impact: 0.40
+    response_cost: 0.15
+    reversible: true
+    downtime_minutes: 20
+    attacker_control: 0.70
+    observability: 0.75
+    effectiveness:
+      default: 0.10
+      Persistence: 0.50
+      Impact: 0.30
+      Execution: 0.30
+    survival: {memory: 0.60, process_state: 0.50, network_connections: 0.60, sysmon_logs: 0.99, disk_artifacts: 0.99}
+    adaptation: "Attacker installs an alternative persistence mechanism."
+
+  SHUTDOWN_HOST:
+    label: Shut down host
+    base_business_impact: 1.00
+    response_cost: 0.35
+    reversible: false
+    downtime_minutes: 240
+    attacker_control: 0.0
+    observability: 0.0
+    effectiveness: {default: 0.97}
+    survival:
+      memory: 0.02
+      process_state: 0.0
+      network_connections: 0.0
+      sysmon_logs: 0.97
+      authentication_logs: 0.97
+      powershell_logs: 0.95
+      disk_artifacts: 0.97
+      registry: 0.97
+    adaptation: "Remaining footholds on other hosts (if any) become the attacker's only access."
+
+  REIMAGE_HOST:
+    label: Reimage host
+    base_business_impact: 1.00
+    response_cost: 0.60
+    reversible: false
+    downtime_minutes: 480
+    attacker_control: 0.0
+    observability: 0.0
+    effectiveness: {default: 0.99}
+    survival:
+      memory: 0.0
+      process_state: 0.0
+      network_connections: 0.0
+      sysmon_logs: 0.0
+      authentication_logs: 0.0
+      powershell_logs: 0.0
+      disk_artifacts: 0.0
+      registry: 0.0
+    adaptation: "Host foothold eliminated; attacker must re-compromise."

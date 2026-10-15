@@ -1,0 +1,9 @@
+# Preserve exact dataset bytes and SHA-256 across platforms.
+data/custom/*.csv -text
+data/custom/** -text
+data/external/optc/** -text
+data/model_evaluations/** -text
+data/models/*.json -text
+docs/OPTC*.md -text
+*.png binary
+*.ico binary

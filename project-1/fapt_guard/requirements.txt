@@ -1,0 +1,24 @@
+# Core (required for the end-to-end MVP pipeline)
+numpy>=1.26
+networkx>=3.2
+pyyaml>=6.0
+pydantic>=2.5
+fastapi>=0.110
+uvicorn>=0.27
+
+# Statistical / ML baselines (optional - rule/logistic fallbacks are used when absent)
+scikit-learn>=1.4
+
+# Dashboard
+streamlit>=1.32
+plotly>=5.18
+pandas>=2.1
+
+# Testing
+pytest>=8.0
+httpx>=0.26
+
+# Optional deep-learning backend for TC-FAPN (install separately):
+#   pip install torch
+# Optional graph backend:
+#   pip install neo4j

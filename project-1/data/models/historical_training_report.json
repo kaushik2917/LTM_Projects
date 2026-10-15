@@ -1,0 +1,208 @@
+{
+  "model_family": "RandomForest baseline (not TC-FAPN)",
+  "seed": 42,
+  "benchmark_13_used_for_training": false,
+  "models": {
+    "cdfu": {
+      "dataset": "10",
+      "features": [
+        "attack_stage",
+        "technique_id",
+        "attacker_intent",
+        "asset_criticality",
+        "baseline_attack_risk",
+        "evidence_trust",
+        "anti_forensic_risk",
+        "prediction_uncertainty"
+      ],
+      "targets": [
+        "fu_memory",
+        "fu_process_state",
+        "fu_active_connections",
+        "fu_sysmon_logs",
+        "fu_security_logs",
+        "fu_powershell_history",
+        "fu_registry",
+        "fu_disk_artifacts",
+        "fu_dns_logs",
+        "fu_auth_logs",
+        "fu_network_flows"
+      ],
+      "train_rows": 6160,
+      "test_rows": 1540,
+      "group_key": "incident_id",
+      "group_overlap": 0,
+      "source_sha256": "60c1bc983c16ff35c644b525b14298c40b129a6aa92c542a8d1cb0495eeb6462",
+      "metrics": {
+        "mae": 0.022553558485657575,
+        "mae_by_target": {
+          "fu_memory": 0.0225265469161959,
+          "fu_process_state": 0.022301165140661966,
+          "fu_active_connections": 0.021043204157441524,
+          "fu_sysmon_logs": 0.02383458587720182,
+          "fu_security_logs": 0.021438542454629034,
+          "fu_powershell_history": 0.022108770549368054,
+          "fu_registry": 0.020430039186584585,
+          "fu_disk_artifacts": 0.02262578418089311,
+          "fu_dns_logs": 0.022334656546379776,
+          "fu_auth_logs": 0.025604770884690094,
+          "fu_network_flows": 0.023841077448187448
+        }
+      }
+    },
+    "aces": {
+      "dataset": "10",
+      "features": [
+        "attack_stage",
+        "technique_id",
+        "attacker_intent",
+        "asset_criticality",
+        "baseline_attack_risk",
+        "evidence_trust",
+        "anti_forensic_risk",
+        "prediction_uncertainty",
+        "action"
+      ],
+      "targets": [
+        "survival_memory",
+        "survival_process_state",
+        "survival_active_connections",
+        "survival_sysmon_logs",
+        "survival_security_logs",
+        "survival_powershell_history",
+        "survival_registry",
+        "survival_disk_artifacts",
+        "survival_dns_logs",
+        "survival_auth_logs",
+        "survival_network_flows",
+        "residual_attack_risk",
+        "business_impact",
+        "response_cost",
+        "evidence_opportunity_cost"
+      ],
+      "train_rows": 6160,
+      "test_rows": 1540,
+      "group_key": "incident_id",
+      "group_overlap": 0,
+      "source_sha256": "60c1bc983c16ff35c644b525b14298c40b129a6aa92c542a8d1cb0495eeb6462",
+      "metrics": {
+        "mae": 0.01281440242942472,
+        "mae_by_target": {
+          "survival_memory": 0.00941144619127264,
+          "survival_process_state": 0.009090530947630139,
+          "survival_active_connections": 0.009305050678420185,
+          "survival_sysmon_logs": 0.013646712970327888,
+          "survival_security_logs": 0.013848334658884267,
+          "survival_powershell_history": 0.014132232487512653,
+          "survival_registry": 0.008208788006894839,
+          "survival_disk_artifacts": 0.013159800148171452,
+          "survival_dns_logs": 0.007437259387326091,
+          "survival_auth_logs": 0.007732999133271564,
+          "survival_network_flows": 0.008561239219018767,
+          "residual_attack_risk": 0.021545916167012638,
+          "business_impact": 0.02039918803613225,
+          "response_cost": 0.015905804533556167,
+          "evidence_opportunity_cost": 0.019830733875939286
+        }
+      }
+    },
+    "afip": {
+      "dataset": "11",
+      "features": [
+        "observed_prev_stage",
+        "observed_current_stage",
+        "current_technique_id",
+        "attacker_intent",
+        "evidence_trust",
+        "graph_integrity_score"
+      ],
+      "targets": [
+        "anti_forensic_behavior"
+      ],
+      "train_rows": 4000,
+      "test_rows": 1000,
+      "group_key": "sequence_id",
+      "group_overlap": 0,
+      "source_sha256": "f9851b4cc3e98ffdd46da6a4e88cadea9437a2c316561df88ce4e5ab0edb241c",
+      "metrics": {
+        "accuracy": 0.613,
+        "macro_f1": 0.08806153518513496
+      }
+    },
+    "trust": {
+      "dataset": "12",
+      "features": [
+        "source",
+        "missing_ratio",
+        "timestamp_shift_seconds",
+        "edge_deleted",
+        "fake_node",
+        "fake_edge",
+        "sensor_spoof",
+        "duplicate_event",
+        "contradiction_count",
+        "corroboration_count",
+        "source_reliability",
+        "integrity_hash_valid",
+        "sensor_health",
+        "temporal_consistency",
+        "graph_consistency",
+        "corroboration_score"
+      ],
+      "targets": [
+        "calculated_evidence_trust",
+        "graph_integrity_score"
+      ],
+      "train_rows": 6465,
+      "test_rows": 1535,
+      "group_key": "incident_id",
+      "group_overlap": 0,
+      "source_sha256": "0ed157d55a32bccfbf72ce287f00dfdb0b7c703a71fd4045e3dcf123954b3e32",
+      "metrics": {
+        "mae": 0.004878970726779123,
+        "mae_by_target": {
+          "calculated_evidence_trust": 0.0049231583918537426,
+          "graph_integrity_score": 0.004834783061704504
+        }
+      }
+    },
+    "poisoning": {
+      "dataset": "12",
+      "features": [
+        "source",
+        "missing_ratio",
+        "timestamp_shift_seconds",
+        "edge_deleted",
+        "fake_node",
+        "fake_edge",
+        "sensor_spoof",
+        "duplicate_event",
+        "contradiction_count",
+        "corroboration_count",
+        "source_reliability",
+        "integrity_hash_valid",
+        "sensor_health",
+        "temporal_consistency",
+        "graph_consistency",
+        "corroboration_score"
+      ],
+      "targets": [
+        "poisoning_label"
+      ],
+      "train_rows": 6465,
+      "test_rows": 1535,
+      "group_key": "incident_id",
+      "group_overlap": 0,
+      "source_sha256": "0ed157d55a32bccfbf72ce287f00dfdb0b7c703a71fd4045e3dcf123954b3e32",
+      "metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      }
+    }
+  },
+  "limitations": [
+    "Synthetic-label agreement is not real-world validation.",
+    "Observational response estimates are not causal effects.",
+    "Trust model assumes corruption indicators are observable upstream."
+  ]
+}

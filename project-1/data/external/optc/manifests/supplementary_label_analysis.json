@@ -1,0 +1,846 @@
+{
+  "analyzed_at": "2026-10-03T21:13:29.015883+00:00",
+  "source_type": "supplementary_research",
+  "source_repository": "AT03380/optc-labels",
+  "git_commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+  "documentation_directory": "NOT PRESENT; README and supplementary/ contain the documentation.",
+  "archives": [
+    {
+      "archive": "malicious.zip",
+      "records": 313018,
+      "unique_event_ids": 313018,
+      "duplicate_ids_within_archive": 0,
+      "hosts": {
+        "SysClient0005.systemia.com": 2346,
+        "SysClient0010.systemia.com": 19458,
+        "SysClient0051.systemia.com": 6524,
+        "SysClient0069.systemia.com": 19441,
+        "SysClient0104.systemia.com": 4393,
+        "SysClient0123.systemia.com": 445,
+        "SysClient0124.systemia.com": 598,
+        "SysClient0170.systemia.com": 4401,
+        "SysClient0201.systemia.com": 39333,
+        "SysClient0203.systemia.com": 19473,
+        "SysClient0205.systemia.com": 4387,
+        "SysClient0255.systemia.com": 4396,
+        "SysClient0321.systemia.com": 4428,
+        "SysClient0351.systemia.com": 891,
+        "SysClient0355.systemia.com": 4624,
+        "SysClient0358.systemia.com": 19400,
+        "SysClient0402.systemia.com": 18811,
+        "SysClient0419.systemia.com": 4520,
+        "SysClient0462.systemia.com": 4388,
+        "SysClient0501.systemia.com": 37292,
+        "SysClient0503.systemia.com": 4389,
+        "SysClient0559.systemia.com": 4482,
+        "SysClient0609.systemia.com": 4393,
+        "SysClient0618.systemia.com": 19279,
+        "SysClient0660.systemia.com": 10278,
+        "SysClient0771.systemia.com": 4447,
+        "SysClient0811.systemia.com": 17925,
+        "SysClient0851.systemia.com": 19356,
+        "SysClient0874.systemia.com": 4395,
+        "SysClient0955.systemia.com": 4478,
+        "SysClient0974.systemia.com": 47
+      },
+      "time_min_utc": "2019-09-20T15:53:18.559000+00:00",
+      "time_max_utc": "2019-09-25T18:35:04.555000+00:00",
+      "top_level_fields": {
+        "action": 313018,
+        "actorID": 313018,
+        "hostname": 313018,
+        "id": 313018,
+        "object": 313018,
+        "objectID": 313018,
+        "pid": 313018,
+        "ppid": 313018,
+        "principal": 313018,
+        "properties": 313018,
+        "tid": 313018,
+        "timestamp": 313018
+      },
+      "missing_or_empty_fields": {
+        "principal": 5847
+      },
+      "embedded_label_technique_scenario_task_keys": {},
+      "per_host_backwards_timestamp_steps_in_file_order": 90772,
+      "zip_crc_verified": true,
+      "cutoff_probe": {
+        "host": "SysClient0201.systemia.com",
+        "cutoff_utc": "2019-09-23T15:30:00+00:00",
+        "before_or_equal": 1801,
+        "strictly_after": 37532,
+        "scope": "Whole malicious archive only; not a forecast-horizon count and not proof of complete prefixes. PDF timezone alignment remains unverified."
+      }
+    },
+    {
+      "archive": "admin.zip",
+      "records": 1480,
+      "unique_event_ids": 1480,
+      "duplicate_ids_within_archive": 0,
+      "hosts": {
+        "SysClient0123.systemia.com": 445,
+        "SysClient0124.systemia.com": 598,
+        "SysClient0201.systemia.com": 338,
+        "SysClient0501.systemia.com": 99
+      },
+      "time_min_utc": "2019-09-20T15:53:18.559000+00:00",
+      "time_max_utc": "2019-09-25T13:18:42.532000+00:00",
+      "top_level_fields": {
+        "action": 1480,
+        "actorID": 1480,
+        "hostname": 1480,
+        "id": 1480,
+        "object": 1480,
+        "objectID": 1480,
+        "pid": 1480,
+        "ppid": 1480,
+        "principal": 1480,
+        "properties": 1480,
+        "tid": 1480,
+        "timestamp": 1480
+      },
+      "missing_or_empty_fields": {
+        "principal": 1
+      },
+      "embedded_label_technique_scenario_task_keys": {},
+      "per_host_backwards_timestamp_steps_in_file_order": 305,
+      "zip_crc_verified": true,
+      "cutoff_probe": null
+    },
+    {
+      "archive": "anomaly.zip",
+      "records": 281327,
+      "unique_event_ids": 281327,
+      "duplicate_ids_within_archive": 0,
+      "hosts": {
+        "SysClient0005.systemia.com": 391,
+        "SysClient0010.systemia.com": 19454,
+        "SysClient0051.systemia.com": 1086,
+        "SysClient0069.systemia.com": 19439,
+        "SysClient0104.systemia.com": 4391,
+        "SysClient0123.systemia.com": 209,
+        "SysClient0124.systemia.com": 596,
+        "SysClient0170.systemia.com": 4379,
+        "SysClient0201.systemia.com": 28121,
+        "SysClient0203.systemia.com": 19434,
+        "SysClient0205.systemia.com": 4385,
+        "SysClient0255.systemia.com": 4394,
+        "SysClient0321.systemia.com": 4378,
+        "SysClient0351.systemia.com": 851,
+        "SysClient0355.systemia.com": 4622,
+        "SysClient0358.systemia.com": 19399,
+        "SysClient0402.systemia.com": 8067,
+        "SysClient0419.systemia.com": 4436,
+        "SysClient0462.systemia.com": 4386,
+        "SysClient0501.systemia.com": 35760,
+        "SysClient0503.systemia.com": 4387,
+        "SysClient0559.systemia.com": 4432,
+        "SysClient0609.systemia.com": 4391,
+        "SysClient0618.systemia.com": 19275,
+        "SysClient0660.systemia.com": 10214,
+        "SysClient0771.systemia.com": 4410,
+        "SysClient0811.systemia.com": 17870,
+        "SysClient0851.systemia.com": 19353,
+        "SysClient0874.systemia.com": 4393,
+        "SysClient0955.systemia.com": 4424
+      },
+      "time_min_utc": "2019-09-20T15:53:18.559000+00:00",
+      "time_max_utc": "2019-09-25T18:25:00.473000+00:00",
+      "top_level_fields": {
+        "action": 281327,
+        "actorID": 281327,
+        "hostname": 281327,
+        "id": 281327,
+        "object": 281327,
+        "objectID": 281327,
+        "pid": 281327,
+        "ppid": 281327,
+        "principal": 281327,
+        "properties": 281327,
+        "tid": 281327,
+        "timestamp": 281327
+      },
+      "missing_or_empty_fields": {
+        "principal": 5235
+      },
+      "embedded_label_technique_scenario_task_keys": {},
+      "per_host_backwards_timestamp_steps_in_file_order": 85082,
+      "zip_crc_verified": true,
+      "cutoff_probe": null
+    },
+    {
+      "archive": "ground.zip",
+      "records": 276895,
+      "unique_event_ids": 276895,
+      "duplicate_ids_within_archive": 0,
+      "hosts": {
+        "SysClient0005.systemia.com": 535,
+        "SysClient0010.systemia.com": 19454,
+        "SysClient0051.systemia.com": 3282,
+        "SysClient0069.systemia.com": 19439,
+        "SysClient0104.systemia.com": 4391,
+        "SysClient0170.systemia.com": 4379,
+        "SysClient0201.systemia.com": 26816,
+        "SysClient0203.systemia.com": 19434,
+        "SysClient0205.systemia.com": 4385,
+        "SysClient0255.systemia.com": 4394,
+        "SysClient0321.systemia.com": 4378,
+        "SysClient0351.systemia.com": 891,
+        "SysClient0355.systemia.com": 4622,
+        "SysClient0358.systemia.com": 19399,
+        "SysClient0402.systemia.com": 8098,
+        "SysClient0419.systemia.com": 4436,
+        "SysClient0462.systemia.com": 4386,
+        "SysClient0501.systemia.com": 31180,
+        "SysClient0503.systemia.com": 4387,
+        "SysClient0559.systemia.com": 4432,
+        "SysClient0609.systemia.com": 4391,
+        "SysClient0618.systemia.com": 19275,
+        "SysClient0660.systemia.com": 10177,
+        "SysClient0771.systemia.com": 4410,
+        "SysClient0811.systemia.com": 17707,
+        "SysClient0851.systemia.com": 19353,
+        "SysClient0874.systemia.com": 4393,
+        "SysClient0955.systemia.com": 4424,
+        "SysClient0974.systemia.com": 47
+      },
+      "time_min_utc": "2019-09-23T15:23:54.681000+00:00",
+      "time_max_utc": "2019-09-25T18:35:04.555000+00:00",
+      "top_level_fields": {
+        "action": 276895,
+        "actorID": 276895,
+        "hostname": 276895,
+        "id": 276895,
+        "object": 276895,
+        "objectID": 276895,
+        "pid": 276895,
+        "ppid": 276895,
+        "principal": 276895,
+        "properties": 276895,
+        "tid": 276895,
+        "timestamp": 276895
+      },
+      "missing_or_empty_fields": {
+        "principal": 5231
+      },
+      "embedded_label_technique_scenario_task_keys": {},
+      "per_host_backwards_timestamp_steps_in_file_order": 83606,
+      "zip_crc_verified": true,
+      "cutoff_probe": null
+    },
+    {
+      "archive": "red.zip",
+      "records": 311877,
+      "unique_event_ids": 311877,
+      "duplicate_ids_within_archive": 0,
+      "hosts": {
+        "SysClient0005.systemia.com": 2346,
+        "SysClient0010.systemia.com": 19458,
+        "SysClient0051.systemia.com": 6524,
+        "SysClient0069.systemia.com": 19441,
+        "SysClient0104.systemia.com": 4393,
+        "SysClient0170.systemia.com": 4401,
+        "SysClient0201.systemia.com": 39332,
+        "SysClient0203.systemia.com": 19473,
+        "SysClient0205.systemia.com": 4387,
+        "SysClient0255.systemia.com": 4396,
+        "SysClient0321.systemia.com": 4428,
+        "SysClient0351.systemia.com": 891,
+        "SysClient0355.systemia.com": 4624,
+        "SysClient0358.systemia.com": 19400,
+        "SysClient0402.systemia.com": 18811,
+        "SysClient0419.systemia.com": 4520,
+        "SysClient0462.systemia.com": 4388,
+        "SysClient0501.systemia.com": 37195,
+        "SysClient0503.systemia.com": 4389,
+        "SysClient0559.systemia.com": 4482,
+        "SysClient0609.systemia.com": 4393,
+        "SysClient0618.systemia.com": 19279,
+        "SysClient0660.systemia.com": 10278,
+        "SysClient0771.systemia.com": 4447,
+        "SysClient0811.systemia.com": 17925,
+        "SysClient0851.systemia.com": 19356,
+        "SysClient0874.systemia.com": 4395,
+        "SysClient0955.systemia.com": 4478,
+        "SysClient0974.systemia.com": 47
+      },
+      "time_min_utc": "2019-09-23T15:23:54.681000+00:00",
+      "time_max_utc": "2019-09-25T18:35:04.555000+00:00",
+      "top_level_fields": {
+        "action": 311877,
+        "actorID": 311877,
+        "hostname": 311877,
+        "id": 311877,
+        "object": 311877,
+        "objectID": 311877,
+        "pid": 311877,
+        "ppid": 311877,
+        "principal": 311877,
+        "properties": 311877,
+        "tid": 311877,
+        "timestamp": 311877
+      },
+      "missing_or_empty_fields": {
+        "principal": 5847
+      },
+      "embedded_label_technique_scenario_task_keys": {},
+      "per_host_backwards_timestamp_steps_in_file_order": 90559,
+      "zip_crc_verified": true,
+      "cutoff_probe": null
+    }
+  ],
+  "archive_overlaps_by_event_id": [
+    {
+      "left": "malicious",
+      "right": "admin",
+      "shared_ids": 1480,
+      "left_only": 311538,
+      "right_only": 0
+    },
+    {
+      "left": "malicious",
+      "right": "anomaly",
+      "shared_ids": 281327,
+      "left_only": 31691,
+      "right_only": 0
+    },
+    {
+      "left": "malicious",
+      "right": "ground",
+      "shared_ids": 276895,
+      "left_only": 36123,
+      "right_only": 0
+    },
+    {
+      "left": "malicious",
+      "right": "red",
+      "shared_ids": 311877,
+      "left_only": 1141,
+      "right_only": 0
+    },
+    {
+      "left": "admin",
+      "right": "anomaly",
+      "shared_ids": 1143,
+      "left_only": 337,
+      "right_only": 280184
+    },
+    {
+      "left": "admin",
+      "right": "ground",
+      "shared_ids": 0,
+      "left_only": 1480,
+      "right_only": 276895
+    },
+    {
+      "left": "admin",
+      "right": "red",
+      "shared_ids": 339,
+      "left_only": 1141,
+      "right_only": 311538
+    },
+    {
+      "left": "anomaly",
+      "right": "ground",
+      "shared_ids": 272864,
+      "left_only": 8463,
+      "right_only": 4031
+    },
+    {
+      "left": "anomaly",
+      "right": "red",
+      "shared_ids": 280522,
+      "left_only": 805,
+      "right_only": 31355
+    },
+    {
+      "left": "ground",
+      "right": "red",
+      "shared_ids": 276895,
+      "left_only": 0,
+      "right_only": 34982
+    }
+  ],
+  "unique_event_union": 313018,
+  "same_uuid_different_line_bytes_vs_malicious": {},
+  "task_count": 931,
+  "task_field_missing_empty_null_counts": {
+    "action": 273,
+    "actor_id": 22,
+    "annotations": 118,
+    "event_id": 22,
+    "hostname": 22,
+    "labels": 22,
+    "log": 791,
+    "object": 273,
+    "object_id": 22,
+    "parent_object_id": 273,
+    "pid": 0,
+    "ppid": 0,
+    "proces_table": 0,
+    "raw": 680,
+    "task_id": 0,
+    "timestamp": 22
+  },
+  "unique_task_ids": 931,
+  "duplicate_task_id_occurrences": 0,
+  "unique_nonempty_event_ids": 851,
+  "task_event_ids_found_in_malicious": 795,
+  "task_label_counts": {
+    "malicious": 854,
+    "ground": 118,
+    "red": 858,
+    "day1": 625,
+    "process": 884,
+    "benign": 55,
+    "event": 24,
+    "day2": 159,
+    "day3": 92,
+    "anomaly": 133,
+    "admin": 49,
+    "prior": 29,
+    "invalid": 17,
+    "correlated": 641
+  },
+  "unique_nonempty_process_object_ids": 799,
+  "unique_nonempty_actor_ids": 190,
+  "annotations_present": 813,
+  "process_tree_present": 931,
+  "embedded_raw_context_present": 251,
+  "invalid_tasks": [
+    {
+      "task_id": "a5f55e05-fe4f-4724-be65-0c48d39123a5",
+      "event_id": "67b1106b-9833-4b13-9e70-7ff8f6ab81c5",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell\" with event ID \"43fb9623-3cd1-45ec-ab22-dbe46e75240e\"."
+      ]
+    },
+    {
+      "task_id": "2d8f681c-f82b-4e0a-b43c-1b3c90fc9889",
+      "event_id": "a000ec48-8f33-4979-a029-3df0c7886eca",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell\" with event ID \"43fb9623-3cd1-45ec-ab22-dbe46e75240e\"."
+      ]
+    },
+    {
+      "task_id": "1ce8ceb3-c300-477b-a485-0d3c6e217ccb",
+      "event_id": "7d8c19b6-c0ab-47e2-81b0-745c43a4d0b7",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "c7dcdd70-d865-4f7d-9a27-e34bf2a92578",
+      "event_id": "936b883f-40d7-426c-a3d8-b76db4217a34",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "301f8d90-e529-40fb-8bd2-1db0ce936063",
+      "event_id": "9fcd2231-cb39-44ac-951c-3ff2838e8172",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "b0b04d56-6f16-400b-afab-5f772d8baf5d",
+      "event_id": "98194473-2cc5-4243-b992-de935d9e725e",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "8c5c1cfb-ba52-4823-ba71-b831a3dbfe5a",
+      "event_id": "ac9c576f-ab6e-4b6a-acb8-5a9f6c1a5408",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "7db5e9aa-48cf-437e-960c-cb34bc67653d",
+      "event_id": "47d916c8-7309-44fa-ae81-8b78532c997b",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "9e2390af-e9e2-4b1f-8cc3-60123803fd55",
+      "event_id": "3fc933db-a549-4a39-90ec-ec7b6c8de0a6",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell.exe\" with event ID \"55afc144-b943-4211-8ac1-2e7b75de69e0\"."
+      ]
+    },
+    {
+      "task_id": "e640151b-c455-41b5-a9ef-2b1ab4a93827",
+      "event_id": "b9421a3c-844a-4ad3-8e5c-ac58c0a3243d",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell\" with event ID \"7db901fd-e1bf-4c38-9833-b4d0cba08633\"."
+      ]
+    },
+    {
+      "task_id": "1020d9d8-1c56-4660-858b-454e84f95794",
+      "event_id": "78ef5ae0-7d54-484b-9ff6-521f09e31836",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell\" with event ID \"7db901fd-e1bf-4c38-9833-b4d0cba08633\"."
+      ]
+    },
+    {
+      "task_id": "f363d94d-b8f8-4c2e-83d0-2af3165c891c",
+      "event_id": "6a99c07b-cac4-4dc2-8674-f31d91bbf5a6",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day1",
+        "process"
+      ],
+      "event_in_malicious_archive": false,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"powershell\" with event ID \"7db901fd-e1bf-4c38-9833-b4d0cba08633\"."
+      ]
+    },
+    {
+      "task_id": "25b39e6b-13e7-4a10-b35b-6d71a3ebd54b",
+      "event_id": "af31b295-8642-42d4-8eb0-def9cc668d4f",
+      "labels": [
+        "benign",
+        "invalid",
+        "process"
+      ],
+      "event_in_malicious_archive": false,
+      "annotation": [
+        "Correlated as parent of process \"regedit.exe\" with event ID \"515e06a3-8cc1-401c-b22d-f77224958279\"."
+      ]
+    },
+    {
+      "task_id": "117b946b-4b0a-4807-a80b-bbe847f72089",
+      "event_id": "e1d1e64f-b418-45e6-bc3a-fea857a367f1",
+      "labels": [
+        "benign",
+        "invalid",
+        "red",
+        "day3",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"lsass.exe\" with event ID \"fa8b1706-4550-4715-bf6b-8ffba87c709b\"."
+      ]
+    },
+    {
+      "task_id": "0b788661-0118-4c6a-98a6-1b7113244863",
+      "event_id": "6c051cc1-81b0-48d9-a9c8-8a6c3d9671d0",
+      "labels": [
+        "benign",
+        "invalid",
+        "admin",
+        "prior",
+        "process"
+      ],
+      "event_in_malicious_archive": true,
+      "annotation": [
+        "Propagated \"malicious\" label from process \"LbcDhcSl.exe\" with event ID \"04bf7cb2-eb81-4a83-b2de-69db513f43e6\"."
+      ]
+    },
+    {
+      "task_id": "61315c3c-291c-4c08-aeb5-0f98de32213e",
+      "event_id": "804b15a1-2b3a-4bd7-bb66-b5fe453ebcbc",
+      "labels": [
+        "benign",
+        "invalid",
+        "admin",
+        "day2",
+        "process"
+      ],
+      "event_in_malicious_archive": false,
+      "annotation": [
+        "Correlated as parent of process \"powershell\" with event ID \"72f0c069-24f2-4f47-8dc9-971e399b75f0\"."
+      ]
+    },
+    {
+      "task_id": "f5df8cff-1842-40f4-a827-72a48875bbbe",
+      "event_id": "0ea01d85-e6bc-4e6b-b1b7-37dc52d3fde6",
+      "labels": [
+        "benign",
+        "invalid",
+        "process"
+      ],
+      "event_in_malicious_archive": false,
+      "annotation": [
+        "Correlated as child of process \"WINWORD.EXE\" with event ID \"af8b479d-afae-455d-b55e-ef7ec534c226\"."
+      ]
+    }
+  ],
+  "conflicting_task_outcomes_for_same_uuid": [],
+  "scenario_hosts": {
+    "prior": [
+      "SysClient0119.systemia.com",
+      "SysClient0123.systemia.com",
+      "SysClient0124.systemia.com",
+      "SysClient0152.systemia.com",
+      "SysClient0265.systemia.com",
+      "SysClient0276.systemia.com",
+      "SysClient0414.systemia.com",
+      "SysClient0499.systemia.com",
+      "SysClient0501.systemia.com"
+    ],
+    "day1": [
+      "SysClient0104.systemia.com",
+      "SysClient0170.systemia.com",
+      "SysClient0201.systemia.com",
+      "SysClient0205.systemia.com",
+      "SysClient0255.systemia.com",
+      "SysClient0321.systemia.com",
+      "SysClient0355.systemia.com",
+      "SysClient0402.systemia.com",
+      "SysClient0419.systemia.com",
+      "SysClient0462.systemia.com",
+      "SysClient0501.systemia.com",
+      "SysClient0503.systemia.com",
+      "SysClient0559.systemia.com",
+      "SysClient0609.systemia.com",
+      "SysClient0660.systemia.com",
+      "SysClient0771.systemia.com",
+      "SysClient0874.systemia.com",
+      "SysClient0955.systemia.com"
+    ],
+    "day2": [
+      "SysClient0005.systemia.com",
+      "SysClient0010.systemia.com",
+      "SysClient0069.systemia.com",
+      "SysClient0201.systemia.com",
+      "SysClient0203.systemia.com",
+      "SysClient0275.systemia.com",
+      "SysClient0358.systemia.com",
+      "SysClient0501.systemia.com",
+      "SysClient0618.systemia.com",
+      "SysClient0723.systemia.com",
+      "SysClient0811.systemia.com",
+      "SysClient0851.systemia.com",
+      "SysClient0974.systemia.com"
+    ],
+    "day3": [
+      "SysClient0001.systemia.com",
+      "SysClient0022.systemia.com",
+      "SysClient0051.systemia.com",
+      "SysClient0165.systemia.com",
+      "SysClient0201.systemia.com",
+      "SysClient0302.systemia.com",
+      "SysClient0324.systemia.com",
+      "SysClient0351.systemia.com",
+      "SysClient0501.systemia.com",
+      "SysClient0718.systemia.com"
+    ]
+  },
+  "scenario_host_overlap": [
+    {
+      "left": "prior",
+      "right": "day1",
+      "shared_hosts": [
+        "SysClient0501.systemia.com"
+      ]
+    },
+    {
+      "left": "prior",
+      "right": "day2",
+      "shared_hosts": [
+        "SysClient0501.systemia.com"
+      ]
+    },
+    {
+      "left": "prior",
+      "right": "day3",
+      "shared_hosts": [
+        "SysClient0501.systemia.com"
+      ]
+    },
+    {
+      "left": "day1",
+      "right": "day2",
+      "shared_hosts": [
+        "SysClient0201.systemia.com",
+        "SysClient0501.systemia.com"
+      ]
+    },
+    {
+      "left": "day1",
+      "right": "day3",
+      "shared_hosts": [
+        "SysClient0201.systemia.com",
+        "SysClient0501.systemia.com"
+      ]
+    },
+    {
+      "left": "day2",
+      "right": "day3",
+      "shared_hosts": [
+        "SysClient0201.systemia.com",
+        "SysClient0501.systemia.com"
+      ]
+    }
+  ],
+  "reconciliation_status_counts": {
+    "PARTIAL": 139,
+    "NOT_FOUND": 1,
+    "UNKNOWN": 778,
+    "DISAGREEMENT": 13
+  },
+  "archive_suitability": [
+    {
+      "id": "A",
+      "question": "Benign context",
+      "status": "NO",
+      "evidence": "Archives select research-labeled malicious activity. Some task outcomes contradict archive membership; neither these nor admin-labeled events establish a representative benign stream."
+    },
+    {
+      "id": "B",
+      "question": "Complete chronological prefixes",
+      "status": "NO",
+      "evidence": "Selected event subsets omit all unselected activity. Time ordering cannot recover missing events."
+    },
+    {
+      "id": "C",
+      "question": "Future events after cutoffs",
+      "status": "PARTIAL",
+      "evidence": "Actual records exist on both sides of the explicit UTC probe cutoff; complete future horizons and PDF clock alignment remain unverified."
+    },
+    {
+      "id": "D",
+      "question": "Independent future-technique labels",
+      "status": "NO",
+      "evidence": "Outcome/source/actor/timeline/granularity labels exist, but no explicit independent ATT&CK targets were found."
+    },
+    {
+      "id": "E",
+      "question": "Scenario-disjoint evaluation",
+      "status": "NO",
+      "evidence": "Only related campaign-day annotations and selected events are available. Independent scenario/collection partitions and complete observations are missing."
+    },
+    {
+      "id": "F",
+      "question": "Original event identifiers",
+      "status": "YES",
+      "evidence": "All archive records contain event UUIDs and preserve eCAR fields. Identity against unavailable official shard bytes has not been independently verified."
+    },
+    {
+      "id": "G",
+      "question": "Alignment to official ground truth",
+      "status": "PARTIAL",
+      "evidence": "Task narrative timestamps/text can be reconciled in part. Official PDF lacks event UUIDs and timezone; inconsistencies remain unresolved."
+    },
+    {
+      "id": "H",
+      "question": "Exploratory preprocessing",
+      "status": "YES",
+      "evidence": "Suitable for parser, schema, identifier, timestamp and provenance inspection with the selection bias clearly retained."
+    },
+    {
+      "id": "I",
+      "question": "Final real-data validation",
+      "status": "NO",
+      "evidence": "Missing full raw telemetry, benign context, reviewed technique targets, independent splits and finalized evaluation protocol."
+    }
+  ],
+  "matcher_static_review": [
+    "Process filters aggregate labels by object_id without host qualification.",
+    "Event filters are populated from process-object filters rather than directly copying event-only task labels.",
+    "No explicit invalid-label exclusion was found in makeFilters; malicious inclusion uses aggregated labels.",
+    "Matching uses regex against actorID or event id; no hostname check. No source code was executed.",
+    "These are static implementation observations, not proof that this exact revision generated each archive."
+  ],
+  "prohibited_uses": [
+    "Do not treat these labels as official DARPA ground truth.",
+    "Do not treat archive selection or task annotations as cutoff features.",
+    "Do not report prediction performance from this analysis."
+  ]
+}

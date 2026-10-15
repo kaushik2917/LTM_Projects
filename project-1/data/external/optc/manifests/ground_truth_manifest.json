@@ -1,0 +1,364 @@
+{
+  "official_pdf": {
+    "value": "data/external/optc/official/ground_truth/OpTCRedTeamGroundTruth.pdf",
+    "provenance": "OFFICIAL_SOURCE",
+    "evidence": "https://raw.githubusercontent.com/FiveDirections/OpTC-data/master/OpTCRedTeamGroundTruth.pdf"
+  },
+  "sha256": {
+    "value": "5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567",
+    "provenance": "DERIVED",
+    "evidence": "SHA-256 of downloaded PDF bytes"
+  },
+  "size_bytes": {
+    "value": 453244,
+    "provenance": "DERIVED",
+    "evidence": "Local file size"
+  },
+  "downloaded_at": {
+    "value": "2026-10-03T16:42:22.001999+00:00",
+    "provenance": "DERIVED",
+    "evidence": "HTTPS acquisition log"
+  },
+  "pdf_validation": {
+    "value": {
+      "header": "%PDF-",
+      "eof_marker": true,
+      "pages": 7,
+      "parser": "pypdf 6.19.0"
+    },
+    "provenance": "DERIVED",
+    "evidence": "Successfully parsed all seven pages; not HTML"
+  },
+  "extracted_text_path": {
+    "value": "data/external/optc/official/ground_truth/ground_truth_text.txt",
+    "provenance": "DERIVED",
+    "evidence": "pypdf 6.19.0 page.extract_text; page markers added; original PDF unchanged"
+  },
+  "extraction_limitations": {
+    "value": "Some punctuation decodes as replacement characters; use original PDF when exact typography matters. No OCR or inferred words added.",
+    "provenance": "DERIVED",
+    "evidence": "Inspection of extracted text"
+  },
+  "attack_scenarios": {
+    "value": [
+      {
+        "name": {
+          "value": "Plain PowerShell Empire",
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF campaign heading"
+        },
+        "day": {
+          "value": 1,
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF campaign heading"
+        },
+        "timestamps_as_printed": {
+          "value": [
+            "09/23/19 11:23:29",
+            "09/23/19 11:24:19",
+            "09/23/19 11:24:54",
+            "09/23/19 11:26:02",
+            "09/23/19 11:26:38",
+            "09/23/19 11:26:56",
+            "09/23/19 11:33:14",
+            "09/23/19 11:35:26",
+            "09/23/19 11:37:15",
+            "09/23/19 11:38:09",
+            "09/23/19 11:39:25",
+            "09/23/19 11:40:41",
+            "09/23/19 11:41:50",
+            "09/23/19 12:51:59",
+            "09/23/19 12:58:20",
+            "09/23/19 13:07:11",
+            "09/23/19 13:08:28",
+            "09/23/19 13:15:48",
+            "09/23/19 13:24:36",
+            "09/23/19 13:25:41",
+            "09/23/19 13:29:47",
+            "09/23/19 13:35:22",
+            "09/23/19 13:38:31",
+            "09/23/19 13:40:38",
+            "09/23/19 13:44:23",
+            "09/23/19 13:49:00",
+            "09/23/19 13:50:56",
+            "09/23/19 13:54:11",
+            "09/23/19 13:56:48",
+            "09/23/19 14:02:12",
+            "09/23/19 14:04:45",
+            "09/23/19 14:06:01",
+            "09/23/19 14:07:21",
+            "09/23/19 14:09:21",
+            "09/23/19 14:45:13",
+            "09/23/19 15:24:33",
+            "09/23/19 15:30:00"
+          ],
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF log entries; extracted order preserved"
+        },
+        "timezone": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "PDF does not explicitly specify timezone. Supplementary telemetry contains -04:00; do not silently assign this to PDF times."
+        },
+        "hosts_as_printed": {
+          "value": [
+            "DC1",
+            "SYSCLIENT0104",
+            "SYSCLIENT0170",
+            "SYSCLIENT0205",
+            "SYSCLIENT0255",
+            "SYSCLIENT0321",
+            "SYSCLIENT0355",
+            "SYSCLIENT0419",
+            "SYSCLIENT0462",
+            "SYSCLIENT0503",
+            "SYSCLIENT0559",
+            "SYSCLIENT0609",
+            "SYSCLIENT0771",
+            "SYSCLIENT0874",
+            "SYSCLIENT0955",
+            "Sysclient0201",
+            "Sysclient0402",
+            "Sysclient0660",
+            "sysclient0201",
+            "sysclient0402"
+          ],
+          "provenance": "DERIVED",
+          "evidence": "Case-insensitive regex extraction from this campaign section; spelling/case preserved, not canonical identities"
+        },
+        "phases_and_actions": {
+          "value": "See official_timeline.json and extracted PDF text; retain attempted/failed/successful distinctions.",
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "Official campaign summary and dated log"
+        },
+        "ecar_event_ids": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "No eCAR UUIDs explicitly present in official PDF."
+        },
+        "attack_technique_ids": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "No explicit ATT&CK technique IDs present in official PDF."
+        }
+      },
+      {
+        "name": {
+          "value": "Custom Powershell Empire",
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF campaign heading"
+        },
+        "day": {
+          "value": 2,
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF campaign heading"
+        },
+        "timestamps_as_printed": {
+          "value": [
+            "09/24/19 10:28:56",
+            "09/24/19 10:36:51",
+            "09/24/19 10:40:14",
+            "09/24/19 10:46:02",
+            "09/24/19 10:51:49",
+            "09/24/19 11:03:36",
+            "09/24/19 11:04:12",
+            "09/24/19 11:04:35",
+            "09/24/19 11:05:39",
+            "09/24/19 11:09:08",
+            "09/24/19 11:09:22",
+            "09/24/19 11:09:44",
+            "09/24/19 11:10:32",
+            "09/24/19 11:13:32",
+            "09/24/19 11:20:19",
+            "09/24/19 11:23:27",
+            "09/24/19 11:23:45",
+            "09/24/19 11:25:06",
+            "09/24/19 11:26:34",
+            "09/24/19 11:31:17",
+            "09/24/19 11:33:15",
+            "09/24/19 11:34:56",
+            "09/24/19 11:35:53",
+            "09/24/19 11:37:35",
+            "09/24/19 11:39:38",
+            "09/24/19 11:41:53",
+            "09/24/19 11:45:13",
+            "09/24/19 13:05:03",
+            "09/24/19 13:11:23",
+            "09/24/19 13:19:38",
+            "09/24/19 13:25:46",
+            "09/24/19 13:26:57",
+            "09/24/19 13:31:29",
+            "09/24/19 13:44:34",
+            "09/24/19 13:45:12",
+            "09/24/19 13:46:58",
+            "09/24/19 13:51:45",
+            "09/24/19 13:54:43",
+            "09/24/19 14:06:06",
+            "09/24/19 14:34:31",
+            "09/24/19 14:37:02",
+            "09/24/19 15:04:14",
+            "09/24/19 15:22:48",
+            "09/24/19 15:23:26",
+            "09/24/19 15:27:32",
+            "09/24/19 15:28:36",
+            "09/24/19 15:42:36",
+            "09/25/19 09:00:00",
+            "09/25/19 10:00:00"
+          ],
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF log entries; extracted order preserved"
+        },
+        "timezone": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "PDF does not explicitly specify timezone. Supplementary telemetry contains -04:00; do not silently assign this to PDF times."
+        },
+        "hosts_as_printed": {
+          "value": [
+            "DC1.systemia.com",
+            "Sysclient0005",
+            "Sysclient0010",
+            "Sysclient0069",
+            "Sysclient0203",
+            "Sysclient0358",
+            "Sysclient0501",
+            "Sysclient0618",
+            "Sysclient0811",
+            "Sysclient0851",
+            "Sysclient0974"
+          ],
+          "provenance": "DERIVED",
+          "evidence": "Case-insensitive regex extraction from this campaign section; spelling/case preserved, not canonical identities"
+        },
+        "phases_and_actions": {
+          "value": "See official_timeline.json and extracted PDF text; retain attempted/failed/successful distinctions.",
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "Official campaign summary and dated log"
+        },
+        "ecar_event_ids": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "No eCAR UUIDs explicitly present in official PDF."
+        },
+        "attack_technique_ids": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "No explicit ATT&CK technique IDs present in official PDF."
+        }
+      },
+      {
+        "name": {
+          "value": "Malicious Upgrade",
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF campaign heading"
+        },
+        "day": {
+          "value": 3,
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF campaign heading"
+        },
+        "timestamps_as_printed": {
+          "value": [
+            "09/25/19 10:29:42",
+            "09/25/19 10:31:08",
+            "09/25/19 10:32:11",
+            "09/25/19 10:33:55",
+            "09/25/19 10:36:28",
+            "09/25/19 10:37:52",
+            "09/25/19 10:38:35",
+            "09/25/19 10:40:39",
+            "09/25/19 10:44:56",
+            "09/25/19 10:48:43",
+            "09/25/19 10:53:06",
+            "09/25/19 11:07:41",
+            "09/25/19 11:23:31",
+            "09/25/19 11:24:30",
+            "09/25/19 13:42:05",
+            "09/25/19 14:24:03"
+          ],
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "PDF log entries; extracted order preserved"
+        },
+        "timezone": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "PDF does not explicitly specify timezone. Supplementary telemetry contains -04:00; do not silently assign this to PDF times."
+        },
+        "hosts_as_printed": {
+          "value": [
+            "Sysclient 0051",
+            "Sysclient0051",
+            "Sysclient0351"
+          ],
+          "provenance": "DERIVED",
+          "evidence": "Case-insensitive regex extraction from this campaign section; spelling/case preserved, not canonical identities"
+        },
+        "phases_and_actions": {
+          "value": "See official_timeline.json and extracted PDF text; retain attempted/failed/successful distinctions.",
+          "provenance": "OFFICIAL_SOURCE",
+          "evidence": "Official campaign summary and dated log"
+        },
+        "ecar_event_ids": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "No eCAR UUIDs explicitly present in official PDF."
+        },
+        "attack_technique_ids": {
+          "value": null,
+          "provenance": "UNKNOWN",
+          "evidence": "No explicit ATT&CK technique IDs present in official PDF."
+        }
+      }
+    ],
+    "provenance": "OFFICIAL_SOURCE",
+    "evidence": "PDF; individual fields identify derived/unknown values"
+  },
+  "timeline_path": {
+    "value": "data/external/optc/processed/official_timeline.json",
+    "provenance": "DERIVED",
+    "evidence": "102 extracted timestamped narrative entries with PDF page references"
+  },
+  "official_event_identifiers": {
+    "value": null,
+    "provenance": "UNKNOWN",
+    "evidence": "Official PDF lists agent IDs and PIDs, not eCAR event UUIDs."
+  },
+  "explicit_attack_mapping": {
+    "value": null,
+    "provenance": "UNKNOWN",
+    "evidence": "Independent reviewed ATT&CK mapping not yet available; no mapping inferred as official."
+  },
+  "processes_accounts_files_network": {
+    "value": "Official PDF and page-referenced timeline retain process names, PIDs, accounts, files, IPs, domains and action outcomes verbatim; they are narrative indicators, not verified telemetry joins.",
+    "provenance": "OFFICIAL_SOURCE",
+    "evidence": "ground_truth_text.txt and official_timeline.json"
+  },
+  "supplementary_event_mapping": {
+    "value": {
+      "repository": "AT03380/optc-labels",
+      "commit": "64c9f9b2e1a15bf3c2789d89d93dc0724cb0d4fa",
+      "tasks_path": "data/external/optc/processed/tasks.json",
+      "annotated_narrative_path": "data/external/optc/supplementary/optc-labels/supplementary/ground-truth.md",
+      "task_count": 931,
+      "unique_nonempty_event_ids": 851,
+      "example_event_id": "43fb9623-3cd1-45ec-ab22-dbe46e75240e",
+      "example_host": "SysClient0201.systemia.com",
+      "example_timestamp": "2019-09-23T11:23:55.857-04:00",
+      "example_labels": [
+        "malicious",
+        "ground",
+        "red",
+        "day1",
+        "process"
+      ],
+      "warnings": "The third-party ground label is not an official DARPA label. Invalid correlations and incomplete/missing observations must be reviewed."
+    },
+    "provenance": "SUPPLEMENTARY_SOURCE",
+    "evidence": "tasks/tasks.zip and supplementary/ground-truth.md"
+  },
+  "raw_alignment_verified": {
+    "value": false,
+    "provenance": "DERIVED",
+    "evidence": "Official raw shards unavailable; no independent official-raw join performed."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "file_name": "AIA-201-225.ecar-2019-12-08T11-05-10.046.json.gz",
+      "drive_id": "1pJLxJsDV8sngiedbfVajMetczIgM3PQd",
+      "listed_size": "104.6 MB",
+      "estimated_compressed_bytes": 110000000,
+      "destination": "data/external/optc/official/raw/AIA-201-225.ecar-2019-12-08T11-05-10.046.json.gz",
+      "source_url": "https://drive.google.com/uc?export=download&id=1pJLxJsDV8sngiedbfVajMetczIgM3PQd",
+      "status": "NOT_ACQUIRED",
+      "reason": "GOOGLE_DRIVE_QUOTA_EXCEEDED",
+      "size_bytes": null,
+      "contains_events": null,
+      "event_count": null,
+      "time_start": null,
+      "time_end": null,
+      "hosts": [],
+      "sha256": null,
+      "required_for_experiment": true,
+      "reason_required": "Need pre-attack activity plus credential-access, discovery and persistence after a documented initial foothold. Download smaller shard first and inspect coverage before deciding whether the second is necessary."
+    },
+    {
+      "file_name": "AIA-201-225.ecar-last.json.gz",
+      "drive_id": "1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv",
+      "listed_size": "2.07 GB",
+      "estimated_compressed_bytes": 2300000000,
+      "destination": "data/external/optc/official/raw/AIA-201-225.ecar-last.json.gz",
+      "source_url": "https://drive.google.com/uc?export=download&id=1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv",
+      "status": "NOT_ACQUIRED",
+      "reason": "GOOGLE_DRIVE_QUOTA_EXCEEDED",
+      "size_bytes": null,
+      "contains_events": null,
+      "event_count": null,
+      "time_start": null,
+      "time_end": null,
+      "hosts": [],
+      "sha256": null,
+      "required_for_experiment": true,
+      "reason_required": "Need pre-attack activity plus credential-access, discovery and persistence after a documented initial foothold. Download smaller shard first and inspect coverage before deciding whether the second is necessary."
+    }
+  ],
+  "selection_scope": "First single-host Day 1 pilot, pending actual shard coverage verification",
+  "conditional_requirements": [
+    "Earlier benign or adjacent evaluation shards if the two selected files lack sufficient pre-attack/post-cutoff coverage; exact filenames NOT AVAILABLE until content inspection.",
+    "Additional host groups for Day 1 pivots and independent campaigns for holdout design are deferred; they are not required for the first single-host inspection."
+  ],
+  "not_required_for_initial_pilot": [
+    "ecar-bro enrichment",
+    "bro network files",
+    "short incomplete-data subset"
+  ]
+}

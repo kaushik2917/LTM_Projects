@@ -1,0 +1,818 @@
+[
+  {
+    "timestamp_as_printed": "09/23/19 11:23:29",
+    "timezone": "NOT SPECIFIED",
+    "description": "Manually accessed console on Sysclient0201 and navigated to news.com:8000 to download runme.bat, a malicious news.com PowerShell empire stager",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:24:19",
+    "timezone": "NOT SPECIFIED",
+    "description": "Sysclient0201, closed Firefox tab and deleted runme.bat",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:24:54",
+    "timezone": "NOT SPECIFIED",
+    "description": "Successful check-in for Agent VL8B5T3U on Sysclient0201 IP 142.20.56.202",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:26:02",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent VL8B5T3U, Used PowerShell Empire Module Bypasses UAC, which performs a registry modification of the \"windir\" value in \"Environment\" to bypass UAC.",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:26:38",
+    "timezone": "NOT SPECIFIED",
+    "description": "On sysclient0201, successful check-in of elevated agent LUAVR71T",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:26:56",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201, killing agent VL8B5T3U",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:33:14",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, ran Mimikatz to collect clear text passwords in memory",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:35:26",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, obtained password for user systemia.com\\zleazer via Mimikatz",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:37:15",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, used psinject to inject into the LSASS process",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:38:09",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, Process injection seems to have failed.",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:39:25",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, established persistence by modifying HKCU:Software\\Microsoft\\Windows\\CurrentVersion\\Debug registry entry",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:40:41",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, obtained process listing by running ps through PowerShell",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 11:41:50",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, retried psinject into LSASS",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 12:51:59",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, collected data collection by obtaining a screenshot of the desktop.",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 12:58:20",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, conducted ARP scan on /22 of 142.20.56.202",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:07:11",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, ARP scan failed. Attempted to use SMB on 142.20.56.204 with credentials from Sysclient0201",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:08:28",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, re-attempted ARP scan without setting any values.",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:15:48",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, executed ping sweep against 142.20.56.0/24",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:24:36",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201 agent LUAVR71T, pivoted to Sysclient0402 using invoke_wmi",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:25:41",
+    "timezone": "NOT SPECIFIED",
+    "description": "On sysclient0402 agent NEK5H8GX checked in as an elevated agent",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:29:47",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0402 agent NEK5H8GX, imported and ran ping sweep script to run against 142.20.57.0/24",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:35:22",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0402 agent NEK5H8GX, pivoted to Sysclient0660 using invoke_wmi. Agent DS29HY41 checks in.",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:38:31",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, used ipconfig to obtain IP",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:40:38",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, used Mimikatz to obtain clear-text passwords from memory",
+    "pdf_page": 2,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:44:23",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, attempted to migrate to local user process with psinject. Failed to inject.",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:49:00",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, obtained list of processes with ps",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:50:56",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, attempted to inject shellcode into process ID 4480. Injection failed.",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:54:11",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, executed script to return domain controller information.",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 13:56:48",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, imported and ran PowerShell script to find domain controllers",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 14:02:12",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, downloaded file zipfldr.dll",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 14:04:45",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0660 agent DS29HY41, used invoke_wmi to pivot to domain controller 1. XH32VTK5 checks in on IP 142.20.58.149",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 14:06:01",
+    "timezone": "NOT SPECIFIED",
+    "description": "Killed agents Sysclient0201 LUAVR71T, Sysclient0402 NEK5H8GX, and Sysclient0660 DS29HY41",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 14:07:21",
+    "timezone": "NOT SPECIFIED",
+    "description": "On DC1 agent XH32VTK5, ran Mimikatz",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 14:09:21",
+    "timezone": "NOT SPECIFIED",
+    "description": "On DC1 agent XH32VTK5, gathered user hdorka's hashes using Mimikatz' lsadump capability",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 14:45:13",
+    "timezone": "NOT SPECIFIED",
+    "description": "On DC1 agent XH32VTK5, used Invoke_wmi to spread to: SYSCLIENT0104, SYSCLIENT0170, SYSCLIENT0205, SYSCLIENT0255, SYSCLIENT0321, SYSCLIENT0355, SYSCLIENT0419, SYSCLIENT0462, SYSCLIENT0503, SYSCLIENT0559, SYSCLIENT0609, SYSCLIENT0771, SYSCLIENT0874, SYSCLIENT0955",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 15:24:33",
+    "timezone": "NOT SPECIFIED",
+    "description": "On DC1 agent XH32VTK5, killed agents on: SYSCLIENT0104, SYSCLIENT0170, SYSCLIENT0205, SYSCLIENT0255, SYSCLIENT0321, SYSCLIENT0355, SYSCLIENT0419, SYSCLIENT0462, SYSCLIENT0503, SYSCLIENT0559, SYSCLIENT0609, SYSCLIENT0771, SYSCLIENT0874, SYSCLIENT0955",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/23/19 15:30:00",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0201, removed registry persistence at HKCU:Software\\Microsoft\\Windows\\CurrentVersion\\Debug",
+    "pdf_page": 3,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 10:28:56",
+    "timezone": "NOT SPECIFIED",
+    "description": "Sent email with malicious word document to bantonio@systemia.com rsantilli@systemia.com on Sysclient0811 from sgerard@ameblo.jp",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 10:36:51",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501, opened malicious attachment named payroll.docx. Agent K3G1U8DN checks in.",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 10:40:14",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0811, opened malicious attachment named payroll.docx. Agent DS8V3RNH checks in.",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 10:46:02",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent K3G1U8DN, injected PowerShell script to pivot to PowerShell Empire on sports.com 202.6.172.98 port 443, Agent 4BW2MKUF checks in.",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 10:51:49",
+    "timezone": "NOT SPECIFIED",
+    "description": "Killed agent K3G1U8DN on Sysclient0501",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:03:36",
+    "timezone": "NOT SPECIFIED",
+    "description": "Started DeathStar to auto find and obtain access to domain controller",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:04:12",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, obtains domain SID",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:04:35",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, obtains list of 43 Domain Admins",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:05:39",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, queried to find domain controllers",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:09:08",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, started lateral movement",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:09:22",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, started domain privilege escalation",
+    "pdf_page": 4,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:09:44",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, attempting to elevate using bypassuac_eventvwr",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:10:32",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, searched for GPOs containing credentials using GPP SYSVOL privilege escalation",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:13:32",
+    "timezone": "NOT SPECIFIED",
+    "description": "Deathstar via Sysclient0501 agent 4BW2MKUF, discovered current security context has admin to 1025 hosts.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:20:19",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 4BW2MKUF, installed elevated agent on domain controller. Agent VUBW3KYE on DC1.systemia.com checks in.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:23:27",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 4BW2MKUF, attempted to bypassed UAC with module privesc/bypassuac_env which modifies registry entry of windir value in environment",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:23:45",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 4BW2MKUF, privesc failed.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:25:06",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 4BW2MKUF, attempted bypassuac with privesc/bypassuac_fodhelper. Failed.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:26:34",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 4BW2MKUF, used invoke_wmi on localhost to obtain elevated Agent. Failed to elevated, normal agent 9HUGDCRL checked in.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:31:17",
+    "timezone": "NOT SPECIFIED",
+    "description": "On agent VUBW3KYE, attempted to pivot to obtain elevated agent using WMI. Got access denied for DC1.systemia.com Sysclient0501 and 0502",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:33:15",
+    "timezone": "NOT SPECIFIED",
+    "description": "On agent VUBW3KYE, pivoted to Sysclient0501 with an elevated agent by usign administrator DC1.systemia.com credentials. Agent 6H8SZPCW checks in.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:34:56",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, set persistence using WMI subscription. Set to reach back at 10:00 every day or within 5 minutes of boot.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:35:53",
+    "timezone": "NOT SPECIFIED",
+    "description": "Killed agents Sysclient0501 4BW2MKUF and Sysclient0501 9HUGDCRL",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:37:35",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, used findtrusteddocuments to enumerate registry to determine any trusted documents and trusted locations.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:39:38",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, used winenum script with keywords \"important, Secret, classified\" to search files and obtain host information",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:41:53",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, ran script to check for windows privilege escalation vectors.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 11:45:13",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, uploaded plink.exe",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:05:03",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, validated upload worked with ls command",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:11:23",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 agent 6H8SZPCW, started reverse SSH connection to port forward RDP port to attacker system. Lost contact with agent 6H8SZPCW.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:19:38",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501, connected via RDP to host via forwarded port using sysadmin account.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:25:46",
+    "timezone": "NOT SPECIFIED",
+    "description": "Agent DS8V3RNH lost contact.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:26:57",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 via RDP session, downloaded fileTransfer1000.exe (nc.exe) from news.com:8080 via chrome.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:31:29",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 via RDP session, compressed documents in C:\\documents for exfiltration.",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:44:34",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 via RDP session, exfiltrated export.zip to port 9999 using fileTransfer1000.exe (nc.exe) news.com",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:45:12",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 via RDP session, cleaned up fileTransfer1000.exe and export.zip",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:46:58",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 via RDP session, RDPed to Sysclient0974",
+    "pdf_page": 5,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:51:45",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0974 via RDP session, browsed files in C:\\documents",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 13:54:43",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0974 via RDP session, RDPed to Sysclient0005",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 14:06:06",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0005 via RDP session, mounted network share \\\\142.20.61.135\\share",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 14:34:31",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0005 via RDP session, added majority of share drive files to compressed folder name allgone.zip and moved to user Download folder.",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 14:37:02",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0005 via RDP session, navigated to news.com:4445 and downloaded movingonup.exe (nc.exe)",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 15:04:14",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0005 via RDP session, exported 3.5 gb exfil file allgona.zip",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 15:22:48",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0005 via RDP session, cleaned up files in downloads folder",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 15:23:26",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0005 closed RDP session.",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 15:27:32",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0974 closed RDP session.",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 15:28:36",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0501 closed RDP session.",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/24/19 15:42:36",
+    "timezone": "NOT SPECIFIED",
+    "description": "On DC1.systemia.com agent VUBW3KYE, used invoke_wmi to spread to Sysclient0010, Sysclient0069, Sysclient0203, Sysclient0358, Sysclient0618, Sysclient0851",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 09:00:00",
+    "timezone": "NOT SPECIFIED",
+    "description": "Agents ran overnight on: DC1.systemia.com VUBW3KYE, Sysclient0010 6FEZ8L4N, Sysclient0069 EMK3VW7F, Sysclient0203 UXCSTKZ9, Sysclient0358 PE54DBYX, Sysclient0618 73FCWS1G, Sysclient0851 5BUEZALX",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:00:00",
+    "timezone": "NOT SPECIFIED",
+    "description": "Sysclinet0501 WMI Subscription persistence method activates, agent XVGHS45M checks in.",
+    "pdf_page": 6,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:29:42",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, updated notepad++, which downloaded malicious binary \"update.exe\" which is a Meterpreter payload.",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:31:08",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, obtained system via Meterpreter\u2019s get system module. Used named pipe impersonation in memory.",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:32:11",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, used Meterpreter to get CMD shell. Ran commands to find out information about local system.",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:33:55",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, used ARP scanner on 142.20.56.0/22",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:36:28",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, used Meterpreter enum modules to discover all installed applications",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:37:52",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051 used Meterpreter enum_domain modules to identify domain controller",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:38:35",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient 0051, used Meterpreter enum_shares to identify any shares on host",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:40:39",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient 0051, migrated from process 2712 cKfGW.exe to LSASS 568",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:44:56",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, ran Mimikatz to collect clear-text passwords and hashes",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:48:43",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, established persistence via Meterpreter. Script written to C:\\Windows\\TEMP\\myHbYXTpViwX.vbx. Installed Autorun at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\RTqWaEHv",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 10:53:06",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, used timestomp to edit MAC times of created files in C:\\Windows\\TEMP",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 11:07:41",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, used get_gui to add administrator \"admin\" to administrators and RDP group",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 11:23:31",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0351, conducted update to notepadd++, which downloaded malicious update.exe binary which made connection back to attacker server",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 11:24:30",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0351, migrated from process 1932 to 1256 lwabeat.",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 13:42:05",
+    "timezone": "NOT SPECIFIED",
+    "description": "On Sysclient0051, RDPed to machine from attacker server.",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  },
+  {
+    "timestamp_as_printed": "09/25/19 14:24:03",
+    "timezone": "NOT SPECIFIED",
+    "description": "Reran updated.exe on Sysclient0051",
+    "pdf_page": 7,
+    "provenance": "OFFICIAL_SOURCE",
+    "extraction": "DERIVED; pypdf 6.19.0"
+  }
+]

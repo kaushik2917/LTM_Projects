@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-03T21:19:53.632399+00:00",
+  "files_checked": 80,
+  "changed_files": [],
+  "missing_files": [],
+  "new_application_files": [],
+  "status": "PASS",
+  "scope": "frontend and backend/app source/config files plus exact data/workflow.sqlite3 bytes",
+  "excluded_generated_directories": [
+    "node_modules",
+    ".next",
+    ".git",
+    "__pycache__"
+  ],
+  "application_importer_executed": false,
+  "training_executed": false
+}

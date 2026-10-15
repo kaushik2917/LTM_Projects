@@ -1,0 +1,124 @@
+# FAPT-Guard - decision thresholds
+
+preattack:
+  alert_probability: 0.60          # pre-attack probability above which prevention is triggered
+  # Coefficients of the configurable logistic baseline (used when no trained model exists).
+  logistic:
+    intercept: -3.2
+    coefficients:
+      recon_scan_count: 0.35         # per scan event (capped by feature engineering)
+      failed_auth_count: 0.30
+      failed_auth_distinct_users: 0.40
+      exposed_services: 0.25
+      max_cvss: 0.22
+      ti_malicious_score: 2.2
+      asset_criticality: 0.8
+      historical_incidents: 0.3
+
+# Poisoning-resilient integrity analysis (P3R / EGIS)
+integrity:
+  duplicate_window_seconds: 2
+  future_skew_seconds: 300          # events stamped this far after ingestion are suspicious
+  sequence_violation_seconds: 1     # child observed before parent by more than this
+  density_zscore: 3.0               # provenance-density burst threshold
+  min_density_events: 8
+  penalties:                        # score penalty per finding (saturating)
+    duplicate_event: 0.03
+    timeline_anomaly: 0.12
+    orphan_node: 0.04
+    decoy_process: 0.10
+    spoofed_sensor: 0.12
+    contradiction: 0.10
+    missing_relationship: 0.04
+    integrity_failure: 0.15
+    density_anomaly: 0.08
+    sensor_gap: 0.06
+  poisoning_suspected_below: 0.80   # graph integrity below which poisoning is suspected
+  suspicious_trust_threshold: 0.50  # evidence below this trust is marked suspicious
+
+# Conformal Safe Evidence-aware Response (CSER)
+cser:
+  coverage_target: 0.90             # 1 - alpha
+  max_prediction_set_size: 3        # larger sets => uncertainty "not acceptable"
+  max_uncertainty: 0.45
+  max_worst_case_attack_risk: 0.35
+  min_worst_case_ers: 0.50
+
+# Anti-forensic intent prediction / predictive evidence preservation
+afip:
+  report_threshold: 0.30
+pep:
+  preserve_priority_threshold: 0.30   # priority = P(destroy) * FU * volatility-factor
+  destroy_probability_threshold: 0.50
+  utility_threshold: 0.70
+  always_preserve_volatile_above: 0.85  # capture volatile metadata when volatility & risk high
+
+# Active Forensic Value-of-Information acquisition
+voi:
+  lambda_cost: 0.25
+  mu_delay: 0.50
+  attack_hazard_per_minute: 0.02     # progression hazard used for delay risk
+  max_wait_risk: 0.15                # waiting is unsafe above this added risk
+  min_voi: 0.02
+  already_collected_discount: 0.25
+  candidates:
+    powershell_history:
+      artifact_class: powershell_logs
+      cost: 0.04
+      delay_minutes: 1.0
+      accuracy: 0.80
+      informs_tactics: [Lateral Movement, Defense Evasion, Execution, Exfiltration, Impact, Discovery]
+    process_tree:
+      artifact_class: process_state
+      cost: 0.03
+      delay_minutes: 0.5
+      accuracy: 0.55
+      informs_tactics: [Execution, Defense Evasion, Persistence, Privilege Escalation]
+    network_flow:
+      artifact_class: network_flow
+      cost: 0.02
+      delay_minutes: 0.5
+      accuracy: 0.60
+      informs_tactics: [Command and Control, Exfiltration, Lateral Movement]
+    dns:
+      artifact_class: dns_logs
+      cost: 0.02
+      delay_minutes: 0.5
+      accuracy: 0.45
+      informs_tactics: [Command and Control, Exfiltration]
+    registry:
+      artifact_class: registry
+      cost: 0.05
+      delay_minutes: 1.5
+      accuracy: 0.60
+      informs_tactics: [Persistence, Defense Evasion, Privilege Escalation]
+    authentication_logs:
+      artifact_class: authentication_logs
+      cost: 0.03
+      delay_minutes: 1.0
+      accuracy: 0.70
+      informs_tactics: [Lateral Movement, Credential Access, Privilege Escalation, Initial Access]
+    volatile_memory_metadata:
+      artifact_class: memory
+      cost: 0.15
+      delay_minutes: 4.0
+      accuracy: 0.65
+      informs_tactics: [Credential Access, Defense Evasion, Execution, Impact]
+    sensor_corroboration:
+      artifact_class: sysmon_logs
+      cost: 0.05
+      delay_minutes: 2.0
+      accuracy: 0.50
+      informs_tactics: [Execution, Discovery, Lateral Movement, Command and Control, Credential Access]
+
+# Adaptive Autonomy Gate
+autonomy:
+  min_confidence_auto: 0.75
+  min_evidence_trust_auto: 0.80
+  min_graph_integrity_auto: 0.80
+  max_business_impact_auto: 0.40
+  max_evidence_loss_auto: 0.25
+  max_set_size_auto: 3
+  high_criticality: 0.85
+  high_severity_risk: 0.60           # residual-without-action above this = high severity
+  low_trust: 0.60

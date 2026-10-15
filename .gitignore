@@ -1,0 +1,53 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+
+# Environment and credentials
+.env
+*.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# JavaScript and build output
+node_modules/
+.next/
+dist/
+build/
+*.log
+*.tsbuildinfo
+coverage/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Raw datasets and local downloads
+*.json.gz
+project-1/data/optc/
+project-1/data/external/optc/official/raw/
+project-1/data/external/optc/supplementary/optc-labels/
+project-1/data/external/optc/downloads/
+project-1/data/external/optc/processed/tasks.json
+project-1/data/mitre/enterprise-attack-19.2.json
+
+# Files exceeding the 50 MB repository upload limit
+project-1/data/external/optc/processed/tasks.json
+project-1/data/external/optc/supplementary/optc-labels/labels/malicious.zip
+project-1/data/external/optc/supplementary/optc-labels/labels/red.zip
+project-1/data/mitre/enterprise-attack-19.2.json

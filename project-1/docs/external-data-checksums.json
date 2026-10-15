@@ -1,0 +1,14 @@
+[
+  {
+    "path": "data/mitre/enterprise-attack-19.2.json",
+    "bytes": 53835637,
+    "sha256": "dc1639caa5501d720e280cf1cbd8fbe009884a0c9b3e6e9ed9d0c25166c3d8f4",
+    "included": false
+  },
+  {
+    "path": "data/optc/OpTCRedTeamGroundTruth.pdf",
+    "bytes": 453244,
+    "sha256": "5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567",
+    "included": false
+  }
+]

@@ -1,0 +1,501 @@
+{
+  "version": "chronological-synthetic-v2",
+  "source_sha256": "8433855364724c70b147ee480e0e2eb739aa7ae26d3e590657754bb22aab7a6e",
+  "feature_version": "future_prediction_v2",
+  "split_hashes": {
+    "train": "5f97089a4a30b77a0138cc6d38cd72ba9ae66c086737f9a60113755d2a04d882",
+    "validation": "dc3c4ef36cbdba45fd8e5ecaaa6e2ec95ef0afa8799b875b1e9fe9e95bceb389",
+    "test": "24b9ce6e0427e587bdd49b7f8a5171ccd0767781c2efc6c3656417afe4af46aa"
+  },
+  "tuning": {
+    "hyperparameter_trials": [
+      {
+        "model": "forest",
+        "parameters": {
+          "n_estimators": 80,
+          "max_depth": 6,
+          "min_samples_leaf": 2,
+          "random_state": 20261003,
+          "n_jobs": 1,
+          "class_weight": null
+        },
+        "selection_accuracy": 0.32,
+        "selection_macro_f1": 0.1420170867266311
+      },
+      {
+        "model": "forest",
+        "parameters": {
+          "n_estimators": 80,
+          "max_depth": 6,
+          "min_samples_leaf": 2,
+          "random_state": 20261003,
+          "n_jobs": 1,
+          "class_weight": "balanced"
+        },
+        "selection_accuracy": 0.33,
+        "selection_macro_f1": 0.2220798207640313
+      },
+      {
+        "model": "forest",
+        "parameters": {
+          "n_estimators": 80,
+          "max_depth": 12,
+          "min_samples_leaf": 2,
+          "random_state": 20261003,
+          "n_jobs": 1,
+          "class_weight": null
+        },
+        "selection_accuracy": 0.41,
+        "selection_macro_f1": 0.22455291158298674
+      },
+      {
+        "model": "forest",
+        "parameters": {
+          "n_estimators": 80,
+          "max_depth": 12,
+          "min_samples_leaf": 2,
+          "random_state": 20261003,
+          "n_jobs": 1,
+          "class_weight": "balanced"
+        },
+        "selection_accuracy": 0.29,
+        "selection_macro_f1": 0.2015069354615302
+      },
+      {
+        "model": "boosting",
+        "parameters": {
+          "max_iter": 80,
+          "max_leaf_nodes": 7,
+          "learning_rate": 0.1,
+          "l2_regularization": 1.0,
+          "early_stopping": false,
+          "random_state": 20261003,
+          "class_weight": null
+        },
+        "selection_accuracy": 0.33,
+        "selection_macro_f1": 0.1957338670960962
+      },
+      {
+        "model": "boosting",
+        "parameters": {
+          "max_iter": 80,
+          "max_leaf_nodes": 7,
+          "learning_rate": 0.1,
+          "l2_regularization": 1.0,
+          "early_stopping": false,
+          "random_state": 20261003,
+          "class_weight": "balanced"
+        },
+        "selection_accuracy": 0.3,
+        "selection_macro_f1": 0.17938697009904442
+      },
+      {
+        "model": "boosting",
+        "parameters": {
+          "max_iter": 80,
+          "max_leaf_nodes": 15,
+          "learning_rate": 0.1,
+          "l2_regularization": 1.0,
+          "early_stopping": false,
+          "random_state": 20261003,
+          "class_weight": null
+        },
+        "selection_accuracy": 0.31,
+        "selection_macro_f1": 0.19206979539389513
+      },
+      {
+        "model": "boosting",
+        "parameters": {
+          "max_iter": 80,
+          "max_leaf_nodes": 15,
+          "learning_rate": 0.1,
+          "l2_regularization": 1.0,
+          "early_stopping": false,
+          "random_state": 20261003,
+          "class_weight": "balanced"
+        },
+        "selection_accuracy": 0.31,
+        "selection_macro_f1": 0.19497636231045842
+      }
+    ],
+    "ensemble_trials": [
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.75
+        },
+        "selection_accuracy": 0.3,
+        "selection_macro_f1": 0.1769812495635373
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.5,
+          "Sequence model": 0.5
+        },
+        "selection_accuracy": 0.34,
+        "selection_macro_f1": 0.19707266417792732
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.75,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.32,
+        "selection_macro_f1": 0.1847300992037834
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.75
+        },
+        "selection_accuracy": 0.32,
+        "selection_macro_f1": 0.17935108904637992
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.5
+        },
+        "selection_accuracy": 0.35,
+        "selection_macro_f1": 0.19999731950196345
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.5,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.36,
+        "selection_macro_f1": 0.21136977058029688
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.75,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.33,
+        "selection_macro_f1": 0.1944358494871775
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.5,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.5
+        },
+        "selection_accuracy": 0.33,
+        "selection_macro_f1": 0.1836169334621347
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.5,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.37,
+        "selection_macro_f1": 0.2090597924567253
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.5,
+          "Gradient Boosting": 0.5,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.39,
+        "selection_macro_f1": 0.2196248539901791
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.75,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.37,
+        "selection_macro_f1": 0.20245980369819377
+      },
+      {
+        "weights": {
+          "Markov": 0.0,
+          "Random Forest": 0.75,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.4,
+        "selection_macro_f1": 0.22924206407851586
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.75
+        },
+        "selection_accuracy": 0.29,
+        "selection_macro_f1": 0.16568884332042227
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.5
+        },
+        "selection_accuracy": 0.34,
+        "selection_macro_f1": 0.1953255464865372
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.5,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.37,
+        "selection_macro_f1": 0.21624663885805795
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.75,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.34,
+        "selection_macro_f1": 0.213377027260032
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.5
+        },
+        "selection_accuracy": 0.32,
+        "selection_macro_f1": 0.17947690369042613
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.37,
+        "selection_macro_f1": 0.21756965944272447
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.5,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.4,
+        "selection_macro_f1": 0.23646247972873358
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.5,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.34,
+        "selection_macro_f1": 0.17723611042796106
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.5,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.45,
+        "selection_macro_f1": 0.28583065541269875
+      },
+      {
+        "weights": {
+          "Markov": 0.25,
+          "Random Forest": 0.75,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.44,
+        "selection_macro_f1": 0.2581800041659368
+      },
+      {
+        "weights": {
+          "Markov": 0.5,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.5
+        },
+        "selection_accuracy": 0.32,
+        "selection_macro_f1": 0.18153781126934324
+      },
+      {
+        "weights": {
+          "Markov": 0.5,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.39,
+        "selection_macro_f1": 0.2429444951666064
+      },
+      {
+        "weights": {
+          "Markov": 0.5,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.5,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.41,
+        "selection_macro_f1": 0.2587947268063117
+      },
+      {
+        "weights": {
+          "Markov": 0.5,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.35,
+        "selection_macro_f1": 0.19938618257803317
+      },
+      {
+        "weights": {
+          "Markov": 0.5,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.45,
+        "selection_macro_f1": 0.28797114771205595
+      },
+      {
+        "weights": {
+          "Markov": 0.5,
+          "Random Forest": 0.5,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.42,
+        "selection_macro_f1": 0.23037274801027488
+      },
+      {
+        "weights": {
+          "Markov": 0.75,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.25
+        },
+        "selection_accuracy": 0.37,
+        "selection_macro_f1": 0.20338978131847404
+      },
+      {
+        "weights": {
+          "Markov": 0.75,
+          "Random Forest": 0.0,
+          "Gradient Boosting": 0.25,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.44,
+        "selection_macro_f1": 0.2810152077025142
+      },
+      {
+        "weights": {
+          "Markov": 0.75,
+          "Random Forest": 0.25,
+          "Gradient Boosting": 0.0,
+          "Sequence model": 0.0
+        },
+        "selection_accuracy": 0.4,
+        "selection_macro_f1": 0.2166674683275516
+      }
+    ],
+    "temperature_trials": [
+      {
+        "temperature": 0.5,
+        "calibration_log_loss": 2.4920726948779777
+      },
+      {
+        "temperature": 0.75,
+        "calibration_log_loss": 2.1301683283629944
+      },
+      {
+        "temperature": 1.0,
+        "calibration_log_loss": 2.0516335047621617
+      },
+      {
+        "temperature": 1.25,
+        "calibration_log_loss": 2.0666404163512273
+      },
+      {
+        "temperature": 1.5,
+        "calibration_log_loss": 2.113519466225069
+      },
+      {
+        "temperature": 2.0,
+        "calibration_log_loss": 2.2235102627444934
+      }
+    ],
+    "selected_weights": {
+      "Markov": 0.5,
+      "Random Forest": 0.25,
+      "Gradient Boosting": 0.25,
+      "Sequence model": 0.0
+    },
+    "selected_temperature": 1.0,
+    "selected_forest_parameters": {
+      "n_estimators": 80,
+      "max_depth": 12,
+      "min_samples_leaf": 2,
+      "random_state": 20261003,
+      "n_jobs": 1,
+      "class_weight": null
+    },
+    "selected_boosting_parameters": {
+      "max_iter": 80,
+      "max_leaf_nodes": 7,
+      "learning_rate": 0.1,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20261003,
+      "class_weight": null
+    },
+    "selection_rule": "Maximize selection Top-1, then macro F1; grid order breaks remaining ties. Minimize calibration NLL separately.",
+    "class_balancing": "Training-only class_weight None vs balanced; no sample duplication or validation/test resampling"
+  },
+  "thresholds": {
+    "observation_window_minutes": 30,
+    "min_interval_seconds": 30,
+    "abstain_below_probability": 0.5,
+    "abstain_above_uncertainty": 0.6,
+    "estimand": {
+      "LIVE": "online: cutoff = processing time; only events whose collection_time <= cutoff are visible",
+      "LAB": "online: cutoff = processing time; only events whose collection_time <= cutoff are visible",
+      "REPLAY": "offline event-time replay: cutoff = triggering event timestamp; availability is assumed equal to event time"
+    }
+  },
+  "selection_sequences": 100,
+  "calibration_sequences": 50,
+  "test_disclosure": "Same fixed test scenarios were previously evaluated under v1. Results are exploratory, not an untouched confirmatory test.",
+  "target_top1_accuracy": 0.9
+}

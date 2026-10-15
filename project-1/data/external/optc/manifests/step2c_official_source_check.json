@@ -1,0 +1,23 @@
+{
+  "url": "https://drive.google.com/drive/folders/15nia2-dLBVw1ieLHz-JMKXCXvO226Ktx",
+  "checked_at": "2026-10-03T21:08:02.631325+00:00",
+  "raw_download_retried": false,
+  "retry_reason": "Previous two official attempts already established quota exhaustion; listing-only verification avoids repeated download retries.",
+  "http_status": 200,
+  "files": [],
+  "listing_rows": [],
+  "status": "CORPORATE_NETWORK_BLOCKED",
+  "google_drive_status": "GOOGLE_DRIVE_BLOCKED",
+  "message": "This site is blocked due to content filtering.",
+  "explanation": "HTTP 200 is a corporate Site Blocked page, not a successful Drive listing.",
+  "previous_raw_status": "OFFICIAL_RAW_TELEMETRY_UNAVAILABLE_QUOTA",
+  "current_quota_state": "UNKNOWN: no raw download retry; current network policy prevents fresh verification.",
+  "file_selection_verification": "Previously saved official Drive listing confirms names, IDs and displayed sizes. Current listing cannot be verified.",
+  "alternative_official_source": "No alternative official raw-telemetry download source identified.",
+  "alternative_search_scope": [
+    "official/documentation/README.md",
+    "official/documentation/ecar.md",
+    "official/documentation/errata.md"
+  ],
+  "next_network_action": "Use organization-approved access process; no bypass or further retries."
+}

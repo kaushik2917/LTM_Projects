@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-03T16:54:21.361410+00:00",
+  "free_disk_bytes": 390932541440,
+  "selection": "Day 1 Plain PowerShell Empire; SysClient0201; retain whole host-group shards for benign context and post-cutoff activity. Other hosts/campaigns deferred.",
+  "files": [
+    {
+      "file_name": "AIA-201-225.ecar-2019-12-08T11-05-10.046.json.gz",
+      "drive_id": "1pJLxJsDV8sngiedbfVajMetczIgM3PQd",
+      "listed_size": "104.6 MB",
+      "estimated_compressed_bytes": 110000000,
+      "destination": "data/external/optc/official/raw/AIA-201-225.ecar-2019-12-08T11-05-10.046.json.gz",
+      "source_url": "https://drive.google.com/uc?export=download&id=1pJLxJsDV8sngiedbfVajMetczIgM3PQd"
+    },
+    {
+      "file_name": "AIA-201-225.ecar-last.json.gz",
+      "drive_id": "1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv",
+      "listed_size": "2.07 GB",
+      "estimated_compressed_bytes": 2300000000,
+      "destination": "data/external/optc/official/raw/AIA-201-225.ecar-last.json.gz",
+      "source_url": "https://drive.google.com/uc?export=download&id=1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv"
+    }
+  ],
+  "estimated_extracted_size_bytes": 120500000000,
+  "estimate_basis": "Conservative planning allowance of 50 times approximately 2.41 GB compressed; actual ratio unknown. Stream inspection without materializing decompressed files.",
+  "reason": "Need pre-attack activity plus credential-access, discovery and persistence after a documented initial foothold. Download smaller shard first and inspect coverage before deciding whether the second is necessary."
+}

@@ -1,0 +1,94 @@
+{
+  "checks": {
+    "10": {
+      "missing_values": 0,
+      "duplicate_identifiers": 0,
+      "identity_columns": [
+        "incident_id",
+        "action"
+      ],
+      "invalid_or_inactive_attack_ids": [
+        "T1070.001"
+      ],
+      "invalid_probability_or_unit_values": [],
+      "duplicate_complete_records": 0,
+      "warning": "Inactive ATT&CK IDs are retained as original dataset labels; do not silently relabel training targets."
+    },
+    "11": {
+      "missing_values": 0,
+      "duplicate_identifiers": 0,
+      "identity_columns": [
+        "sequence_id"
+      ],
+      "invalid_or_inactive_attack_ids": [
+        "T1070.001"
+      ],
+      "invalid_probability_or_unit_values": [],
+      "duplicate_complete_records": 0,
+      "warning": "Inactive ATT&CK IDs are retained as original dataset labels; do not silently relabel training targets."
+    },
+    "12": {
+      "missing_values": 0,
+      "duplicate_identifiers": 0,
+      "identity_columns": [
+        "evidence_id"
+      ],
+      "invalid_or_inactive_attack_ids": [
+        "T1070.001"
+      ],
+      "invalid_probability_or_unit_values": [],
+      "duplicate_complete_records": 0,
+      "warning": "Inactive ATT&CK IDs are retained as original dataset labels; do not silently relabel training targets."
+    },
+    "13": {
+      "missing_values": 0,
+      "duplicate_identifiers": 0,
+      "identity_columns": [
+        "benchmark_id"
+      ],
+      "invalid_or_inactive_attack_ids": [
+        "T1070.001"
+      ],
+      "invalid_probability_or_unit_values": [],
+      "duplicate_complete_records": 0,
+      "warning": "Inactive ATT&CK IDs are retained as original dataset labels; do not silently relabel training targets."
+    },
+    "model:cdfu": {
+      "missing_metadata": [],
+      "group_overlap": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": []
+    },
+    "model:aces": {
+      "missing_metadata": [],
+      "group_overlap": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": []
+    },
+    "model:afip": {
+      "missing_metadata": [],
+      "group_overlap": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": []
+    },
+    "model:trust": {
+      "missing_metadata": [],
+      "group_overlap": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": []
+    },
+    "model:poisoning": {
+      "missing_metadata": [],
+      "group_overlap": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": []
+    },
+    "model:progression": {
+      "missing_metadata": [],
+      "group_overlap": 0,
+      "duplicate_train_test_records": 0,
+      "feature_target_overlap": []
+    }
+  },
+  "policy": "Report warnings without fabricating or relabeling evidence"
+}

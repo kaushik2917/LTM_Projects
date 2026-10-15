@@ -1,0 +1,62 @@
+{
+  "evaluated_at": "2026-10-03T17:08:33.984767+00:00",
+  "answers": [
+    {
+      "id": "A",
+      "question": "Chronological observed prefixes",
+      "status": "PARTIAL",
+      "evidence": "Timestamped supplementary records can be ordered, but label-selected records omit benign context; complete official prefixes cannot yet be built."
+    },
+    {
+      "id": "B",
+      "question": "Events after a prediction cutoff",
+      "status": "PARTIAL",
+      "evidence": "Supplementary events span several days and include later records; completeness and official-raw coverage are unverified."
+    },
+    {
+      "id": "C",
+      "question": "Independent actual future attack behavior",
+      "status": "PARTIAL",
+      "evidence": "Official narrative and third-party annotations exist independently of the predictor; raw alignment and action outcomes require review."
+    },
+    {
+      "id": "D",
+      "question": "ATT&CK mapping independent of predictor output",
+      "status": "PARTIAL",
+      "evidence": "Narrative behavior supports later analyst mapping, but no explicit technique IDs were found in the PDF or tasks and no reviewed mapping is ready."
+    },
+    {
+      "id": "E",
+      "question": "Train/validation/test scenario separation",
+      "status": "NO",
+      "evidence": "A complete pilot is unavailable; three related campaign days do not establish sufficient independent scenarios. Host/day groups are not independent incidents."
+    },
+    {
+      "id": "F",
+      "question": "Top-1/3/5, MRR, Macro-F1, Brier, ECE",
+      "status": "NO",
+      "evidence": "No aligned independent technique targets, declared label space, real-data predictions or held-out split."
+    },
+    {
+      "id": "G",
+      "question": "Measure uncertainty",
+      "status": "NO",
+      "evidence": "No real-data predictive distribution or independent uncertainty validation has been produced."
+    },
+    {
+      "id": "H",
+      "question": "Measure calibration",
+      "status": "NO",
+      "evidence": "No untouched calibration/test partitions and aligned probability predictions exist for real telemetry."
+    },
+    {
+      "id": "I",
+      "question": "Real-data holdout evaluation",
+      "status": "NO",
+      "evidence": "Acquisition is partial and no leakage-controlled real holdout has been established."
+    }
+  ],
+  "metrics": null,
+  "metric_status": "NOT MEASURED",
+  "real_validation_completed": false
+}

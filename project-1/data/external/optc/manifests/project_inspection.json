@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-10-03T17:02:56.190043+00:00",
+  "scope": "Initial project inspection before acquisition; read-only code review",
+  "existing_optc_raw_files": false,
+  "existing_ground_truth_pdf": false,
+  "existing_supplementary_labels": false,
+  "existing_optc_database": false,
+  "existing_optc_manifest": false,
+  "historical_checksum_record": "docs/external-data-checksums.json lists absent data/optc/OpTCRedTeamGroundTruth.pdf with included=false; freshly downloaded PDF matches its SHA-256.",
+  "inspected": [
+    "data/",
+    "data/external/",
+    "data/optc/",
+    "backend/app/services/optc_service.py",
+    "backend/app/fetch_public_data.py",
+    "backend/app/api/research.py",
+    "backend/app/temporal_prediction.py",
+    "backend/app/prediction_audit.py",
+    "docs/",
+    "DATASETS.md",
+    "README.md"
+  ],
+  "importer_compatibility": {
+    "format": "One JSON object per line, optionally gzip; JSON arrays and ZIP unsupported.",
+    "required_fields": [
+      "hostname",
+      "actorID",
+      "objectID",
+      "object",
+      "action",
+      "timestamp or timestamp_ms"
+    ],
+    "timestamps": "Numeric epoch milliseconds or timezone-aware ISO string.",
+    "deduplication": "Exact line SHA-256, not event UUID.",
+    "default_record_limit": 100000,
+    "api_location_restriction": "Files directly inside data/optc; acquired files under data/external/optc are not currently accepted by API.",
+    "grouping": "host/UTC-date, not independent attack scenario.",
+    "runtime_import_test": "NOT RUN: would create/modify database.",
+    "supplementary_warning": "Label-only event subsets are not complete observed prefixes; tasks.json is an array and not directly importable."
+  },
+  "application_changes": false
+}

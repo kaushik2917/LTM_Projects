@@ -1,0 +1,89 @@
+{
+  "version": "defense-config-v1",
+  "notes": "All numeric values below are configurable analyst assumptions, not measured quantities. Every risk, policy and verification record stores this version and the SHA-256 of this file.",
+  "schema_version": "canonical-event-v1",
+  "parser_version": "defense-adapters-v1",
+  "modes": ["LIVE", "LAB", "REPLAY"],
+  "ingestion": {
+    "queue_capacity": 10000,
+    "max_event_bytes": 262144,
+    "max_batch_events": 1000,
+    "rate_limit_events_per_second": 500,
+    "rate_limit_burst": 2000,
+    "future_skew_seconds": 300,
+    "write_retries": 3
+  },
+  "inference": {
+    "observation_window_minutes": 30,
+    "min_interval_seconds": 30,
+    "abstain_below_probability": 0.5,
+    "abstain_above_uncertainty": 0.6,
+    "estimand": {
+      "LIVE": "online: cutoff = processing time; only events whose collection_time <= cutoff are visible",
+      "LAB": "online: cutoff = processing time; only events whose collection_time <= cutoff are visible",
+      "REPLAY": "offline event-time replay: cutoff = triggering event timestamp; availability is assumed equal to event time"
+    }
+  },
+  "risk": {
+    "formula": "risk_score = max(predictive_component, observed_component); predictive_component = probability * (1 - uncertainty) * evidence_strength * technique_impact(predicted) * asset_criticality; observed_component = candidate_discount * evidence_strength * max technique_impact(observed CANDIDATE rule hits) * asset_criticality",
+    "candidate_discount": 0.5,
+    "levels": [["LOW", 0.0], ["MEDIUM", 0.25], ["HIGH", 0.5], ["CRITICAL", 0.75]],
+    "default_technique_impact": 0.5,
+    "tactic_impact": {
+      "reconnaissance": 0.3, "resource-development": 0.3, "initial-access": 0.7, "execution": 0.6,
+      "persistence": 0.7, "privilege-escalation": 0.8, "defense-evasion": 0.7, "credential-access": 0.9,
+      "discovery": 0.4, "lateral-movement": 0.9, "collection": 0.7, "command-and-control": 0.8,
+      "exfiltration": 1.0, "impact": 1.0
+    },
+    "default_asset_criticality": 0.5,
+    "asset_criticality": {},
+    "evidence_quality_penalties": {"future_skew": 0.3, "out_of_order": 0.1, "missing_process": 0.1, "missing_user": 0.05}
+  },
+  "policy": {
+    "version": "policy-v1",
+    "level_actions": {
+      "LOW": ["MONITOR"],
+      "MEDIUM": ["ALERT", "PRESERVE_EVIDENCE"],
+      "HIGH": ["ALERT", "PRESERVE_EVIDENCE", "CONTAINMENT_REQUIRES_APPROVAL"],
+      "CRITICAL": ["PRESERVE_EVIDENCE", "CONTAINMENT_REQUIRES_APPROVAL"]
+    },
+    "auto_execute_critical": false,
+    "containment_min_probability": 0.75,
+    "containment_min_evidence_strength": 0.8,
+    "cooldown_seconds": 900,
+    "protected_processes": ["system", "smss.exe", "csrss.exe", "wininit.exe", "winlogon.exe", "services.exe", "lsass.exe", "svchost.exe", "fapt-guard.exe", "wazuh-agent.exe", "sysmon.exe", "sysmon64.exe"],
+    "protected_accounts": ["system", "local service", "network service", "administrator"],
+    "protected_networks": ["127.0.0.0/8", "::1/128", "169.254.0.0/16"]
+  },
+  "response": {
+    "execution_mode": "DRY_RUN",
+    "supported_execution_modes": ["DRY_RUN"],
+    "containment_actions": {
+      "BLOCK_DESTINATION_IP": {"reversible": true, "requires": ["destination_ip"]},
+      "TERMINATE_PROCESS": {"reversible": false, "requires": ["process_id", "process_name"]},
+      "DISABLE_LOCAL_ACCOUNT": {"reversible": true, "requires": ["user"]}
+    }
+  },
+  "defensive_mapping": {
+    "version": "attack-mitigation-controls-v1",
+    "source": "ATT&CK 19.2 course-of-action 'mitigates' relationships from data/mitre/enterprise-attack-19.2.json",
+    "d3fend": {"status": "NOT_LOADED", "reason": "No approved D3FEND source is present in the repository; not downloaded."},
+    "mitigation_controls": {
+      "M1037": ["BLOCK_DESTINATION_IP"],
+      "M1031": ["BLOCK_DESTINATION_IP"],
+      "M1038": ["TERMINATE_PROCESS"],
+      "M1040": ["TERMINATE_PROCESS"],
+      "M1018": ["DISABLE_LOCAL_ACCOUNT"],
+      "M1026": ["DISABLE_LOCAL_ACCOUNT"]
+    }
+  },
+  "verification": {
+    "window_minutes": 15,
+    "min_risk_reduction": 0.5,
+    "escalate_levels": ["HIGH", "CRITICAL"]
+  },
+  "incidents": {
+    "open_at_level": "MEDIUM",
+    "gap_minutes": 60
+  }
+}

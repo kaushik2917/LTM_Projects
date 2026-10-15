@@ -1,0 +1,399 @@
+{
+  "algorithm": "SHA-256",
+  "verified_at": "2026-10-03T21:02:35.882053+00:00",
+  "exclusions": [
+    "This manifest itself",
+    ".git internals",
+    "Isolated PDF utility package files"
+  ],
+  "files": [
+    {
+      "path": "data/external/optc/official/ground_truth/OpTCRedTeamGroundTruth.pdf",
+      "size_bytes": 453244,
+      "sha256": "5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567",
+      "kind": "source",
+      "source_type": "official"
+    },
+    {
+      "path": "data/external/optc/official/documentation/README.md",
+      "size_bytes": 4681,
+      "sha256": "bbbeca5d5a861ffc765a6d42ddd19cb84acb93861226b4b93887bb950e121074",
+      "kind": "source",
+      "source_type": "official"
+    },
+    {
+      "path": "data/external/optc/official/documentation/ecar.md",
+      "size_bytes": 2336,
+      "sha256": "1df4539c49963cc49b783580033fe1ec68bbae68434abf29da83c47b5d26d16b",
+      "kind": "source",
+      "source_type": "official"
+    },
+    {
+      "path": "data/external/optc/official/documentation/errata.md",
+      "size_bytes": 722,
+      "sha256": "4044970eae0db4f67055fa2c0e5bb99824628c13d991fcef01dcc5ec06e8d062",
+      "kind": "source",
+      "source_type": "official"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/images/labeler-ui.png",
+      "size_bytes": 127222,
+      "sha256": "50d3cc11faf9bc60f817f52fdfda5bac4854bdc06a264edcbf188df10d2c8043",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/.gitignore",
+      "size_bytes": 8,
+      "sha256": "231603bda32a6de12ecd228babd9d1809207d80b633e9fae814b8f32194d8ab1",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/confirm.go",
+      "size_bytes": 1933,
+      "sha256": "9b64cc17c618f8883a49495910c966c62ed237881b2618eedbd05334abdccdf7",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/go.mod",
+      "size_bytes": 1156,
+      "sha256": "ad6c78eeb751e5068403869e6261b01b5a72f9700c47c2e7706ea896171a0130",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/go.sum",
+      "size_bytes": 4262,
+      "sha256": "8d289e2a0716ae332b16e80c998591e7fa190bcbd0067beed5ca340f18220149",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/lookup.go",
+      "size_bytes": 3766,
+      "sha256": "58b6cefa503dbc77bb7f34d29a6e12c9bac620d4c57b0f5fb15a9c48eee0ed0e",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/main.go",
+      "size_bytes": 28670,
+      "sha256": "e8cac449242b6f23b56087f3e4b9cab9e3321976dfe7bc5ab821a94736f76994",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/Makefile",
+      "size_bytes": 157,
+      "sha256": "7020f065245d5b5fc19c0e8c482e36ff64531f56f2368437972addf407e34e01",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/matcher/matcher.go",
+      "size_bytes": 4289,
+      "sha256": "8b807af0468d91c729a69f04b6b115a5e8b9945771fafd91daac87ad98fd674b",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labeler/tasks.go",
+      "size_bytes": 8200,
+      "sha256": "06c52cfbdab63ca0028cc657198e538bb1d20ac02bb7179ebd3e603b55c1b7d7",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/admin.zip",
+      "size_bytes": 137492,
+      "sha256": "e4c459a2a8afbc86989bc17b3a369492fb06e061389f0b3fb799a082bbe97ab4",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/anomaly.zip",
+      "size_bytes": 50929269,
+      "sha256": "5c3336f926fb081e76df892ce6cc75d9acfa5482317b24cfd73e14ff9a3806d7",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/ground.zip",
+      "size_bytes": 50427842,
+      "sha256": "eda0114c1f85ab194baf3329b989f0a8848281fe34b27744122a0fbe2f9b22a8",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/malicious.zip",
+      "size_bytes": 52964839,
+      "sha256": "9feb73e29c07fd41bbe5670c111bd396bc101991beb39ca3721ddf6565650c2a",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/labels/red.zip",
+      "size_bytes": 52855002,
+      "sha256": "aec872135cf97581c595e15342df43613d4bbf81db70d17c63307e496900d7db",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/LICENSE",
+      "size_bytes": 35184,
+      "sha256": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/README.md",
+      "size_bytes": 3665,
+      "sha256": "67e77cace093ff3822dc19ebbce0d42e563efb92ad6229d37db91bc2d287e6eb",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/article-appendix-A.pdf",
+      "size_bytes": 173339,
+      "sha256": "978dd17d72fd2fd4b25c12de9c191a519f0027fbcf286e43b720dff0ed8d1f24",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/errata.md",
+      "size_bytes": 3386,
+      "sha256": "ee9b6bea423c45f8ddc831dfb650f0420f84b26cd2cefcd2bde5b4d5094760e3",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/ground-truth.md",
+      "size_bytes": 20768,
+      "sha256": "cfd786ff7e4f00c73381bb72ffc227e54e7e07da3835a5757a490de2ae994ee2",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/how-to.md",
+      "size_bytes": 3259,
+      "sha256": "7eb72619d237ba9df892c32c8ab29c2a6f998876eb031e87a299a6cb364e65f0",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/labels.md",
+      "size_bytes": 3109,
+      "sha256": "c1066a524b11fd7767ce7e7e72cce9dda618870742aaf9d09937b8eac0569cc1",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/supplementary/related.md",
+      "size_bytes": 1256,
+      "sha256": "d81e4e17cf46c31c162bfbcca30421bf7ed8c7400904aa6a575080867e85fb76",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/supplementary/optc-labels/tasks/tasks.zip",
+      "size_bytes": 12293620,
+      "sha256": "b8ddd6d2d82ebbdc637f158cb7e7537c808ddd6968079653405844e1efc83c77",
+      "kind": "source",
+      "source_type": "supplementary_research"
+    },
+    {
+      "path": "data/external/optc/official/ground_truth/ground_truth_text.txt",
+      "size_bytes": 20518,
+      "sha256": "9df614eedb695d9b4075f7eb366ea0c13d0ee99c64f9cbf8ab24d5f582e6b942",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/processed/build_readiness.py",
+      "size_bytes": 30990,
+      "sha256": "c66e7641f3fb43872dd56c02eadd2e8d7220c370c342a5b8b82e8c62f743ff2a",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/processed/inspect_sources.py",
+      "size_bytes": 5630,
+      "sha256": "d004880eb34d55b858dac01d3fba335f5498ee42788d456ed6f80c1b7d92019f",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/processed/official_timeline.json",
+      "size_bytes": 32082,
+      "sha256": "8dd2115e4c8c0c6424498d9e3ea6021f84b6edbe23d1038aaf4a0b863fa78eaf",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/processed/supplementary_labels_inspection.json",
+      "size_bytes": 10809,
+      "sha256": "5173da0971808d09b5b31611b499f0e41e54cf4d1a0f10c30d09ac36b1ed6efd",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/processed/supplementary_tasks_inspection.json",
+      "size_bytes": 2419,
+      "sha256": "89be1a11f1e5116ef9445f91a718ac85ebba7910bdcf1117740472591fce6aee",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/processed/tasks.json",
+      "size_bytes": 136569900,
+      "sha256": "38469bfada5364fe1dc8356b58796ec4178c1f12d364231b37ae7839507dfe96",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/acquisition_plan.json",
+      "size_bytes": 1578,
+      "sha256": "0b34b63167ad58aa2dbcb97c162783ed97d3004a255d93c1b39db3f6c2212d55",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/evaluation_readiness.json",
+      "size_bytes": 2480,
+      "sha256": "406def0603db27230c79d56f4d92df37975c4f21c1b5e153837f1a0ed044a432",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/ground_truth_manifest.json",
+      "size_bytes": 13235,
+      "sha256": "729135daf9c1870b4f5e977b207db82a094a7e9488989fb5b027ee43e05ae0bd",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/missing_required_files.json",
+      "size_bytes": 2563,
+      "sha256": "bfbe8a2a820de7bd3a59f94b1c08fb657dad3c12d40fe14907095ed81c758b72",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/network_access.json",
+      "size_bytes": 1689,
+      "sha256": "362e69dcb24df49dc339eb2b1e224be5deeed9645eeec14156eff91b0a616dea",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/optc_manifest.json",
+      "size_bytes": 27614,
+      "sha256": "426c34d532a75ff1df39aed92375e1b9523fceb384828a5a6905fb1cdc796e4b",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/project_inspection.json",
+      "size_bytes": 1780,
+      "sha256": "1738ec64d39d976a939fd6157e45ce515c61b6284310cd0d6864ca7ec51bace2",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/manifests/raw_file_catalog.json",
+      "size_bytes": 21919,
+      "sha256": "abe6ae446419b153375e34adee97350793c9ff4a3735392f7551b94b445b1afe",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv_download.json",
+      "size_bytes": 570,
+      "sha256": "cbb569380f4b76792b902b788380b4b09e8a190e87749348c52b17a3beef0412",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv_failure.html",
+      "size_bytes": 2009,
+      "sha256": "e32e94858ab3ca87e54f80a50f3de6420bba6bfd0a22ef9f2fa7d1ff024e41d7",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/1HFSyvmgH0jvdnnnTdKfWRjZYOrLWoIkv_response.html",
+      "size_bytes": 2446,
+      "sha256": "8d74ef43e344ae05cd762189c551c37fb7f0b60c9b14664bce2774ee4011a7d7",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/1pJLxJsDV8sngiedbfVajMetczIgM3PQd_download.json",
+      "size_bytes": 557,
+      "sha256": "6e403456821f7c18da0a630973d2d93e02da2c487750f6dde0028bdfb72e1da3",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/1pJLxJsDV8sngiedbfVajMetczIgM3PQd_response.html",
+      "size_bytes": 2465,
+      "sha256": "93a04a236d44fb3cd6cceab4615df5d8409204d815f0cca7c122c878180bd3bf",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/acquire_raw.py",
+      "size_bytes": 3582,
+      "sha256": "faa6f3b9f85f4cababd0a426884b4cc5c406275d9461198615e34ba13e46a07d",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_access.json",
+      "size_bytes": 277,
+      "sha256": "2049f4aa88726671cbc507726fbd19c59e9305f6eaad2bbf8b0119889f0521b6",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_day1.html",
+      "size_bytes": 494006,
+      "sha256": "b3268f91d08bebde764da3c615ba3b892c27e263642e47b514a070e6eb7468e4",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_day1_201.html",
+      "size_bytes": 316904,
+      "sha256": "4a190df6c47a0b03ca092bfef6a5be73a57ebcfe32289bacb28cb057c7dabcaf",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_download_diagnostic.bin",
+      "size_bytes": 2009,
+      "sha256": "67fd4811264478e04b62344e4da9817f510478149e3313eab3e5cf7cee5127d8",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_download_diagnostic.json",
+      "size_bytes": 2263,
+      "sha256": "36110a507dcd062510705a32006fd3ee5ea5c2085843bbf0c93ba2e30325c9df",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_ecar.html",
+      "size_bytes": 322835,
+      "sha256": "41bca0e4be369cd7207c9813c21f1ebf36078955d489220dc8234ecd6769a7cc",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_evaluation.html",
+      "size_bytes": 342060,
+      "sha256": "5d7d9d858d10dd7505408e20143bcde88dd80678f50c7703ac77e9e81eed14a1",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/drive_root.html",
+      "size_bytes": 343308,
+      "sha256": "d0c354c3b1ca8a1f71554527811aa9d5aef364b816ea4442065e668203ff2adc",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/official_acquisition.json",
+      "size_bytes": 1038,
+      "sha256": "6df5f8b8b99e8dab0e83e329199355134358d8359506158050d6a0f3d7f2f99f",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "data/external/optc/downloads/official_acquisition_retry.json",
+      "size_bytes": 1373,
+      "sha256": "557ebdb5bd44897584b8dfa838878ec8ccb091665a76340a647aefe0359aa2d2",
+      "kind": "derived_inspection_or_acquisition_record"
+    },
+    {
+      "path": "docs/OPTC_REAL_DATA_READINESS.md",
+      "size_bytes": 17907,
+      "sha256": "3821a8c647ad454aca91d592d30dafa0bdad8cb1f53dc0b79c84399ba5e9905a",
+      "kind": "readiness_report"
+    }
+  ]
+}

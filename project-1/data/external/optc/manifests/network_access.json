@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-03T17:08:33.984767+00:00",
+  "github_accessible": true,
+  "google_drive_listing_accessible": true,
+  "corporate_network_block_evidence": false,
+  "status": "GOOGLE_DRIVE_QUOTA_EXCEEDED",
+  "errors": [
+    {
+      "scope": "Sandbox official HTTPS attempts",
+      "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))",
+      "resolution": "Normal HTTPS succeeded after tool sandbox approval; no network policy bypass."
+    },
+    {
+      "scope": "Sandbox git clone",
+      "error": "fatal: unable to access 'https://github.com/AT03380/optc-labels.git/': Failed to connect to github.com port 443 via 127.0.0.1 after 2041 ms: Could not connect to server",
+      "resolution": "Normal git clone succeeded after tool sandbox approval."
+    },
+    {
+      "scope": "Web PDF reader",
+      "error": "(400) Unsupported content-type: application/octet-stream",
+      "resolution": "Downloaded original PDF through HTTPS; extracted locally with pypdf."
+    },
+    {
+      "scope": "First official shard",
+      "error": "RuntimeError('Download returned HTML instead of gzip')",
+      "diagnosis": "Google Drive - Quota exceeded; HTTP 200 text/html, not telemetry. Saved download diagnostic confirms quota."
+    },
+    {
+      "scope": "Second official shard",
+      "error": "RuntimeError('GOOGLE_DRIVE_QUOTA_EXCEEDED: Too many users have viewed or downloaded this file recently.')",
+      "diagnosis": "Google Drive - Quota exceeded; failure HTML retained."
+    }
+  ],
+  "restrictions_bypassed": false,
+  "unauthorized_mirrors_used": false
+}

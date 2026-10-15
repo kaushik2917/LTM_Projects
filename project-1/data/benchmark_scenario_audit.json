@@ -1,0 +1,108 @@
+{
+  "dataset": "13",
+  "usage": "evaluation_only",
+  "rows": 1890,
+  "scenarios": {
+    "baseline_complete": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6173370370370369
+    },
+    "missing_10": {
+      "rows": 135,
+      "missing_ratios": [
+        0.1
+      ],
+      "mean_synthetic_expected_ers": 0.5998459259259259
+    },
+    "missing_20": {
+      "rows": 135,
+      "missing_ratios": [
+        0.2
+      ],
+      "mean_synthetic_expected_ers": 0.6270525925925927
+    },
+    "missing_50": {
+      "rows": 135,
+      "missing_ratios": [
+        0.5
+      ],
+      "mean_synthetic_expected_ers": 0.5689229629629631
+    },
+    "fake_events_10": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6144607407407408
+    },
+    "fake_events_25": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6394296296296295
+    },
+    "timestamp_manipulation": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6456577777777778
+    },
+    "sensor_failure_sysmon": {
+      "rows": 135,
+      "missing_ratios": [
+        0.15
+      ],
+      "mean_synthetic_expected_ers": 0.6287629629629631
+    },
+    "sensor_failure_netflow": {
+      "rows": 135,
+      "missing_ratios": [
+        0.12
+      ],
+      "mean_synthetic_expected_ers": 0.6530133333333336
+    },
+    "graph_poisoning_nodes": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6484466666666664
+    },
+    "graph_poisoning_edges": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.615317777777778
+    },
+    "cross_sensor_contradiction": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6674770370370373
+    },
+    "concept_drift": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6459199999999999
+    },
+    "unseen_technique": {
+      "rows": 135,
+      "missing_ratios": [
+        0.0
+      ],
+      "mean_synthetic_expected_ers": 0.6213977777777778
+    }
+  },
+  "measured_model_metrics": null,
+  "status": "scenario_audit_only",
+  "reason": "CSV supplies scenario descriptors and expected synthetic scores, not raw event sequences, evidence survival observations, or true next-technique labels. Empirical robustness, conformal coverage and unsafe-action rates require replay traces and measured outcomes."
+}
