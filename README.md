@@ -5,6 +5,6 @@ This repository contains two independent M.Tech projects. Each folder is self-co
 | Folder | Project | Description |
 |---|---|---|
 | [project-1](./project-1) | FAPT-Guard | Intelligent prediction and prevention of cyberattack with digital evidence analysis. |
-| [project-2](./project-2) | Call Sense | Real-time voice AI banking-support prototype with evidence-grounded answers, safety controls, and human-agent handoff. |
+| [project-2](./project-2) | Call Sense | Real-time voice AI Agent for Banking Support. |
 
 Start with the README inside the project you want to run. The projects do not share runtime configuration or dependencies.
