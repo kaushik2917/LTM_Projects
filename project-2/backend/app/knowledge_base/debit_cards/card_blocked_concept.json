@@ -1,0 +1,48 @@
+{
+  "id": "KB-card_blocked-concept",
+  "title": "Already blocked or disabled card - explained",
+  "category": "debit_cards",
+  "subcategory": "card_blocked",
+  "supported_intents": [
+    "card_blocked"
+  ],
+  "intent": "card_blocked",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "my card is blocked",
+    "my debit card got blocked",
+    "my bank card is blocked",
+    "my card has been blocked",
+    "my ATM card is blocked",
+    "the bank blocked my card",
+    "my card got disabled",
+    "blocked debit card",
+    "blocked credit card",
+    "my debit card is blocked only",
+    "card blocked and replacement",
+    "my card has stopped working"
+  ],
+  "aliases": [
+    "my card is blocked",
+    "my debit card got blocked",
+    "my bank card is blocked",
+    "my card has been blocked",
+    "my ATM card is blocked",
+    "the bank blocked my card",
+    "my card got disabled",
+    "blocked debit card",
+    "blocked credit card",
+    "my debit card is blocked only",
+    "card blocked and replacement",
+    "my card has stopped working"
+  ],
+  "content": "A card may be restricted after repeated incorrect PIN attempts or a security check. Avoid repeated attempts and check any message in your trusted banking app. A restriction does not always require a new card; support must check the reason before advising replacement.",
+  "customer_content": "A card may be restricted after repeated incorrect PIN attempts or a security check. Avoid repeated attempts and check any message in your trusted banking app. A restriction does not always require a new card; support must check the reason before advising replacement.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_blocked_concept.json"
+}

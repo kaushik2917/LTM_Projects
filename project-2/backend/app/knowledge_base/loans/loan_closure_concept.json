@@ -1,0 +1,34 @@
+{
+  "id": "KB-loan_closure-concept",
+  "title": "Loan closure, statements and NOC - explained",
+  "category": "loans",
+  "subcategory": "loan_closure",
+  "supported_intents": [
+    "loan_closure"
+  ],
+  "intent": "loan_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "loan closure",
+    "NOC",
+    "loan statement",
+    "loan outstanding",
+    "loan account"
+  ],
+  "aliases": [
+    "loan closure",
+    "NOC",
+    "loan statement",
+    "loan outstanding",
+    "loan account"
+  ],
+  "content": "A loan closure involves confirming that all required amounts and conditions are settled. A no-objection or closure certificate is a separate document issued through the lender's process; a final payment receipt alone may not complete every step.",
+  "customer_content": "A loan closure involves confirming that all required amounts and conditions are settled. A no-objection or closure certificate is a separate document issued through the lender's process; a final payment receipt alone may not complete every step.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_closure_concept.json"
+}

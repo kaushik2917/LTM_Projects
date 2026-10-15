@@ -1,0 +1,32 @@
+{
+  "id": "KB-balance_holds-concept",
+  "title": "Holds, liens and uncleared funds - explained",
+  "category": "balances",
+  "subcategory": "balance_holds",
+  "supported_intents": [
+    "balance_holds"
+  ],
+  "intent": "balance_holds",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "hold amount",
+    "lien",
+    "uncleared balance",
+    "money on hold"
+  ],
+  "aliases": [
+    "hold amount",
+    "lien",
+    "uncleared balance",
+    "money on hold"
+  ],
+  "content": "A hold can reserve funds pending settlement, and a lien can restrict funds for an obligation or other authorized reason. Uncleared funds represent deposits not yet available. These labels do not reveal the underlying reason without account review.",
+  "customer_content": "A hold can reserve funds pending settlement, and a lien can restrict funds for an obligation or other authorized reason. Uncleared funds represent deposits not yet available. These labels do not reveal the underlying reason without account review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/balance_holds_concept.json"
+}

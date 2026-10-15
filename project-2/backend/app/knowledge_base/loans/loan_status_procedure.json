@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_status-procedure",
+  "title": "Specific loan balance and repayment status - support procedure",
+  "category": "loans",
+  "subcategory": "loan_status",
+  "supported_intents": [
+    "loan_status"
+  ],
+  "intent": "loan_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "my loan balance",
+    "my loan status",
+    "my outstanding loan",
+    "my loan details"
+  ],
+  "aliases": [
+    "my loan balance",
+    "my loan status",
+    "my outstanding loan",
+    "my loan details"
+  ],
+  "content": "After demo verification, the adapter reads the fictional loan record and due schedule for the selected customer. This provides a demonstration of account-specific support without accessing a real credit file or authorizing a loan transaction.",
+  "customer_content": "After demo verification, the adapter reads the fictional loan record and due schedule for the selected customer. This provides a demonstration of account-specific support without accessing a real credit file or authorizing a loan transaction.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_status_procedure.json"
+}

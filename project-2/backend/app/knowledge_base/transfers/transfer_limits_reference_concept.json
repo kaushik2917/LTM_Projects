@@ -1,0 +1,34 @@
+{
+  "id": "KB-transfer_limits_reference-concept",
+  "title": "Transfer limits, routing codes and charges - explained",
+  "category": "transfers",
+  "subcategory": "transfer_limits_reference",
+  "supported_intents": [
+    "transfer_limits_reference"
+  ],
+  "intent": "transfer_limits_reference",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "transfer limit",
+    "transfer charges",
+    "IFSC",
+    "reference number",
+    "bank routing code"
+  ],
+  "aliases": [
+    "transfer limit",
+    "transfer charges",
+    "IFSC",
+    "reference number",
+    "bank routing code"
+  ],
+  "content": "Transfer limits and fees can vary by product, channel and customer configuration. An IFSC identifies a participating branch for relevant Indian transfers, while a transaction reference identifies an instruction; neither should be guessed from a customer's name.",
+  "customer_content": "Transfer limits and fees can vary by product, channel and customer configuration. An IFSC identifies a participating branch for relevant Indian transfers, while a transaction reference identifies an instruction; neither should be guessed from a customer's name.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/transfer_limits_reference_concept.json"
+}

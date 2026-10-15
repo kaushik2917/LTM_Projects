@@ -1,0 +1,34 @@
+{
+  "id": "KB-international_remittance-concept",
+  "title": "International transfers and SWIFT - explained",
+  "category": "international",
+  "subcategory": "international_remittance",
+  "supported_intents": [
+    "international_remittance"
+  ],
+  "intent": "international_remittance",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "international transfer",
+    "SWIFT",
+    "remittance",
+    "foreign currency",
+    "SWIFT code"
+  ],
+  "aliases": [
+    "international transfer",
+    "SWIFT",
+    "remittance",
+    "foreign currency",
+    "SWIFT code"
+  ],
+  "content": "Cross-border transfers can involve sending, intermediary and receiving institutions, exchange conversion and compliance checks. A SWIFT identifier helps identify an institution; it does not itself establish the correct beneficiary account or guarantee final credit.",
+  "customer_content": "Cross-border transfers can involve sending, intermediary and receiving institutions, exchange conversion and compliance checks. A SWIFT identifier helps identify an institution; it does not itself establish the correct beneficiary account or guarantee final credit.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "international/international_remittance_concept.json"
+}

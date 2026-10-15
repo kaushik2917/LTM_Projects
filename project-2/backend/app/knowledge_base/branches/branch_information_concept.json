@@ -1,0 +1,36 @@
+{
+  "id": "KB-branch_information-concept",
+  "title": "Branch locations, hours and holidays - explained",
+  "category": "branches",
+  "subcategory": "branch_information",
+  "supported_intents": [
+    "branch_information"
+  ],
+  "intent": "branch_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "branch location",
+    "branch timing",
+    "working days",
+    "opening hours",
+    "holiday",
+    "timings"
+  ],
+  "aliases": [
+    "branch location",
+    "branch timing",
+    "working days",
+    "opening hours",
+    "holiday",
+    "timings"
+  ],
+  "content": "Branches can have different opening hours, holiday closures and service availability. A building being open does not establish that every counter service or specialist is available throughout the day. Cash-counter hours and appointment-based service times should be checked separately.",
+  "customer_content": "Branches can have different opening hours, holiday closures and service availability. A building being open does not establish that every counter service or specialist is available throughout the day. Cash-counter hours and appointment-based service times should be checked separately.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "branches/branch_information_concept.json"
+}

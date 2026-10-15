@@ -1,0 +1,34 @@
+{
+  "id": "KB-fund_transfer-concept",
+  "title": "Transfer instructions and scheduled transfers - explained",
+  "category": "transfers",
+  "subcategory": "fund_transfer",
+  "supported_intents": [
+    "fund_transfer"
+  ],
+  "intent": "fund_transfer",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "send money",
+    "transfer money",
+    "bank transfer",
+    "internal transfer",
+    "scheduled transfer"
+  ],
+  "aliases": [
+    "send money",
+    "transfer money",
+    "bank transfer",
+    "internal transfer",
+    "scheduled transfer"
+  ],
+  "content": "A bank transfer moves money between accounts using the chosen payment channel and destination details. Scheduling records a future instruction rather than guaranteeing immediate completion; beneficiary setup, limits and available funds can affect execution.",
+  "customer_content": "A bank transfer moves money between accounts using the chosen payment channel and destination details. Scheduling records a future instruction rather than guaranteeing immediate completion; beneficiary setup, limits and available funds can affect execution.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/fund_transfer_concept.json"
+}

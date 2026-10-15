@@ -1,0 +1,32 @@
+{
+  "id": "KB-recurring_deposit-concept",
+  "title": "Recurring deposits and installments - explained",
+  "category": "deposits",
+  "subcategory": "recurring_deposit",
+  "supported_intents": [
+    "recurring_deposit"
+  ],
+  "intent": "recurring_deposit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "recurring deposit",
+    "RD installment",
+    "open RD",
+    "RD maturity"
+  ],
+  "aliases": [
+    "recurring deposit",
+    "RD installment",
+    "open RD",
+    "RD maturity"
+  ],
+  "content": "A recurring deposit builds a balance through scheduled installments over an agreed tenure. It differs from placing the whole amount into a fixed deposit at once. Maturity proceeds depend on the contributions and applicable product terms.",
+  "customer_content": "A recurring deposit builds a balance through scheduled installments over an agreed tenure. It differs from placing the whole amount into a fixed deposit at once. Maturity proceeds depend on the contributions and applicable product terms.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/recurring_deposit_concept.json"
+}

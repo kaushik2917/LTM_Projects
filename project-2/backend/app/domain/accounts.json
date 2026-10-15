@@ -1,0 +1,182 @@
+[
+  {
+    "id": "account_opening",
+    "title": "Opening a bank account",
+    "category": "accounts",
+    "aliases": [
+      "open account",
+      "account opening",
+      "start savings",
+      "new bank account"
+    ],
+    "overview": "Opening an account establishes a banking relationship after identity and product checks. Choose an account for personal saving or business receipts before applying; opening documents and operating instructions depend on that choice.",
+    "procedure": "In the Call Sense Bank demo, select a product, prepare identity and address proof, and submit a fictional application at the demo branch. A reviewer checks eligibility and records consent before activation; this assistant does not open a real account.",
+    "risk": "LOW"
+  },
+  {
+    "id": "account_types",
+    "title": "Savings, current and salary accounts",
+    "category": "accounts",
+    "aliases": [
+      "account types",
+      "savings account",
+      "current account",
+      "salary account"
+    ],
+    "overview": "Savings accounts hold personal funds, current accounts support business activity, and salary accounts receive employer payments. Product terms can differ in balance conditions, permitted transactions and available services; a salary label does not guarantee permanent fee exemptions.",
+    "procedure": "Compare the synthetic product schedule before choosing an account. Tell the assistant whether the purpose is personal saving, business receipts or salary credit; a demo agent can explain the matching category without giving a personalized recommendation.",
+    "risk": "LOW"
+  },
+  {
+    "id": "joint_minor_accounts",
+    "title": "Joint, minor and family accounts",
+    "category": "accounts",
+    "aliases": [
+      "joint account",
+      "minor account",
+      "guardian",
+      "student account"
+    ],
+    "overview": "Joint accounts have more than one holder and an agreed operating instruction. Minor accounts involve a guardian where applicable. Student and senior-citizen variants are product categories, not automatic exemptions from identity checks or operating restrictions.",
+    "procedure": "For the synthetic branch workflow, specify holders, guardian involvement and who may operate the account. A demo agent reviews operating instructions and required documents; changes to holders or guardians need a separate verified review.",
+    "risk": "LOW"
+  },
+  {
+    "id": "account_eligibility",
+    "title": "Account eligibility and opening documents",
+    "category": "accounts",
+    "aliases": [
+      "account eligibility",
+      "opening documents",
+      "student eligibility",
+      "senior citizen account"
+    ],
+    "overview": "Account eligibility depends on the selected product, applicant category and applicable local requirements. Identity proof, address evidence and any product-specific records support the application; an information conversation does not establish eligibility or guarantee approval.",
+    "procedure": "The fictional bank asks applicants to select an individual or business product and obtain its configured document checklist from the demo branch. Do not upload real identity documents to this prototype; unresolved eligibility questions go to a reviewer.",
+    "risk": "LOW"
+  },
+  {
+    "id": "account_activation",
+    "title": "Activating a new account",
+    "category": "accounts",
+    "aliases": [
+      "account activation",
+      "activate account",
+      "new account inactive"
+    ],
+    "overview": "A newly opened account may remain inactive until its required checks and opening instructions are complete. Activation is different from reactivating an old dormant account and different from activating an associated debit card.",
+    "procedure": "In the synthetic workflow, a verified demo agent checks application completion, outstanding documents and consent. The assistant explains the next step but does not claim that an actual account has been activated or waive pending verification.",
+    "risk": "LOW"
+  },
+  {
+    "id": "account_closure",
+    "title": "Closing an account",
+    "category": "accounts",
+    "aliases": [
+      "close account",
+      "account closure",
+      "shut account"
+    ],
+    "overview": "Closing an account may require settling pending entries, moving recurring payments and returning or disabling linked instruments. A zero displayed balance alone does not establish that all obligations or holds have cleared.",
+    "procedure": "For Call Sense Bank demonstration cases, review standing instructions, linked deposits, outstanding charges and pending card transactions with the demo agent. Submit a closure request through the verified workflow and retain its reference; the assistant cannot close real accounts.",
+    "risk": "LOW"
+  },
+  {
+    "id": "dormant_account",
+    "title": "Dormant and inactive accounts",
+    "category": "accounts",
+    "aliases": [
+      "dormant account",
+      "inactive account",
+      "reactivate account",
+      "unused account"
+    ],
+    "overview": "An inactive or dormant classification can restrict certain account operations after a period without qualifying activity. The applicable period and permitted activity depend on the institution; the prototype does not infer a real account status from elapsed time.",
+    "procedure": "The synthetic reactivation workflow checks the demo account status, updates KYC where needed, and sends the case to an authorized reviewer. Obtain a review reference before attempting another transaction; no automatic reactivation is promised.",
+    "risk": "LOW"
+  },
+  {
+    "id": "nominee_management",
+    "title": "Nominee addition and modification",
+    "category": "accounts",
+    "aliases": [
+      "nominee",
+      "nomination",
+      "add nominee",
+      "change nominee"
+    ],
+    "overview": "A nomination records whom the institution should consider under its applicable claim process. It is distinct from adding a joint holder, and nomination does not itself change everyday account ownership or operating authority.",
+    "procedure": "The Call Sense Bank demo lets an agent review a nomination request after profile verification. Specify whether the request is to add, replace or correct a nominee; real legal entitlements and documents must be confirmed through the relevant institution.",
+    "risk": "LOW"
+  },
+  {
+    "id": "address_update",
+    "title": "Updating an address",
+    "category": "accounts",
+    "aliases": [
+      "address change",
+      "update address",
+      "change my address",
+      "new residence"
+    ],
+    "overview": "Address changes update the contact record and can affect mailed statements or card delivery. Explaining the process does not require account authentication; viewing or changing the address on a particular customer record does.",
+    "procedure": "For the synthetic bank, use the profile-update menu or a verified branch, select the address field, and follow the displayed evidence checklist. A demo reviewer checks the request before marking it complete; never paste a real residential address here.",
+    "risk": "LOW",
+    "customer_procedure": "Use the profile-update menu in your trusted banking app or visit a verified branch to request an address change. Follow the displayed document checklist and wait for review before treating the update as complete. Do not send a residential address through this conversation."
+  },
+  {
+    "id": "contact_update",
+    "title": "Updating phone and email contact details",
+    "category": "accounts",
+    "aliases": [
+      "phone number update",
+      "email update",
+      "change mobile number",
+      "new phone number"
+    ],
+    "overview": "Changing a registered phone number or email can affect alerts, account recovery and service messages. Losing access to the old contact method is a separate recovery problem and may require additional review.",
+    "procedure": "The demo process verifies the synthetic profile, records which contact field should change and refers recovery problems to an agent. This assistant never asks for an OTP or a full real phone number to authorize the update.",
+    "risk": "LOW"
+  },
+  {
+    "id": "personal_details_update",
+    "title": "Correcting name, birth date and PAN information",
+    "category": "accounts",
+    "aliases": [
+      "name correction",
+      "date of birth",
+      "PAN update",
+      "change account type"
+    ],
+    "overview": "Corrections to a name, birth date or tax identifier need consistency across the relevant records. Changing an account type is a product conversion rather than a spelling correction and may have different conditions.",
+    "procedure": "In a synthetic correction case, identify the field and whether it is a correction or a legal change. The demo branch supplies the appropriate evidence checklist; avoid sharing real PAN or identity values in a call transcript.",
+    "risk": "LOW"
+  },
+  {
+    "id": "account_service",
+    "title": "Customer identifiers, passbooks and certificates",
+    "category": "accounts",
+    "aliases": [
+      "customer id",
+      "account number information",
+      "passbook",
+      "account certificate"
+    ],
+    "overview": "A customer identifier can link several products, while an account identifier refers to one account. Passbooks, account certificates and balance certificates serve different recordkeeping purposes; a balance certificate refers to a stated point in time.",
+    "procedure": "Verified demo profiles may view masked product identifiers. For a passbook update or certificate, specify the product and requested date to the demo agent; this prototype never discloses complete real account numbers or issues legally valid certificates.",
+    "risk": "LOW"
+  },
+  {
+    "id": "account_conversion",
+    "title": "Converting an account product",
+    "category": "accounts",
+    "aliases": [
+      "convert savings account",
+      "change salary account",
+      "account conversion"
+    ],
+    "overview": "Changing an account product can alter fees, balance conditions and available features. It is different from changing ownership or correcting profile details; linked cards, mandates and deposits may also need review.",
+    "procedure": "For a synthetic conversion, the demo agent compares the current and requested product schedules and identifies affected services. The assistant explains the comparison but cannot convert a real account or guarantee retention of existing benefits.",
+    "risk": "LOW"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "id": "KB-beneficiary_issue-procedure",
+  "title": "Beneficiaries and cooling periods - support procedure",
+  "category": "transfers",
+  "subcategory": "beneficiary_issue",
+  "supported_intents": [
+    "beneficiary_issue"
+  ],
+  "intent": "beneficiary_issue",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "beneficiary",
+    "payee",
+    "beneficiary addition",
+    "beneficiary deletion",
+    "cooling period"
+  ],
+  "aliases": [
+    "beneficiary",
+    "payee",
+    "beneficiary addition",
+    "beneficiary deletion",
+    "cooling period"
+  ],
+  "content": "In the synthetic bank, use the beneficiary-management menu and review the displayed destination carefully. A demo agent can explain a pending activation, but the assistant does not collect full destination credentials or bypass an activation control.",
+  "customer_content": "In the synthetic bank, use the beneficiary-management menu and review the displayed destination carefully. A demo agent can explain a pending activation, but the assistant does not collect full destination credentials or bypass an activation control.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/beneficiary_issue_procedure.json"
+}

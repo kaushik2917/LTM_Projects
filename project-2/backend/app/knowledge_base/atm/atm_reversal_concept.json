@@ -1,0 +1,32 @@
+{
+  "id": "KB-atm_reversal-concept",
+  "title": "Reversed ATM transactions - explained",
+  "category": "atm",
+  "subcategory": "atm_reversal",
+  "supported_intents": [
+    "atm_reversal"
+  ],
+  "intent": "atm_reversal",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "ATM reversed",
+    "cash withdrawal reversal",
+    "ATM refund",
+    "ATM reversal status"
+  ],
+  "aliases": [
+    "ATM reversed",
+    "cash withdrawal reversal",
+    "ATM refund",
+    "ATM reversal status"
+  ],
+  "content": "An ATM reversal is an adjustment associated with an earlier withdrawal entry. A reversal notification should be compared with the posted account record; a pending adjustment is not the same as available funds.",
+  "customer_content": "An ATM reversal is an adjustment associated with an earlier withdrawal entry. A reversal notification should be compared with the posted account record; a pending adjustment is not the same as available funds.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/atm_reversal_concept.json"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_pin_reset-procedure",
+  "title": "Debit card PIN setup and reset - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_pin_reset",
+  "supported_intents": [
+    "card_pin_reset"
+  ],
+  "intent": "card_pin_reset",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "PIN reset",
+    "PIN generation",
+    "forgot card PIN",
+    "ATM PIN",
+    "incorrect PIN",
+    "PIN retry exceeded"
+  ],
+  "aliases": [
+    "PIN reset",
+    "PIN generation",
+    "forgot card PIN",
+    "ATM PIN",
+    "incorrect PIN",
+    "PIN retry exceeded"
+  ],
+  "content": "The synthetic guidance directs you to card services in the trusted banking channel, where the official reset steps appear. Never speak your PIN, CVV or OTP to this assistant. A demo agent can explain the process without seeing any secret.",
+  "customer_content": "The synthetic guidance directs you to card services in the trusted banking channel, where the official reset steps appear. Never speak your PIN, CVV or OTP to this assistant. A demo agent can explain the process without seeing any secret.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_pin_reset_procedure.json"
+}

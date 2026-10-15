@@ -1,0 +1,32 @@
+{
+  "id": "KB-card_status-procedure",
+  "title": "Checking a card status - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_status",
+  "supported_intents": [
+    "card_status"
+  ],
+  "intent": "card_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "card status",
+    "is my card active",
+    "is card blocked",
+    "my debit card status"
+  ],
+  "aliases": [
+    "card status",
+    "is my card active",
+    "is card blocked",
+    "my debit card status"
+  ],
+  "content": "After demo verification, the synthetic adapter reads the selected card status and masked identifier. A demo-only block is reflected in later enquiries; the system never infers or changes a real card's status from a conversation.",
+  "customer_content": "After demo verification, the synthetic adapter reads the selected card status and masked identifier. A demo-only block is reflected in later enquiries; the system never infers or changes a real card's status from a conversation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_status_procedure.json"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "KB-remote_access_scam-concept",
+  "title": "Remote-access, screen-sharing and OTP scams - explained",
+  "category": "security",
+  "subcategory": "remote_access_scam",
+  "supported_intents": [
+    "remote_access_scam"
+  ],
+  "intent": "remote_access_scam",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "remote access scam",
+    "screen sharing scam",
+    "OTP scam",
+    "PIN scam",
+    "support app scam"
+  ],
+  "aliases": [
+    "remote access scam",
+    "screen sharing scam",
+    "OTP scam",
+    "PIN scam",
+    "support app scam"
+  ],
+  "content": "A caller asking you to install remote-control software, share your screen during banking or disclose a verification code may be attempting fraud. Stop the interaction and avoid further approvals; screen sharing can expose more than the visible payment.",
+  "customer_content": "A caller asking you to install remote-control software, share your screen during banking or disclose a verification code may be attempting fraud. Stop the interaction and avoid further approvals; screen sharing can expose more than the visible payment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/remote_access_scam_concept.json"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "KB-credit_application-procedure",
+  "title": "Credit-card application and eligibility - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_application",
+  "supported_intents": [
+    "credit_application"
+  ],
+  "intent": "credit_application",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "credit card eligibility",
+    "credit card application",
+    "credit application status"
+  ],
+  "aliases": [
+    "credit card eligibility",
+    "credit card application",
+    "credit application status"
+  ],
+  "content": "In the fictional application flow, select the card category and review the configured document checklist with a demo agent. Application status is account-specific and requires demo verification; no approval or real credit limit is promised.",
+  "customer_content": "In the fictional application flow, select the card category and review the configured document checklist with a demo agent. Application status is account-specific and requires demo verification; no approval or real credit limit is promised.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_application_procedure.json"
+}

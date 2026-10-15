@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_payment_issue-concept",
+  "title": "Declined debit-card payments - explained",
+  "category": "debit_cards",
+  "subcategory": "card_payment_issue",
+  "supported_intents": [
+    "card_payment_issue"
+  ],
+  "intent": "card_payment_issue",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "card not working",
+    "card payment failed",
+    "card payment declined",
+    "online payment",
+    "POS transaction",
+    "payment at shop"
+  ],
+  "aliases": [
+    "card not working",
+    "card payment failed",
+    "card payment declined",
+    "online payment",
+    "POS transaction",
+    "payment at shop"
+  ],
+  "content": "A card payment can fail because of channel controls, available balance, a merchant problem or a card restriction. Determine whether it happened online, at a shop or at an ATM before deciding which checks apply.",
+  "customer_content": "A card payment can fail because of channel controls, available balance, a merchant problem or a card restriction. Determine whether it happened online, at a shop or at an ATM before deciding which checks apply.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_payment_issue_concept.json"
+}

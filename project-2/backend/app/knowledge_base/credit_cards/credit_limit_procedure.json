@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_limit-procedure",
+  "title": "Credit limits and available credit - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_limit",
+  "supported_intents": [
+    "credit_limit"
+  ],
+  "intent": "credit_limit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "credit limit",
+    "available credit",
+    "available limit",
+    "increase credit limit"
+  ],
+  "aliases": [
+    "credit limit",
+    "available credit",
+    "available limit",
+    "increase credit limit"
+  ],
+  "content": "A verified demo profile may view its configured total and available credit. For a limit-review enquiry, an agent explains the synthetic review workflow; the assistant does not approve lending or encourage borrowing beyond the customer's means.",
+  "customer_content": "A verified demo profile may view its configured total and available credit. For a limit-review enquiry, an agent explains the synthetic review workflow; the assistant does not approve lending or encourage borrowing beyond the customer's means.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_limit_procedure.json"
+}

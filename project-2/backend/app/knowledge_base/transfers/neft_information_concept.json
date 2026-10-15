@@ -1,0 +1,30 @@
+{
+  "id": "KB-neft_information-concept",
+  "title": "NEFT explained - explained",
+  "category": "transfers",
+  "subcategory": "neft_information",
+  "supported_intents": [
+    "neft_information"
+  ],
+  "intent": "neft_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "NEFT",
+    "national electronic funds transfer",
+    "what is NEFT"
+  ],
+  "aliases": [
+    "NEFT",
+    "national electronic funds transfer",
+    "what is NEFT"
+  ],
+  "content": "NEFT stands for National Electronic Funds Transfer. It is a bank-to-bank transfer system in India, with transfers processed through settlement batches. The account and routing details identify the intended beneficiary; actual service conditions come from the sending institution.",
+  "customer_content": "NEFT stands for National Electronic Funds Transfer. It is a bank-to-bank transfer system in India, with transfers processed through settlement batches. The account and routing details identify the intended beneficiary; actual service conditions come from the sending institution.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/neft_information_concept.json"
+}

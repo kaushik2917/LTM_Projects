@@ -1,0 +1,34 @@
+{
+  "id": "KB-digital_login-concept",
+  "title": "Locked accounts and login problems - explained",
+  "category": "digital_banking",
+  "subcategory": "digital_login",
+  "supported_intents": [
+    "digital_login"
+  ],
+  "intent": "digital_login",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "login issue",
+    "account locked",
+    "app login problem",
+    "cannot login",
+    "internet banking locked"
+  ],
+  "aliases": [
+    "login issue",
+    "account locked",
+    "app login problem",
+    "cannot login",
+    "internet banking locked"
+  ],
+  "content": "Digital access can fail because of account locks, connectivity, an outdated app or an incorrect login method. Repeated guessing can worsen a lock, and an unexpected lock with unfamiliar activity may require a security review.",
+  "customer_content": "Digital access can fail because of account locks, connectivity, an outdated app or an incorrect login method. Repeated guessing can worsen a lock, and an unexpected lock with unfamiliar activity may require a security review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/digital_login_concept.json"
+}

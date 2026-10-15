@@ -1,0 +1,48 @@
+{
+  "id": "KB-card_blocked-procedure",
+  "title": "Already blocked or disabled card - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_blocked",
+  "supported_intents": [
+    "card_blocked"
+  ],
+  "intent": "card_blocked",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "my card is blocked",
+    "my debit card got blocked",
+    "my bank card is blocked",
+    "my card has been blocked",
+    "my ATM card is blocked",
+    "the bank blocked my card",
+    "my card got disabled",
+    "blocked debit card",
+    "blocked credit card",
+    "my debit card is blocked only",
+    "card blocked and replacement",
+    "my card has stopped working"
+  ],
+  "aliases": [
+    "my card is blocked",
+    "my debit card got blocked",
+    "my bank card is blocked",
+    "my card has been blocked",
+    "my ATM card is blocked",
+    "the bank blocked my card",
+    "my card got disabled",
+    "blocked debit card",
+    "blocked credit card",
+    "my debit card is blocked only",
+    "card blocked and replacement",
+    "my card has stopped working"
+  ],
+  "content": "For a blocked card, check whether the restriction affects ATM withdrawals, online payments or all uses. For account-specific card status, your identity must be verified first. Use the secure banking channel to request a review or replacement; never share your PIN or one-time codes.",
+  "customer_content": "For a blocked card, check whether the restriction affects ATM withdrawals, online payments or all uses. For account-specific card status, your identity must be verified first. Use the secure banking channel to request a review or replacement; never share your PIN or one-time codes.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_blocked_procedure.json"
+}

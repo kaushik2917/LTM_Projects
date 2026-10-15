@@ -1,0 +1,32 @@
+{
+  "id": "KB-duplicate_transaction-concept",
+  "title": "Duplicate charges and repeated payments - explained",
+  "category": "disputes",
+  "subcategory": "duplicate_transaction",
+  "supported_intents": [
+    "duplicate_transaction"
+  ],
+  "intent": "duplicate_transaction",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "charged twice",
+    "duplicate transaction",
+    "double charged",
+    "paid twice"
+  ],
+  "aliases": [
+    "charged twice",
+    "duplicate transaction",
+    "double charged",
+    "paid twice"
+  ],
+  "content": "Two similar entries can represent duplicate completed payments, a pending authorization plus a posted payment, or separate transactions. Compare their status, date, amount and merchant description before concluding that both are final debits.",
+  "customer_content": "Two similar entries can represent duplicate completed payments, a pending authorization plus a posted payment, or separate transactions. Compare their status, date, amount and merchant description before concluding that both are final debits.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/duplicate_transaction_concept.json"
+}

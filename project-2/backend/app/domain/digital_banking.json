@@ -1,0 +1,89 @@
+﻿[
+  {
+    "id": "internet_registration",
+    "title": "Internet and mobile banking registration",
+    "category": "digital_banking",
+    "aliases": [
+      "internet banking registration",
+      "mobile banking registration",
+      "register app",
+      "online banking"
+    ],
+    "overview": "Digital banking registration establishes access to the bank's trusted portal or app. It is distinct from opening the underlying account and can depend on supported devices and the registered customer record.",
+    "procedure": "Use the institution's verified website or app-store listing and follow its enrollment screens. The Call Sense Bank demo explains registration with fictional profiles; never provide authentication secrets or install software from an unsolicited support link.",
+    "risk": "LOW"
+  },
+  {
+    "id": "password_reset",
+    "title": "Forgotten internet-banking passwords and usernames",
+    "category": "digital_banking",
+    "aliases": [
+      "forgot internet banking password",
+      "forgot password",
+      "password reset",
+      "forgot username",
+      "reset login"
+    ],
+    "overview": "A forgotten internet-banking password should be reset using the trusted portal's recovery option. Support cannot retrieve the existing password. Username recovery and password reset may use different steps and should not involve sharing secrets with an assistant.",
+    "procedure": "Choose Forgot password or Forgot username on the verified banking portal and complete its private verification process yourself. This assistant can explain the steps without seeing a password, PIN, CVV or OTP; stop if an unsolicited caller asks for them.",
+    "risk": "LOW"
+  },
+  {
+    "id": "digital_login",
+    "title": "Locked accounts and login problems",
+    "category": "digital_banking",
+    "aliases": [
+      "login issue",
+      "account locked",
+      "app login problem",
+      "cannot login",
+      "internet banking locked"
+    ],
+    "overview": "Digital access can fail because of account locks, connectivity, an outdated app or an incorrect login method. Repeated guessing can worsen a lock, and an unexpected lock with unfamiliar activity may require a security review.",
+    "procedure": "In the demo, identify the displayed non-sensitive error and whether it affects the website or app. Use official recovery or verified support for a lock; the assistant does not bypass access controls or ask to view login credentials.",
+    "risk": "LOW"
+  },
+  {
+    "id": "device_binding",
+    "title": "New devices, device binding and biometrics",
+    "category": "digital_banking",
+    "aliases": [
+      "device binding",
+      "new phone",
+      "biometric login",
+      "mobile device",
+      "change handset"
+    ],
+    "overview": "A banking app may associate access with a particular device. Moving to a new phone and changing a registered phone number are different operations; biometric access depends on the app's supported settings and device protections.",
+    "procedure": "Follow the trusted app's device-registration instructions on your own device and review old-device access through verified support. The synthetic agent can explain these steps but never requests screen sharing, remote access or a biometric sample.",
+    "risk": "LOW"
+  },
+  {
+    "id": "notification_settings",
+    "title": "SMS, email and push notifications",
+    "category": "digital_banking",
+    "aliases": [
+      "SMS alerts",
+      "email alerts",
+      "push notifications",
+      "notification settings"
+    ],
+    "overview": "Transaction and service notifications can arrive through different channels and may have separate preferences. Disabling a notification does not stop the underlying transaction or change a payment mandate; delayed alerts do not prove a failed transaction.",
+    "procedure": "The demo profile contains synthetic notification preferences that an agent can explain. Check the actual transaction status in the trusted channel when an alert is delayed, and confirm any notification fees using the configured product schedule.",
+    "risk": "LOW"
+  },
+  {
+    "id": "digital_outage",
+    "title": "Service outages and app maintenance",
+    "category": "digital_banking",
+    "aliases": [
+      "app not loading",
+      "banking outage",
+      "service unavailable",
+      "app crashing"
+    ],
+    "overview": "An unavailable app or portal can reflect a device problem, connectivity issue or service interruption. Do not treat an error page as proof that a payment failed; checking transaction status is a separate task.",
+    "procedure": "Use a trusted connection and the official app, then check the institution's verified service notice before retrying a payment. The synthetic demo does not have live outage telemetry, so the assistant does not invent a restoration estimate.",
+    "risk": "LOW"
+  }
+]

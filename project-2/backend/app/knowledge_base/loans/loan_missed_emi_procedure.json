@@ -1,0 +1,34 @@
+{
+  "id": "KB-loan_missed_emi-procedure",
+  "title": "Missed or late loan installments - support procedure",
+  "category": "loans",
+  "subcategory": "loan_missed_emi",
+  "supported_intents": [
+    "loan_missed_emi"
+  ],
+  "intent": "loan_missed_emi",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "miss EMI",
+    "missed EMI",
+    "late EMI",
+    "unable to pay EMI",
+    "miss one loan EMI"
+  ],
+  "aliases": [
+    "miss EMI",
+    "missed EMI",
+    "late EMI",
+    "unable to pay EMI",
+    "miss one loan EMI"
+  ],
+  "content": "Call Sense Bank's demo process checks the configured due date and late-payment schedule, then refers difficulty cases to an agent. A review may explain available options, but neither a waiver nor restructuring is guaranteed by this assistant.",
+  "customer_content": "Call Sense Bank's demo process checks the configured due date and late-payment schedule, then refers difficulty cases to an agent. A review may explain available options, but neither a waiver nor restructuring is guaranteed by this assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_missed_emi_procedure.json"
+}

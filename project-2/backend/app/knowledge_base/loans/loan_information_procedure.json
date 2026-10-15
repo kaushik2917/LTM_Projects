@@ -1,0 +1,36 @@
+{
+  "id": "KB-loan_information-procedure",
+  "title": "Loan products and application basics - support procedure",
+  "category": "loans",
+  "subcategory": "loan_information",
+  "supported_intents": [
+    "loan_information"
+  ],
+  "intent": "loan_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "personal loan",
+    "home loan",
+    "vehicle loan",
+    "education loan",
+    "gold loan",
+    "business loan"
+  ],
+  "aliases": [
+    "personal loan",
+    "home loan",
+    "vehicle loan",
+    "education loan",
+    "gold loan",
+    "business loan"
+  ],
+  "content": "The synthetic bank uses a configured document and product checklist for a demo enquiry. Specify the loan purpose so the agent can explain the relevant process; do not submit real income records or expect a personalized lending decision.",
+  "customer_content": "The synthetic bank uses a configured document and product checklist for a demo enquiry. Specify the loan purpose so the agent can explain the relevant process; do not submit real income records or expect a personalized lending decision.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_information_procedure.json"
+}

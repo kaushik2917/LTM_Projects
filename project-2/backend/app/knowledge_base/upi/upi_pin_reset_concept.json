@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_pin_reset-concept",
+  "title": "UPI PIN setup and reset - explained",
+  "category": "upi",
+  "subcategory": "upi_pin_reset",
+  "supported_intents": [
+    "upi_pin_reset"
+  ],
+  "intent": "upi_pin_reset",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "UPI PIN reset",
+    "forgot UPI PIN",
+    "change UPI PIN",
+    "UPI PIN generation"
+  ],
+  "aliases": [
+    "UPI PIN reset",
+    "forgot UPI PIN",
+    "change UPI PIN",
+    "UPI PIN generation"
+  ],
+  "content": "A UPI PIN authorizes payments in the relevant app and must remain secret. If forgotten, follow the app's secure reset process; support cannot retrieve or disclose the existing PIN and should not ask you to read verification codes aloud.",
+  "customer_content": "A UPI PIN authorizes payments in the relevant app and must remain secret. If forgotten, follow the app's secure reset process; support cannot retrieve or disclose the existing PIN and should not ask you to read verification codes aloud.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_pin_reset_concept.json"
+}

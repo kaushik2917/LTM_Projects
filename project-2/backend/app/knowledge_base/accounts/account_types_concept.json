@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_types-concept",
+  "title": "Savings, current and salary accounts - explained",
+  "category": "accounts",
+  "subcategory": "account_types",
+  "supported_intents": [
+    "account_types"
+  ],
+  "intent": "account_types",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "account types",
+    "savings account",
+    "current account",
+    "salary account"
+  ],
+  "aliases": [
+    "account types",
+    "savings account",
+    "current account",
+    "salary account"
+  ],
+  "content": "Savings accounts hold personal funds, current accounts support business activity, and salary accounts receive employer payments. Product terms can differ in balance conditions, permitted transactions and available services; a salary label does not guarantee permanent fee exemptions.",
+  "customer_content": "Savings accounts hold personal funds, current accounts support business activity, and salary accounts receive employer payments. Product terms can differ in balance conditions, permitted transactions and available services; a salary label does not guarantee permanent fee exemptions.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_types_concept.json"
+}

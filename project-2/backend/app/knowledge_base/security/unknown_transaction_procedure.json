@@ -1,0 +1,34 @@
+{
+  "id": "KB-unknown_transaction-procedure",
+  "title": "Unrecognized and unauthorized transactions - support procedure",
+  "category": "security",
+  "subcategory": "unknown_transaction",
+  "supported_intents": [
+    "unknown_transaction"
+  ],
+  "intent": "unknown_transaction",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "unknown transaction",
+    "unauthorized",
+    "do not recognize",
+    "don't recognize",
+    "unrecognized payment"
+  ],
+  "aliases": [
+    "unknown transaction",
+    "unauthorized",
+    "do not recognize",
+    "don't recognize",
+    "unrecognized payment"
+  ],
+  "content": "This is a high-priority handoff. The demo agent receives the masked description, amount and known channel, and may simulate blocking a verified synthetic card. Do not share credentials, and use your real bank's verified fraud contact for actual losses.",
+  "customer_content": "This is a high-priority handoff. The demo agent receives the masked description, amount and known channel, and may simulate blocking a verified synthetic card. Do not share credentials, and use your real bank's verified fraud contact for actual losses.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/unknown_transaction_procedure.json"
+}

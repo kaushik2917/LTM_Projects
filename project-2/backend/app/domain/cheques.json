@@ -1,0 +1,84 @@
+﻿[
+  {
+    "id": "cheque_book",
+    "title": "Cheque-book requests and delivery",
+    "category": "cheques",
+    "aliases": [
+      "cheque book",
+      "new cheque book",
+      "cheque book status",
+      "cheque number"
+    ],
+    "overview": "A cheque book contains numbered instruments linked to an account. Requesting a book, tracking dispatch and checking a particular cheque's status are separate tasks; possession of a cheque does not establish that funds have cleared.",
+    "procedure": "The synthetic process verifies the demo profile, checks its account eligibility and records a cheque-book request for review. Delivery status comes from configured records; do not provide a complete account or cheque image in this assistant.",
+    "risk": "LOW"
+  },
+  {
+    "id": "cheque_stop",
+    "title": "Stop-payment and cancellation requests",
+    "category": "cheques",
+    "aliases": [
+      "stop cheque",
+      "cancel cheque",
+      "cheque stop payment"
+    ],
+    "overview": "A stop-payment request asks the bank to prevent payment of a specified cheque where possible. It may not undo a payment already completed and does not necessarily remove the underlying obligation to the payee.",
+    "procedure": "For the synthetic case, an agent reviews the cheque's masked identifier and current status after verification. The assistant records the request for review rather than claiming a real stop instruction succeeded; suspected theft should be flagged urgently.",
+    "risk": "LOW"
+  },
+  {
+    "id": "cheque_clearing",
+    "title": "Cheque deposits, clearing and uncredited cheques",
+    "category": "cheques",
+    "aliases": [
+      "cheque clearing",
+      "cheque deposited",
+      "cheque not credited",
+      "CTS"
+    ],
+    "overview": "Cheque clearing involves processing the deposited instrument and confirming the outcome with the relevant institution. A deposit acknowledgement is not final cleared credit; image-based processing such as CTS does not remove the need for validation.",
+    "procedure": "Keep the deposit acknowledgement, date and non-sensitive amount for review. The demo agent checks the configured clearing status and any return reason; no real clearing deadline or credit guarantee is inferred from the deposit date alone.",
+    "risk": "LOW"
+  },
+  {
+    "id": "cheque_return",
+    "title": "Returned cheques and signature mismatch",
+    "category": "cheques",
+    "aliases": [
+      "cheque bounce",
+      "cheque returned",
+      "signature mismatch",
+      "cheque return reason"
+    ],
+    "overview": "A cheque can be returned for reasons such as a mismatch in required details, an instrument issue or insufficient funds. The actual return reason must come from the bank's record; fees and legal consequences depend on the applicable terms and circumstances.",
+    "procedure": "In a demo review, compare the return reason with the instrument details and ask the issuer to resolve the specific problem. Do not automatically redeposit an unchanged cheque or assume that the assistant can waive charges or provide legal advice.",
+    "risk": "LOW"
+  },
+  {
+    "id": "cheque_validity_positive_pay",
+    "title": "Cheque dates and positive-pay checks",
+    "category": "cheques",
+    "aliases": [
+      "post dated cheque",
+      "stale cheque",
+      "positive pay",
+      "cheque validity"
+    ],
+    "overview": "Post-dated and stale cheques relate to the date on the instrument and its permitted presentment period. Positive pay is a verification process comparing supplied cheque details with the presented instrument; coverage depends on the bank's rules.",
+    "procedure": "For a synthetic enquiry, ask a demo agent to check the configured date and verification requirements before presentment. Exact validity periods, thresholds and penalties must be confirmed from the relevant institution rather than invented by the assistant.",
+    "risk": "LOW"
+  },
+  {
+    "id": "cheque_positive_pay",
+    "title": "Submitting positive-pay cheque details",
+    "category": "cheques",
+    "aliases": [
+      "positive pay submission",
+      "positive pay registration",
+      "confirm cheque details"
+    ],
+    "overview": "Positive pay compares key information about a cheque supplied by the issuer with the instrument presented for payment. It supplements other validation and does not ensure payment if funds or other required conditions are missing.",
+    "procedure": "The demo branch explains the configured submission channel and checks whether a synthetic cheque has a matching record. Real thresholds and required fields must come from the bank's policy; do not upload a real cheque image to this assistant.",
+    "risk": "LOW"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "KB-branch_information-procedure",
+  "title": "Branch locations, hours and holidays - support procedure",
+  "category": "branches",
+  "subcategory": "branch_information",
+  "supported_intents": [
+    "branch_information"
+  ],
+  "intent": "branch_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "branch location",
+    "branch timing",
+    "working days",
+    "opening hours",
+    "holiday",
+    "timings"
+  ],
+  "aliases": [
+    "branch location",
+    "branch timing",
+    "working days",
+    "opening hours",
+    "holiday",
+    "timings"
+  ],
+  "content": "The fictional Central Demo Branch is located at 10 Example Avenue, Demo City and opens Monday to Friday from 9 AM to 4 PM under the configured directory. Holiday and specialist availability must be checked with the demo branch record; these are not real-bank details.",
+  "customer_content": "The fictional Central Demo Branch is located at 10 Example Avenue, Demo City and opens Monday to Friday from 9 AM to 4 PM under the configured directory. Holiday and specialist availability must be checked with the demo branch record; these are not real-bank details.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "branches/branch_information_procedure.json"
+}

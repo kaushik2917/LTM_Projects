@@ -1,0 +1,32 @@
+{
+  "id": "KB-security_education-concept",
+  "title": "Recognizing and preventing banking scams - explained",
+  "category": "security",
+  "subcategory": "security_education",
+  "supported_intents": [
+    "security_education"
+  ],
+  "intent": "security_education",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "how to avoid scams",
+    "what is phishing",
+    "identify fake bank calls",
+    "prevent banking fraud"
+  ],
+  "aliases": [
+    "how to avoid scams",
+    "what is phishing",
+    "identify fake bank calls",
+    "prevent banking fraud"
+  ],
+  "content": "Bank impersonation scams often pressure people to share secrets, install remote-access software or authorize an unexplained payment. Independently verify contact details and use trusted banking channels; legitimate support should not require you to disclose a PIN, OTP, CVV or password.",
+  "customer_content": "Bank impersonation scams often pressure people to share secrets, install remote-access software or authorize an unexplained payment. Independently verify contact details and use trusted banking channels; legitimate support should not require you to disclose a PIN, OTP, CVV or password.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/security_education_concept.json"
+}

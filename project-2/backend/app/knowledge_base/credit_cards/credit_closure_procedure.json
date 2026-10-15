@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_closure-procedure",
+  "title": "Credit-card replacement and closure - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_closure",
+  "supported_intents": [
+    "credit_closure"
+  ],
+  "intent": "credit_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "credit card closure",
+    "close credit card",
+    "credit card replacement",
+    "blocked credit card"
+  ],
+  "aliases": [
+    "credit card closure",
+    "close credit card",
+    "credit card replacement",
+    "blocked credit card"
+  ],
+  "content": "The fictional closure checklist asks a demo agent to review dues, linked mandates and unresolved disputes. A lost or stolen credit card should be reported urgently through the security workflow rather than waiting for ordinary closure review.",
+  "customer_content": "The fictional closure checklist asks a demo agent to review dues, linked mandates and unresolved disputes. A lost or stolen credit card should be reported urgently through the security workflow rather than waiting for ordinary closure review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_closure_procedure.json"
+}

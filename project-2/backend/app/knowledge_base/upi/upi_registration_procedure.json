@@ -1,0 +1,34 @@
+{
+  "id": "KB-upi_registration-procedure",
+  "title": "UPI registration and account linking - support procedure",
+  "category": "upi",
+  "subcategory": "upi_registration",
+  "supported_intents": [
+    "upi_registration"
+  ],
+  "intent": "upi_registration",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI registration",
+    "create UPI ID",
+    "UPI linking",
+    "unlink UPI",
+    "UPI account"
+  ],
+  "aliases": [
+    "UPI registration",
+    "create UPI ID",
+    "UPI linking",
+    "unlink UPI",
+    "UPI account"
+  ],
+  "content": "Use the trusted UPI app's registration and bank-selection screens for the official steps. In the synthetic demo, a reviewer can explain linking or unlinking using fictional records, without collecting a mobile number, card credential or verification code.",
+  "customer_content": "Use the trusted UPI app's registration and bank-selection screens for the official steps. In the synthetic demo, a reviewer can explain linking or unlinking using fictional records, without collecting a mobile number, card credential or verification code.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_registration_procedure.json"
+}

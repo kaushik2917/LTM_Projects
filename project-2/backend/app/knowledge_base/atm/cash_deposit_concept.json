@@ -1,0 +1,32 @@
+{
+  "id": "KB-cash_deposit-concept",
+  "title": "Cash deposit machines and deposit discrepancies - explained",
+  "category": "atm",
+  "subcategory": "cash_deposit",
+  "supported_intents": [
+    "cash_deposit"
+  ],
+  "intent": "cash_deposit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "cash deposit machine",
+    "cash deposit",
+    "cash accepted not credited",
+    "deposit receipt"
+  ],
+  "aliases": [
+    "cash deposit machine",
+    "cash deposit",
+    "cash accepted not credited",
+    "deposit receipt"
+  ],
+  "content": "A cash deposit machine may validate notes and issue a receipt before the credit is fully reflected in the account. Rejected notes and an uncredited accepted deposit are different issues, so retain the receipt and avoid repeated submissions.",
+  "customer_content": "A cash deposit machine may validate notes and issue a receipt before the credit is fully reflected in the account. Rejected notes and an uncredited accepted deposit are different issues, so retain the receipt and avoid repeated submissions.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/cash_deposit_concept.json"
+}

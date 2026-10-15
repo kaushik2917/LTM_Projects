@@ -1,0 +1,32 @@
+{
+  "id": "KB-branch_services-concept",
+  "title": "Appointments, lockers and in-branch services - explained",
+  "category": "branches",
+  "subcategory": "branch_services",
+  "supported_intents": [
+    "branch_services"
+  ],
+  "intent": "branch_services",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "appointment",
+    "locker",
+    "service availability",
+    "branch services"
+  ],
+  "aliases": [
+    "appointment",
+    "locker",
+    "service availability",
+    "branch services"
+  ],
+  "content": "Branch appointments can help with specialist services, while lockers have their own availability, access and rental conditions. A request for information does not reserve a locker or create an appointment.",
+  "customer_content": "Branch appointments can help with specialist services, while lockers have their own availability, access and rental conditions. A request for information does not reserve a locker or create an appointment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "branches/branch_services_concept.json"
+}

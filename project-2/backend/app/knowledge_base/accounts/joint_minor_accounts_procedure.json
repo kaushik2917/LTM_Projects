@@ -1,0 +1,32 @@
+{
+  "id": "KB-joint_minor_accounts-procedure",
+  "title": "Joint, minor and family accounts - support procedure",
+  "category": "accounts",
+  "subcategory": "joint_minor_accounts",
+  "supported_intents": [
+    "joint_minor_accounts"
+  ],
+  "intent": "joint_minor_accounts",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "joint account",
+    "minor account",
+    "guardian",
+    "student account"
+  ],
+  "aliases": [
+    "joint account",
+    "minor account",
+    "guardian",
+    "student account"
+  ],
+  "content": "For the synthetic branch workflow, specify holders, guardian involvement and who may operate the account. A demo agent reviews operating instructions and required documents; changes to holders or guardians need a separate verified review.",
+  "customer_content": "For the synthetic branch workflow, specify holders, guardian involvement and who may operate the account. A demo agent reviews operating instructions and required documents; changes to holders or guardians need a separate verified review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/joint_minor_accounts_procedure.json"
+}

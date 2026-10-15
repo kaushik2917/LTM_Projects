@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_validity_positive_pay-procedure",
+  "title": "Cheque dates and positive-pay checks - support procedure",
+  "category": "cheques",
+  "subcategory": "cheque_validity_positive_pay",
+  "supported_intents": [
+    "cheque_validity_positive_pay"
+  ],
+  "intent": "cheque_validity_positive_pay",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "post dated cheque",
+    "stale cheque",
+    "positive pay",
+    "cheque validity"
+  ],
+  "aliases": [
+    "post dated cheque",
+    "stale cheque",
+    "positive pay",
+    "cheque validity"
+  ],
+  "content": "For a synthetic enquiry, ask a demo agent to check the configured date and verification requirements before presentment. Exact validity periods, thresholds and penalties must be confirmed from the relevant institution rather than invented by the assistant.",
+  "customer_content": "For a synthetic enquiry, ask a demo agent to check the configured date and verification requirements before presentment. Exact validity periods, thresholds and penalties must be confirmed from the relevant institution rather than invented by the assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_validity_positive_pay_procedure.json"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "KB-remote_access_scam-procedure",
+  "title": "Remote-access, screen-sharing and OTP scams - support procedure",
+  "category": "security",
+  "subcategory": "remote_access_scam",
+  "supported_intents": [
+    "remote_access_scam"
+  ],
+  "intent": "remote_access_scam",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "remote access scam",
+    "screen sharing scam",
+    "OTP scam",
+    "PIN scam",
+    "support app scam"
+  ],
+  "aliases": [
+    "remote access scam",
+    "screen sharing scam",
+    "OTP scam",
+    "PIN scam",
+    "support app scam"
+  ],
+  "content": "Use a trusted device or verified contact route to seek urgent support if access may have been exposed. The demo creates a high-priority handoff without collecting software access codes or secrets and does not claim that a real device has been secured.",
+  "customer_content": "Use a trusted device or verified contact route to seek urgent support if access may have been exposed. The demo creates a high-priority handoff without collecting software access codes or secrets and does not claim that a real device has been secured.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/remote_access_scam_procedure.json"
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "branch_information",
+    "title": "Branch locations, hours and holidays",
+    "category": "branches",
+    "aliases": [
+      "branch location",
+      "branch timing",
+      "working days",
+      "opening hours",
+      "holiday",
+      "timings"
+    ],
+    "overview": "Branches can have different opening hours, holiday closures and service availability. A building being open does not establish that every counter service or specialist is available throughout the day. Cash-counter hours and appointment-based service times should be checked separately.",
+    "procedure": "The fictional Central Demo Branch is located at 10 Example Avenue, Demo City and opens Monday to Friday from 9 AM to 4 PM under the configured directory. Holiday and specialist availability must be checked with the demo branch record; these are not real-bank details.",
+    "risk": "LOW"
+  },
+  {
+    "id": "atm_locations",
+    "title": "ATM directory and accessible services",
+    "category": "branches",
+    "aliases": [
+      "ATM location",
+      "nearest ATM",
+      "ATM near me",
+      "accessible ATM"
+    ],
+    "overview": "An ATM directory can identify locations and supported services such as cash withdrawal or deposits. Real-time cash availability and accessibility features may require confirmation; the prototype does not use a customer's live location.",
+    "procedure": "The synthetic directory includes Central Demo ATM at the fictional branch and Riverside Demo ATM at 20 Sample Road. Choose a demo location to review configured services; this is not navigation or a promise about an actual cash machine.",
+    "risk": "LOW"
+  },
+  {
+    "id": "branch_services",
+    "title": "Appointments, lockers and in-branch services",
+    "category": "branches",
+    "aliases": [
+      "appointment",
+      "locker",
+      "service availability",
+      "branch services"
+    ],
+    "overview": "Branch appointments can help with specialist services, while lockers have their own availability, access and rental conditions. A request for information does not reserve a locker or create an appointment.",
+    "procedure": "In the synthetic process, ask the demo branch agent to review the service category and configured availability. No real appointment or locker allotment is made, and unconfigured rental amounts or legal access rules are not supplied.",
+    "risk": "LOW"
+  }
+]

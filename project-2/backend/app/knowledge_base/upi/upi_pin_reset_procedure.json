@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_pin_reset-procedure",
+  "title": "UPI PIN setup and reset - support procedure",
+  "category": "upi",
+  "subcategory": "upi_pin_reset",
+  "supported_intents": [
+    "upi_pin_reset"
+  ],
+  "intent": "upi_pin_reset",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI PIN reset",
+    "forgot UPI PIN",
+    "change UPI PIN",
+    "UPI PIN generation"
+  ],
+  "aliases": [
+    "UPI PIN reset",
+    "forgot UPI PIN",
+    "change UPI PIN",
+    "UPI PIN generation"
+  ],
+  "content": "The demo guidance identifies the reset menu and reminds you to use the trusted app on your own device. A failure during reset should be reviewed through verified support; never enter the UPI PIN or OTP into this prototype.",
+  "customer_content": "The demo guidance identifies the reset menu and reminds you to use the trusted app on your own device. A failure during reset should be reviewed through verified support; never enter the UPI PIN or OTP into this prototype.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_pin_reset_procedure.json"
+}

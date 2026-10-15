@@ -1,0 +1,34 @@
+{
+  "id": "KB-loan_missed_emi-concept",
+  "title": "Missed or late loan installments - explained",
+  "category": "loans",
+  "subcategory": "loan_missed_emi",
+  "supported_intents": [
+    "loan_missed_emi"
+  ],
+  "intent": "loan_missed_emi",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "miss EMI",
+    "missed EMI",
+    "late EMI",
+    "unable to pay EMI",
+    "miss one loan EMI"
+  ],
+  "aliases": [
+    "miss EMI",
+    "missed EMI",
+    "late EMI",
+    "unable to pay EMI",
+    "miss one loan EMI"
+  ],
+  "content": "Missing an EMI can lead to late charges and may affect repayment status under the loan agreement. Repeated missed payments can have further consequences. Contact the lender early rather than assuming a grace period or automatic waiver.",
+  "customer_content": "Missing an EMI can lead to late charges and may affect repayment status under the loan agreement. Repeated missed payments can have further consequences. Contact the lender early rather than assuming a grace period or automatic waiver.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_missed_emi_concept.json"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "KB-loan_payment-procedure",
+  "title": "EMI meaning, calculation and payment dates - support procedure",
+  "category": "loans",
+  "subcategory": "loan_payment",
+  "supported_intents": [
+    "loan_payment"
+  ],
+  "intent": "loan_payment",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "EMI",
+    "equated monthly installment",
+    "loan payment",
+    "installment",
+    "EMI calculation",
+    "EMI date"
+  ],
+  "aliases": [
+    "EMI",
+    "equated monthly installment",
+    "loan payment",
+    "installment",
+    "EMI calculation",
+    "EMI date"
+  ],
+  "content": "For the synthetic loan, verify the demo profile to read its configured installment and due date. General EMI explanations are available without verification, but an exact real repayment calculation needs the actual loan agreement and inputs.",
+  "customer_content": "For the synthetic loan, verify the demo profile to read its configured installment and due date. General EMI explanations are available without verification, but an exact real repayment calculation needs the actual loan agreement and inputs.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_payment_procedure.json"
+}

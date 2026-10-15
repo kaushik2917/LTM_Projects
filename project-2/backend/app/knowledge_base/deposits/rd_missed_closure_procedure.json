@@ -1,0 +1,32 @@
+{
+  "id": "KB-rd_missed_closure-procedure",
+  "title": "Missed RD installments and sweep accounts - support procedure",
+  "category": "deposits",
+  "subcategory": "rd_missed_closure",
+  "supported_intents": [
+    "rd_missed_closure"
+  ],
+  "intent": "rd_missed_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "RD missed installment",
+    "RD closure",
+    "sweep account",
+    "sweep deposit"
+  ],
+  "aliases": [
+    "RD missed installment",
+    "RD closure",
+    "sweep account",
+    "sweep deposit"
+  ],
+  "content": "For a synthetic case, check whether the issue is a missed RD contribution or a sweep movement, then review the relevant product configuration. A demo agent explains closure or restoration options without inventing a penalty or return.",
+  "customer_content": "For a synthetic case, check whether the issue is a missed RD contribution or a sweep movement, then review the relevant product configuration. A demo agent explains closure or restoration options without inventing a penalty or return.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/rd_missed_closure_procedure.json"
+}

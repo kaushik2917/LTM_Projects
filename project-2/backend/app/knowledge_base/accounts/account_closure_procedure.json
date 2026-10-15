@@ -1,0 +1,30 @@
+{
+  "id": "KB-account_closure-procedure",
+  "title": "Closing an account - support procedure",
+  "category": "accounts",
+  "subcategory": "account_closure",
+  "supported_intents": [
+    "account_closure"
+  ],
+  "intent": "account_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "close account",
+    "account closure",
+    "shut account"
+  ],
+  "aliases": [
+    "close account",
+    "account closure",
+    "shut account"
+  ],
+  "content": "For Call Sense Bank demonstration cases, review standing instructions, linked deposits, outstanding charges and pending card transactions with the demo agent. Submit a closure request through the verified workflow and retain its reference; the assistant cannot close real accounts.",
+  "customer_content": "For Call Sense Bank demonstration cases, review standing instructions, linked deposits, outstanding charges and pending card transactions with the demo agent. Submit a closure request through the verified workflow and retain its reference; the assistant cannot close real accounts.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_closure_procedure.json"
+}

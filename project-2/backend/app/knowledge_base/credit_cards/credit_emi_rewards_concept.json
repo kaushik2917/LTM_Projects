@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_emi_rewards-concept",
+  "title": "Credit-card EMI and reward programmes - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_emi_rewards",
+  "supported_intents": [
+    "credit_emi_rewards"
+  ],
+  "intent": "credit_emi_rewards",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "card EMI conversion",
+    "reward points",
+    "reward redemption",
+    "credit card rewards"
+  ],
+  "aliases": [
+    "card EMI conversion",
+    "reward points",
+    "reward redemption",
+    "credit card rewards"
+  ],
+  "content": "Converting an eligible card purchase into installments changes its repayment structure and may involve charges. Reward points follow a separate programme with earning, expiry and redemption rules; not every transaction is necessarily eligible.",
+  "customer_content": "Converting an eligible card purchase into installments changes its repayment structure and may involve charges. Reward points follow a separate programme with earning, expiry and redemption rules; not every transaction is necessarily eligible.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_emi_rewards_concept.json"
+}

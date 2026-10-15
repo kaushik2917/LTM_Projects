@@ -1,0 +1,32 @@
+{
+  "id": "KB-duplicate_transaction-procedure",
+  "title": "Duplicate charges and repeated payments - support procedure",
+  "category": "disputes",
+  "subcategory": "duplicate_transaction",
+  "supported_intents": [
+    "duplicate_transaction"
+  ],
+  "intent": "duplicate_transaction",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "charged twice",
+    "duplicate transaction",
+    "double charged",
+    "paid twice"
+  ],
+  "aliases": [
+    "charged twice",
+    "duplicate transaction",
+    "double charged",
+    "paid twice"
+  ],
+  "content": "The synthetic dispute workflow records the non-sensitive details and checks fictional transaction status after verification. A demo agent reviews the alleged duplicate; a refund is not guaranteed and no real chargeback is submitted by this assistant.",
+  "customer_content": "The synthetic dispute workflow records the non-sensitive details and checks fictional transaction status after verification. A demo agent reviews the alleged duplicate; a refund is not guaranteed and no real chargeback is submitted by this assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/duplicate_transaction_procedure.json"
+}

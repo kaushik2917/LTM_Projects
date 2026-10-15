@@ -1,0 +1,32 @@
+{
+  "id": "KB-personal_details_update-procedure",
+  "title": "Correcting name, birth date and PAN information - support procedure",
+  "category": "accounts",
+  "subcategory": "personal_details_update",
+  "supported_intents": [
+    "personal_details_update"
+  ],
+  "intent": "personal_details_update",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "name correction",
+    "date of birth",
+    "PAN update",
+    "change account type"
+  ],
+  "aliases": [
+    "name correction",
+    "date of birth",
+    "PAN update",
+    "change account type"
+  ],
+  "content": "In a synthetic correction case, identify the field and whether it is a correction or a legal change. The demo branch supplies the appropriate evidence checklist; avoid sharing real PAN or identity values in a call transcript.",
+  "customer_content": "In a synthetic correction case, identify the field and whether it is a correction or a legal change. The demo branch supplies the appropriate evidence checklist; avoid sharing real PAN or identity values in a call transcript.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/personal_details_update_procedure.json"
+}

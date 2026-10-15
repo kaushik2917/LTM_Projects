@@ -1,0 +1,32 @@
+{
+  "id": "KB-deposit_status-procedure",
+  "title": "Specific deposit balances and maturity details - support procedure",
+  "category": "deposits",
+  "subcategory": "deposit_status",
+  "supported_intents": [
+    "deposit_status"
+  ],
+  "intent": "deposit_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "my FD details",
+    "my deposit balance",
+    "my fixed deposit maturity",
+    "my RD details"
+  ],
+  "aliases": [
+    "my FD details",
+    "my deposit balance",
+    "my fixed deposit maturity",
+    "my RD details"
+  ],
+  "content": "Select and verify a fictional demo customer to inspect the adapter's configured FD or RD details. The assistant labels all returned amounts as synthetic and does not claim to calculate an actual premature-closure or maturity settlement.",
+  "customer_content": "Select and verify a fictional demo customer to inspect the adapter's configured FD or RD details. The assistant labels all returned amounts as synthetic and does not claim to calculate an actual premature-closure or maturity settlement.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/deposit_status_procedure.json"
+}

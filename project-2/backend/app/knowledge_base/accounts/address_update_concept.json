@@ -1,0 +1,32 @@
+{
+  "id": "KB-address_update-concept",
+  "title": "Updating an address - explained",
+  "category": "accounts",
+  "subcategory": "address_update",
+  "supported_intents": [
+    "address_update"
+  ],
+  "intent": "address_update",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "address change",
+    "update address",
+    "change my address",
+    "new residence"
+  ],
+  "aliases": [
+    "address change",
+    "update address",
+    "change my address",
+    "new residence"
+  ],
+  "content": "Address changes update the contact record and can affect mailed statements or card delivery. Explaining the process does not require account authentication; viewing or changing the address on a particular customer record does.",
+  "customer_content": "Address changes update the contact record and can affect mailed statements or card delivery. Explaining the process does not require account authentication; viewing or changing the address on a particular customer record does.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/address_update_concept.json"
+}

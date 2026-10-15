@@ -1,0 +1,34 @@
+{
+  "id": "KB-loan_interest-concept",
+  "title": "Fixed and floating loan interest - explained",
+  "category": "loans",
+  "subcategory": "loan_interest",
+  "supported_intents": [
+    "loan_interest"
+  ],
+  "intent": "loan_interest",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "fixed interest",
+    "floating interest",
+    "loan interest",
+    "loan tenure",
+    "loan amount"
+  ],
+  "aliases": [
+    "fixed interest",
+    "floating interest",
+    "loan interest",
+    "loan tenure",
+    "loan amount"
+  ],
+  "content": "A fixed interest arrangement follows its agreed fixed-rate terms, while a floating arrangement can change with its reference and reset rules. Tenure, principal and interest structure together influence repayments; rate changes do not affect every product identically.",
+  "customer_content": "A fixed interest arrangement follows its agreed fixed-rate terms, while a floating arrangement can change with its reference and reset rules. Tenure, principal and interest structure together influence repayments; rate changes do not affect every product identically.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_interest_concept.json"
+}

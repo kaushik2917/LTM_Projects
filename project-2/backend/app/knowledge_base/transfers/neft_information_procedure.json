@@ -1,0 +1,30 @@
+{
+  "id": "KB-neft_information-procedure",
+  "title": "NEFT explained - support procedure",
+  "category": "transfers",
+  "subcategory": "neft_information",
+  "supported_intents": [
+    "neft_information"
+  ],
+  "intent": "neft_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "NEFT",
+    "national electronic funds transfer",
+    "what is NEFT"
+  ],
+  "aliases": [
+    "NEFT",
+    "national electronic funds transfer",
+    "what is NEFT"
+  ],
+  "content": "For a synthetic NEFT enquiry, prepare a fictional beneficiary and explain the requested transfer without executing it. Check the reference and transaction status in the trusted banking channel if a previous transfer is delayed; do not assume a guaranteed credit time.",
+  "customer_content": "For a synthetic NEFT enquiry, prepare a fictional beneficiary and explain the requested transfer without executing it. Check the reference and transaction status in the trusted banking channel if a previous transfer is delayed; do not assume a guaranteed credit time.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/neft_information_procedure.json"
+}

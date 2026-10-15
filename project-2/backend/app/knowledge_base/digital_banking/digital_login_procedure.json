@@ -1,0 +1,34 @@
+{
+  "id": "KB-digital_login-procedure",
+  "title": "Locked accounts and login problems - support procedure",
+  "category": "digital_banking",
+  "subcategory": "digital_login",
+  "supported_intents": [
+    "digital_login"
+  ],
+  "intent": "digital_login",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "login issue",
+    "account locked",
+    "app login problem",
+    "cannot login",
+    "internet banking locked"
+  ],
+  "aliases": [
+    "login issue",
+    "account locked",
+    "app login problem",
+    "cannot login",
+    "internet banking locked"
+  ],
+  "content": "In the demo, identify the displayed non-sensitive error and whether it affects the website or app. Use official recovery or verified support for a lock; the assistant does not bypass access controls or ask to view login credentials.",
+  "customer_content": "In the demo, identify the displayed non-sensitive error and whether it affects the website or app. Use official recovery or verified support for a lock; the assistant does not bypass access controls or ask to view login credentials.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/digital_login_procedure.json"
+}

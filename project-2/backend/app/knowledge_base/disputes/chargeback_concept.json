@@ -1,0 +1,32 @@
+{
+  "id": "KB-chargeback-concept",
+  "title": "Chargebacks and card disputes - explained",
+  "category": "disputes",
+  "subcategory": "chargeback",
+  "supported_intents": [
+    "chargeback"
+  ],
+  "intent": "chargeback",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "chargeback",
+    "card dispute",
+    "transaction dispute",
+    "what is chargeback"
+  ],
+  "aliases": [
+    "chargeback",
+    "card dispute",
+    "transaction dispute",
+    "what is chargeback"
+  ],
+  "content": "A chargeback is a dispute mechanism used under applicable card-network and issuer processes. It is not the same as a merchant voluntarily refunding a payment and does not guarantee that a disputed amount will be returned.",
+  "customer_content": "A chargeback is a dispute mechanism used under applicable card-network and issuer processes. It is not the same as a merchant voluntarily refunding a payment and does not guarantee that a disputed amount will be returned.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/chargeback_concept.json"
+}

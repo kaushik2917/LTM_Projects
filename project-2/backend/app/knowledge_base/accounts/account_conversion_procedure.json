@@ -1,0 +1,30 @@
+{
+  "id": "KB-account_conversion-procedure",
+  "title": "Converting an account product - support procedure",
+  "category": "accounts",
+  "subcategory": "account_conversion",
+  "supported_intents": [
+    "account_conversion"
+  ],
+  "intent": "account_conversion",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "convert savings account",
+    "change salary account",
+    "account conversion"
+  ],
+  "aliases": [
+    "convert savings account",
+    "change salary account",
+    "account conversion"
+  ],
+  "content": "For a synthetic conversion, the demo agent compares the current and requested product schedules and identifies affected services. The assistant explains the comparison but cannot convert a real account or guarantee retention of existing benefits.",
+  "customer_content": "For a synthetic conversion, the demo agent compares the current and requested product schedules and identifies affected services. The assistant explains the comparison but cannot convert a real account or guarantee retention of existing benefits.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_conversion_procedure.json"
+}

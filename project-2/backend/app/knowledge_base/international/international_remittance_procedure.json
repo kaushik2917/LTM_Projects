@@ -1,0 +1,34 @@
+{
+  "id": "KB-international_remittance-procedure",
+  "title": "International transfers and SWIFT - support procedure",
+  "category": "international",
+  "subcategory": "international_remittance",
+  "supported_intents": [
+    "international_remittance"
+  ],
+  "intent": "international_remittance",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "international transfer",
+    "SWIFT",
+    "remittance",
+    "foreign currency",
+    "SWIFT code"
+  ],
+  "aliases": [
+    "international transfer",
+    "SWIFT",
+    "remittance",
+    "foreign currency",
+    "SWIFT code"
+  ],
+  "content": "For a synthetic enquiry, specify the intended currency and general destination without real account details. A demo agent explains the required review; rates, fees, documentation and restrictions must come from current configured or authoritative terms, never an invented quote.",
+  "customer_content": "For a synthetic enquiry, specify the intended currency and general destination without real account details. A demo agent explains the required review; rates, fees, documentation and restrictions must come from current configured or authoritative terms, never an invented quote.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "international/international_remittance_procedure.json"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "KB-upi_registration-concept",
+  "title": "UPI registration and account linking - explained",
+  "category": "upi",
+  "subcategory": "upi_registration",
+  "supported_intents": [
+    "upi_registration"
+  ],
+  "intent": "upi_registration",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "UPI registration",
+    "create UPI ID",
+    "UPI linking",
+    "unlink UPI",
+    "UPI account"
+  ],
+  "aliases": [
+    "UPI registration",
+    "create UPI ID",
+    "UPI linking",
+    "unlink UPI",
+    "UPI account"
+  ],
+  "content": "UPI setup associates a supported app and payment identifier with an eligible account through the app's secure registration process. Linking an account and changing the primary account are distinct actions; device or mobile-record mismatches can interrupt setup.",
+  "customer_content": "UPI setup associates a supported app and payment identifier with an eligible account through the app's secure registration process. Linking an account and changing the primary account are distinct actions; device or mobile-record mismatches can interrupt setup.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_registration_concept.json"
+}

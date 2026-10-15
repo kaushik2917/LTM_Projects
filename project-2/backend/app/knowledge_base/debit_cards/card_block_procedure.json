@@ -1,0 +1,34 @@
+{
+  "id": "KB-card_block-procedure",
+  "title": "Lost or stolen cards and blocking - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_block",
+  "supported_intents": [
+    "card_block"
+  ],
+  "intent": "card_block",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "lost card",
+    "stolen card",
+    "my card was stolen",
+    "block card",
+    "temporary card block"
+  ],
+  "aliases": [
+    "lost card",
+    "stolen card",
+    "my card was stolen",
+    "block card",
+    "temporary card block"
+  ],
+  "content": "This is a high-priority support case. After demo verification, the dashboard can simulate blocking the selected synthetic card; the assistant records the step in the human handoff. No real card is blocked and any unrecognized activity needs investigation.",
+  "customer_content": "This is a high-priority support case. After demo verification, the dashboard can simulate blocking the selected synthetic card; the assistant records the step in the human handoff. No real card is blocked and any unrecognized activity needs investigation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_block_procedure.json"
+}

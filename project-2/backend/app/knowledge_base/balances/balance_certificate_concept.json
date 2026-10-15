@@ -1,0 +1,30 @@
+{
+  "id": "KB-balance_certificate-concept",
+  "title": "Balance certificates and dated confirmations - explained",
+  "category": "balances",
+  "subcategory": "balance_certificate",
+  "supported_intents": [
+    "balance_certificate"
+  ],
+  "intent": "balance_certificate",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "balance certificate",
+    "dated balance confirmation",
+    "proof of funds"
+  ],
+  "aliases": [
+    "balance certificate",
+    "dated balance confirmation",
+    "proof of funds"
+  ],
+  "content": "A balance certificate confirms a balance as of a stated date under the issuer's process. It differs from a transaction statement and may not show funds that became available later or all obligations attached to the account.",
+  "customer_content": "A balance certificate confirms a balance as of a stated date under the issuer's process. It differs from a transaction statement and may not show funds that became available later or all obligations attached to the account.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/balance_certificate_concept.json"
+}

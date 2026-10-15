@@ -1,0 +1,32 @@
+{
+  "id": "KB-complaint_status-concept",
+  "title": "Complaint references and follow-up - explained",
+  "category": "disputes",
+  "subcategory": "complaint_status",
+  "supported_intents": [
+    "complaint_status"
+  ],
+  "intent": "complaint_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "complaint status",
+    "complaint reference",
+    "follow up complaint",
+    "case progress"
+  ],
+  "aliases": [
+    "complaint status",
+    "complaint reference",
+    "follow up complaint",
+    "case progress"
+  ],
+  "content": "A complaint reference identifies a case, while its current status describes the review stage. Acknowledgement does not necessarily mean the underlying problem is resolved; additional information may be needed.",
+  "customer_content": "A complaint reference identifies a case, while its current status describes the review stage. Acknowledgement does not necessarily mean the underlying problem is resolved; additional information may be needed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/complaint_status_concept.json"
+}

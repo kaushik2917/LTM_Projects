@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_score-procedure",
+  "title": "Credit scores and credit-report concepts - support procedure",
+  "category": "education",
+  "subcategory": "credit_score",
+  "supported_intents": [
+    "credit_score"
+  ],
+  "intent": "credit_score",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "credit score",
+    "credit report",
+    "credit rating",
+    "improve score"
+  ],
+  "aliases": [
+    "credit score",
+    "credit report",
+    "credit rating",
+    "improve score"
+  ],
+  "content": "For a general enquiry, review your report through its authorized provider and use its correction process for suspected errors. The demo assistant does not access real reports, promise a score increase or recommend personalized borrowing decisions.",
+  "customer_content": "For a general enquiry, review your report through its authorized provider and use its correction process for suspected errors. The demo assistant does not access real reports, promise a score increase or recommend personalized borrowing decisions.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "education/credit_score_procedure.json"
+}

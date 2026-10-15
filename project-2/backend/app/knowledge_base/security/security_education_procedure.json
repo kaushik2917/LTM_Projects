@@ -1,0 +1,32 @@
+{
+  "id": "KB-security_education-procedure",
+  "title": "Recognizing and preventing banking scams - support procedure",
+  "category": "security",
+  "subcategory": "security_education",
+  "supported_intents": [
+    "security_education"
+  ],
+  "intent": "security_education",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "how to avoid scams",
+    "what is phishing",
+    "identify fake bank calls",
+    "prevent banking fraud"
+  ],
+  "aliases": [
+    "how to avoid scams",
+    "what is phishing",
+    "identify fake bank calls",
+    "prevent banking fraud"
+  ],
+  "content": "For preventive guidance, review the warning signs and stop before taking an unfamiliar action. If money, credentials or access have already been exposed, say so without repeating the secret so the assistant can create an urgent human-support handoff.",
+  "customer_content": "For preventive guidance, review the warning signs and stop before taking an unfamiliar action. If money, credentials or access have already been exposed, say so without repeating the secret so the assistant can create an urgent human-support handoff.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/security_education_procedure.json"
+}

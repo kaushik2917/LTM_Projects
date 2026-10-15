@@ -1,0 +1,30 @@
+{
+  "id": "KB-imps_information-procedure",
+  "title": "IMPS explained - support procedure",
+  "category": "transfers",
+  "subcategory": "imps_information",
+  "supported_intents": [
+    "imps_information"
+  ],
+  "intent": "imps_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "IMPS",
+    "immediate payment service",
+    "what is IMPS"
+  ],
+  "aliases": [
+    "IMPS",
+    "immediate payment service",
+    "what is IMPS"
+  ],
+  "content": "In the demo, inspect the configured IMPS record and reference after verification. If the recipient has not received funds, compare the status shown by the trusted channel and raise a review rather than repeatedly sending the payment.",
+  "customer_content": "In the demo, inspect the configured IMPS record and reference after verification. If the recipient has not received funds, compare the status shown by the trusted channel and raise a review rather than repeatedly sending the payment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/imps_information_procedure.json"
+}

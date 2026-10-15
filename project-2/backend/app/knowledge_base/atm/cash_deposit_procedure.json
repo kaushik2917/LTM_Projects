@@ -1,0 +1,32 @@
+{
+  "id": "KB-cash_deposit-procedure",
+  "title": "Cash deposit machines and deposit discrepancies - support procedure",
+  "category": "atm",
+  "subcategory": "cash_deposit",
+  "supported_intents": [
+    "cash_deposit"
+  ],
+  "intent": "cash_deposit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "cash deposit machine",
+    "cash deposit",
+    "cash accepted not credited",
+    "deposit receipt"
+  ],
+  "aliases": [
+    "cash deposit machine",
+    "cash deposit",
+    "cash accepted not credited",
+    "deposit receipt"
+  ],
+  "content": "In the demo case, record the location, time, amount tendered and amount accepted without exposing an account number. A demo agent compares the synthetic deposit record and opens a reconciliation case if the figures do not agree.",
+  "customer_content": "In the demo case, record the location, time, amount tendered and amount accepted without exposing an account number. A demo agent compares the synthetic deposit record and opens a reconciliation case if the figures do not agree.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/cash_deposit_procedure.json"
+}

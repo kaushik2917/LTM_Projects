@@ -1,0 +1,32 @@
+{
+  "id": "KB-deposit_status-concept",
+  "title": "Specific deposit balances and maturity details - explained",
+  "category": "deposits",
+  "subcategory": "deposit_status",
+  "supported_intents": [
+    "deposit_status"
+  ],
+  "intent": "deposit_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "my FD details",
+    "my deposit balance",
+    "my fixed deposit maturity",
+    "my RD details"
+  ],
+  "aliases": [
+    "my FD details",
+    "my deposit balance",
+    "my fixed deposit maturity",
+    "my RD details"
+  ],
+  "content": "A deposit record identifies the booked principal, product terms and maturity instruction for a particular holding. General product rates may not match the rate agreed for an older booking, so use that deposit's record for account-specific questions.",
+  "customer_content": "A deposit record identifies the booked principal, product terms and maturity instruction for a particular holding. General product rates may not match the rate agreed for an older booking, so use that deposit's record for account-specific questions.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/deposit_status_concept.json"
+}

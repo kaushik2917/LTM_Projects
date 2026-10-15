@@ -1,0 +1,32 @@
+{
+  "id": "KB-failed_transaction-concept",
+  "title": "Failed or debited-but-unsuccessful payments - explained",
+  "category": "disputes",
+  "subcategory": "failed_transaction",
+  "supported_intents": [
+    "failed_transaction"
+  ],
+  "intent": "failed_transaction",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "payment failed",
+    "failed transaction",
+    "money deducted payment failed",
+    "payment did not go through"
+  ],
+  "aliases": [
+    "payment failed",
+    "failed transaction",
+    "money deducted payment failed",
+    "payment did not go through"
+  ],
+  "content": "A failed payment can leave no debit, a pending debit or an entry later reversed. Determine the channel and final displayed status before retrying, since repeated attempts can create additional authorizations or duplicate payments.",
+  "customer_content": "A failed payment can leave no debit, a pending debit or an entry later reversed. Determine the channel and final displayed status before retrying, since repeated attempts can create additional authorizations or duplicate payments.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/failed_transaction_concept.json"
+}

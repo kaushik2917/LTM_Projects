@@ -1,0 +1,34 @@
+{
+  "id": "KB-upi_information-concept",
+  "title": "UPI concepts, IDs and QR payments - explained",
+  "category": "upi",
+  "subcategory": "upi_information",
+  "supported_intents": [
+    "upi_information"
+  ],
+  "intent": "upi_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "what is UPI",
+    "UPI ID",
+    "virtual payment address",
+    "QR payment",
+    "collect request"
+  ],
+  "aliases": [
+    "what is UPI",
+    "UPI ID",
+    "virtual payment address",
+    "QR payment",
+    "collect request"
+  ],
+  "content": "UPI is a payment system that can use an identifier or QR code to route a payment between linked accounts. A collect request asks you to authorize a payment; receiving money does not require telling another person your PIN.",
+  "customer_content": "UPI is a payment system that can use an identifier or QR code to route a payment between linked accounts. A collect request asks you to authorize a payment; receiving money does not require telling another person your PIN.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_information_concept.json"
+}

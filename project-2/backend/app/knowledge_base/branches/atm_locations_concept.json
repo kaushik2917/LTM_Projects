@@ -1,0 +1,32 @@
+{
+  "id": "KB-atm_locations-concept",
+  "title": "ATM directory and accessible services - explained",
+  "category": "branches",
+  "subcategory": "atm_locations",
+  "supported_intents": [
+    "atm_locations"
+  ],
+  "intent": "atm_locations",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "ATM location",
+    "nearest ATM",
+    "ATM near me",
+    "accessible ATM"
+  ],
+  "aliases": [
+    "ATM location",
+    "nearest ATM",
+    "ATM near me",
+    "accessible ATM"
+  ],
+  "content": "An ATM directory can identify locations and supported services such as cash withdrawal or deposits. Real-time cash availability and accessibility features may require confirmation; the prototype does not use a customer's live location.",
+  "customer_content": "An ATM directory can identify locations and supported services such as cash withdrawal or deposits. Real-time cash availability and accessibility features may require confirmation; the prototype does not use a customer's live location.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "branches/atm_locations_concept.json"
+}

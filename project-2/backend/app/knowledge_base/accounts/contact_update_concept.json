@@ -1,0 +1,32 @@
+{
+  "id": "KB-contact_update-concept",
+  "title": "Updating phone and email contact details - explained",
+  "category": "accounts",
+  "subcategory": "contact_update",
+  "supported_intents": [
+    "contact_update"
+  ],
+  "intent": "contact_update",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "phone number update",
+    "email update",
+    "change mobile number",
+    "new phone number"
+  ],
+  "aliases": [
+    "phone number update",
+    "email update",
+    "change mobile number",
+    "new phone number"
+  ],
+  "content": "Changing a registered phone number or email can affect alerts, account recovery and service messages. Losing access to the old contact method is a separate recovery problem and may require additional review.",
+  "customer_content": "Changing a registered phone number or email can affect alerts, account recovery and service messages. Losing access to the old contact method is a separate recovery problem and may require additional review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/contact_update_concept.json"
+}

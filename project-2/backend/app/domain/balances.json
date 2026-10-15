@@ -1,0 +1,88 @@
+﻿[
+  {
+    "id": "account_balance_information",
+    "title": "Available and ledger balances",
+    "category": "balances",
+    "aliases": [
+      "account balance",
+      "available balance",
+      "ledger balance",
+      "how much money",
+      "my balance"
+    ],
+    "overview": "Available balance is the amount currently usable, while ledger balance reflects posted entries. Holds, uncleared deposits or pending authorizations can explain a difference. An explanation is general information; reading a specific customer's balance requires verification.",
+    "procedure": "Select a fictional demo customer and complete the non-sensitive demo challenge before requesting a balance. The adapter returns only that profile's configured synthetic balances and labels them as demo data; it cannot query a real bank.",
+    "risk": "LOW"
+  },
+  {
+    "id": "balance_holds",
+    "title": "Holds, liens and uncleared funds",
+    "category": "balances",
+    "aliases": [
+      "hold amount",
+      "lien",
+      "uncleared balance",
+      "money on hold"
+    ],
+    "overview": "A hold can reserve funds pending settlement, and a lien can restrict funds for an obligation or other authorized reason. Uncleared funds represent deposits not yet available. These labels do not reveal the underlying reason without account review.",
+    "procedure": "Ask a demo agent to inspect the synthetic hold description and associated product. Do not retry payments solely because the ledger balance appears sufficient; removing a real restriction requires the institution's authorized process.",
+    "risk": "LOW"
+  },
+  {
+    "id": "statement_download",
+    "title": "Statements and statement periods",
+    "category": "balances",
+    "aliases": [
+      "statement download",
+      "monthly statement",
+      "annual statement",
+      "mini statement",
+      "bank statement"
+    ],
+    "overview": "A statement summarizes entries over a selected period, while a mini statement shows a limited recent set. Monthly, annual and custom-period statements can differ in scope; transaction posting dates can differ from purchase dates.",
+    "procedure": "In the synthetic demo, verify the selected profile, choose its account and requested period, then review the configured transaction list. This prototype displays demonstration records only and does not produce an official bank statement.",
+    "risk": "LOW"
+  },
+  {
+    "id": "statement_delivery",
+    "title": "Missing or protected statements",
+    "category": "balances",
+    "aliases": [
+      "email statement",
+      "statement not received",
+      "statement password",
+      "protected statement"
+    ],
+    "overview": "Statement delivery depends on the selected delivery channel and correct contact details. Protected statement files may use an institution-defined access format; support should explain the official instructions rather than request or reveal a customer's secret.",
+    "procedure": "For the demo, check the statement period and notification preference before raising a delivery case. Consult the institution's published file-opening instructions if a statement is protected; never send the file password or private statement to this assistant.",
+    "risk": "LOW"
+  },
+  {
+    "id": "transaction_history",
+    "title": "Recent transactions and transaction search",
+    "category": "balances",
+    "aliases": [
+      "latest five transactions",
+      "recent transactions",
+      "transaction history",
+      "transaction search",
+      "last transactions"
+    ],
+    "overview": "Transaction history lists completed or pending activity for a selected product. Merchant names can differ from a shop's trading name, and a pending authorization is not necessarily a completed debit. An unknown entry should be reviewed promptly.",
+    "procedure": "After demo verification, the assistant can read the latest five configured synthetic transactions or explain their status. Search by non-sensitive date, amount or merchant description; a real dispute must use a verified banking channel.",
+    "risk": "LOW"
+  },
+  {
+    "id": "balance_certificate",
+    "title": "Balance certificates and dated confirmations",
+    "category": "balances",
+    "aliases": [
+      "balance certificate",
+      "dated balance confirmation",
+      "proof of funds"
+    ],
+    "overview": "A balance certificate confirms a balance as of a stated date under the issuer's process. It differs from a transaction statement and may not show funds that became available later or all obligations attached to the account.",
+    "procedure": "The demo branch can explain the certificate request after profile verification and selection of the relevant account and date. This research system does not issue official proof of funds or documents suitable for legal, visa or lending use.",
+    "risk": "LOW"
+  }
+]

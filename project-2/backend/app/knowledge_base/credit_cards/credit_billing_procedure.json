@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_billing-procedure",
+  "title": "Billing cycles, statement and due dates - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_billing",
+  "supported_intents": [
+    "credit_billing"
+  ],
+  "intent": "credit_billing",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "billing cycle",
+    "statement date",
+    "payment due date",
+    "credit card bill"
+  ],
+  "aliases": [
+    "billing cycle",
+    "statement date",
+    "payment due date",
+    "credit card bill"
+  ],
+  "content": "Use the synthetic card statement to check the cycle and due date after profile verification. Confirm payment posting rather than relying only on a transfer receipt; real deadlines must come from the issuer's current statement.",
+  "customer_content": "Use the synthetic card statement to check the cycle and due date after profile verification. Confirm payment posting rather than relying only on a transfer receipt; real deadlines must come from the issuer's current statement.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_billing_procedure.json"
+}

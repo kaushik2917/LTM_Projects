@@ -1,0 +1,32 @@
+{
+  "id": "KB-complaint_status-procedure",
+  "title": "Complaint references and follow-up - support procedure",
+  "category": "disputes",
+  "subcategory": "complaint_status",
+  "supported_intents": [
+    "complaint_status"
+  ],
+  "intent": "complaint_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "complaint status",
+    "complaint reference",
+    "follow up complaint",
+    "case progress"
+  ],
+  "aliases": [
+    "complaint status",
+    "complaint reference",
+    "follow up complaint",
+    "case progress"
+  ],
+  "content": "For a synthetic case, use the agent queue to inspect Open, Needs Follow-up, Escalated Further or Resolved status. Only permitted non-sensitive information should be added; real escalation deadlines must be confirmed with the responsible institution.",
+  "customer_content": "For a synthetic case, use the agent queue to inspect Open, Needs Follow-up, Escalated Further or Resolved status. Only permitted non-sensitive information should be added; real escalation deadlines must be confirmed with the responsible institution.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/complaint_status_procedure.json"
+}

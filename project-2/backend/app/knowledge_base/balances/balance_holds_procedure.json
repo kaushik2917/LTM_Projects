@@ -1,0 +1,32 @@
+{
+  "id": "KB-balance_holds-procedure",
+  "title": "Holds, liens and uncleared funds - support procedure",
+  "category": "balances",
+  "subcategory": "balance_holds",
+  "supported_intents": [
+    "balance_holds"
+  ],
+  "intent": "balance_holds",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "hold amount",
+    "lien",
+    "uncleared balance",
+    "money on hold"
+  ],
+  "aliases": [
+    "hold amount",
+    "lien",
+    "uncleared balance",
+    "money on hold"
+  ],
+  "content": "Ask a demo agent to inspect the synthetic hold description and associated product. Do not retry payments solely because the ledger balance appears sufficient; removing a real restriction requires the institution's authorized process.",
+  "customer_content": "Ask a demo agent to inspect the synthetic hold description and associated product. Do not retry payments solely because the ledger balance appears sufficient; removing a real restriction requires the institution's authorized process.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/balance_holds_procedure.json"
+}

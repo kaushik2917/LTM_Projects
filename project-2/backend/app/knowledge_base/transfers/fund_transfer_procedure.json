@@ -1,0 +1,34 @@
+{
+  "id": "KB-fund_transfer-procedure",
+  "title": "Transfer instructions and scheduled transfers - support procedure",
+  "category": "transfers",
+  "subcategory": "fund_transfer",
+  "supported_intents": [
+    "fund_transfer"
+  ],
+  "intent": "fund_transfer",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "send money",
+    "transfer money",
+    "bank transfer",
+    "internal transfer",
+    "scheduled transfer"
+  ],
+  "aliases": [
+    "send money",
+    "transfer money",
+    "bank transfer",
+    "internal transfer",
+    "scheduled transfer"
+  ],
+  "content": "The assistant can explain the synthetic transfer workflow and inspect a verified demo transfer record. It cannot execute real banking transactions. A request to move actual funds must use the bank's authenticated channel and applicable confirmation process.",
+  "customer_content": "The assistant can explain the synthetic transfer workflow and inspect a verified demo transfer record. It cannot execute real banking transactions. A request to move actual funds must use the bank's authenticated channel and applicable confirmation process.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/fund_transfer_procedure.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_opening-concept",
+  "title": "Opening a bank account - explained",
+  "category": "accounts",
+  "subcategory": "account_opening",
+  "supported_intents": [
+    "account_opening"
+  ],
+  "intent": "account_opening",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "open account",
+    "account opening",
+    "start savings",
+    "new bank account"
+  ],
+  "aliases": [
+    "open account",
+    "account opening",
+    "start savings",
+    "new bank account"
+  ],
+  "content": "Opening an account establishes a banking relationship after identity and product checks. Choose an account for personal saving or business receipts before applying; opening documents and operating instructions depend on that choice.",
+  "customer_content": "Opening an account establishes a banking relationship after identity and product checks. Choose an account for personal saving or business receipts before applying; opening documents and operating instructions depend on that choice.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_opening_concept.json"
+}

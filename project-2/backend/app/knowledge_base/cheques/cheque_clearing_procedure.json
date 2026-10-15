@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_clearing-procedure",
+  "title": "Cheque deposits, clearing and uncredited cheques - support procedure",
+  "category": "cheques",
+  "subcategory": "cheque_clearing",
+  "supported_intents": [
+    "cheque_clearing"
+  ],
+  "intent": "cheque_clearing",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "cheque clearing",
+    "cheque deposited",
+    "cheque not credited",
+    "CTS"
+  ],
+  "aliases": [
+    "cheque clearing",
+    "cheque deposited",
+    "cheque not credited",
+    "CTS"
+  ],
+  "content": "Keep the deposit acknowledgement, date and non-sensitive amount for review. The demo agent checks the configured clearing status and any return reason; no real clearing deadline or credit guarantee is inferred from the deposit date alone.",
+  "customer_content": "Keep the deposit acknowledgement, date and non-sensitive amount for review. The demo agent checks the configured clearing status and any return reason; no real clearing deadline or credit guarantee is inferred from the deposit date alone.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_clearing_procedure.json"
+}

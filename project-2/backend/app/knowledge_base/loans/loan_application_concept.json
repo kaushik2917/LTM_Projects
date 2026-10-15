@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_application-concept",
+  "title": "Loan eligibility, documents and status - explained",
+  "category": "loans",
+  "subcategory": "loan_application",
+  "supported_intents": [
+    "loan_application"
+  ],
+  "intent": "loan_application",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "loan eligibility",
+    "loan documents",
+    "loan application",
+    "loan application status"
+  ],
+  "aliases": [
+    "loan eligibility",
+    "loan documents",
+    "loan application",
+    "loan application status"
+  ],
+  "content": "A loan application is assessed using the lender's product rules and supplied information. Document submission, preliminary screening and approval are distinct stages; an indicative amount is not an unconditional lending commitment.",
+  "customer_content": "A loan application is assessed using the lender's product rules and supplied information. Document submission, preliminary screening and approval are distinct stages; an indicative amount is not an unconditional lending commitment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_application_concept.json"
+}

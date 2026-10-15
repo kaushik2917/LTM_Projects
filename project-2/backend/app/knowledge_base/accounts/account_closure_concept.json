@@ -1,0 +1,30 @@
+{
+  "id": "KB-account_closure-concept",
+  "title": "Closing an account - explained",
+  "category": "accounts",
+  "subcategory": "account_closure",
+  "supported_intents": [
+    "account_closure"
+  ],
+  "intent": "account_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "close account",
+    "account closure",
+    "shut account"
+  ],
+  "aliases": [
+    "close account",
+    "account closure",
+    "shut account"
+  ],
+  "content": "Closing an account may require settling pending entries, moving recurring payments and returning or disabling linked instruments. A zero displayed balance alone does not establish that all obligations or holds have cleared.",
+  "customer_content": "Closing an account may require settling pending entries, moving recurring payments and returning or disabling linked instruments. A zero displayed balance alone does not establish that all obligations or holds have cleared.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_closure_concept.json"
+}

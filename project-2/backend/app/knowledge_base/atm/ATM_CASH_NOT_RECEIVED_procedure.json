@@ -1,0 +1,36 @@
+{
+  "id": "KB-ATM_CASH_NOT_RECEIVED-procedure",
+  "title": "ATM debit with missing or partial cash - support procedure",
+  "category": "atm",
+  "subcategory": "ATM_CASH_NOT_RECEIVED",
+  "supported_intents": [
+    "ATM_CASH_NOT_RECEIVED"
+  ],
+  "intent": "ATM_CASH_NOT_RECEIVED",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "cash never came",
+    "cash not dispensed",
+    "ATM deducted money",
+    "cash did not come out",
+    "partial cash",
+    "no cash"
+  ],
+  "aliases": [
+    "cash never came",
+    "cash not dispensed",
+    "ATM deducted money",
+    "cash did not come out",
+    "partial cash",
+    "no cash"
+  ],
+  "content": "For the Call Sense Bank demo, record the non-sensitive amount, ATM location and cash actually received, then create a cash-dispute case. An agent reviews the synthetic entry; neither an immediate refund nor a fixed resolution time is guaranteed.",
+  "customer_content": "Keep the amount, ATM location, time and any transaction reference for a cash-dispute request. Check the account entry through a secure channel and report missing or partial cash to support. A refund or fixed resolution time cannot be guaranteed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/ATM_CASH_NOT_RECEIVED_procedure.json"
+}

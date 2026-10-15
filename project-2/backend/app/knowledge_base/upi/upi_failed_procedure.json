@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_failed-procedure",
+  "title": "Failed UPI payments and debited amounts - support procedure",
+  "category": "upi",
+  "subcategory": "upi_failed",
+  "supported_intents": [
+    "upi_failed"
+  ],
+  "intent": "upi_failed",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI failed",
+    "failed UPI payment",
+    "UPI debited",
+    "money deducted UPI failed"
+  ],
+  "aliases": [
+    "UPI failed",
+    "failed UPI payment",
+    "UPI debited",
+    "money deducted UPI failed"
+  ],
+  "content": "For the fictional bank, note failed or pending status, approximate amount and date, then check the synthetic transaction history after verification. If the receiving party disputes receipt, an agent reviews the reference; refunds and timelines are not guaranteed.",
+  "customer_content": "For the fictional bank, note failed or pending status, approximate amount and date, then check the synthetic transaction history after verification. If the receiving party disputes receipt, an agent reviews the reference; refunds and timelines are not guaranteed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_failed_procedure.json"
+}

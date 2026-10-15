@@ -1,0 +1,135 @@
+﻿[
+  {
+    "id": "loan_information",
+    "title": "Loan products and application basics",
+    "category": "loans",
+    "aliases": [
+      "personal loan",
+      "home loan",
+      "vehicle loan",
+      "education loan",
+      "gold loan",
+      "business loan"
+    ],
+    "overview": "Loans can fund personal needs, homes, vehicles, education or business purposes, with product-specific assessment and security requirements. A general product explanation cannot establish a person's eligibility, approval amount or suitability.",
+    "procedure": "The synthetic bank uses a configured document and product checklist for a demo enquiry. Specify the loan purpose so the agent can explain the relevant process; do not submit real income records or expect a personalized lending decision.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_application",
+    "title": "Loan eligibility, documents and status",
+    "category": "loans",
+    "aliases": [
+      "loan eligibility",
+      "loan documents",
+      "loan application",
+      "loan application status"
+    ],
+    "overview": "A loan application is assessed using the lender's product rules and supplied information. Document submission, preliminary screening and approval are distinct stages; an indicative amount is not an unconditional lending commitment.",
+    "procedure": "For a demo application, choose the fictional loan type and ask the agent which configured documents and review steps apply. Specific synthetic application status requires demo verification; real approvals must come from the lending institution.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_interest",
+    "title": "Fixed and floating loan interest",
+    "category": "loans",
+    "aliases": [
+      "fixed interest",
+      "floating interest",
+      "loan interest",
+      "loan tenure",
+      "loan amount"
+    ],
+    "overview": "A fixed interest arrangement follows its agreed fixed-rate terms, while a floating arrangement can change with its reference and reset rules. Tenure, principal and interest structure together influence repayments; rate changes do not affect every product identically.",
+    "procedure": "Review the synthetic loan schedule for its configured interest type and reset description. Ask an agent to explain the effect on the demonstration schedule; the assistant will not invent a rate or recommend a loan based on personal finances.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_payment",
+    "title": "EMI meaning, calculation and payment dates",
+    "category": "loans",
+    "aliases": [
+      "EMI",
+      "equated monthly installment",
+      "loan payment",
+      "installment",
+      "EMI calculation",
+      "EMI date"
+    ],
+    "overview": "EMI means equated monthly installment: a scheduled repayment that generally includes principal and interest. The amount depends on loan inputs such as principal, rate and tenure; fees or irregular schedules can require additional terms.",
+    "procedure": "For the synthetic loan, verify the demo profile to read its configured installment and due date. General EMI explanations are available without verification, but an exact real repayment calculation needs the actual loan agreement and inputs.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_missed_emi",
+    "title": "Missed or late loan installments",
+    "category": "loans",
+    "aliases": [
+      "miss EMI",
+      "missed EMI",
+      "late EMI",
+      "unable to pay EMI",
+      "miss one loan EMI"
+    ],
+    "overview": "Missing an EMI can lead to late charges and may affect repayment status under the loan agreement. Repeated missed payments can have further consequences. Contact the lender early rather than assuming a grace period or automatic waiver.",
+    "procedure": "Call Sense Bank's demo process checks the configured due date and late-payment schedule, then refers difficulty cases to an agent. A review may explain available options, but neither a waiver nor restructuring is guaranteed by this assistant.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_prepayment",
+    "title": "Part-payment, prepayment and foreclosure",
+    "category": "loans",
+    "aliases": [
+      "loan prepayment",
+      "part payment",
+      "foreclosure",
+      "early loan repayment"
+    ],
+    "overview": "A part-payment reduces some outstanding principal, while foreclosure or full prepayment seeks to settle the loan before its scheduled end. Charges, notice requirements and how remaining installments change depend on the agreement.",
+    "procedure": "For the fictional bank, a verified demo agent reviews the configured outstanding amount and applicable early-settlement policy. Obtain the authorized settlement quote before acting; the assistant does not promise that an extra payment automatically closes a real loan.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_closure",
+    "title": "Loan closure, statements and NOC",
+    "category": "loans",
+    "aliases": [
+      "loan closure",
+      "NOC",
+      "loan statement",
+      "loan outstanding",
+      "loan account"
+    ],
+    "overview": "A loan closure involves confirming that all required amounts and conditions are settled. A no-objection or closure certificate is a separate document issued through the lender's process; a final payment receipt alone may not complete every step.",
+    "procedure": "After demo verification, the agent checks fictional outstanding balances and closure status before explaining statement or NOC requests. No official certificate, release of collateral or credit-report update is performed by this prototype.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_restructuring",
+    "title": "Repayment difficulty, restructuring and insurance",
+    "category": "loans",
+    "aliases": [
+      "loan restructuring",
+      "repayment difficulty",
+      "loan insurance",
+      "financial hardship"
+    ],
+    "overview": "Restructuring changes agreed repayment terms after review; it is not an automatic entitlement. Loan insurance is a separate contract with its own coverage and claims requirements, so repayment difficulty alone does not prove that a claim will be paid.",
+    "procedure": "The synthetic workflow routes hardship or coverage questions to a demo agent with the relevant product context. Explain the issue without sensitive documents, and seek the lender or insurer's formal terms before relying on any proposed option.",
+    "risk": "LOW"
+  },
+  {
+    "id": "loan_status",
+    "title": "Specific loan balance and repayment status",
+    "category": "loans",
+    "aliases": [
+      "my loan balance",
+      "my loan status",
+      "my outstanding loan",
+      "my loan details"
+    ],
+    "overview": "A loan account record can show outstanding principal, the next scheduled installment and the recorded repayment status. Outstanding principal is not necessarily the full settlement figure, since accrued interest and other agreement terms can matter.",
+    "procedure": "After demo verification, the adapter reads the fictional loan record and due schedule for the selected customer. This provides a demonstration of account-specific support without accessing a real credit file or authorizing a loan transaction.",
+    "risk": "LOW"
+  }
+]

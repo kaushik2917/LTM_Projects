@@ -1,0 +1,32 @@
+{
+  "id": "KB-personal_details_update-concept",
+  "title": "Correcting name, birth date and PAN information - explained",
+  "category": "accounts",
+  "subcategory": "personal_details_update",
+  "supported_intents": [
+    "personal_details_update"
+  ],
+  "intent": "personal_details_update",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "name correction",
+    "date of birth",
+    "PAN update",
+    "change account type"
+  ],
+  "aliases": [
+    "name correction",
+    "date of birth",
+    "PAN update",
+    "change account type"
+  ],
+  "content": "Corrections to a name, birth date or tax identifier need consistency across the relevant records. Changing an account type is a product conversion rather than a spelling correction and may have different conditions.",
+  "customer_content": "Corrections to a name, birth date or tax identifier need consistency across the relevant records. Changing an account type is a product conversion rather than a spelling correction and may have different conditions.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/personal_details_update_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_dues-concept",
+  "title": "Minimum due and total card amount due - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_dues",
+  "supported_intents": [
+    "credit_dues"
+  ],
+  "intent": "credit_dues",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "minimum amount due",
+    "total amount due",
+    "credit card due",
+    "minimum payment"
+  ],
+  "aliases": [
+    "minimum amount due",
+    "total amount due",
+    "credit card due",
+    "minimum payment"
+  ],
+  "content": "The minimum amount due is a required partial payment, not a promise that no interest will accrue. Paying only that amount can leave a balance subject to the card's terms; the total amount due represents the statement obligation.",
+  "customer_content": "The minimum amount due is a required partial payment, not a promise that no interest will accrue. Paying only that amount can leave a balance subject to the card's terms; the total amount due represents the statement obligation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_dues_concept.json"
+}

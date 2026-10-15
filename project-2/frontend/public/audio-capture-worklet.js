@@ -1,0 +1,2 @@
+class CallSenseCapture extends AudioWorkletProcessor {process(inputs,outputs){const pcm=inputs[0]?.[0];if(pcm)this.port.postMessage(new Float32Array(pcm));for(const output of outputs)for(const channel of output)channel.fill(0);return true;}}
+registerProcessor('call-sense-capture',CallSenseCapture);

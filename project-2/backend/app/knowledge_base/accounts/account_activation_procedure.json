@@ -1,0 +1,30 @@
+{
+  "id": "KB-account_activation-procedure",
+  "title": "Activating a new account - support procedure",
+  "category": "accounts",
+  "subcategory": "account_activation",
+  "supported_intents": [
+    "account_activation"
+  ],
+  "intent": "account_activation",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "account activation",
+    "activate account",
+    "new account inactive"
+  ],
+  "aliases": [
+    "account activation",
+    "activate account",
+    "new account inactive"
+  ],
+  "content": "In the synthetic workflow, a verified demo agent checks application completion, outstanding documents and consent. The assistant explains the next step but does not claim that an actual account has been activated or waive pending verification.",
+  "customer_content": "In the synthetic workflow, a verified demo agent checks application completion, outstanding documents and consent. The assistant explains the next step but does not claim that an actual account has been activated or waive pending verification.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_activation_procedure.json"
+}

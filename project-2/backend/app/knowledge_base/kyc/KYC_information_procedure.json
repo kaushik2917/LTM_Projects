@@ -1,0 +1,34 @@
+{
+  "id": "KB-KYC_information-procedure",
+  "title": "KYC meaning and document checks - support procedure",
+  "category": "kyc",
+  "subcategory": "KYC_information",
+  "supported_intents": [
+    "KYC_information"
+  ],
+  "intent": "KYC_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "KYC",
+    "KYC documents",
+    "identity proof",
+    "address proof",
+    "what is KYC"
+  ],
+  "aliases": [
+    "KYC",
+    "KYC documents",
+    "identity proof",
+    "address proof",
+    "what is KYC"
+  ],
+  "content": "For Call Sense Bank's synthetic KYC checklist, prepare a government-issued identity document, proof of address and a recent photograph for the demo branch workflow. Do not upload real documents here; an information request does not require sharing their numbers.",
+  "customer_content": "For Call Sense Bank's synthetic KYC checklist, prepare a government-issued identity document, proof of address and a recent photograph for the demo branch workflow. Do not upload real documents here; an information request does not require sharing their numbers.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "kyc/KYC_information_procedure.json"
+}

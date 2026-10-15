@@ -1,0 +1,146 @@
+[
+  {
+    "id": "debit_card_application",
+    "title": "New debit cards, delivery and tracking",
+    "category": "debit_cards",
+    "aliases": [
+      "new debit card",
+      "card delivery",
+      "card tracking",
+      "debit card application"
+    ],
+    "overview": "A debit card normally accesses funds in its linked account, subject to available balance and controls. Application, production, dispatch and delivery are separate stages; a delayed shipment does not prove that the card is active.",
+    "procedure": "In the fictional workflow, verify the demo profile and ask an agent for the configured dispatch stage. Confirm the delivery process through the secure channel; do not provide a full address or card number in the research transcript.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_activation",
+    "title": "Debit card activation and deactivation",
+    "category": "debit_cards",
+    "aliases": [
+      "activate card",
+      "card activation",
+      "deactivate card",
+      "card deactivation"
+    ],
+    "overview": "Activation enables a delivered card under the bank's controls. Deactivation or a temporary freeze can disable use without necessarily closing the underlying account. Activation procedures should be followed only through the bank's trusted channel.",
+    "procedure": "For the demo, an agent checks the synthetic card status and explains its activation menu. Never provide a PIN, CVV or OTP to this assistant; it cannot activate or deactivate a real card. If the card has not arrived or its delivery status is unexpected, request a delivery review before attempting activation.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_block",
+    "title": "Lost or stolen cards and blocking",
+    "category": "debit_cards",
+    "aliases": [
+      "lost card",
+      "stolen card",
+      "my card was stolen",
+      "block card",
+      "temporary card block"
+    ],
+    "overview": "If a card is lost or stolen, use the bank's verified channel to freeze or block it promptly and review recent activity. A temporary freeze and permanent replacement can have different effects on recurring payments and card credentials.",
+    "procedure": "This is a high-priority support case. After demo verification, the dashboard can simulate blocking the selected synthetic card; the assistant records the step in the human handoff. No real card is blocked and any unrecognized activity needs investigation.",
+    "risk": "HIGH"
+  },
+  {
+    "id": "card_renewal",
+    "title": "Expiry, renewal and damaged-card replacement",
+    "category": "debit_cards",
+    "aliases": [
+      "card expires",
+      "expired card",
+      "card renewal",
+      "damaged card",
+      "replacement debit card",
+      "expires next month"
+    ],
+    "overview": "An expiring card may need renewal, while a damaged card may need replacement before its expiry date. Check the expiry month, delivery status and registered contact details through a secure channel; the old card may not remain usable after replacement.",
+    "procedure": "Call Sense Bank's demo renewal process lets an agent review the synthetic expiry date and replacement stage. Request review before expiry, and update recurring card payments after receiving an authorized replacement; no delivery date is guaranteed.",
+    "risk": "LOW",
+    "customer_procedure": "Request a card renewal review before expiry through your verified banking channel. Check the registered contact details and update recurring payments after receiving an authorized replacement. A delivery date cannot be guaranteed."
+  },
+  {
+    "id": "card_pin_reset",
+    "title": "Debit card PIN setup and reset",
+    "category": "debit_cards",
+    "aliases": [
+      "PIN reset",
+      "PIN generation",
+      "forgot card PIN",
+      "ATM PIN",
+      "incorrect PIN",
+      "PIN retry exceeded"
+    ],
+    "overview": "A forgotten card PIN cannot be read back by support. Use the bank's secure PIN-generation or reset flow. Repeated incorrect attempts can restrict use; continuing to guess can prolong the problem and may require a review.",
+    "procedure": "The synthetic guidance directs you to card services in the trusted banking channel, where the official reset steps appear. Never speak your PIN, CVV or OTP to this assistant. A demo agent can explain the process without seeing any secret.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_payment_issue",
+    "title": "Declined debit-card payments",
+    "category": "debit_cards",
+    "aliases": [
+      "card not working",
+      "card payment failed",
+      "card payment declined",
+      "online payment",
+      "POS transaction",
+      "payment at shop"
+    ],
+    "overview": "A card payment can fail because of channel controls, available balance, a merchant problem or a card restriction. Determine whether it happened online, at a shop or at an ATM before deciding which checks apply.",
+    "procedure": "For online failures, check online payments in the trusted app and review the transaction status before retrying. For a store decline, confirm whether other terminals work; for ATM cash problems, preserve the location and time for a cash dispute.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_controls",
+    "title": "Card limits, contactless and international controls",
+    "category": "debit_cards",
+    "aliases": [
+      "card limit",
+      "contactless",
+      "online spending limit",
+      "international card",
+      "POS limit",
+      "international activation"
+    ],
+    "overview": "Separate controls may apply to ATM, store, online, contactless and international usage. Enabling a channel and setting its spending limit are different operations; available funds and merchant support still matter after a control is enabled.",
+    "procedure": "The demo card panel shows configured channel flags and a synthetic limit. Request an authorized review to change controls; the assistant explains settings but does not bypass authentication or promise that an international payment will be accepted.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_status",
+    "title": "Checking a card status",
+    "category": "debit_cards",
+    "aliases": [
+      "card status",
+      "is my card active",
+      "is card blocked",
+      "my debit card status"
+    ],
+    "overview": "A card status indicates whether the issuer's record permits use, but an active status alone does not ensure a particular transaction will succeed. Channel limits, available balance and merchant support can still affect acceptance.",
+    "procedure": "After demo verification, the synthetic adapter reads the selected card status and masked identifier. A demo-only block is reflected in later enquiries; the system never infers or changes a real card's status from a conversation.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_blocked",
+    "title": "Already blocked or disabled card",
+    "category": "debit_cards",
+    "risk": "LOW",
+    "aliases": [
+      "my card is blocked",
+      "my debit card got blocked",
+      "my bank card is blocked",
+      "my card has been blocked",
+      "my ATM card is blocked",
+      "the bank blocked my card",
+      "my card got disabled",
+      "blocked debit card",
+      "blocked credit card",
+      "my debit card is blocked only",
+      "card blocked and replacement",
+      "my card has stopped working"
+    ],
+    "overview": "A card may be restricted after repeated incorrect PIN attempts or a security check. Avoid repeated attempts and check any message in your trusted banking app. A restriction does not always require a new card; support must check the reason before advising replacement.",
+    "procedure": "For a blocked card, check whether the restriction affects ATM withdrawals, online payments or all uses. For account-specific card status, your identity must be verified first. Use the secure banking channel to request a review or replacement; never share your PIN or one-time codes."
+  }
+]

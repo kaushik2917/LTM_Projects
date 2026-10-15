@@ -1,0 +1,34 @@
+{
+  "id": "KB-complaint-procedure",
+  "title": "Complaints and human support - support procedure",
+  "category": "disputes",
+  "subcategory": "complaint",
+  "supported_intents": [
+    "complaint"
+  ],
+  "intent": "complaint",
+  "risk_level": "MEDIUM",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "complaint",
+    "human agent",
+    "speak to agent",
+    "support person",
+    "complain"
+  ],
+  "aliases": [
+    "complaint",
+    "human agent",
+    "speak to agent",
+    "support person",
+    "complain"
+  ],
+  "content": "The Call Sense Bank demo creates a human handoff with the masked conversation and an issue summary. Ask for the case reference and next review step; this simulation does not submit a complaint to a real institution or regulator.",
+  "customer_content": "The Call Sense Bank demo creates a human handoff with the masked conversation and an issue summary. Ask for the case reference and next review step; this simulation does not submit a complaint to a real institution or regulator.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/complaint_procedure.json"
+}

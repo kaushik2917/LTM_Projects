@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_failed-concept",
+  "title": "Failed UPI payments and debited amounts - explained",
+  "category": "upi",
+  "subcategory": "upi_failed",
+  "supported_intents": [
+    "upi_failed"
+  ],
+  "intent": "upi_failed",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "UPI failed",
+    "failed UPI payment",
+    "UPI debited",
+    "money deducted UPI failed"
+  ],
+  "aliases": [
+    "UPI failed",
+    "failed UPI payment",
+    "UPI debited",
+    "money deducted UPI failed"
+  ],
+  "content": "A failed UPI payment and a pending UPI payment require different checks. If an amount was debited, inspect the app's final status and transaction reference before retrying; an entry can be reversed or need dispute review.",
+  "customer_content": "A failed UPI payment and a pending UPI payment require different checks. If an amount was debited, inspect the app's final status and transaction reference before retrying; an entry can be reversed or need dispute review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_failed_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-dormant_account-concept",
+  "title": "Dormant and inactive accounts - explained",
+  "category": "accounts",
+  "subcategory": "dormant_account",
+  "supported_intents": [
+    "dormant_account"
+  ],
+  "intent": "dormant_account",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "dormant account",
+    "inactive account",
+    "reactivate account",
+    "unused account"
+  ],
+  "aliases": [
+    "dormant account",
+    "inactive account",
+    "reactivate account",
+    "unused account"
+  ],
+  "content": "An inactive or dormant classification can restrict certain account operations after a period without qualifying activity. The applicable period and permitted activity depend on the institution; the prototype does not infer a real account status from elapsed time.",
+  "customer_content": "An inactive or dormant classification can restrict certain account operations after a period without qualifying activity. The applicable period and permitted activity depend on the institution; the prototype does not infer a real account status from elapsed time.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/dormant_account_concept.json"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_payment_issue-procedure",
+  "title": "Declined debit-card payments - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_payment_issue",
+  "supported_intents": [
+    "card_payment_issue"
+  ],
+  "intent": "card_payment_issue",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "card not working",
+    "card payment failed",
+    "card payment declined",
+    "online payment",
+    "POS transaction",
+    "payment at shop"
+  ],
+  "aliases": [
+    "card not working",
+    "card payment failed",
+    "card payment declined",
+    "online payment",
+    "POS transaction",
+    "payment at shop"
+  ],
+  "content": "For online failures, check online payments in the trusted app and review the transaction status before retrying. For a store decline, confirm whether other terminals work; for ATM cash problems, preserve the location and time for a cash dispute.",
+  "customer_content": "For online failures, check online payments in the trusted app and review the transaction status before retrying. For a store decline, confirm whether other terminals work; for ATM cash problems, preserve the location and time for a cash dispute.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_payment_issue_procedure.json"
+}

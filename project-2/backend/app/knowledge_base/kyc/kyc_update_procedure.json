@@ -1,0 +1,34 @@
+{
+  "id": "KB-kyc_update-procedure",
+  "title": "KYC status, updates and periodic review - support procedure",
+  "category": "kyc",
+  "subcategory": "kyc_update",
+  "supported_intents": [
+    "kyc_update"
+  ],
+  "intent": "kyc_update",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "KYC update",
+    "re KYC",
+    "rekyc",
+    "KYC status",
+    "expired KYC"
+  ],
+  "aliases": [
+    "KYC update",
+    "re KYC",
+    "rekyc",
+    "KYC status",
+    "expired KYC"
+  ],
+  "content": "The synthetic process verifies the demo profile and asks an agent to review the recorded KYC status and missing checklist items. Complete real updates only through authenticated channels; no actual restriction is lifted by this prototype.",
+  "customer_content": "The synthetic process verifies the demo profile and asks an agent to review the recorded KYC status and missing checklist items. Complete real updates only through authenticated channels; no actual restriction is lifted by this prototype.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "kyc/kyc_update_procedure.json"
+}

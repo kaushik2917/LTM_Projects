@@ -1,0 +1,36 @@
+{
+  "id": "KB-loan_payment-concept",
+  "title": "EMI meaning, calculation and payment dates - explained",
+  "category": "loans",
+  "subcategory": "loan_payment",
+  "supported_intents": [
+    "loan_payment"
+  ],
+  "intent": "loan_payment",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "EMI",
+    "equated monthly installment",
+    "loan payment",
+    "installment",
+    "EMI calculation",
+    "EMI date"
+  ],
+  "aliases": [
+    "EMI",
+    "equated monthly installment",
+    "loan payment",
+    "installment",
+    "EMI calculation",
+    "EMI date"
+  ],
+  "content": "EMI means equated monthly installment: a scheduled repayment that generally includes principal and interest. The amount depends on loan inputs such as principal, rate and tenure; fees or irregular schedules can require additional terms.",
+  "customer_content": "EMI means equated monthly installment: a scheduled repayment that generally includes principal and interest. The amount depends on loan inputs such as principal, rate and tenure; fees or irregular schedules can require additional terms.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_payment_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-internet_registration-concept",
+  "title": "Internet and mobile banking registration - explained",
+  "category": "digital_banking",
+  "subcategory": "internet_registration",
+  "supported_intents": [
+    "internet_registration"
+  ],
+  "intent": "internet_registration",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "internet banking registration",
+    "mobile banking registration",
+    "register app",
+    "online banking"
+  ],
+  "aliases": [
+    "internet banking registration",
+    "mobile banking registration",
+    "register app",
+    "online banking"
+  ],
+  "content": "Digital banking registration establishes access to the bank's trusted portal or app. It is distinct from opening the underlying account and can depend on supported devices and the registered customer record.",
+  "customer_content": "Digital banking registration establishes access to the bank's trusted portal or app. It is distinct from opening the underlying account and can depend on supported devices and the registered customer record.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/internet_registration_concept.json"
+}

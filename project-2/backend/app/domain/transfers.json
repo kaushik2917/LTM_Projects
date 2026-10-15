@@ -1,0 +1,116 @@
+﻿[
+  {
+    "id": "neft_information",
+    "title": "NEFT explained",
+    "category": "transfers",
+    "aliases": [
+      "NEFT",
+      "national electronic funds transfer",
+      "what is NEFT"
+    ],
+    "overview": "NEFT stands for National Electronic Funds Transfer. It is a bank-to-bank transfer system in India, with transfers processed through settlement batches. The account and routing details identify the intended beneficiary; actual service conditions come from the sending institution.",
+    "procedure": "For a synthetic NEFT enquiry, prepare a fictional beneficiary and explain the requested transfer without executing it. Check the reference and transaction status in the trusted banking channel if a previous transfer is delayed; do not assume a guaranteed credit time.",
+    "risk": "LOW"
+  },
+  {
+    "id": "rtgs_information",
+    "title": "RTGS explained",
+    "category": "transfers",
+    "aliases": [
+      "RTGS",
+      "real time gross settlement",
+      "what is RTGS"
+    ],
+    "overview": "RTGS stands for Real Time Gross Settlement. It settles qualifying transfers individually in real time rather than netting them in a batch. Eligibility, value thresholds and supported channels must be checked against the applicable institution and system rules.",
+    "procedure": "Call Sense Bank's demonstration explains the RTGS flow using fictional transaction records. A demo agent can distinguish it from NEFT or IMPS; this assistant does not invent regulatory thresholds or send a real RTGS payment.",
+    "risk": "LOW"
+  },
+  {
+    "id": "imps_information",
+    "title": "IMPS explained",
+    "category": "transfers",
+    "aliases": [
+      "IMPS",
+      "immediate payment service",
+      "what is IMPS"
+    ],
+    "overview": "IMPS stands for Immediate Payment Service. It is an electronic transfer service used by participating institutions in India. Actual completion still depends on a valid destination and service availability; a debit notification alone does not prove final beneficiary credit.",
+    "procedure": "In the demo, inspect the configured IMPS record and reference after verification. If the recipient has not received funds, compare the status shown by the trusted channel and raise a review rather than repeatedly sending the payment.",
+    "risk": "LOW"
+  },
+  {
+    "id": "fund_transfer",
+    "title": "Transfer instructions and scheduled transfers",
+    "category": "transfers",
+    "aliases": [
+      "send money",
+      "transfer money",
+      "bank transfer",
+      "internal transfer",
+      "scheduled transfer"
+    ],
+    "overview": "A bank transfer moves money between accounts using the chosen payment channel and destination details. Scheduling records a future instruction rather than guaranteeing immediate completion; beneficiary setup, limits and available funds can affect execution.",
+    "procedure": "The assistant can explain the synthetic transfer workflow and inspect a verified demo transfer record. It cannot execute real banking transactions. A request to move actual funds must use the bank's authenticated channel and applicable confirmation process.",
+    "risk": "LOW"
+  },
+  {
+    "id": "transaction_status",
+    "title": "Delayed transfers, reversals and UTR references",
+    "category": "transfers",
+    "aliases": [
+      "transfer pending",
+      "transfer status",
+      "receiver not received",
+      "sent money not arrived",
+      "transfer reversed",
+      "UTR"
+    ],
+    "overview": "If money left the sender but has not reached the receiver, first identify the payment channel and its displayed status. UPI, IMPS, NEFT and RTGS can expose different reference and reconciliation details; a reference is not a guarantee of receipt.",
+    "procedure": "Tell the assistant which channel was used, then preserve the date, approximate amount and non-sensitive status. The verified demo adapter can inspect a fictional transfer; an unresolved real transfer needs a reference-based bank review rather than a promised timeline.",
+    "risk": "LOW"
+  },
+  {
+    "id": "beneficiary_issue",
+    "title": "Beneficiaries and cooling periods",
+    "category": "transfers",
+    "aliases": [
+      "beneficiary",
+      "payee",
+      "beneficiary addition",
+      "beneficiary deletion",
+      "cooling period"
+    ],
+    "overview": "A beneficiary is the intended recipient saved for a transfer. Adding, deleting and activating a beneficiary are separate operations. Some products apply a waiting or cooling period to a newly added recipient; the applicable rule must come from that product's policy.",
+    "procedure": "In the synthetic bank, use the beneficiary-management menu and review the displayed destination carefully. A demo agent can explain a pending activation, but the assistant does not collect full destination credentials or bypass an activation control.",
+    "risk": "LOW"
+  },
+  {
+    "id": "transfer_limits_reference",
+    "title": "Transfer limits, routing codes and charges",
+    "category": "transfers",
+    "aliases": [
+      "transfer limit",
+      "transfer charges",
+      "IFSC",
+      "reference number",
+      "bank routing code"
+    ],
+    "overview": "Transfer limits and fees can vary by product, channel and customer configuration. An IFSC identifies a participating branch for relevant Indian transfers, while a transaction reference identifies an instruction; neither should be guessed from a customer's name.",
+    "procedure": "Use the configured Call Sense Bank schedule for synthetic fees and limits, and the trusted recipient record for routing details. For a real transfer, verify the institution's own current information before confirming any instruction.",
+    "risk": "LOW"
+  },
+  {
+    "id": "wrong_bank_transfer",
+    "title": "Transfers to an unintended bank account",
+    "category": "transfers",
+    "aliases": [
+      "wrong bank transfer",
+      "wrong beneficiary",
+      "sent to wrong account",
+      "mistaken transfer"
+    ],
+    "overview": "A payment to the wrong beneficiary should be reported promptly. Completed transfers are not necessarily reversible on demand, and the receiving institution may need to participate in review; contacting a recipient outside verified channels can create further risk.",
+    "procedure": "The synthetic agent records the channel, date and approximate amount and checks the fictional transfer reference after verification. A recovery review can be simulated, but the assistant never promises recovery, reverses a real payment or invents a recipient identity.",
+    "risk": "LOW"
+  }
+]

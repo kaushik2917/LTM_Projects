@@ -1,0 +1,32 @@
+{
+  "id": "KB-failed_transaction-procedure",
+  "title": "Failed or debited-but-unsuccessful payments - support procedure",
+  "category": "disputes",
+  "subcategory": "failed_transaction",
+  "supported_intents": [
+    "failed_transaction"
+  ],
+  "intent": "failed_transaction",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "payment failed",
+    "failed transaction",
+    "money deducted payment failed",
+    "payment did not go through"
+  ],
+  "aliases": [
+    "payment failed",
+    "failed transaction",
+    "money deducted payment failed",
+    "payment did not go through"
+  ],
+  "content": "For the demo, describe whether the attempt used a card, UPI or a bank transfer and whether money was debited. An agent can review the synthetic entry and relevant procedure; the assistant does not promise automatic reversal within an invented timeframe.",
+  "customer_content": "For the demo, describe whether the attempt used a card, UPI or a bank transfer and whether money was debited. An agent can review the synthetic entry and relevant procedure; the assistant does not promise automatic reversal within an invented timeframe.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/failed_transaction_procedure.json"
+}

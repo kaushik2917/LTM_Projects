@@ -1,0 +1,32 @@
+{
+  "id": "KB-statement_delivery-procedure",
+  "title": "Missing or protected statements - support procedure",
+  "category": "balances",
+  "subcategory": "statement_delivery",
+  "supported_intents": [
+    "statement_delivery"
+  ],
+  "intent": "statement_delivery",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "email statement",
+    "statement not received",
+    "statement password",
+    "protected statement"
+  ],
+  "aliases": [
+    "email statement",
+    "statement not received",
+    "statement password",
+    "protected statement"
+  ],
+  "content": "For the demo, check the statement period and notification preference before raising a delivery case. Consult the institution's published file-opening instructions if a statement is protected; never send the file password or private statement to this assistant.",
+  "customer_content": "For the demo, check the statement period and notification preference before raising a delivery case. Consult the institution's published file-opening instructions if a statement is protected; never send the file password or private statement to this assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/statement_delivery_procedure.json"
+}

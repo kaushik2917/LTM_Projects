@@ -1,0 +1,32 @@
+{
+  "id": "KB-atm_reversal-procedure",
+  "title": "Reversed ATM transactions - support procedure",
+  "category": "atm",
+  "subcategory": "atm_reversal",
+  "supported_intents": [
+    "atm_reversal"
+  ],
+  "intent": "atm_reversal",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "ATM reversed",
+    "cash withdrawal reversal",
+    "ATM refund",
+    "ATM reversal status"
+  ],
+  "aliases": [
+    "ATM reversed",
+    "cash withdrawal reversal",
+    "ATM refund",
+    "ATM reversal status"
+  ],
+  "content": "After demo verification, inspect the fictional original debit and any linked reversal using date and amount. If their status is inconsistent, the demo agent opens reconciliation; do not assume a fixed settlement period or an extra withdrawal entitlement.",
+  "customer_content": "After demo verification, inspect the fictional original debit and any linked reversal using date and amount. If their status is inconsistent, the demo agent opens reconciliation; do not assume a fixed settlement period or an extra withdrawal entitlement.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/atm_reversal_procedure.json"
+}

@@ -1,0 +1,45 @@
+﻿[
+  {
+    "id": "account_fees",
+    "title": "Account fees and minimum-balance charges",
+    "category": "fees",
+    "aliases": [
+      "account fees",
+      "minimum balance",
+      "service charges",
+      "balance charges"
+    ],
+    "overview": "Minimum-balance conditions and account fees depend on the chosen product. An average-balance rule is not necessarily the same as a daily minimum, and some variants may have different conditions; do not assume a fee waiver applies.",
+    "procedure": "Call Sense Bank's fictional schedule supplies the demo balance condition and any listed charge. Ask a demo agent to review the configured product before explaining a posted synthetic fee; no unlisted amount may be invented or waived by the assistant.",
+    "risk": "LOW"
+  },
+  {
+    "id": "card_fees",
+    "title": "Card annual and replacement charges",
+    "category": "fees",
+    "aliases": [
+      "card annual fee",
+      "replacement card fee",
+      "debit card fee",
+      "credit card fee"
+    ],
+    "overview": "Card fees can relate to issuance, annual service or replacement, and may differ by card product. A lost-card replacement may not follow the same conditions as a routine expiry renewal; taxes or conditions should not be assumed.",
+    "procedure": "Use the structured fictional card-fee schedule for any numerical example. For a specific synthetic charge, verify the demo profile and ask an agent to compare the entry with that schedule; a real fee dispute needs issuer review.",
+    "risk": "LOW"
+  },
+  {
+    "id": "service_fee_schedule",
+    "title": "Transfer, cheque, ATM and loan charges",
+    "category": "fees",
+    "aliases": [
+      "transaction charges",
+      "cheque charges",
+      "loan charges",
+      "late fees",
+      "fee schedule"
+    ],
+    "overview": "Service charges may depend on transaction type, channel and product terms. A transfer fee, an ATM operator surcharge and a loan late charge are distinct items and should not be conflated into one quoted amount.",
+    "procedure": "The demo fee schedule is the only source of bank-specific amounts in this prototype. If a requested fee is not configured, the assistant explains the relevant category and directs the amount question to a reviewer rather than inventing a number.",
+    "risk": "LOW"
+  }
+]

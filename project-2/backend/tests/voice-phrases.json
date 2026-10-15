@@ -1,0 +1,23 @@
+{
+  "purpose": "Manual acoustic acceptance phrases; not prerecorded audio or a measured accuracy benchmark",
+  "phrases": [
+    "My card is blocked.",
+    "My debit card got blocked.",
+    "My card is not working.",
+    "I transferred money through UPI.",
+    "My account got debited but the receiver didn't get the money.",
+    "My cash didn't come out but the amount was deducted.",
+    "I forgot my internet banking password.",
+    "What is my current balance?",
+    "I need my account statement.",
+    "My credit card payment was declined.",
+    "I want to close my fixed deposit.",
+    "My EMI is due tomorrow.",
+    "I think someone used my card.",
+    "I don't recognize this transaction.",
+    "How do I update my KYC?",
+    "How do I add a beneficiary?",
+    "What is the difference between NEFT and RTGS?"
+  ],
+  "long_utterance": "My card is blocked and I tried using it twice at the ATM this morning but it still isn't working, so I want to know whether I need a replacement."
+}

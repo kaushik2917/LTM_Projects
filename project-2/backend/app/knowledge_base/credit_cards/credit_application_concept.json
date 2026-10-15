@@ -1,0 +1,30 @@
+{
+  "id": "KB-credit_application-concept",
+  "title": "Credit-card application and eligibility - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_application",
+  "supported_intents": [
+    "credit_application"
+  ],
+  "intent": "credit_application",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "credit card eligibility",
+    "credit card application",
+    "credit application status"
+  ],
+  "aliases": [
+    "credit card eligibility",
+    "credit card application",
+    "credit application status"
+  ],
+  "content": "A credit card provides a borrowing facility with repayment terms rather than direct access to a savings balance. Eligibility, supporting documents and approval depend on the issuer's assessment; general guidance is not an approval decision.",
+  "customer_content": "A credit card provides a borrowing facility with repayment terms rather than direct access to a savings balance. Eligibility, supporting documents and approval depend on the issuer's assessment; general guidance is not an approval decision.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_application_concept.json"
+}

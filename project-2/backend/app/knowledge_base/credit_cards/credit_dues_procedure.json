@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_dues-procedure",
+  "title": "Minimum due and total card amount due - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_dues",
+  "supported_intents": [
+    "credit_dues"
+  ],
+  "intent": "credit_dues",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "minimum amount due",
+    "total amount due",
+    "credit card due",
+    "minimum payment"
+  ],
+  "aliases": [
+    "minimum amount due",
+    "total amount due",
+    "credit card due",
+    "minimum payment"
+  ],
+  "content": "After demo verification, the adapter can read configured synthetic minimum and total dues. Review the card's published terms before deciding how to repay; the assistant explains concepts without prescribing a personal repayment strategy.",
+  "customer_content": "After demo verification, the adapter can read configured synthetic minimum and total dues. Review the card's published terms before deciding how to repay; the assistant explains concepts without prescribing a personal repayment strategy.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_dues_procedure.json"
+}

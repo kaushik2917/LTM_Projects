@@ -1,0 +1,87 @@
+[
+  {
+    "id": "duplicate_transaction",
+    "title": "Duplicate charges and repeated payments",
+    "category": "disputes",
+    "aliases": [
+      "charged twice",
+      "duplicate transaction",
+      "double charged",
+      "paid twice"
+    ],
+    "overview": "Two similar entries can represent duplicate completed payments, a pending authorization plus a posted payment, or separate transactions. Compare their status, date, amount and merchant description before concluding that both are final debits.",
+    "procedure": "The synthetic dispute workflow records the non-sensitive details and checks fictional transaction status after verification. A demo agent reviews the alleged duplicate; a refund is not guaranteed and no real chargeback is submitted by this assistant.",
+    "risk": "LOW"
+  },
+  {
+    "id": "failed_transaction",
+    "title": "Failed or debited-but-unsuccessful payments",
+    "category": "disputes",
+    "aliases": [
+      "payment failed",
+      "failed transaction",
+      "money deducted payment failed",
+      "payment did not go through"
+    ],
+    "overview": "A failed payment can leave no debit, a pending debit or an entry later reversed. Determine the channel and final displayed status before retrying, since repeated attempts can create additional authorizations or duplicate payments.",
+    "procedure": "For the demo, describe whether the attempt used a card, UPI or a bank transfer and whether money was debited. An agent can review the synthetic entry and relevant procedure; the assistant does not promise automatic reversal within an invented timeframe.",
+    "risk": "LOW"
+  },
+  {
+    "id": "refund_status",
+    "title": "Refunds not received and merchant disputes",
+    "category": "disputes",
+    "aliases": [
+      "refund not received",
+      "refund pending",
+      "merchant refund",
+      "merchant dispute"
+    ],
+    "overview": "A merchant refund is separate from the original purchase and can have its own processing reference. A cancellation notice alone may not show that a refund has reached the account; the merchant and bank records may need to be compared.",
+    "procedure": "Keep the merchant confirmation and non-sensitive dates for the synthetic review. After verification, inspect the fictional credit entry and ask an agent to reconcile an unresolved refund; no fixed credit date or entitlement is invented.",
+    "risk": "LOW"
+  },
+  {
+    "id": "chargeback",
+    "title": "Chargebacks and card disputes",
+    "category": "disputes",
+    "aliases": [
+      "chargeback",
+      "card dispute",
+      "transaction dispute",
+      "what is chargeback"
+    ],
+    "overview": "A chargeback is a dispute mechanism used under applicable card-network and issuer processes. It is not the same as a merchant voluntarily refunding a payment and does not guarantee that a disputed amount will be returned.",
+    "procedure": "The demo agent asks for a non-sensitive description, relevant dates and steps already taken with the merchant. Actual eligibility, evidence and deadlines must come from the issuer's rules; the assistant does not provide legal advice or file a real dispute.",
+    "risk": "LOW"
+  },
+  {
+    "id": "complaint",
+    "title": "Complaints and human support",
+    "category": "disputes",
+    "aliases": [
+      "complaint",
+      "human agent",
+      "speak to agent",
+      "support person",
+      "complain"
+    ],
+    "overview": "A complaint records an unresolved service issue for review. A support agent can help distinguish a transaction dispute from a general service complaint and explain the institution's tracking process. Keep the issue timeline and any earlier support references so the reviewer can avoid repeating completed checks.",
+    "procedure": "The Call Sense Bank demo creates a human handoff with the masked conversation and an issue summary. Ask for the case reference and next review step; this simulation does not submit a complaint to a real institution or regulator.",
+    "risk": "MEDIUM"
+  },
+  {
+    "id": "complaint_status",
+    "title": "Complaint references and follow-up",
+    "category": "disputes",
+    "aliases": [
+      "complaint status",
+      "complaint reference",
+      "follow up complaint",
+      "case progress"
+    ],
+    "overview": "A complaint reference identifies a case, while its current status describes the review stage. Acknowledgement does not necessarily mean the underlying problem is resolved; additional information may be needed.",
+    "procedure": "For a synthetic case, use the agent queue to inspect Open, Needs Follow-up, Escalated Further or Resolved status. Only permitted non-sensitive information should be added; real escalation deadlines must be confirmed with the responsible institution.",
+    "risk": "LOW"
+  }
+]

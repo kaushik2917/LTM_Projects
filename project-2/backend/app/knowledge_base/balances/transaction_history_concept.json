@@ -1,0 +1,34 @@
+{
+  "id": "KB-transaction_history-concept",
+  "title": "Recent transactions and transaction search - explained",
+  "category": "balances",
+  "subcategory": "transaction_history",
+  "supported_intents": [
+    "transaction_history"
+  ],
+  "intent": "transaction_history",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "latest five transactions",
+    "recent transactions",
+    "transaction history",
+    "transaction search",
+    "last transactions"
+  ],
+  "aliases": [
+    "latest five transactions",
+    "recent transactions",
+    "transaction history",
+    "transaction search",
+    "last transactions"
+  ],
+  "content": "Transaction history lists completed or pending activity for a selected product. Merchant names can differ from a shop's trading name, and a pending authorization is not necessarily a completed debit. An unknown entry should be reviewed promptly.",
+  "customer_content": "Transaction history lists completed or pending activity for a selected product. Merchant names can differ from a shop's trading name, and a pending authorization is not necessarily a completed debit. An unknown entry should be reviewed promptly.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/transaction_history_concept.json"
+}

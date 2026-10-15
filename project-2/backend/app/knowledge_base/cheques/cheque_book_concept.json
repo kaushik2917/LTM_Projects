@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_book-concept",
+  "title": "Cheque-book requests and delivery - explained",
+  "category": "cheques",
+  "subcategory": "cheque_book",
+  "supported_intents": [
+    "cheque_book"
+  ],
+  "intent": "cheque_book",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "cheque book",
+    "new cheque book",
+    "cheque book status",
+    "cheque number"
+  ],
+  "aliases": [
+    "cheque book",
+    "new cheque book",
+    "cheque book status",
+    "cheque number"
+  ],
+  "content": "A cheque book contains numbered instruments linked to an account. Requesting a book, tracking dispatch and checking a particular cheque's status are separate tasks; possession of a cheque does not establish that funds have cleared.",
+  "customer_content": "A cheque book contains numbered instruments linked to an account. Requesting a book, tracking dispatch and checking a particular cheque's status are separate tasks; possession of a cheque does not establish that funds have cleared.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_book_concept.json"
+}

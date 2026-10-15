@@ -1,0 +1,32 @@
+{
+  "id": "KB-fd_maturity-procedure",
+  "title": "FD maturity, renewal and receipts - support procedure",
+  "category": "deposits",
+  "subcategory": "fd_maturity",
+  "supported_intents": [
+    "fd_maturity"
+  ],
+  "intent": "fd_maturity",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "FD maturity",
+    "FD renewal",
+    "FD receipt",
+    "FD nomination"
+  ],
+  "aliases": [
+    "FD maturity",
+    "FD renewal",
+    "FD receipt",
+    "FD nomination"
+  ],
+  "content": "After demo verification, inspect the configured fictional deposit's maturity date and instruction. Ask an agent to review renewal, nominee or receipt details before changing them; no real maturity amount is calculated without the agreed product inputs.",
+  "customer_content": "After demo verification, inspect the configured fictional deposit's maturity date and instruction. Ask an agent to review renewal, nominee or receipt details before changing them; no real maturity amount is calculated without the agreed product inputs.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/fd_maturity_procedure.json"
+}

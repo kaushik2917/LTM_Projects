@@ -1,0 +1,32 @@
+{
+  "id": "KB-recurring_deposit-procedure",
+  "title": "Recurring deposits and installments - support procedure",
+  "category": "deposits",
+  "subcategory": "recurring_deposit",
+  "supported_intents": [
+    "recurring_deposit"
+  ],
+  "intent": "recurring_deposit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "recurring deposit",
+    "RD installment",
+    "open RD",
+    "RD maturity"
+  ],
+  "aliases": [
+    "recurring deposit",
+    "RD installment",
+    "open RD",
+    "RD maturity"
+  ],
+  "content": "Call Sense Bank's demo RD record shows the configured installment, next due date and maturity instruction. A demo agent can explain the schedule after verification; the assistant does not create real standing instructions or guarantee an investment return.",
+  "customer_content": "Call Sense Bank's demo RD record shows the configured installment, next due date and maturity instruction. A demo agent can explain the schedule after verification; the assistant does not create real standing instructions or guarantee an investment return.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/recurring_deposit_procedure.json"
+}

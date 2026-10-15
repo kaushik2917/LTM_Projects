@@ -1,0 +1,34 @@
+{
+  "id": "KB-service_fee_schedule-concept",
+  "title": "Transfer, cheque, ATM and loan charges - explained",
+  "category": "fees",
+  "subcategory": "service_fee_schedule",
+  "supported_intents": [
+    "service_fee_schedule"
+  ],
+  "intent": "service_fee_schedule",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "transaction charges",
+    "cheque charges",
+    "loan charges",
+    "late fees",
+    "fee schedule"
+  ],
+  "aliases": [
+    "transaction charges",
+    "cheque charges",
+    "loan charges",
+    "late fees",
+    "fee schedule"
+  ],
+  "content": "Service charges may depend on transaction type, channel and product terms. A transfer fee, an ATM operator surcharge and a loan late charge are distinct items and should not be conflated into one quoted amount.",
+  "customer_content": "Service charges may depend on transaction type, channel and product terms. A transfer fee, an ATM operator surcharge and a loan late charge are distinct items and should not be conflated into one quoted amount.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "fees/service_fee_schedule_concept.json"
+}

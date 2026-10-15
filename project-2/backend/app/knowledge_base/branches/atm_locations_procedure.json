@@ -1,0 +1,32 @@
+{
+  "id": "KB-atm_locations-procedure",
+  "title": "ATM directory and accessible services - support procedure",
+  "category": "branches",
+  "subcategory": "atm_locations",
+  "supported_intents": [
+    "atm_locations"
+  ],
+  "intent": "atm_locations",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "ATM location",
+    "nearest ATM",
+    "ATM near me",
+    "accessible ATM"
+  ],
+  "aliases": [
+    "ATM location",
+    "nearest ATM",
+    "ATM near me",
+    "accessible ATM"
+  ],
+  "content": "The synthetic directory includes Central Demo ATM at the fictional branch and Riverside Demo ATM at 20 Sample Road. Choose a demo location to review configured services; this is not navigation or a promise about an actual cash machine.",
+  "customer_content": "The synthetic directory includes Central Demo ATM at the fictional branch and Riverside Demo ATM at 20 Sample Road. Choose a demo location to review configured services; this is not navigation or a promise about an actual cash machine.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "branches/atm_locations_procedure.json"
+}

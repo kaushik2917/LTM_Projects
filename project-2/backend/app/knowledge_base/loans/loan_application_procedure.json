@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_application-procedure",
+  "title": "Loan eligibility, documents and status - support procedure",
+  "category": "loans",
+  "subcategory": "loan_application",
+  "supported_intents": [
+    "loan_application"
+  ],
+  "intent": "loan_application",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "loan eligibility",
+    "loan documents",
+    "loan application",
+    "loan application status"
+  ],
+  "aliases": [
+    "loan eligibility",
+    "loan documents",
+    "loan application",
+    "loan application status"
+  ],
+  "content": "For a demo application, choose the fictional loan type and ask the agent which configured documents and review steps apply. Specific synthetic application status requires demo verification; real approvals must come from the lending institution.",
+  "customer_content": "For a demo application, choose the fictional loan type and ask the agent which configured documents and review steps apply. Specific synthetic application status requires demo verification; real approvals must come from the lending institution.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_application_procedure.json"
+}

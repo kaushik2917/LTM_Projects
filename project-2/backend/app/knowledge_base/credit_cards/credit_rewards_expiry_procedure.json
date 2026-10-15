@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_rewards_expiry-procedure",
+  "title": "Reward expiry and missing reward points - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_rewards_expiry",
+  "supported_intents": [
+    "credit_rewards_expiry"
+  ],
+  "intent": "credit_rewards_expiry",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "reward expiry",
+    "points missing",
+    "uncredited rewards",
+    "expired points"
+  ],
+  "aliases": [
+    "reward expiry",
+    "points missing",
+    "uncredited rewards",
+    "expired points"
+  ],
+  "content": "For the synthetic review, identify the relevant fictional purchase and statement period, then ask a demo agent to compare the reward schedule. The assistant cannot reinstate real expired points or promise an exception to programme rules.",
+  "customer_content": "For the synthetic review, identify the relevant fictional purchase and statement period, then ask a demo agent to compare the reward schedule. The assistant cannot reinstate real expired points or promise an exception to programme rules.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_rewards_expiry_procedure.json"
+}

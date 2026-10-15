@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_mandates-concept",
+  "title": "UPI limits, mandates and autopay - explained",
+  "category": "upi",
+  "subcategory": "upi_mandates",
+  "supported_intents": [
+    "upi_mandates"
+  ],
+  "intent": "upi_mandates",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "UPI limit",
+    "UPI mandate",
+    "UPI autopay",
+    "cancel autopay"
+  ],
+  "aliases": [
+    "UPI limit",
+    "UPI mandate",
+    "UPI autopay",
+    "cancel autopay"
+  ],
+  "content": "A UPI mandate is an authorization for qualifying future debits, while a transaction limit constrains payments. Pausing or revoking a mandate does not necessarily settle an outstanding service bill or reverse a debit already processed.",
+  "customer_content": "A UPI mandate is an authorization for qualifying future debits, while a transaction limit constrains payments. Pausing or revoking a mandate does not necessarily settle an outstanding service bill or reverse a debit already processed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_mandates_concept.json"
+}

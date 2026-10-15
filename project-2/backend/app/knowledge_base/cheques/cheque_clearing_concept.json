@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_clearing-concept",
+  "title": "Cheque deposits, clearing and uncredited cheques - explained",
+  "category": "cheques",
+  "subcategory": "cheque_clearing",
+  "supported_intents": [
+    "cheque_clearing"
+  ],
+  "intent": "cheque_clearing",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "cheque clearing",
+    "cheque deposited",
+    "cheque not credited",
+    "CTS"
+  ],
+  "aliases": [
+    "cheque clearing",
+    "cheque deposited",
+    "cheque not credited",
+    "CTS"
+  ],
+  "content": "Cheque clearing involves processing the deposited instrument and confirming the outcome with the relevant institution. A deposit acknowledgement is not final cleared credit; image-based processing such as CTS does not remove the need for validation.",
+  "customer_content": "Cheque clearing involves processing the deposited instrument and confirming the outcome with the relevant institution. A deposit acknowledgement is not final cleared credit; image-based processing such as CTS does not remove the need for validation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_clearing_concept.json"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "KB-fixed_deposit-concept",
+  "title": "Fixed deposits, tenure and eligibility - explained",
+  "category": "deposits",
+  "subcategory": "fixed_deposit",
+  "supported_intents": [
+    "fixed_deposit"
+  ],
+  "intent": "fixed_deposit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "fixed deposit",
+    "open FD",
+    "FD eligibility",
+    "FD tenure",
+    "what is FD"
+  ],
+  "aliases": [
+    "fixed deposit",
+    "open FD",
+    "FD eligibility",
+    "FD tenure",
+    "what is FD"
+  ],
+  "content": "A fixed deposit holds funds for a selected tenure under agreed terms. The applicable interest treatment, maturity instruction and early-withdrawal conditions should be reviewed before placing the deposit; a general explanation is not investment advice.",
+  "customer_content": "A fixed deposit holds funds for a selected tenure under agreed terms. The applicable interest treatment, maturity instruction and early-withdrawal conditions should be reviewed before placing the deposit; a general explanation is not investment advice.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/fixed_deposit_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-statement_delivery-concept",
+  "title": "Missing or protected statements - explained",
+  "category": "balances",
+  "subcategory": "statement_delivery",
+  "supported_intents": [
+    "statement_delivery"
+  ],
+  "intent": "statement_delivery",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "email statement",
+    "statement not received",
+    "statement password",
+    "protected statement"
+  ],
+  "aliases": [
+    "email statement",
+    "statement not received",
+    "statement password",
+    "protected statement"
+  ],
+  "content": "Statement delivery depends on the selected delivery channel and correct contact details. Protected statement files may use an institution-defined access format; support should explain the official instructions rather than request or reveal a customer's secret.",
+  "customer_content": "Statement delivery depends on the selected delivery channel and correct contact details. Protected statement files may use an institution-defined access format; support should explain the official instructions rather than request or reveal a customer's secret.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/statement_delivery_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-card_fees-concept",
+  "title": "Card annual and replacement charges - explained",
+  "category": "fees",
+  "subcategory": "card_fees",
+  "supported_intents": [
+    "card_fees"
+  ],
+  "intent": "card_fees",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "card annual fee",
+    "replacement card fee",
+    "debit card fee",
+    "credit card fee"
+  ],
+  "aliases": [
+    "card annual fee",
+    "replacement card fee",
+    "debit card fee",
+    "credit card fee"
+  ],
+  "content": "Card fees can relate to issuance, annual service or replacement, and may differ by card product. A lost-card replacement may not follow the same conditions as a routine expiry renewal; taxes or conditions should not be assumed.",
+  "customer_content": "Card fees can relate to issuance, annual service or replacement, and may differ by card product. A lost-card replacement may not follow the same conditions as a routine expiry renewal; taxes or conditions should not be assumed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "fees/card_fees_concept.json"
+}

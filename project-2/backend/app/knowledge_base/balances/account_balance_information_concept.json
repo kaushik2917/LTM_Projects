@@ -1,0 +1,34 @@
+{
+  "id": "KB-account_balance_information-concept",
+  "title": "Available and ledger balances - explained",
+  "category": "balances",
+  "subcategory": "account_balance_information",
+  "supported_intents": [
+    "account_balance_information"
+  ],
+  "intent": "account_balance_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "account balance",
+    "available balance",
+    "ledger balance",
+    "how much money",
+    "my balance"
+  ],
+  "aliases": [
+    "account balance",
+    "available balance",
+    "ledger balance",
+    "how much money",
+    "my balance"
+  ],
+  "content": "Available balance is the amount currently usable, while ledger balance reflects posted entries. Holds, uncleared deposits or pending authorizations can explain a difference. An explanation is general information; reading a specific customer's balance requires verification.",
+  "customer_content": "Available balance is the amount currently usable, while ledger balance reflects posted entries. Holds, uncleared deposits or pending authorizations can explain a difference. An explanation is general information; reading a specific customer's balance requires verification.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/account_balance_information_concept.json"
+}

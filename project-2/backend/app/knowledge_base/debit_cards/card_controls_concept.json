@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_controls-concept",
+  "title": "Card limits, contactless and international controls - explained",
+  "category": "debit_cards",
+  "subcategory": "card_controls",
+  "supported_intents": [
+    "card_controls"
+  ],
+  "intent": "card_controls",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "card limit",
+    "contactless",
+    "online spending limit",
+    "international card",
+    "POS limit",
+    "international activation"
+  ],
+  "aliases": [
+    "card limit",
+    "contactless",
+    "online spending limit",
+    "international card",
+    "POS limit",
+    "international activation"
+  ],
+  "content": "Separate controls may apply to ATM, store, online, contactless and international usage. Enabling a channel and setting its spending limit are different operations; available funds and merchant support still matter after a control is enabled.",
+  "customer_content": "Separate controls may apply to ATM, store, online, contactless and international usage. Enabling a channel and setting its spending limit are different operations; available funds and merchant support still matter after a control is enabled.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_controls_concept.json"
+}

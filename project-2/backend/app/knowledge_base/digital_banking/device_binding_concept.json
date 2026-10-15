@@ -1,0 +1,34 @@
+{
+  "id": "KB-device_binding-concept",
+  "title": "New devices, device binding and biometrics - explained",
+  "category": "digital_banking",
+  "subcategory": "device_binding",
+  "supported_intents": [
+    "device_binding"
+  ],
+  "intent": "device_binding",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "device binding",
+    "new phone",
+    "biometric login",
+    "mobile device",
+    "change handset"
+  ],
+  "aliases": [
+    "device binding",
+    "new phone",
+    "biometric login",
+    "mobile device",
+    "change handset"
+  ],
+  "content": "A banking app may associate access with a particular device. Moving to a new phone and changing a registered phone number are different operations; biometric access depends on the app's supported settings and device protections.",
+  "customer_content": "A banking app may associate access with a particular device. Moving to a new phone and changing a registered phone number are different operations; biometric access depends on the app's supported settings and device protections.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/device_binding_concept.json"
+}

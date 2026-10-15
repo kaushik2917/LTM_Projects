@@ -1,0 +1,34 @@
+{
+  "id": "KB-upi_information-procedure",
+  "title": "UPI concepts, IDs and QR payments - support procedure",
+  "category": "upi",
+  "subcategory": "upi_information",
+  "supported_intents": [
+    "upi_information"
+  ],
+  "intent": "upi_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "what is UPI",
+    "UPI ID",
+    "virtual payment address",
+    "QR payment",
+    "collect request"
+  ],
+  "aliases": [
+    "what is UPI",
+    "UPI ID",
+    "virtual payment address",
+    "QR payment",
+    "collect request"
+  ],
+  "content": "For a safe demonstration, inspect the displayed recipient and amount before approving a fictional QR payment or request. This prototype explains the flow but does not initiate a real payment, scan payment credentials or ask for a UPI PIN.",
+  "customer_content": "For a safe demonstration, inspect the displayed recipient and amount before approving a fictional QR payment or request. This prototype explains the flow but does not initiate a real payment, scan payment credentials or ask for a UPI PIN.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_information_procedure.json"
+}

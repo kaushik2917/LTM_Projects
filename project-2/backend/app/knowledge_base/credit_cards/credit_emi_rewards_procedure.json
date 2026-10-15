@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_emi_rewards-procedure",
+  "title": "Credit-card EMI and reward programmes - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_emi_rewards",
+  "supported_intents": [
+    "credit_emi_rewards"
+  ],
+  "intent": "credit_emi_rewards",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "card EMI conversion",
+    "reward points",
+    "reward redemption",
+    "credit card rewards"
+  ],
+  "aliases": [
+    "card EMI conversion",
+    "reward points",
+    "reward redemption",
+    "credit card rewards"
+  ],
+  "content": "In the demo, ask an agent to review a synthetic purchase for EMI eligibility or inspect the fictional rewards record. Read the configured offer before confirming any conversion; the assistant cannot redeem real rewards or promise approval.",
+  "customer_content": "In the demo, ask an agent to review a synthetic purchase for EMI eligibility or inspect the fictional rewards record. Read the configured offer before confirming any conversion; the assistant cannot redeem real rewards or promise approval.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_emi_rewards_procedure.json"
+}

@@ -1,0 +1,58 @@
+﻿{
+  "institution": "Call Sense Bank",
+  "fictional": true,
+  "currency": "INR",
+  "rates": {
+    "savings_annual_percent": 3,
+    "fd_12_month_annual_percent": 6,
+    "rd_12_month_annual_percent": 5.5,
+    "personal_loan_annual_percent": 12
+  },
+  "fees": {
+    "savings_monthly_service": 0,
+    "debit_annual": 150,
+    "debit_replacement": 100,
+    "neft_online": 0,
+    "cheque_book_25_leaves": 50,
+    "loan_late_installment": 100
+  },
+  "limits": {
+    "demo_debit_daily_atm": 20000,
+    "demo_card_online_daily": 50000,
+    "demo_transfer_daily": 100000
+  },
+  "branches": [
+    {
+      "id": "DEMO-CENTRAL",
+      "name": "Central Demo Branch",
+      "address": "10 Example Avenue, Demo City",
+      "hours": "Monday-Friday, 09:00-16:00",
+      "holidays": [
+        "2026-01-01"
+      ],
+      "services": [
+        "account support",
+        "cash deposit",
+        "KYC review"
+      ]
+    }
+  ],
+  "atms": [
+    {
+      "name": "Central Demo ATM",
+      "location": "10 Example Avenue, Demo City",
+      "services": [
+        "withdrawal",
+        "deposit"
+      ]
+    },
+    {
+      "name": "Riverside Demo ATM",
+      "location": "20 Sample Road, Demo City",
+      "services": [
+        "withdrawal"
+      ]
+    }
+  ],
+  "notice": "All figures are fictional configuration examples, not live rates or regulatory limits."
+}

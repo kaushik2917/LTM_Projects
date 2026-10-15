@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_return-concept",
+  "title": "Returned cheques and signature mismatch - explained",
+  "category": "cheques",
+  "subcategory": "cheque_return",
+  "supported_intents": [
+    "cheque_return"
+  ],
+  "intent": "cheque_return",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "cheque bounce",
+    "cheque returned",
+    "signature mismatch",
+    "cheque return reason"
+  ],
+  "aliases": [
+    "cheque bounce",
+    "cheque returned",
+    "signature mismatch",
+    "cheque return reason"
+  ],
+  "content": "A cheque can be returned for reasons such as a mismatch in required details, an instrument issue or insufficient funds. The actual return reason must come from the bank's record; fees and legal consequences depend on the applicable terms and circumstances.",
+  "customer_content": "A cheque can be returned for reasons such as a mismatch in required details, an instrument issue or insufficient funds. The actual return reason must come from the bank's record; fees and legal consequences depend on the applicable terms and circumstances.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_return_concept.json"
+}

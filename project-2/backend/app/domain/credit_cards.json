@@ -1,0 +1,127 @@
+﻿[
+  {
+    "id": "credit_application",
+    "title": "Credit-card application and eligibility",
+    "category": "credit_cards",
+    "aliases": [
+      "credit card eligibility",
+      "credit card application",
+      "credit application status"
+    ],
+    "overview": "A credit card provides a borrowing facility with repayment terms rather than direct access to a savings balance. Eligibility, supporting documents and approval depend on the issuer's assessment; general guidance is not an approval decision.",
+    "procedure": "In the fictional application flow, select the card category and review the configured document checklist with a demo agent. Application status is account-specific and requires demo verification; no approval or real credit limit is promised.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_limit",
+    "title": "Credit limits and available credit",
+    "category": "credit_cards",
+    "aliases": [
+      "credit limit",
+      "available credit",
+      "available limit",
+      "increase credit limit"
+    ],
+    "overview": "Available credit can differ from the total credit limit because of posted balances, pending authorizations, fees or repayments awaiting posting. A limit increase involves issuer assessment and is not guaranteed by a payment history alone.",
+    "procedure": "A verified demo profile may view its configured total and available credit. For a limit-review enquiry, an agent explains the synthetic review workflow; the assistant does not approve lending or encourage borrowing beyond the customer's means.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_billing",
+    "title": "Billing cycles, statement and due dates",
+    "category": "credit_cards",
+    "aliases": [
+      "billing cycle",
+      "statement date",
+      "payment due date",
+      "credit card bill"
+    ],
+    "overview": "A billing cycle groups card activity into a statement period. The statement date closes that period, while the payment due date is the repayment deadline shown on the statement; purchases near a cutoff can appear in a later cycle.",
+    "procedure": "Use the synthetic card statement to check the cycle and due date after profile verification. Confirm payment posting rather than relying only on a transfer receipt; real deadlines must come from the issuer's current statement.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_dues",
+    "title": "Minimum due and total card amount due",
+    "category": "credit_cards",
+    "aliases": [
+      "minimum amount due",
+      "total amount due",
+      "credit card due",
+      "minimum payment"
+    ],
+    "overview": "The minimum amount due is a required partial payment, not a promise that no interest will accrue. Paying only that amount can leave a balance subject to the card's terms; the total amount due represents the statement obligation.",
+    "procedure": "After demo verification, the adapter can read configured synthetic minimum and total dues. Review the card's published terms before deciding how to repay; the assistant explains concepts without prescribing a personal repayment strategy.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_payment",
+    "title": "Credit-card repayment and late payment",
+    "category": "credit_cards",
+    "aliases": [
+      "credit card payment",
+      "late credit payment",
+      "credit late fee",
+      "pay card bill"
+    ],
+    "overview": "Card payments may take time to appear in the issuer's record depending on the channel. A late or insufficient payment can attract charges and affect repayment status under the agreement; an initiated transfer is not always a posted repayment.",
+    "procedure": "For the synthetic workflow, check due date, payment reference and posting status before raising a missing-payment case. Only configured fees may be quoted; no automatic waiver, reversal or credit-report correction is promised.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_interest_cash",
+    "title": "Credit-card interest and cash advances",
+    "category": "credit_cards",
+    "aliases": [
+      "credit card interest",
+      "cash advance",
+      "credit cash withdrawal",
+      "revolving interest"
+    ],
+    "overview": "A cash advance is borrowing cash against a card facility and may have different fees and interest treatment from a purchase. Carrying a purchase balance can also attract interest according to the issuer's calculation method.",
+    "procedure": "Consult the configured synthetic card schedule for an example of the applicable charge categories. The assistant will not invent a real interest rate or estimate personalized borrowing costs without the necessary statement terms and inputs.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_emi_rewards",
+    "title": "Credit-card EMI and reward programmes",
+    "category": "credit_cards",
+    "aliases": [
+      "card EMI conversion",
+      "reward points",
+      "reward redemption",
+      "credit card rewards"
+    ],
+    "overview": "Converting an eligible card purchase into installments changes its repayment structure and may involve charges. Reward points follow a separate programme with earning, expiry and redemption rules; not every transaction is necessarily eligible.",
+    "procedure": "In the demo, ask an agent to review a synthetic purchase for EMI eligibility or inspect the fictional rewards record. Read the configured offer before confirming any conversion; the assistant cannot redeem real rewards or promise approval.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_closure",
+    "title": "Credit-card replacement and closure",
+    "category": "credit_cards",
+    "aliases": [
+      "credit card closure",
+      "close credit card",
+      "credit card replacement",
+      "blocked credit card"
+    ],
+    "overview": "Closing a credit card is different from replacing its physical card or freezing new transactions. Outstanding balances, installment plans, recurring payments and rewards may need attention before a closure request can be completed.",
+    "procedure": "The fictional closure checklist asks a demo agent to review dues, linked mandates and unresolved disputes. A lost or stolen credit card should be reported urgently through the security workflow rather than waiting for ordinary closure review.",
+    "risk": "LOW"
+  },
+  {
+    "id": "credit_rewards_expiry",
+    "title": "Reward expiry and missing reward points",
+    "category": "credit_cards",
+    "aliases": [
+      "reward expiry",
+      "points missing",
+      "uncredited rewards",
+      "expired points"
+    ],
+    "overview": "Reward programmes may post points after a delay, exclude particular transactions or expire unused points under their terms. A reversed purchase can also lead to points being adjusted, so compare the transaction and reward records.",
+    "procedure": "For the synthetic review, identify the relevant fictional purchase and statement period, then ask a demo agent to compare the reward schedule. The assistant cannot reinstate real expired points or promise an exception to programme rules.",
+    "risk": "LOW"
+  }
+]

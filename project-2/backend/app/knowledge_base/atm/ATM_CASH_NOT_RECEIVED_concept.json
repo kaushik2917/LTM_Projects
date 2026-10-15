@@ -1,0 +1,36 @@
+{
+  "id": "KB-ATM_CASH_NOT_RECEIVED-concept",
+  "title": "ATM debit with missing or partial cash - explained",
+  "category": "atm",
+  "subcategory": "ATM_CASH_NOT_RECEIVED",
+  "supported_intents": [
+    "ATM_CASH_NOT_RECEIVED"
+  ],
+  "intent": "ATM_CASH_NOT_RECEIVED",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "cash never came",
+    "cash not dispensed",
+    "ATM deducted money",
+    "cash did not come out",
+    "partial cash",
+    "no cash"
+  ],
+  "aliases": [
+    "cash never came",
+    "cash not dispensed",
+    "ATM deducted money",
+    "cash did not come out",
+    "partial cash",
+    "no cash"
+  ],
+  "content": "If an ATM debits your account but cash is missing or only partly dispensed, keep the time, location and transaction reference. Check whether the entry is pending or reversed before assuming the loss is final; a cash reconciliation review may be needed.",
+  "customer_content": "If an ATM debits your account but cash is missing or only partly dispensed, keep the time, location and transaction reference. Check whether the entry is pending or reversed before assuming the loss is final; a cash reconciliation review may be needed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/ATM_CASH_NOT_RECEIVED_concept.json"
+}

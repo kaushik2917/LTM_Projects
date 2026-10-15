@@ -1,0 +1,32 @@
+{
+  "id": "KB-branch_services-procedure",
+  "title": "Appointments, lockers and in-branch services - support procedure",
+  "category": "branches",
+  "subcategory": "branch_services",
+  "supported_intents": [
+    "branch_services"
+  ],
+  "intent": "branch_services",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "appointment",
+    "locker",
+    "service availability",
+    "branch services"
+  ],
+  "aliases": [
+    "appointment",
+    "locker",
+    "service availability",
+    "branch services"
+  ],
+  "content": "In the synthetic process, ask the demo branch agent to review the service category and configured availability. No real appointment or locker allotment is made, and unconfigured rental amounts or legal access rules are not supplied.",
+  "customer_content": "In the synthetic process, ask the demo branch agent to review the service category and configured availability. No real appointment or locker allotment is made, and unconfigured rental amounts or legal access rules are not supplied.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "branches/branch_services_procedure.json"
+}

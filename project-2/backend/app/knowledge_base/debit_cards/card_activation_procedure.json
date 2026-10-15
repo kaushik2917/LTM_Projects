@@ -1,0 +1,32 @@
+{
+  "id": "KB-card_activation-procedure",
+  "title": "Debit card activation and deactivation - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_activation",
+  "supported_intents": [
+    "card_activation"
+  ],
+  "intent": "card_activation",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "activate card",
+    "card activation",
+    "deactivate card",
+    "card deactivation"
+  ],
+  "aliases": [
+    "activate card",
+    "card activation",
+    "deactivate card",
+    "card deactivation"
+  ],
+  "content": "For the demo, an agent checks the synthetic card status and explains its activation menu. Never provide a PIN, CVV or OTP to this assistant; it cannot activate or deactivate a real card. If the card has not arrived or its delivery status is unexpected, request a delivery review before attempting activation.",
+  "customer_content": "For the demo, an agent checks the synthetic card status and explains its activation menu. Never provide a PIN, CVV or OTP to this assistant; it cannot activate or deactivate a real card. If the card has not arrived or its delivery status is unexpected, request a delivery review before attempting activation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_activation_procedure.json"
+}

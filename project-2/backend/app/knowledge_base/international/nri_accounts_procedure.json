@@ -1,0 +1,32 @@
+{
+  "id": "KB-nri_accounts-procedure",
+  "title": "NRE, NRO and FCNR concepts - support procedure",
+  "category": "international",
+  "subcategory": "nri_accounts",
+  "supported_intents": [
+    "nri_accounts"
+  ],
+  "intent": "nri_accounts",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "NRE",
+    "NRO",
+    "FCNR",
+    "NRI account"
+  ],
+  "aliases": [
+    "NRE",
+    "NRO",
+    "FCNR",
+    "NRI account"
+  ],
+  "content": "The fictional bank provides a product-comparison review through a demo agent. This assistant explains the categories at a high level but does not determine residency, invent regulatory limits or give personalized tax or remittance advice.",
+  "customer_content": "The fictional bank provides a product-comparison review through a demo agent. This assistant explains the categories at a high level but does not determine residency, invent regulatory limits or give personalized tax or remittance advice.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "international/nri_accounts_procedure.json"
+}

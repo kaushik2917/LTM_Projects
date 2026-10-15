@@ -1,0 +1,34 @@
+{
+  "id": "KB-account_balance_information-procedure",
+  "title": "Available and ledger balances - support procedure",
+  "category": "balances",
+  "subcategory": "account_balance_information",
+  "supported_intents": [
+    "account_balance_information"
+  ],
+  "intent": "account_balance_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "account balance",
+    "available balance",
+    "ledger balance",
+    "how much money",
+    "my balance"
+  ],
+  "aliases": [
+    "account balance",
+    "available balance",
+    "ledger balance",
+    "how much money",
+    "my balance"
+  ],
+  "content": "Select a fictional demo customer and complete the non-sensitive demo challenge before requesting a balance. The adapter returns only that profile's configured synthetic balances and labels them as demo data; it cannot query a real bank.",
+  "customer_content": "Select a fictional demo customer and complete the non-sensitive demo challenge before requesting a balance. The adapter returns only that profile's configured synthetic balances and labels them as demo data; it cannot query a real bank.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/account_balance_information_procedure.json"
+}

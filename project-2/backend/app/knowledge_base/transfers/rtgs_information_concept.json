@@ -1,0 +1,30 @@
+{
+  "id": "KB-rtgs_information-concept",
+  "title": "RTGS explained - explained",
+  "category": "transfers",
+  "subcategory": "rtgs_information",
+  "supported_intents": [
+    "rtgs_information"
+  ],
+  "intent": "rtgs_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "RTGS",
+    "real time gross settlement",
+    "what is RTGS"
+  ],
+  "aliases": [
+    "RTGS",
+    "real time gross settlement",
+    "what is RTGS"
+  ],
+  "content": "RTGS stands for Real Time Gross Settlement. It settles qualifying transfers individually in real time rather than netting them in a batch. Eligibility, value thresholds and supported channels must be checked against the applicable institution and system rules.",
+  "customer_content": "RTGS stands for Real Time Gross Settlement. It settles qualifying transfers individually in real time rather than netting them in a batch. Eligibility, value thresholds and supported channels must be checked against the applicable institution and system rules.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/rtgs_information_concept.json"
+}

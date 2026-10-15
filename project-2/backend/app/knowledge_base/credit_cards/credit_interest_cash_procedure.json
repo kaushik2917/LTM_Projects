@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_interest_cash-procedure",
+  "title": "Credit-card interest and cash advances - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_interest_cash",
+  "supported_intents": [
+    "credit_interest_cash"
+  ],
+  "intent": "credit_interest_cash",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "credit card interest",
+    "cash advance",
+    "credit cash withdrawal",
+    "revolving interest"
+  ],
+  "aliases": [
+    "credit card interest",
+    "cash advance",
+    "credit cash withdrawal",
+    "revolving interest"
+  ],
+  "content": "Consult the configured synthetic card schedule for an example of the applicable charge categories. The assistant will not invent a real interest rate or estimate personalized borrowing costs without the necessary statement terms and inputs.",
+  "customer_content": "Consult the configured synthetic card schedule for an example of the applicable charge categories. The assistant will not invent a real interest rate or estimate personalized borrowing costs without the necessary statement terms and inputs.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_interest_cash_procedure.json"
+}

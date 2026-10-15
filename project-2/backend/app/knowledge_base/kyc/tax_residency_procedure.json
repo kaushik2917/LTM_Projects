@@ -1,0 +1,32 @@
+{
+  "id": "KB-tax_residency-procedure",
+  "title": "Tax-residency and FATCA information - support procedure",
+  "category": "kyc",
+  "subcategory": "tax_residency",
+  "supported_intents": [
+    "tax_residency"
+  ],
+  "intent": "tax_residency",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "FATCA",
+    "tax residency",
+    "tax residence",
+    "PAN information"
+  ],
+  "aliases": [
+    "FATCA",
+    "tax residency",
+    "tax residence",
+    "PAN information"
+  ],
+  "content": "The Call Sense Bank demo routes declaration questions to a configured checklist and a human reviewer. This assistant does not infer a customer's tax status or provide tax advice; consult the relevant institution or a qualified adviser for real declarations.",
+  "customer_content": "The Call Sense Bank demo routes declaration questions to a configured checklist and a human reviewer. This assistant does not infer a customer's tax status or provide tax advice; consult the relevant institution or a qualified adviser for real declarations.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "kyc/tax_residency_procedure.json"
+}

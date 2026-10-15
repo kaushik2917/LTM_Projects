@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_return-procedure",
+  "title": "Returned cheques and signature mismatch - support procedure",
+  "category": "cheques",
+  "subcategory": "cheque_return",
+  "supported_intents": [
+    "cheque_return"
+  ],
+  "intent": "cheque_return",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "cheque bounce",
+    "cheque returned",
+    "signature mismatch",
+    "cheque return reason"
+  ],
+  "aliases": [
+    "cheque bounce",
+    "cheque returned",
+    "signature mismatch",
+    "cheque return reason"
+  ],
+  "content": "In a demo review, compare the return reason with the instrument details and ask the issuer to resolve the specific problem. Do not automatically redeposit an unchanged cheque or assume that the assistant can waive charges or provide legal advice.",
+  "customer_content": "In a demo review, compare the return reason with the instrument details and ask the issuer to resolve the specific problem. Do not automatically redeposit an unchanged cheque or assume that the assistant can waive charges or provide legal advice.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_return_procedure.json"
+}

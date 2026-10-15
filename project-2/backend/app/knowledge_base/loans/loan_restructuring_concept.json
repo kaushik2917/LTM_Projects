@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_restructuring-concept",
+  "title": "Repayment difficulty, restructuring and insurance - explained",
+  "category": "loans",
+  "subcategory": "loan_restructuring",
+  "supported_intents": [
+    "loan_restructuring"
+  ],
+  "intent": "loan_restructuring",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "loan restructuring",
+    "repayment difficulty",
+    "loan insurance",
+    "financial hardship"
+  ],
+  "aliases": [
+    "loan restructuring",
+    "repayment difficulty",
+    "loan insurance",
+    "financial hardship"
+  ],
+  "content": "Restructuring changes agreed repayment terms after review; it is not an automatic entitlement. Loan insurance is a separate contract with its own coverage and claims requirements, so repayment difficulty alone does not prove that a claim will be paid.",
+  "customer_content": "Restructuring changes agreed repayment terms after review; it is not an automatic entitlement. Loan insurance is a separate contract with its own coverage and claims requirements, so repayment difficulty alone does not prove that a claim will be paid.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_restructuring_concept.json"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "KB-rtgs_information-procedure",
+  "title": "RTGS explained - support procedure",
+  "category": "transfers",
+  "subcategory": "rtgs_information",
+  "supported_intents": [
+    "rtgs_information"
+  ],
+  "intent": "rtgs_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "RTGS",
+    "real time gross settlement",
+    "what is RTGS"
+  ],
+  "aliases": [
+    "RTGS",
+    "real time gross settlement",
+    "what is RTGS"
+  ],
+  "content": "Call Sense Bank's demonstration explains the RTGS flow using fictional transaction records. A demo agent can distinguish it from NEFT or IMPS; this assistant does not invent regulatory thresholds or send a real RTGS payment.",
+  "customer_content": "Call Sense Bank's demonstration explains the RTGS flow using fictional transaction records. A demo agent can distinguish it from NEFT or IMPS; this assistant does not invent regulatory thresholds or send a real RTGS payment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/rtgs_information_procedure.json"
+}

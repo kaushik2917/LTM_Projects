@@ -1,0 +1,30 @@
+{
+  "id": "KB-cheque_positive_pay-procedure",
+  "title": "Submitting positive-pay cheque details - support procedure",
+  "category": "cheques",
+  "subcategory": "cheque_positive_pay",
+  "supported_intents": [
+    "cheque_positive_pay"
+  ],
+  "intent": "cheque_positive_pay",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "positive pay submission",
+    "positive pay registration",
+    "confirm cheque details"
+  ],
+  "aliases": [
+    "positive pay submission",
+    "positive pay registration",
+    "confirm cheque details"
+  ],
+  "content": "The demo branch explains the configured submission channel and checks whether a synthetic cheque has a matching record. Real thresholds and required fields must come from the bank's policy; do not upload a real cheque image to this assistant.",
+  "customer_content": "The demo branch explains the configured submission channel and checks whether a synthetic cheque has a matching record. Real thresholds and required fields must come from the bank's policy; do not upload a real cheque image to this assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_positive_pay_procedure.json"
+}

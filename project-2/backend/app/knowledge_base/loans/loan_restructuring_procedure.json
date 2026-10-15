@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_restructuring-procedure",
+  "title": "Repayment difficulty, restructuring and insurance - support procedure",
+  "category": "loans",
+  "subcategory": "loan_restructuring",
+  "supported_intents": [
+    "loan_restructuring"
+  ],
+  "intent": "loan_restructuring",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "loan restructuring",
+    "repayment difficulty",
+    "loan insurance",
+    "financial hardship"
+  ],
+  "aliases": [
+    "loan restructuring",
+    "repayment difficulty",
+    "loan insurance",
+    "financial hardship"
+  ],
+  "content": "The synthetic workflow routes hardship or coverage questions to a demo agent with the relevant product context. Explain the issue without sensitive documents, and seek the lender or insurer's formal terms before relying on any proposed option.",
+  "customer_content": "The synthetic workflow routes hardship or coverage questions to a demo agent with the relevant product context. Explain the issue without sensitive documents, and seek the lender or insurer's formal terms before relying on any proposed option.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_restructuring_procedure.json"
+}

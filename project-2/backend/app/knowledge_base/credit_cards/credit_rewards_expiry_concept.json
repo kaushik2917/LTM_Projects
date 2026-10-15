@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_rewards_expiry-concept",
+  "title": "Reward expiry and missing reward points - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_rewards_expiry",
+  "supported_intents": [
+    "credit_rewards_expiry"
+  ],
+  "intent": "credit_rewards_expiry",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "reward expiry",
+    "points missing",
+    "uncredited rewards",
+    "expired points"
+  ],
+  "aliases": [
+    "reward expiry",
+    "points missing",
+    "uncredited rewards",
+    "expired points"
+  ],
+  "content": "Reward programmes may post points after a delay, exclude particular transactions or expire unused points under their terms. A reversed purchase can also lead to points being adjusted, so compare the transaction and reward records.",
+  "customer_content": "Reward programmes may post points after a delay, exclude particular transactions or expire unused points under their terms. A reversed purchase can also lead to points being adjusted, so compare the transaction and reward records.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_rewards_expiry_concept.json"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "KB-imps_information-concept",
+  "title": "IMPS explained - explained",
+  "category": "transfers",
+  "subcategory": "imps_information",
+  "supported_intents": [
+    "imps_information"
+  ],
+  "intent": "imps_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "IMPS",
+    "immediate payment service",
+    "what is IMPS"
+  ],
+  "aliases": [
+    "IMPS",
+    "immediate payment service",
+    "what is IMPS"
+  ],
+  "content": "IMPS stands for Immediate Payment Service. It is an electronic transfer service used by participating institutions in India. Actual completion still depends on a valid destination and service availability; a debit notification alone does not prove final beneficiary credit.",
+  "customer_content": "IMPS stands for Immediate Payment Service. It is an electronic transfer service used by participating institutions in India. Actual completion still depends on a valid destination and service availability; a debit notification alone does not prove final beneficiary credit.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/imps_information_concept.json"
+}

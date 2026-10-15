@@ -1,0 +1,32 @@
+{
+  "id": "KB-address_update-procedure",
+  "title": "Updating an address - support procedure",
+  "category": "accounts",
+  "subcategory": "address_update",
+  "supported_intents": [
+    "address_update"
+  ],
+  "intent": "address_update",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "address change",
+    "update address",
+    "change my address",
+    "new residence"
+  ],
+  "aliases": [
+    "address change",
+    "update address",
+    "change my address",
+    "new residence"
+  ],
+  "content": "For the synthetic bank, use the profile-update menu or a verified branch, select the address field, and follow the displayed evidence checklist. A demo reviewer checks the request before marking it complete; never paste a real residential address here.",
+  "customer_content": "Use the profile-update menu in your trusted banking app or visit a verified branch to request an address change. Follow the displayed document checklist and wait for review before treating the update as complete. Do not send a residential address through this conversation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/address_update_procedure.json"
+}

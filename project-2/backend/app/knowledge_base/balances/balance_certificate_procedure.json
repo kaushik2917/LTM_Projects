@@ -1,0 +1,30 @@
+{
+  "id": "KB-balance_certificate-procedure",
+  "title": "Balance certificates and dated confirmations - support procedure",
+  "category": "balances",
+  "subcategory": "balance_certificate",
+  "supported_intents": [
+    "balance_certificate"
+  ],
+  "intent": "balance_certificate",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "balance certificate",
+    "dated balance confirmation",
+    "proof of funds"
+  ],
+  "aliases": [
+    "balance certificate",
+    "dated balance confirmation",
+    "proof of funds"
+  ],
+  "content": "The demo branch can explain the certificate request after profile verification and selection of the relevant account and date. This research system does not issue official proof of funds or documents suitable for legal, visa or lending use.",
+  "customer_content": "The demo branch can explain the certificate request after profile verification and selection of the relevant account and date. This research system does not issue official proof of funds or documents suitable for legal, visa or lending use.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/balance_certificate_procedure.json"
+}

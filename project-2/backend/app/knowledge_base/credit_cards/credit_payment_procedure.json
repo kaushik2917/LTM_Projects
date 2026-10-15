@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_payment-procedure",
+  "title": "Credit-card repayment and late payment - support procedure",
+  "category": "credit_cards",
+  "subcategory": "credit_payment",
+  "supported_intents": [
+    "credit_payment"
+  ],
+  "intent": "credit_payment",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "credit card payment",
+    "late credit payment",
+    "credit late fee",
+    "pay card bill"
+  ],
+  "aliases": [
+    "credit card payment",
+    "late credit payment",
+    "credit late fee",
+    "pay card bill"
+  ],
+  "content": "For the synthetic workflow, check due date, payment reference and posting status before raising a missing-payment case. Only configured fees may be quoted; no automatic waiver, reversal or credit-report correction is promised.",
+  "customer_content": "For the synthetic workflow, check due date, payment reference and posting status before raising a missing-payment case. Only configured fees may be quoted; no automatic waiver, reversal or credit-report correction is promised.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_payment_procedure.json"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "KB-atm_retained_card-concept",
+  "title": "Cards retained by an ATM - explained",
+  "category": "atm",
+  "subcategory": "atm_retained_card",
+  "supported_intents": [
+    "atm_retained_card"
+  ],
+  "intent": "atm_retained_card",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "ATM retained card",
+    "machine swallowed card",
+    "card stuck in ATM"
+  ],
+  "aliases": [
+    "ATM retained card",
+    "machine swallowed card",
+    "card stuck in ATM"
+  ],
+  "content": "An ATM may retain a card after a device problem or security trigger. Do not accept help from strangers asking for a PIN or attempt to dismantle the machine. Use the bank's verified support channel to protect the card.",
+  "customer_content": "An ATM may retain a card after a device problem or security trigger. Do not accept help from strangers asking for a PIN or attempt to dismantle the machine. Use the bank's verified support channel to protect the card.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/atm_retained_card_concept.json"
+}

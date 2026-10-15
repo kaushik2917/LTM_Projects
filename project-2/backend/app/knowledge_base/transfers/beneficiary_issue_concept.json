@@ -1,0 +1,34 @@
+{
+  "id": "KB-beneficiary_issue-concept",
+  "title": "Beneficiaries and cooling periods - explained",
+  "category": "transfers",
+  "subcategory": "beneficiary_issue",
+  "supported_intents": [
+    "beneficiary_issue"
+  ],
+  "intent": "beneficiary_issue",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "beneficiary",
+    "payee",
+    "beneficiary addition",
+    "beneficiary deletion",
+    "cooling period"
+  ],
+  "aliases": [
+    "beneficiary",
+    "payee",
+    "beneficiary addition",
+    "beneficiary deletion",
+    "cooling period"
+  ],
+  "content": "A beneficiary is the intended recipient saved for a transfer. Adding, deleting and activating a beneficiary are separate operations. Some products apply a waiting or cooling period to a newly added recipient; the applicable rule must come from that product's policy.",
+  "customer_content": "A beneficiary is the intended recipient saved for a transfer. Adding, deleting and activating a beneficiary are separate operations. Some products apply a waiting or cooling period to a newly added recipient; the applicable rule must come from that product's policy.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/beneficiary_issue_concept.json"
+}

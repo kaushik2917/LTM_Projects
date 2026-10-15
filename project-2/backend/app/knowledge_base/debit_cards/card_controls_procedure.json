@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_controls-procedure",
+  "title": "Card limits, contactless and international controls - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_controls",
+  "supported_intents": [
+    "card_controls"
+  ],
+  "intent": "card_controls",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "card limit",
+    "contactless",
+    "online spending limit",
+    "international card",
+    "POS limit",
+    "international activation"
+  ],
+  "aliases": [
+    "card limit",
+    "contactless",
+    "online spending limit",
+    "international card",
+    "POS limit",
+    "international activation"
+  ],
+  "content": "The demo card panel shows configured channel flags and a synthetic limit. Request an authorized review to change controls; the assistant explains settings but does not bypass authentication or promise that an international payment will be accepted.",
+  "customer_content": "The demo card panel shows configured channel flags and a synthetic limit. Request an authorized review to change controls; the assistant explains settings but does not bypass authentication or promise that an international payment will be accepted.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_controls_procedure.json"
+}

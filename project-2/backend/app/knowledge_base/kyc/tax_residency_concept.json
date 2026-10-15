@@ -1,0 +1,32 @@
+{
+  "id": "KB-tax_residency-concept",
+  "title": "Tax-residency and FATCA information - explained",
+  "category": "kyc",
+  "subcategory": "tax_residency",
+  "supported_intents": [
+    "tax_residency"
+  ],
+  "intent": "tax_residency",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "FATCA",
+    "tax residency",
+    "tax residence",
+    "PAN information"
+  ],
+  "aliases": [
+    "FATCA",
+    "tax residency",
+    "tax residence",
+    "PAN information"
+  ],
+  "content": "Tax-residency declarations and related reporting frameworks help institutions determine applicable reporting obligations. Their requirements depend on personal circumstances and jurisdiction; nationality, address and tax residence are not always interchangeable.",
+  "customer_content": "Tax-residency declarations and related reporting frameworks help institutions determine applicable reporting obligations. Their requirements depend on personal circumstances and jurisdiction; nationality, address and tax residence are not always interchangeable.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "kyc/tax_residency_concept.json"
+}

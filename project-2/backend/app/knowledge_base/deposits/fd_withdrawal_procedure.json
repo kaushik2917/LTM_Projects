@@ -1,0 +1,32 @@
+{
+  "id": "KB-fd_withdrawal-procedure",
+  "title": "Premature FD withdrawal and closure - support procedure",
+  "category": "deposits",
+  "subcategory": "fd_withdrawal",
+  "supported_intents": [
+    "fd_withdrawal"
+  ],
+  "intent": "fd_withdrawal",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "premature withdrawal",
+    "FD closure",
+    "break fixed deposit",
+    "FD interest"
+  ],
+  "aliases": [
+    "premature withdrawal",
+    "FD closure",
+    "break fixed deposit",
+    "FD interest"
+  ],
+  "content": "A verified demo agent can compare the fictional booking terms with the requested closure date. Quote only the configured synthetic schedule, and obtain the institution's actual settlement figure before making any real financial decision.",
+  "customer_content": "A verified demo agent can compare the fictional booking terms with the requested closure date. Quote only the configured synthetic schedule, and obtain the institution's actual settlement figure before making any real financial decision.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/fd_withdrawal_procedure.json"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "KB-KYC_information-concept",
+  "title": "KYC meaning and document checks - explained",
+  "category": "kyc",
+  "subcategory": "KYC_information",
+  "supported_intents": [
+    "KYC_information"
+  ],
+  "intent": "KYC_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "KYC",
+    "KYC documents",
+    "identity proof",
+    "address proof",
+    "what is KYC"
+  ],
+  "aliases": [
+    "KYC",
+    "KYC documents",
+    "identity proof",
+    "address proof",
+    "what is KYC"
+  ],
+  "content": "KYC means Know Your Customer: checks used to establish and maintain customer information. Identity proof, address evidence and product-specific records can form part of the process. Requirements vary by institution and applicable jurisdiction.",
+  "customer_content": "KYC means Know Your Customer: checks used to establish and maintain customer information. Identity proof, address evidence and product-specific records can form part of the process. Requirements vary by institution and applicable jurisdiction.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "kyc/KYC_information_concept.json"
+}

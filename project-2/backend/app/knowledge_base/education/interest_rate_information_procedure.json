@@ -1,0 +1,32 @@
+{
+  "id": "KB-interest_rate_information-procedure",
+  "title": "Interest, simple interest and compounding - support procedure",
+  "category": "education",
+  "subcategory": "interest_rate_information",
+  "supported_intents": [
+    "interest_rate_information"
+  ],
+  "intent": "interest_rate_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "interest rate",
+    "simple interest",
+    "compound interest",
+    "savings interest"
+  ],
+  "aliases": [
+    "interest rate",
+    "simple interest",
+    "compound interest",
+    "savings interest"
+  ],
+  "content": "For bank-specific examples, Call Sense Bank uses the configured synthetic product rates only. Ask which product and tenure you mean before comparing terms; the assistant never substitutes a guessed live rate for missing configuration.",
+  "customer_content": "For bank-specific examples, Call Sense Bank uses the configured synthetic product rates only. Ask which product and tenure you mean before comparing terms; the assistant never substitutes a guessed live rate for missing configuration.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "education/interest_rate_information_procedure.json"
+}

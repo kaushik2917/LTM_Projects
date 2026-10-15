@@ -1,0 +1,32 @@
+{
+  "id": "KB-fd_withdrawal-concept",
+  "title": "Premature FD withdrawal and closure - explained",
+  "category": "deposits",
+  "subcategory": "fd_withdrawal",
+  "supported_intents": [
+    "fd_withdrawal"
+  ],
+  "intent": "fd_withdrawal",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "premature withdrawal",
+    "FD closure",
+    "break fixed deposit",
+    "FD interest"
+  ],
+  "aliases": [
+    "premature withdrawal",
+    "FD closure",
+    "break fixed deposit",
+    "FD interest"
+  ],
+  "content": "Withdrawing a fixed deposit before its agreed maturity can change the interest payable or trigger a configured charge. Partial and full withdrawal may have different availability; the applicable treatment depends on the booked product terms.",
+  "customer_content": "Withdrawing a fixed deposit before its agreed maturity can change the interest payable or trigger a configured charge. Partial and full withdrawal may have different availability; the applicable treatment depends on the booked product terms.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/fd_withdrawal_concept.json"
+}

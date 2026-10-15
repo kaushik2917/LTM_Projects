@@ -1,0 +1,34 @@
+{
+  "id": "KB-fixed_deposit-procedure",
+  "title": "Fixed deposits, tenure and eligibility - support procedure",
+  "category": "deposits",
+  "subcategory": "fixed_deposit",
+  "supported_intents": [
+    "fixed_deposit"
+  ],
+  "intent": "fixed_deposit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "fixed deposit",
+    "open FD",
+    "FD eligibility",
+    "FD tenure",
+    "what is FD"
+  ],
+  "aliases": [
+    "fixed deposit",
+    "open FD",
+    "FD eligibility",
+    "FD tenure",
+    "what is FD"
+  ],
+  "content": "The fictional Call Sense Bank FD is described in the configured product schedule. A demo agent explains the available tenure and sample rate, while opening a real deposit must happen through an authenticated institution channel.",
+  "customer_content": "Before opening a fixed deposit, review the tenure, applicable rate, maturity instruction and early-withdrawal terms. Use an authenticated banking channel to apply, and confirm the terms before placing funds.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/fixed_deposit_procedure.json"
+}

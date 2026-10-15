@@ -1,0 +1,30 @@
+{
+  "id": "KB-account_conversion-concept",
+  "title": "Converting an account product - explained",
+  "category": "accounts",
+  "subcategory": "account_conversion",
+  "supported_intents": [
+    "account_conversion"
+  ],
+  "intent": "account_conversion",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "convert savings account",
+    "change salary account",
+    "account conversion"
+  ],
+  "aliases": [
+    "convert savings account",
+    "change salary account",
+    "account conversion"
+  ],
+  "content": "Changing an account product can alter fees, balance conditions and available features. It is different from changing ownership or correcting profile details; linked cards, mandates and deposits may also need review.",
+  "customer_content": "Changing an account product can alter fees, balance conditions and available features. It is different from changing ownership or correcting profile details; linked cards, mandates and deposits may also need review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_conversion_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_fees-concept",
+  "title": "Account fees and minimum-balance charges - explained",
+  "category": "fees",
+  "subcategory": "account_fees",
+  "supported_intents": [
+    "account_fees"
+  ],
+  "intent": "account_fees",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "account fees",
+    "minimum balance",
+    "service charges",
+    "balance charges"
+  ],
+  "aliases": [
+    "account fees",
+    "minimum balance",
+    "service charges",
+    "balance charges"
+  ],
+  "content": "Minimum-balance conditions and account fees depend on the chosen product. An average-balance rule is not necessarily the same as a daily minimum, and some variants may have different conditions; do not assume a fee waiver applies.",
+  "customer_content": "Minimum-balance conditions and account fees depend on the chosen product. An average-balance rule is not necessarily the same as a daily minimum, and some variants may have different conditions; do not assume a fee waiver applies.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "fees/account_fees_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-atm_limits_charges-concept",
+  "title": "ATM limits, charges and availability - explained",
+  "category": "atm",
+  "subcategory": "atm_limits_charges",
+  "supported_intents": [
+    "atm_limits_charges"
+  ],
+  "intent": "atm_limits_charges",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "ATM withdrawal limit",
+    "ATM charges",
+    "ATM unavailable",
+    "international ATM"
+  ],
+  "aliases": [
+    "ATM withdrawal limit",
+    "ATM charges",
+    "ATM unavailable",
+    "international ATM"
+  ],
+  "content": "ATM withdrawals can be constrained by card limits, machine cash availability and network or currency support. The machine's own fee and the issuer's fee can be separate; an international ATM transaction may also involve currency conversion.",
+  "customer_content": "ATM withdrawals can be constrained by card limits, machine cash availability and network or currency support. The machine's own fee and the issuer's fee can be separate; an international ATM transaction may also involve currency conversion.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/atm_limits_charges_concept.json"
+}

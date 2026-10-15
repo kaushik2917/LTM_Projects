@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_billing-concept",
+  "title": "Billing cycles, statement and due dates - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_billing",
+  "supported_intents": [
+    "credit_billing"
+  ],
+  "intent": "credit_billing",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "billing cycle",
+    "statement date",
+    "payment due date",
+    "credit card bill"
+  ],
+  "aliases": [
+    "billing cycle",
+    "statement date",
+    "payment due date",
+    "credit card bill"
+  ],
+  "content": "A billing cycle groups card activity into a statement period. The statement date closes that period, while the payment due date is the repayment deadline shown on the statement; purchases near a cutoff can appear in a later cycle.",
+  "customer_content": "A billing cycle groups card activity into a statement period. The statement date closes that period, while the payment due date is the repayment deadline shown on the statement; purchases near a cutoff can appear in a later cycle.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_billing_concept.json"
+}

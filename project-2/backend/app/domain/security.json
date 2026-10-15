@@ -1,0 +1,94 @@
+﻿[
+  {
+    "id": "unknown_transaction",
+    "title": "Unrecognized and unauthorized transactions",
+    "category": "security",
+    "aliases": [
+      "unknown transaction",
+      "unauthorized",
+      "do not recognize",
+      "don't recognize",
+      "unrecognized payment"
+    ],
+    "overview": "An unfamiliar transaction can indicate fraud or an unfamiliar merchant description. Review it promptly through a verified banking channel and protect affected access if misuse is suspected; do not wait for a chatbot to confirm that fraud occurred.",
+    "procedure": "This is a high-priority handoff. The demo agent receives the masked description, amount and known channel, and may simulate blocking a verified synthetic card. Do not share credentials, and use your real bank's verified fraud contact for actual losses.",
+    "risk": "HIGH"
+  },
+  {
+    "id": "fraud_report",
+    "title": "Fraud reports and suspicious banking contact",
+    "category": "security",
+    "aliases": [
+      "fraud",
+      "scam",
+      "phishing",
+      "smishing",
+      "vishing",
+      "fake banking call",
+      "malicious link"
+    ],
+    "overview": "Fraud attempts may use calls, messages or links that impersonate bank staff and create urgency. Avoid interacting with suspicious links, stop sharing information and contact the bank through independently verified details; an apparent caller name is not proof of identity.",
+    "procedure": "The synthetic security workflow records the masked report and escalates to an agent with high priority. If a real credential or payment may be compromised, act through the institution's verified fraud process; this assistant cannot recover funds or investigate actual accounts.",
+    "risk": "HIGH"
+  },
+  {
+    "id": "account_takeover",
+    "title": "Compromised access, SIM swaps and lost phones",
+    "category": "security",
+    "aliases": [
+      "account takeover",
+      "suspicious login",
+      "SIM swap",
+      "lost phone",
+      "credential compromise",
+      "hacked"
+    ],
+    "overview": "Unexpected login activity, loss of a banking device or a suspected SIM swap can compromise access. Use another trusted route to reach the institution and mobile operator where relevant; avoid approving unexpected login or payment requests.",
+    "procedure": "The demo agent receives a high-priority access-security case and can explain simulated channel protection. Follow the real institution's recovery steps independently; do not disclose a password, OTP or remote-access code to this assistant.",
+    "risk": "HIGH"
+  },
+  {
+    "id": "upi_fraud",
+    "title": "Fraudulent UPI requests and fake QR codes",
+    "category": "security",
+    "aliases": [
+      "UPI fraud",
+      "fake QR",
+      "fraudulent collect",
+      "UPI scam",
+      "unknown UPI"
+    ],
+    "overview": "A request to enter a PIN to receive money, approve an unexplained collect request or scan an unsolicited QR code can be a fraud warning. Verify the payer or merchant independently before authorizing any transaction.",
+    "procedure": "The synthetic workflow marks the report high risk and prepares a human handoff with the payment channel and masked description. Reject suspicious requests and contact verified bank support for any real debit; the assistant never requests your UPI PIN.",
+    "risk": "HIGH"
+  },
+  {
+    "id": "remote_access_scam",
+    "title": "Remote-access, screen-sharing and OTP scams",
+    "category": "security",
+    "aliases": [
+      "remote access scam",
+      "screen sharing scam",
+      "OTP scam",
+      "PIN scam",
+      "support app scam"
+    ],
+    "overview": "A caller asking you to install remote-control software, share your screen during banking or disclose a verification code may be attempting fraud. Stop the interaction and avoid further approvals; screen sharing can expose more than the visible payment.",
+    "procedure": "Use a trusted device or verified contact route to seek urgent support if access may have been exposed. The demo creates a high-priority handoff without collecting software access codes or secrets and does not claim that a real device has been secured.",
+    "risk": "HIGH"
+  },
+  {
+    "id": "security_education",
+    "title": "Recognizing and preventing banking scams",
+    "category": "security",
+    "aliases": [
+      "how to avoid scams",
+      "what is phishing",
+      "identify fake bank calls",
+      "prevent banking fraud"
+    ],
+    "overview": "Bank impersonation scams often pressure people to share secrets, install remote-access software or authorize an unexplained payment. Independently verify contact details and use trusted banking channels; legitimate support should not require you to disclose a PIN, OTP, CVV or password.",
+    "procedure": "For preventive guidance, review the warning signs and stop before taking an unfamiliar action. If money, credentials or access have already been exposed, say so without repeating the secret so the assistant can create an urgent human-support handoff.",
+    "risk": "LOW"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "id": "KB-loan_closure-procedure",
+  "title": "Loan closure, statements and NOC - support procedure",
+  "category": "loans",
+  "subcategory": "loan_closure",
+  "supported_intents": [
+    "loan_closure"
+  ],
+  "intent": "loan_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "loan closure",
+    "NOC",
+    "loan statement",
+    "loan outstanding",
+    "loan account"
+  ],
+  "aliases": [
+    "loan closure",
+    "NOC",
+    "loan statement",
+    "loan outstanding",
+    "loan account"
+  ],
+  "content": "After demo verification, the agent checks fictional outstanding balances and closure status before explaining statement or NOC requests. No official certificate, release of collateral or credit-report update is performed by this prototype.",
+  "customer_content": "After demo verification, the agent checks fictional outstanding balances and closure status before explaining statement or NOC requests. No official certificate, release of collateral or credit-report update is performed by this prototype.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_closure_procedure.json"
+}

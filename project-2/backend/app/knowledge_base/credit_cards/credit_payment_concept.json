@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_payment-concept",
+  "title": "Credit-card repayment and late payment - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_payment",
+  "supported_intents": [
+    "credit_payment"
+  ],
+  "intent": "credit_payment",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "credit card payment",
+    "late credit payment",
+    "credit late fee",
+    "pay card bill"
+  ],
+  "aliases": [
+    "credit card payment",
+    "late credit payment",
+    "credit late fee",
+    "pay card bill"
+  ],
+  "content": "Card payments may take time to appear in the issuer's record depending on the channel. A late or insufficient payment can attract charges and affect repayment status under the agreement; an initiated transfer is not always a posted repayment.",
+  "customer_content": "Card payments may take time to appear in the issuer's record depending on the channel. A late or insufficient payment can attract charges and affect repayment status under the agreement; an initiated transfer is not always a posted repayment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_payment_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_fees-procedure",
+  "title": "Account fees and minimum-balance charges - support procedure",
+  "category": "fees",
+  "subcategory": "account_fees",
+  "supported_intents": [
+    "account_fees"
+  ],
+  "intent": "account_fees",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "account fees",
+    "minimum balance",
+    "service charges",
+    "balance charges"
+  ],
+  "aliases": [
+    "account fees",
+    "minimum balance",
+    "service charges",
+    "balance charges"
+  ],
+  "content": "Call Sense Bank's fictional schedule supplies the demo balance condition and any listed charge. Ask a demo agent to review the configured product before explaining a posted synthetic fee; no unlisted amount may be invented or waived by the assistant.",
+  "customer_content": "Call Sense Bank's fictional schedule supplies the demo balance condition and any listed charge. Ask a demo agent to review the configured product before explaining a posted synthetic fee; no unlisted amount may be invented or waived by the assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "fees/account_fees_procedure.json"
+}

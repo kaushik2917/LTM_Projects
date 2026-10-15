@@ -1,0 +1,44 @@
+﻿[
+  {
+    "id": "credit_score",
+    "title": "Credit scores and credit-report concepts",
+    "category": "education",
+    "aliases": [
+      "credit score",
+      "credit report",
+      "credit rating",
+      "improve score"
+    ],
+    "overview": "A credit score summarizes aspects of reported borrowing and repayment behavior using a provider's model. Different models and lenders can interpret information differently; a score is not a guarantee of approval or a complete picture of affordability.",
+    "procedure": "For a general enquiry, review your report through its authorized provider and use its correction process for suspected errors. The demo assistant does not access real reports, promise a score increase or recommend personalized borrowing decisions.",
+    "risk": "LOW"
+  },
+  {
+    "id": "interest_rate_information",
+    "title": "Interest, simple interest and compounding",
+    "category": "education",
+    "aliases": [
+      "interest rate",
+      "simple interest",
+      "compound interest",
+      "savings interest"
+    ],
+    "overview": "Interest is the cost of borrowing or a return paid under a deposit agreement. Simple and compound calculations treat accumulated interest differently, while frequency and product terms affect the result; a headline rate alone may not describe all costs.",
+    "procedure": "For bank-specific examples, Call Sense Bank uses the configured synthetic product rates only. Ask which product and tenure you mean before comparing terms; the assistant never substitutes a guessed live rate for missing configuration.",
+    "risk": "LOW"
+  },
+  {
+    "id": "general_banking_query",
+    "title": "Banking support and choosing a service",
+    "category": "education",
+    "aliases": [
+      "banking help",
+      "hello",
+      "help with banking",
+      "what can you do"
+    ],
+    "overview": "Call Sense supports banking information, synthetic account enquiries and human handoff. It distinguishes educational explanations from bank policy and from verified demo records, so not every question requires account access.",
+    "procedure": "Describe whether your question concerns an account, a card, a payment, a deposit or a loan. The assistant can ask a focused clarification, retrieve approved guidance, or prepare a demo-agent case when the issue needs human authority.",
+    "risk": "LOW"
+  }
+]

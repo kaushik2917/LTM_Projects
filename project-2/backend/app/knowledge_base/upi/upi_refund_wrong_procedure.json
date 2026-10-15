@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_refund_wrong-procedure",
+  "title": "UPI refunds and wrong-recipient transfers - support procedure",
+  "category": "upi",
+  "subcategory": "upi_refund_wrong",
+  "supported_intents": [
+    "upi_refund_wrong"
+  ],
+  "intent": "upi_refund_wrong",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI refund",
+    "wrong UPI transfer",
+    "UPI sent wrong person",
+    "UPI dispute"
+  ],
+  "aliases": [
+    "UPI refund",
+    "wrong UPI transfer",
+    "UPI sent wrong person",
+    "UPI dispute"
+  ],
+  "content": "Report a wrong-recipient payment promptly through verified support with its reference, date and approximate amount. The synthetic workflow creates a review case; the assistant never promises recovery or contacts a real recipient.",
+  "customer_content": "Report a wrong-recipient payment promptly through verified support with its reference, date and approximate amount. The synthetic workflow creates a review case; the assistant never promises recovery or contacts a real recipient.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_refund_wrong_procedure.json"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "KB-unknown_transaction-concept",
+  "title": "Unrecognized and unauthorized transactions - explained",
+  "category": "security",
+  "subcategory": "unknown_transaction",
+  "supported_intents": [
+    "unknown_transaction"
+  ],
+  "intent": "unknown_transaction",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "unknown transaction",
+    "unauthorized",
+    "do not recognize",
+    "don't recognize",
+    "unrecognized payment"
+  ],
+  "aliases": [
+    "unknown transaction",
+    "unauthorized",
+    "do not recognize",
+    "don't recognize",
+    "unrecognized payment"
+  ],
+  "content": "An unfamiliar transaction can indicate fraud or an unfamiliar merchant description. Review it promptly through a verified banking channel and protect affected access if misuse is suspected; do not wait for a chatbot to confirm that fraud occurred.",
+  "customer_content": "An unfamiliar transaction can indicate fraud or an unfamiliar merchant description. Review it promptly through a verified banking channel and protect affected access if misuse is suspected; do not wait for a chatbot to confirm that fraud occurred.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/unknown_transaction_concept.json"
+}

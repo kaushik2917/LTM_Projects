@@ -1,0 +1,34 @@
+{
+  "id": "KB-upi_fraud-procedure",
+  "title": "Fraudulent UPI requests and fake QR codes - support procedure",
+  "category": "security",
+  "subcategory": "upi_fraud",
+  "supported_intents": [
+    "upi_fraud"
+  ],
+  "intent": "upi_fraud",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI fraud",
+    "fake QR",
+    "fraudulent collect",
+    "UPI scam",
+    "unknown UPI"
+  ],
+  "aliases": [
+    "UPI fraud",
+    "fake QR",
+    "fraudulent collect",
+    "UPI scam",
+    "unknown UPI"
+  ],
+  "content": "The synthetic workflow marks the report high risk and prepares a human handoff with the payment channel and masked description. Reject suspicious requests and contact verified bank support for any real debit; the assistant never requests your UPI PIN.",
+  "customer_content": "The synthetic workflow marks the report high risk and prepares a human handoff with the payment channel and masked description. Reject suspicious requests and contact verified bank support for any real debit; the assistant never requests your UPI PIN.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/upi_fraud_procedure.json"
+}

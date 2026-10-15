@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_renewal-procedure",
+  "title": "Expiry, renewal and damaged-card replacement - support procedure",
+  "category": "debit_cards",
+  "subcategory": "card_renewal",
+  "supported_intents": [
+    "card_renewal"
+  ],
+  "intent": "card_renewal",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "card expires",
+    "expired card",
+    "card renewal",
+    "damaged card",
+    "replacement debit card",
+    "expires next month"
+  ],
+  "aliases": [
+    "card expires",
+    "expired card",
+    "card renewal",
+    "damaged card",
+    "replacement debit card",
+    "expires next month"
+  ],
+  "content": "Call Sense Bank's demo renewal process lets an agent review the synthetic expiry date and replacement stage. Request review before expiry, and update recurring card payments after receiving an authorized replacement; no delivery date is guaranteed.",
+  "customer_content": "Request a card renewal review before expiry through your verified banking channel. Check the registered contact details and update recurring payments after receiving an authorized replacement. A delivery date cannot be guaranteed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_renewal_procedure.json"
+}

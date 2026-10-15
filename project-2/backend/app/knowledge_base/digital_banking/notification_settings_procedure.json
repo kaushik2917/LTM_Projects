@@ -1,0 +1,32 @@
+{
+  "id": "KB-notification_settings-procedure",
+  "title": "SMS, email and push notifications - support procedure",
+  "category": "digital_banking",
+  "subcategory": "notification_settings",
+  "supported_intents": [
+    "notification_settings"
+  ],
+  "intent": "notification_settings",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "SMS alerts",
+    "email alerts",
+    "push notifications",
+    "notification settings"
+  ],
+  "aliases": [
+    "SMS alerts",
+    "email alerts",
+    "push notifications",
+    "notification settings"
+  ],
+  "content": "The demo profile contains synthetic notification preferences that an agent can explain. Check the actual transaction status in the trusted channel when an alert is delayed, and confirm any notification fees using the configured product schedule.",
+  "customer_content": "The demo profile contains synthetic notification preferences that an agent can explain. Check the actual transaction status in the trusted channel when an alert is delayed, and confirm any notification fees using the configured product schedule.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/notification_settings_procedure.json"
+}

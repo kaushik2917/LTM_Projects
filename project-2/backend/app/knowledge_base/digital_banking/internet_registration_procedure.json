@@ -1,0 +1,32 @@
+{
+  "id": "KB-internet_registration-procedure",
+  "title": "Internet and mobile banking registration - support procedure",
+  "category": "digital_banking",
+  "subcategory": "internet_registration",
+  "supported_intents": [
+    "internet_registration"
+  ],
+  "intent": "internet_registration",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "internet banking registration",
+    "mobile banking registration",
+    "register app",
+    "online banking"
+  ],
+  "aliases": [
+    "internet banking registration",
+    "mobile banking registration",
+    "register app",
+    "online banking"
+  ],
+  "content": "Use the institution's verified website or app-store listing and follow its enrollment screens. The Call Sense Bank demo explains registration with fictional profiles; never provide authentication secrets or install software from an unsolicited support link.",
+  "customer_content": "Use the institution's verified website or app-store listing and follow its enrollment screens. The Call Sense Bank demo explains registration with fictional profiles; never provide authentication secrets or install software from an unsolicited support link.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/internet_registration_procedure.json"
+}

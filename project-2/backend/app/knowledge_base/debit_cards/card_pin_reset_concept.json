@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_pin_reset-concept",
+  "title": "Debit card PIN setup and reset - explained",
+  "category": "debit_cards",
+  "subcategory": "card_pin_reset",
+  "supported_intents": [
+    "card_pin_reset"
+  ],
+  "intent": "card_pin_reset",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "PIN reset",
+    "PIN generation",
+    "forgot card PIN",
+    "ATM PIN",
+    "incorrect PIN",
+    "PIN retry exceeded"
+  ],
+  "aliases": [
+    "PIN reset",
+    "PIN generation",
+    "forgot card PIN",
+    "ATM PIN",
+    "incorrect PIN",
+    "PIN retry exceeded"
+  ],
+  "content": "A forgotten card PIN cannot be read back by support. Use the bank's secure PIN-generation or reset flow. Repeated incorrect attempts can restrict use; continuing to guess can prolong the problem and may require a review.",
+  "customer_content": "A forgotten card PIN cannot be read back by support. Use the bank's secure PIN-generation or reset flow. Repeated incorrect attempts can restrict use; continuing to guess can prolong the problem and may require a review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_pin_reset_concept.json"
+}

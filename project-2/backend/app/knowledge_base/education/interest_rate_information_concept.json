@@ -1,0 +1,32 @@
+{
+  "id": "KB-interest_rate_information-concept",
+  "title": "Interest, simple interest and compounding - explained",
+  "category": "education",
+  "subcategory": "interest_rate_information",
+  "supported_intents": [
+    "interest_rate_information"
+  ],
+  "intent": "interest_rate_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "interest rate",
+    "simple interest",
+    "compound interest",
+    "savings interest"
+  ],
+  "aliases": [
+    "interest rate",
+    "simple interest",
+    "compound interest",
+    "savings interest"
+  ],
+  "content": "Interest is the cost of borrowing or a return paid under a deposit agreement. Simple and compound calculations treat accumulated interest differently, while frequency and product terms affect the result; a headline rate alone may not describe all costs.",
+  "customer_content": "Interest is the cost of borrowing or a return paid under a deposit agreement. Simple and compound calculations treat accumulated interest differently, while frequency and product terms affect the result; a headline rate alone may not describe all costs.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "education/interest_rate_information_concept.json"
+}

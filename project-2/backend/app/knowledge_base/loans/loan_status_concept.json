@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_status-concept",
+  "title": "Specific loan balance and repayment status - explained",
+  "category": "loans",
+  "subcategory": "loan_status",
+  "supported_intents": [
+    "loan_status"
+  ],
+  "intent": "loan_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "my loan balance",
+    "my loan status",
+    "my outstanding loan",
+    "my loan details"
+  ],
+  "aliases": [
+    "my loan balance",
+    "my loan status",
+    "my outstanding loan",
+    "my loan details"
+  ],
+  "content": "A loan account record can show outstanding principal, the next scheduled installment and the recorded repayment status. Outstanding principal is not necessarily the full settlement figure, since accrued interest and other agreement terms can matter.",
+  "customer_content": "A loan account record can show outstanding principal, the next scheduled installment and the recorded repayment status. Outstanding principal is not necessarily the full settlement figure, since accrued interest and other agreement terms can matter.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_status_concept.json"
+}

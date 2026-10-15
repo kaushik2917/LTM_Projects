@@ -1,0 +1,34 @@
+{
+  "id": "KB-statement_download-concept",
+  "title": "Statements and statement periods - explained",
+  "category": "balances",
+  "subcategory": "statement_download",
+  "supported_intents": [
+    "statement_download"
+  ],
+  "intent": "statement_download",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "statement download",
+    "monthly statement",
+    "annual statement",
+    "mini statement",
+    "bank statement"
+  ],
+  "aliases": [
+    "statement download",
+    "monthly statement",
+    "annual statement",
+    "mini statement",
+    "bank statement"
+  ],
+  "content": "A statement summarizes entries over a selected period, while a mini statement shows a limited recent set. Monthly, annual and custom-period statements can differ in scope; transaction posting dates can differ from purchase dates.",
+  "customer_content": "A statement summarizes entries over a selected period, while a mini statement shows a limited recent set. Monthly, annual and custom-period statements can differ in scope; transaction posting dates can differ from purchase dates.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/statement_download_concept.json"
+}

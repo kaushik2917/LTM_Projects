@@ -1,0 +1,32 @@
+{
+  "id": "KB-joint_minor_accounts-concept",
+  "title": "Joint, minor and family accounts - explained",
+  "category": "accounts",
+  "subcategory": "joint_minor_accounts",
+  "supported_intents": [
+    "joint_minor_accounts"
+  ],
+  "intent": "joint_minor_accounts",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "joint account",
+    "minor account",
+    "guardian",
+    "student account"
+  ],
+  "aliases": [
+    "joint account",
+    "minor account",
+    "guardian",
+    "student account"
+  ],
+  "content": "Joint accounts have more than one holder and an agreed operating instruction. Minor accounts involve a guardian where applicable. Student and senior-citizen variants are product categories, not automatic exemptions from identity checks or operating restrictions.",
+  "customer_content": "Joint accounts have more than one holder and an agreed operating instruction. Minor accounts involve a guardian where applicable. Student and senior-citizen variants are product categories, not automatic exemptions from identity checks or operating restrictions.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/joint_minor_accounts_concept.json"
+}

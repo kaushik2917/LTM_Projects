@@ -1,0 +1,30 @@
+{
+  "id": "KB-cheque_stop-procedure",
+  "title": "Stop-payment and cancellation requests - support procedure",
+  "category": "cheques",
+  "subcategory": "cheque_stop",
+  "supported_intents": [
+    "cheque_stop"
+  ],
+  "intent": "cheque_stop",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "stop cheque",
+    "cancel cheque",
+    "cheque stop payment"
+  ],
+  "aliases": [
+    "stop cheque",
+    "cancel cheque",
+    "cheque stop payment"
+  ],
+  "content": "For the synthetic case, an agent reviews the cheque's masked identifier and current status after verification. The assistant records the request for review rather than claiming a real stop instruction succeeded; suspected theft should be flagged urgently.",
+  "customer_content": "For the synthetic case, an agent reviews the cheque's masked identifier and current status after verification. The assistant records the request for review rather than claiming a real stop instruction succeeded; suspected theft should be flagged urgently.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_stop_procedure.json"
+}

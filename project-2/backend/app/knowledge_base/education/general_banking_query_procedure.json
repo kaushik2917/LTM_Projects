@@ -1,0 +1,32 @@
+{
+  "id": "KB-general_banking_query-procedure",
+  "title": "Banking support and choosing a service - support procedure",
+  "category": "education",
+  "subcategory": "general_banking_query",
+  "supported_intents": [
+    "general_banking_query"
+  ],
+  "intent": "general_banking_query",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "banking help",
+    "hello",
+    "help with banking",
+    "what can you do"
+  ],
+  "aliases": [
+    "banking help",
+    "hello",
+    "help with banking",
+    "what can you do"
+  ],
+  "content": "Describe whether your question concerns an account, a card, a payment, a deposit or a loan. The assistant can ask a focused clarification, retrieve approved guidance, or prepare a demo-agent case when the issue needs human authority.",
+  "customer_content": "Describe whether your question concerns an account, a card, a payment, a deposit or a loan. The assistant can ask a focused clarification, retrieve approved guidance, or prepare a demo-agent case when the issue needs human authority.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "education/general_banking_query_procedure.json"
+}

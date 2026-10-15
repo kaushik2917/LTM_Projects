@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ATM_CASH_NOT_RECEIVED",
+    "title": "ATM debit with missing or partial cash",
+    "category": "atm",
+    "aliases": [
+      "cash never came",
+      "cash not dispensed",
+      "ATM deducted money",
+      "cash did not come out",
+      "partial cash",
+      "no cash"
+    ],
+    "overview": "If an ATM debits your account but cash is missing or only partly dispensed, keep the time, location and transaction reference. Check whether the entry is pending or reversed before assuming the loss is final; a cash reconciliation review may be needed.",
+    "procedure": "For the Call Sense Bank demo, record the non-sensitive amount, ATM location and cash actually received, then create a cash-dispute case. An agent reviews the synthetic entry; neither an immediate refund nor a fixed resolution time is guaranteed.",
+    "risk": "LOW",
+    "customer_procedure": "Keep the amount, ATM location, time and any transaction reference for a cash-dispute request. Check the account entry through a secure channel and report missing or partial cash to support. A refund or fixed resolution time cannot be guaranteed."
+  },
+  {
+    "id": "atm_retained_card",
+    "title": "Cards retained by an ATM",
+    "category": "atm",
+    "aliases": [
+      "ATM retained card",
+      "machine swallowed card",
+      "card stuck in ATM"
+    ],
+    "overview": "An ATM may retain a card after a device problem or security trigger. Do not accept help from strangers asking for a PIN or attempt to dismantle the machine. Use the bank's verified support channel to protect the card.",
+    "procedure": "The synthetic workflow records the ATM location, time and whether the card is recoverable through authorized support. A demo agent may recommend a simulated block and replacement; a real retained card requires the responsible institution's procedure.",
+    "risk": "LOW"
+  },
+  {
+    "id": "atm_limits_charges",
+    "title": "ATM limits, charges and availability",
+    "category": "atm",
+    "aliases": [
+      "ATM withdrawal limit",
+      "ATM charges",
+      "ATM unavailable",
+      "international ATM"
+    ],
+    "overview": "ATM withdrawals can be constrained by card limits, machine cash availability and network or currency support. The machine's own fee and the issuer's fee can be separate; an international ATM transaction may also involve currency conversion.",
+    "procedure": "Check the configured synthetic card limit and ATM directory before a demonstration withdrawal. For actual fees or foreign-currency treatment, consult the issuer and machine disclosures; this assistant does not quote unconfigured rates or surcharges.",
+    "risk": "LOW"
+  },
+  {
+    "id": "cash_deposit",
+    "title": "Cash deposit machines and deposit discrepancies",
+    "category": "atm",
+    "aliases": [
+      "cash deposit machine",
+      "cash deposit",
+      "cash accepted not credited",
+      "deposit receipt"
+    ],
+    "overview": "A cash deposit machine may validate notes and issue a receipt before the credit is fully reflected in the account. Rejected notes and an uncredited accepted deposit are different issues, so retain the receipt and avoid repeated submissions.",
+    "procedure": "In the demo case, record the location, time, amount tendered and amount accepted without exposing an account number. A demo agent compares the synthetic deposit record and opens a reconciliation case if the figures do not agree.",
+    "risk": "LOW"
+  },
+  {
+    "id": "atm_reversal",
+    "title": "Reversed ATM transactions",
+    "category": "atm",
+    "aliases": [
+      "ATM reversed",
+      "cash withdrawal reversal",
+      "ATM refund",
+      "ATM reversal status"
+    ],
+    "overview": "An ATM reversal is an adjustment associated with an earlier withdrawal entry. A reversal notification should be compared with the posted account record; a pending adjustment is not the same as available funds.",
+    "procedure": "After demo verification, inspect the fictional original debit and any linked reversal using date and amount. If their status is inconsistent, the demo agent opens reconciliation; do not assume a fixed settlement period or an extra withdrawal entitlement.",
+    "risk": "LOW"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "KB-transaction_status-procedure",
+  "title": "Delayed transfers, reversals and UTR references - support procedure",
+  "category": "transfers",
+  "subcategory": "transaction_status",
+  "supported_intents": [
+    "transaction_status"
+  ],
+  "intent": "transaction_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "transfer pending",
+    "transfer status",
+    "receiver not received",
+    "sent money not arrived",
+    "transfer reversed",
+    "UTR"
+  ],
+  "aliases": [
+    "transfer pending",
+    "transfer status",
+    "receiver not received",
+    "sent money not arrived",
+    "transfer reversed",
+    "UTR"
+  ],
+  "content": "Tell the assistant which channel was used, then preserve the date, approximate amount and non-sensitive status. The verified demo adapter can inspect a fictional transfer; an unresolved real transfer needs a reference-based bank review rather than a promised timeline.",
+  "customer_content": "Tell the assistant which channel was used, then preserve the date, approximate amount and non-sensitive status. The verified demo adapter can inspect a fictional transfer; an unresolved real transfer needs a reference-based bank review rather than a promised timeline.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/transaction_status_procedure.json"
+}

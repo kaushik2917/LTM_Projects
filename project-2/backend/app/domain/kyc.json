@@ -1,0 +1,46 @@
+﻿[
+  {
+    "id": "KYC_information",
+    "title": "KYC meaning and document checks",
+    "category": "kyc",
+    "aliases": [
+      "KYC",
+      "KYC documents",
+      "identity proof",
+      "address proof",
+      "what is KYC"
+    ],
+    "overview": "KYC means Know Your Customer: checks used to establish and maintain customer information. Identity proof, address evidence and product-specific records can form part of the process. Requirements vary by institution and applicable jurisdiction.",
+    "procedure": "For Call Sense Bank's synthetic KYC checklist, prepare a government-issued identity document, proof of address and a recent photograph for the demo branch workflow. Do not upload real documents here; an information request does not require sharing their numbers.",
+    "risk": "LOW"
+  },
+  {
+    "id": "kyc_update",
+    "title": "KYC status, updates and periodic review",
+    "category": "kyc",
+    "aliases": [
+      "KYC update",
+      "re KYC",
+      "rekyc",
+      "KYC status",
+      "expired KYC"
+    ],
+    "overview": "Periodic KYC review keeps customer information current. Updating one contact field does not necessarily satisfy all review requirements, and a pending document check can differ from an account restriction.",
+    "procedure": "The synthetic process verifies the demo profile and asks an agent to review the recorded KYC status and missing checklist items. Complete real updates only through authenticated channels; no actual restriction is lifted by this prototype.",
+    "risk": "LOW"
+  },
+  {
+    "id": "tax_residency",
+    "title": "Tax-residency and FATCA information",
+    "category": "kyc",
+    "aliases": [
+      "FATCA",
+      "tax residency",
+      "tax residence",
+      "PAN information"
+    ],
+    "overview": "Tax-residency declarations and related reporting frameworks help institutions determine applicable reporting obligations. Their requirements depend on personal circumstances and jurisdiction; nationality, address and tax residence are not always interchangeable.",
+    "procedure": "The Call Sense Bank demo routes declaration questions to a configured checklist and a human reviewer. This assistant does not infer a customer's tax status or provide tax advice; consult the relevant institution or a qualified adviser for real declarations.",
+    "risk": "LOW"
+  }
+]

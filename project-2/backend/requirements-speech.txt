@@ -1,0 +1,2 @@
+# Optional local audio transcription; browser/Azure paths remain usable without it.
+faster-whisper>=1.2,<2

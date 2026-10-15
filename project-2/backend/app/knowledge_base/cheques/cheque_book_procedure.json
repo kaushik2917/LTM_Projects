@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_book-procedure",
+  "title": "Cheque-book requests and delivery - support procedure",
+  "category": "cheques",
+  "subcategory": "cheque_book",
+  "supported_intents": [
+    "cheque_book"
+  ],
+  "intent": "cheque_book",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "cheque book",
+    "new cheque book",
+    "cheque book status",
+    "cheque number"
+  ],
+  "aliases": [
+    "cheque book",
+    "new cheque book",
+    "cheque book status",
+    "cheque number"
+  ],
+  "content": "The synthetic process verifies the demo profile, checks its account eligibility and records a cheque-book request for review. Delivery status comes from configured records; do not provide a complete account or cheque image in this assistant.",
+  "customer_content": "The synthetic process verifies the demo profile, checks its account eligibility and records a cheque-book request for review. Delivery status comes from configured records; do not provide a complete account or cheque image in this assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_book_procedure.json"
+}

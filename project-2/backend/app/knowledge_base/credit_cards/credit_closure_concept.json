@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_closure-concept",
+  "title": "Credit-card replacement and closure - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_closure",
+  "supported_intents": [
+    "credit_closure"
+  ],
+  "intent": "credit_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "credit card closure",
+    "close credit card",
+    "credit card replacement",
+    "blocked credit card"
+  ],
+  "aliases": [
+    "credit card closure",
+    "close credit card",
+    "credit card replacement",
+    "blocked credit card"
+  ],
+  "content": "Closing a credit card is different from replacing its physical card or freezing new transactions. Outstanding balances, installment plans, recurring payments and rewards may need attention before a closure request can be completed.",
+  "customer_content": "Closing a credit card is different from replacing its physical card or freezing new transactions. Outstanding balances, installment plans, recurring payments and rewards may need attention before a closure request can be completed.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_closure_concept.json"
+}

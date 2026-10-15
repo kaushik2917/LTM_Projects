@@ -1,0 +1,32 @@
+{
+  "id": "KB-rd_missed_closure-concept",
+  "title": "Missed RD installments and sweep accounts - explained",
+  "category": "deposits",
+  "subcategory": "rd_missed_closure",
+  "supported_intents": [
+    "rd_missed_closure"
+  ],
+  "intent": "rd_missed_closure",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "RD missed installment",
+    "RD closure",
+    "sweep account",
+    "sweep deposit"
+  ],
+  "aliases": [
+    "RD missed installment",
+    "RD closure",
+    "sweep account",
+    "sweep deposit"
+  ],
+  "content": "A missed recurring-deposit installment can affect the account under its product rules. A sweep arrangement is different: eligible balances move between an account and deposit facility according to configured instructions, which can change liquidity and interest treatment.",
+  "customer_content": "A missed recurring-deposit installment can affect the account under its product rules. A sweep arrangement is different: eligible balances move between an account and deposit facility according to configured instructions, which can change liquidity and interest treatment.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/rd_missed_closure_concept.json"
+}

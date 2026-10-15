@@ -1,0 +1,32 @@
+{
+  "id": "KB-general_banking_query-concept",
+  "title": "Banking support and choosing a service - explained",
+  "category": "education",
+  "subcategory": "general_banking_query",
+  "supported_intents": [
+    "general_banking_query"
+  ],
+  "intent": "general_banking_query",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "banking help",
+    "hello",
+    "help with banking",
+    "what can you do"
+  ],
+  "aliases": [
+    "banking help",
+    "hello",
+    "help with banking",
+    "what can you do"
+  ],
+  "content": "Call Sense supports banking information, synthetic account enquiries and human handoff. It distinguishes educational explanations from bank policy and from verified demo records, so not every question requires account access.",
+  "customer_content": "Call Sense supports banking information, synthetic account enquiries and human handoff. It distinguishes educational explanations from bank policy and from verified demo records, so not every question requires account access.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "education/general_banking_query_concept.json"
+}

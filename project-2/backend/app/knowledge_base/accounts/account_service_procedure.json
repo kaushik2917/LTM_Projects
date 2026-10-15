@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_service-procedure",
+  "title": "Customer identifiers, passbooks and certificates - support procedure",
+  "category": "accounts",
+  "subcategory": "account_service",
+  "supported_intents": [
+    "account_service"
+  ],
+  "intent": "account_service",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "customer id",
+    "account number information",
+    "passbook",
+    "account certificate"
+  ],
+  "aliases": [
+    "customer id",
+    "account number information",
+    "passbook",
+    "account certificate"
+  ],
+  "content": "Verified demo profiles may view masked product identifiers. For a passbook update or certificate, specify the product and requested date to the demo agent; this prototype never discloses complete real account numbers or issues legally valid certificates.",
+  "customer_content": "Verified demo profiles may view masked product identifiers. For a passbook update or certificate, specify the product and requested date to the demo agent; this prototype never discloses complete real account numbers or issues legally valid certificates.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_service_procedure.json"
+}

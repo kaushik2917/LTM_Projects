@@ -1,0 +1,32 @@
+{
+  "id": "KB-nominee_management-procedure",
+  "title": "Nominee addition and modification - support procedure",
+  "category": "accounts",
+  "subcategory": "nominee_management",
+  "supported_intents": [
+    "nominee_management"
+  ],
+  "intent": "nominee_management",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "nominee",
+    "nomination",
+    "add nominee",
+    "change nominee"
+  ],
+  "aliases": [
+    "nominee",
+    "nomination",
+    "add nominee",
+    "change nominee"
+  ],
+  "content": "The Call Sense Bank demo lets an agent review a nomination request after profile verification. Specify whether the request is to add, replace or correct a nominee; real legal entitlements and documents must be confirmed through the relevant institution.",
+  "customer_content": "The Call Sense Bank demo lets an agent review a nomination request after profile verification. Specify whether the request is to add, replace or correct a nominee; real legal entitlements and documents must be confirmed through the relevant institution.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/nominee_management_procedure.json"
+}

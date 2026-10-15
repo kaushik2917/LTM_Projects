@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_mandates-procedure",
+  "title": "UPI limits, mandates and autopay - support procedure",
+  "category": "upi",
+  "subcategory": "upi_mandates",
+  "supported_intents": [
+    "upi_mandates"
+  ],
+  "intent": "upi_mandates",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI limit",
+    "UPI mandate",
+    "UPI autopay",
+    "cancel autopay"
+  ],
+  "aliases": [
+    "UPI limit",
+    "UPI mandate",
+    "UPI autopay",
+    "cancel autopay"
+  ],
+  "content": "In the synthetic workflow, review the mandate's merchant, amount rule and next execution date through the trusted app. A demo agent explains pause or cancellation steps; current limits and charges must come from the configured product schedule.",
+  "customer_content": "In the synthetic workflow, review the mandate's merchant, amount rule and next execution date through the trusted app. A demo agent explains pause or cancellation steps; current limits and charges must come from the configured product schedule.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_mandates_procedure.json"
+}

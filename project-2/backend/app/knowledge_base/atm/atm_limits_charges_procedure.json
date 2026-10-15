@@ -1,0 +1,32 @@
+{
+  "id": "KB-atm_limits_charges-procedure",
+  "title": "ATM limits, charges and availability - support procedure",
+  "category": "atm",
+  "subcategory": "atm_limits_charges",
+  "supported_intents": [
+    "atm_limits_charges"
+  ],
+  "intent": "atm_limits_charges",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "ATM withdrawal limit",
+    "ATM charges",
+    "ATM unavailable",
+    "international ATM"
+  ],
+  "aliases": [
+    "ATM withdrawal limit",
+    "ATM charges",
+    "ATM unavailable",
+    "international ATM"
+  ],
+  "content": "Check the configured synthetic card limit and ATM directory before a demonstration withdrawal. For actual fees or foreign-currency treatment, consult the issuer and machine disclosures; this assistant does not quote unconfigured rates or surcharges.",
+  "customer_content": "Check the configured synthetic card limit and ATM directory before a demonstration withdrawal. For actual fees or foreign-currency treatment, consult the issuer and machine disclosures; this assistant does not quote unconfigured rates or surcharges.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/atm_limits_charges_procedure.json"
+}

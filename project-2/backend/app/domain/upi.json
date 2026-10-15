@@ -1,0 +1,116 @@
+﻿[
+  {
+    "id": "upi_information",
+    "title": "UPI concepts, IDs and QR payments",
+    "category": "upi",
+    "aliases": [
+      "what is UPI",
+      "UPI ID",
+      "virtual payment address",
+      "QR payment",
+      "collect request"
+    ],
+    "overview": "UPI is a payment system that can use an identifier or QR code to route a payment between linked accounts. A collect request asks you to authorize a payment; receiving money does not require telling another person your PIN.",
+    "procedure": "For a safe demonstration, inspect the displayed recipient and amount before approving a fictional QR payment or request. This prototype explains the flow but does not initiate a real payment, scan payment credentials or ask for a UPI PIN.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_registration",
+    "title": "UPI registration and account linking",
+    "category": "upi",
+    "aliases": [
+      "UPI registration",
+      "create UPI ID",
+      "UPI linking",
+      "unlink UPI",
+      "UPI account"
+    ],
+    "overview": "UPI setup associates a supported app and payment identifier with an eligible account through the app's secure registration process. Linking an account and changing the primary account are distinct actions; device or mobile-record mismatches can interrupt setup.",
+    "procedure": "Use the trusted UPI app's registration and bank-selection screens for the official steps. In the synthetic demo, a reviewer can explain linking or unlinking using fictional records, without collecting a mobile number, card credential or verification code.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_pin_reset",
+    "title": "UPI PIN setup and reset",
+    "category": "upi",
+    "aliases": [
+      "UPI PIN reset",
+      "forgot UPI PIN",
+      "change UPI PIN",
+      "UPI PIN generation"
+    ],
+    "overview": "A UPI PIN authorizes payments in the relevant app and must remain secret. If forgotten, follow the app's secure reset process; support cannot retrieve or disclose the existing PIN and should not ask you to read verification codes aloud.",
+    "procedure": "The demo guidance identifies the reset menu and reminds you to use the trusted app on your own device. A failure during reset should be reviewed through verified support; never enter the UPI PIN or OTP into this prototype.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_failed",
+    "title": "Failed UPI payments and debited amounts",
+    "category": "upi",
+    "aliases": [
+      "UPI failed",
+      "failed UPI payment",
+      "UPI debited",
+      "money deducted UPI failed"
+    ],
+    "overview": "A failed UPI payment and a pending UPI payment require different checks. If an amount was debited, inspect the app's final status and transaction reference before retrying; an entry can be reversed or need dispute review.",
+    "procedure": "For the fictional bank, note failed or pending status, approximate amount and date, then check the synthetic transaction history after verification. If the receiving party disputes receipt, an agent reviews the reference; refunds and timelines are not guaranteed.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_pending",
+    "title": "Pending UPI or successful-but-unreceived payments",
+    "category": "upi",
+    "aliases": [
+      "UPI pending",
+      "UPI stuck",
+      "UPI successful not received",
+      "UPI receiver not credited"
+    ],
+    "overview": "A pending UPI status means the final outcome is not yet confirmed in the displayed record. A successful status with a receiver reporting no credit can also require reference-based reconciliation; repeated payment attempts can create duplicate payments.",
+    "procedure": "Check the transaction detail in the trusted app, confirm the intended recipient and preserve the reference. The demo agent compares configured sender and recipient status where available and opens a review when the outcome remains unclear.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_refund_wrong",
+    "title": "UPI refunds and wrong-recipient transfers",
+    "category": "upi",
+    "aliases": [
+      "UPI refund",
+      "wrong UPI transfer",
+      "UPI sent wrong person",
+      "UPI dispute"
+    ],
+    "overview": "A refund is a separate credit and may have its own reference. A payment to an unintended recipient is not automatically reversible; recovery depends on the appropriate banking review and the circumstances of the transfer.",
+    "procedure": "Report a wrong-recipient payment promptly through verified support with its reference, date and approximate amount. The synthetic workflow creates a review case; the assistant never promises recovery or contacts a real recipient.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_mandates",
+    "title": "UPI limits, mandates and autopay",
+    "category": "upi",
+    "aliases": [
+      "UPI limit",
+      "UPI mandate",
+      "UPI autopay",
+      "cancel autopay"
+    ],
+    "overview": "A UPI mandate is an authorization for qualifying future debits, while a transaction limit constrains payments. Pausing or revoking a mandate does not necessarily settle an outstanding service bill or reverse a debit already processed.",
+    "procedure": "In the synthetic workflow, review the mandate's merchant, amount rule and next execution date through the trusted app. A demo agent explains pause or cancellation steps; current limits and charges must come from the configured product schedule.",
+    "risk": "LOW"
+  },
+  {
+    "id": "upi_account_change",
+    "title": "Changing the primary UPI bank account",
+    "category": "upi",
+    "aliases": [
+      "primary UPI account",
+      "default UPI bank",
+      "change UPI account",
+      "remove linked UPI account"
+    ],
+    "overview": "A UPI app may have several linked accounts and a selected default account. Changing the default can affect future payment or receipt selection, while existing mandates or pending transactions may remain associated with another account.",
+    "procedure": "Use the trusted app's bank-account settings to inspect the current selection and mandate links before changing it. The synthetic assistant explains the workflow only; it does not unlink real accounts or request bank credentials.",
+    "risk": "LOW"
+  }
+]

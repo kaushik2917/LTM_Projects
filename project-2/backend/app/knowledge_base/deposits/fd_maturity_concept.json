@@ -1,0 +1,32 @@
+{
+  "id": "KB-fd_maturity-concept",
+  "title": "FD maturity, renewal and receipts - explained",
+  "category": "deposits",
+  "subcategory": "fd_maturity",
+  "supported_intents": [
+    "fd_maturity"
+  ],
+  "intent": "fd_maturity",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "FD maturity",
+    "FD renewal",
+    "FD receipt",
+    "FD nomination"
+  ],
+  "aliases": [
+    "FD maturity",
+    "FD renewal",
+    "FD receipt",
+    "FD nomination"
+  ],
+  "content": "At maturity, a fixed deposit follows its recorded instruction, such as crediting proceeds or renewal where permitted. The renewal terms can differ from the original booking. A deposit receipt and nominee record serve distinct documentation purposes.",
+  "customer_content": "At maturity, a fixed deposit follows its recorded instruction, such as crediting proceeds or renewal where permitted. The renewal terms can differ from the original booking. A deposit receipt and nominee record serve distinct documentation purposes.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "deposits/fd_maturity_concept.json"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "KB-fraud_report-concept",
+  "title": "Fraud reports and suspicious banking contact - explained",
+  "category": "security",
+  "subcategory": "fraud_report",
+  "supported_intents": [
+    "fraud_report"
+  ],
+  "intent": "fraud_report",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "fraud",
+    "scam",
+    "phishing",
+    "smishing",
+    "vishing",
+    "fake banking call",
+    "malicious link"
+  ],
+  "aliases": [
+    "fraud",
+    "scam",
+    "phishing",
+    "smishing",
+    "vishing",
+    "fake banking call",
+    "malicious link"
+  ],
+  "content": "Fraud attempts may use calls, messages or links that impersonate bank staff and create urgency. Avoid interacting with suspicious links, stop sharing information and contact the bank through independently verified details; an apparent caller name is not proof of identity.",
+  "customer_content": "Fraud attempts may use calls, messages or links that impersonate bank staff and create urgency. Avoid interacting with suspicious links, stop sharing information and contact the bank through independently verified details; an apparent caller name is not proof of identity.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/fraud_report_concept.json"
+}

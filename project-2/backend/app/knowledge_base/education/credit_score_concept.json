@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_score-concept",
+  "title": "Credit scores and credit-report concepts - explained",
+  "category": "education",
+  "subcategory": "credit_score",
+  "supported_intents": [
+    "credit_score"
+  ],
+  "intent": "credit_score",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "credit score",
+    "credit report",
+    "credit rating",
+    "improve score"
+  ],
+  "aliases": [
+    "credit score",
+    "credit report",
+    "credit rating",
+    "improve score"
+  ],
+  "content": "A credit score summarizes aspects of reported borrowing and repayment behavior using a provider's model. Different models and lenders can interpret information differently; a score is not a guarantee of approval or a complete picture of affordability.",
+  "customer_content": "A credit score summarizes aspects of reported borrowing and repayment behavior using a provider's model. Different models and lenders can interpret information differently; a score is not a guarantee of approval or a complete picture of affordability.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "education/credit_score_concept.json"
+}

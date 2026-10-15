@@ -1,0 +1,34 @@
+{
+  "id": "KB-service_fee_schedule-procedure",
+  "title": "Transfer, cheque, ATM and loan charges - support procedure",
+  "category": "fees",
+  "subcategory": "service_fee_schedule",
+  "supported_intents": [
+    "service_fee_schedule"
+  ],
+  "intent": "service_fee_schedule",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "transaction charges",
+    "cheque charges",
+    "loan charges",
+    "late fees",
+    "fee schedule"
+  ],
+  "aliases": [
+    "transaction charges",
+    "cheque charges",
+    "loan charges",
+    "late fees",
+    "fee schedule"
+  ],
+  "content": "The demo fee schedule is the only source of bank-specific amounts in this prototype. If a requested fee is not configured, the assistant explains the relevant category and directs the amount question to a reviewer rather than inventing a number.",
+  "customer_content": "The demo fee schedule is the only source of bank-specific amounts in this prototype. If a requested fee is not configured, the assistant explains the relevant category and directs the amount question to a reviewer rather than inventing a number.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "fees/service_fee_schedule_procedure.json"
+}

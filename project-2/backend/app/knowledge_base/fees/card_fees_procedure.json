@@ -1,0 +1,32 @@
+{
+  "id": "KB-card_fees-procedure",
+  "title": "Card annual and replacement charges - support procedure",
+  "category": "fees",
+  "subcategory": "card_fees",
+  "supported_intents": [
+    "card_fees"
+  ],
+  "intent": "card_fees",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "card annual fee",
+    "replacement card fee",
+    "debit card fee",
+    "credit card fee"
+  ],
+  "aliases": [
+    "card annual fee",
+    "replacement card fee",
+    "debit card fee",
+    "credit card fee"
+  ],
+  "content": "Use the structured fictional card-fee schedule for any numerical example. For a specific synthetic charge, verify the demo profile and ask an agent to compare the entry with that schedule; a real fee dispute needs issuer review.",
+  "customer_content": "Use the structured fictional card-fee schedule for any numerical example. For a specific synthetic charge, verify the demo profile and ask an agent to compare the entry with that schedule; a real fee dispute needs issuer review.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "fees/card_fees_procedure.json"
+}

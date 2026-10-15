@@ -1,0 +1,3 @@
+"""Provider-neutral banking speech hints."""
+BANKING_PHRASES = ["bank","banking","card","debit card","credit card","ATM","UPI","IMPS","NEFT","RTGS","KYC","EMI","account","balance","statement","transaction","beneficiary","transfer","payment","refund","cash","withdrawal","deposit","fixed deposit","FD","recurring deposit","RD","loan","interest","PIN","OTP","CVV","fraud","blocked card","card blocked","card declined","cash not received","money deducted","recipient","merchant","chargeback","dispute","net banking","internet banking","mobile banking"]
+BANKING_PROMPT='Banking customer support conversation. Common terminology: '+', '.join(BANKING_PHRASES)+'.'

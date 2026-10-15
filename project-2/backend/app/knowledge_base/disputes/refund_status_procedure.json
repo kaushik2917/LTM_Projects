@@ -1,0 +1,32 @@
+{
+  "id": "KB-refund_status-procedure",
+  "title": "Refunds not received and merchant disputes - support procedure",
+  "category": "disputes",
+  "subcategory": "refund_status",
+  "supported_intents": [
+    "refund_status"
+  ],
+  "intent": "refund_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "refund not received",
+    "refund pending",
+    "merchant refund",
+    "merchant dispute"
+  ],
+  "aliases": [
+    "refund not received",
+    "refund pending",
+    "merchant refund",
+    "merchant dispute"
+  ],
+  "content": "Keep the merchant confirmation and non-sensitive dates for the synthetic review. After verification, inspect the fictional credit entry and ask an agent to reconcile an unresolved refund; no fixed credit date or entitlement is invented.",
+  "customer_content": "Keep the merchant confirmation and non-sensitive dates for the synthetic review. After verification, inspect the fictional credit entry and ask an agent to reconcile an unresolved refund; no fixed credit date or entitlement is invented.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/refund_status_procedure.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-nominee_management-concept",
+  "title": "Nominee addition and modification - explained",
+  "category": "accounts",
+  "subcategory": "nominee_management",
+  "supported_intents": [
+    "nominee_management"
+  ],
+  "intent": "nominee_management",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "nominee",
+    "nomination",
+    "add nominee",
+    "change nominee"
+  ],
+  "aliases": [
+    "nominee",
+    "nomination",
+    "add nominee",
+    "change nominee"
+  ],
+  "content": "A nomination records whom the institution should consider under its applicable claim process. It is distinct from adding a joint holder, and nomination does not itself change everyday account ownership or operating authority.",
+  "customer_content": "A nomination records whom the institution should consider under its applicable claim process. It is distinct from adding a joint holder, and nomination does not itself change everyday account ownership or operating authority.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/nominee_management_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_interest_cash-concept",
+  "title": "Credit-card interest and cash advances - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_interest_cash",
+  "supported_intents": [
+    "credit_interest_cash"
+  ],
+  "intent": "credit_interest_cash",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "credit card interest",
+    "cash advance",
+    "credit cash withdrawal",
+    "revolving interest"
+  ],
+  "aliases": [
+    "credit card interest",
+    "cash advance",
+    "credit cash withdrawal",
+    "revolving interest"
+  ],
+  "content": "A cash advance is borrowing cash against a card facility and may have different fees and interest treatment from a purchase. Carrying a purchase balance can also attract interest according to the issuer's calculation method.",
+  "customer_content": "A cash advance is borrowing cash against a card facility and may have different fees and interest treatment from a purchase. Carrying a purchase balance can also attract interest according to the issuer's calculation method.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_interest_cash_concept.json"
+}

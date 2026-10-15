@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_eligibility-concept",
+  "title": "Account eligibility and opening documents - explained",
+  "category": "accounts",
+  "subcategory": "account_eligibility",
+  "supported_intents": [
+    "account_eligibility"
+  ],
+  "intent": "account_eligibility",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "account eligibility",
+    "opening documents",
+    "student eligibility",
+    "senior citizen account"
+  ],
+  "aliases": [
+    "account eligibility",
+    "opening documents",
+    "student eligibility",
+    "senior citizen account"
+  ],
+  "content": "Account eligibility depends on the selected product, applicant category and applicable local requirements. Identity proof, address evidence and any product-specific records support the application; an information conversation does not establish eligibility or guarantee approval.",
+  "customer_content": "Account eligibility depends on the selected product, applicant category and applicable local requirements. Identity proof, address evidence and any product-specific records support the application; an information conversation does not establish eligibility or guarantee approval.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_eligibility_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_service-concept",
+  "title": "Customer identifiers, passbooks and certificates - explained",
+  "category": "accounts",
+  "subcategory": "account_service",
+  "supported_intents": [
+    "account_service"
+  ],
+  "intent": "account_service",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "customer id",
+    "account number information",
+    "passbook",
+    "account certificate"
+  ],
+  "aliases": [
+    "customer id",
+    "account number information",
+    "passbook",
+    "account certificate"
+  ],
+  "content": "A customer identifier can link several products, while an account identifier refers to one account. Passbooks, account certificates and balance certificates serve different recordkeeping purposes; a balance certificate refers to a stated point in time.",
+  "customer_content": "A customer identifier can link several products, while an account identifier refers to one account. Passbooks, account certificates and balance certificates serve different recordkeeping purposes; a balance certificate refers to a stated point in time.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_service_concept.json"
+}

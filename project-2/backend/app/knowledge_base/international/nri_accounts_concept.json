@@ -1,0 +1,32 @@
+{
+  "id": "KB-nri_accounts-concept",
+  "title": "NRE, NRO and FCNR concepts - explained",
+  "category": "international",
+  "subcategory": "nri_accounts",
+  "supported_intents": [
+    "nri_accounts"
+  ],
+  "intent": "nri_accounts",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "NRE",
+    "NRO",
+    "FCNR",
+    "NRI account"
+  ],
+  "aliases": [
+    "NRE",
+    "NRO",
+    "FCNR",
+    "NRI account"
+  ],
+  "content": "NRE, NRO and FCNR are account or deposit categories used in Indian non-resident banking, with different purposes and currency features. Eligibility, permitted credits, taxation and repatriation depend on applicable rules and circumstances.",
+  "customer_content": "NRE, NRO and FCNR are account or deposit categories used in Indian non-resident banking, with different purposes and currency features. Eligibility, permitted credits, taxation and repatriation depend on applicable rules and circumstances.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "international/nri_accounts_concept.json"
+}

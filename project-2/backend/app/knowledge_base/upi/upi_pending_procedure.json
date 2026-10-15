@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_pending-procedure",
+  "title": "Pending UPI or successful-but-unreceived payments - support procedure",
+  "category": "upi",
+  "subcategory": "upi_pending",
+  "supported_intents": [
+    "upi_pending"
+  ],
+  "intent": "upi_pending",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "UPI pending",
+    "UPI stuck",
+    "UPI successful not received",
+    "UPI receiver not credited"
+  ],
+  "aliases": [
+    "UPI pending",
+    "UPI stuck",
+    "UPI successful not received",
+    "UPI receiver not credited"
+  ],
+  "content": "Check the transaction detail in the trusted app, confirm the intended recipient and preserve the reference. The demo agent compares configured sender and recipient status where available and opens a review when the outcome remains unclear.",
+  "customer_content": "Check the transaction detail in the trusted app, confirm the intended recipient and preserve the reference. The demo agent compares configured sender and recipient status where available and opens a review when the outcome remains unclear.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_pending_procedure.json"
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "fixed_deposit",
+    "title": "Fixed deposits, tenure and eligibility",
+    "category": "deposits",
+    "aliases": [
+      "fixed deposit",
+      "open FD",
+      "FD eligibility",
+      "FD tenure",
+      "what is FD"
+    ],
+    "overview": "A fixed deposit holds funds for a selected tenure under agreed terms. The applicable interest treatment, maturity instruction and early-withdrawal conditions should be reviewed before placing the deposit; a general explanation is not investment advice.",
+    "procedure": "The fictional Call Sense Bank FD is described in the configured product schedule. A demo agent explains the available tenure and sample rate, while opening a real deposit must happen through an authenticated institution channel.",
+    "risk": "LOW",
+    "customer_procedure": "Before opening a fixed deposit, review the tenure, applicable rate, maturity instruction and early-withdrawal terms. Use an authenticated banking channel to apply, and confirm the terms before placing funds."
+  },
+  {
+    "id": "fd_maturity",
+    "title": "FD maturity, renewal and receipts",
+    "category": "deposits",
+    "aliases": [
+      "FD maturity",
+      "FD renewal",
+      "FD receipt",
+      "FD nomination"
+    ],
+    "overview": "At maturity, a fixed deposit follows its recorded instruction, such as crediting proceeds or renewal where permitted. The renewal terms can differ from the original booking. A deposit receipt and nominee record serve distinct documentation purposes.",
+    "procedure": "After demo verification, inspect the configured fictional deposit's maturity date and instruction. Ask an agent to review renewal, nominee or receipt details before changing them; no real maturity amount is calculated without the agreed product inputs.",
+    "risk": "LOW"
+  },
+  {
+    "id": "fd_withdrawal",
+    "title": "Premature FD withdrawal and closure",
+    "category": "deposits",
+    "aliases": [
+      "premature withdrawal",
+      "FD closure",
+      "break fixed deposit",
+      "FD interest"
+    ],
+    "overview": "Withdrawing a fixed deposit before its agreed maturity can change the interest payable or trigger a configured charge. Partial and full withdrawal may have different availability; the applicable treatment depends on the booked product terms.",
+    "procedure": "A verified demo agent can compare the fictional booking terms with the requested closure date. Quote only the configured synthetic schedule, and obtain the institution's actual settlement figure before making any real financial decision.",
+    "risk": "LOW"
+  },
+  {
+    "id": "recurring_deposit",
+    "title": "Recurring deposits and installments",
+    "category": "deposits",
+    "aliases": [
+      "recurring deposit",
+      "RD installment",
+      "open RD",
+      "RD maturity"
+    ],
+    "overview": "A recurring deposit builds a balance through scheduled installments over an agreed tenure. It differs from placing the whole amount into a fixed deposit at once. Maturity proceeds depend on the contributions and applicable product terms.",
+    "procedure": "Call Sense Bank's demo RD record shows the configured installment, next due date and maturity instruction. A demo agent can explain the schedule after verification; the assistant does not create real standing instructions or guarantee an investment return.",
+    "risk": "LOW"
+  },
+  {
+    "id": "rd_missed_closure",
+    "title": "Missed RD installments and sweep accounts",
+    "category": "deposits",
+    "aliases": [
+      "RD missed installment",
+      "RD closure",
+      "sweep account",
+      "sweep deposit"
+    ],
+    "overview": "A missed recurring-deposit installment can affect the account under its product rules. A sweep arrangement is different: eligible balances move between an account and deposit facility according to configured instructions, which can change liquidity and interest treatment.",
+    "procedure": "For a synthetic case, check whether the issue is a missed RD contribution or a sweep movement, then review the relevant product configuration. A demo agent explains closure or restoration options without inventing a penalty or return.",
+    "risk": "LOW"
+  },
+  {
+    "id": "deposit_status",
+    "title": "Specific deposit balances and maturity details",
+    "category": "deposits",
+    "aliases": [
+      "my FD details",
+      "my deposit balance",
+      "my fixed deposit maturity",
+      "my RD details"
+    ],
+    "overview": "A deposit record identifies the booked principal, product terms and maturity instruction for a particular holding. General product rates may not match the rate agreed for an older booking, so use that deposit's record for account-specific questions.",
+    "procedure": "Select and verify a fictional demo customer to inspect the adapter's configured FD or RD details. The assistant labels all returned amounts as synthetic and does not claim to calculate an actual premature-closure or maturity settlement.",
+    "risk": "LOW"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "KB-card_renewal-concept",
+  "title": "Expiry, renewal and damaged-card replacement - explained",
+  "category": "debit_cards",
+  "subcategory": "card_renewal",
+  "supported_intents": [
+    "card_renewal"
+  ],
+  "intent": "card_renewal",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "card expires",
+    "expired card",
+    "card renewal",
+    "damaged card",
+    "replacement debit card",
+    "expires next month"
+  ],
+  "aliases": [
+    "card expires",
+    "expired card",
+    "card renewal",
+    "damaged card",
+    "replacement debit card",
+    "expires next month"
+  ],
+  "content": "An expiring card may need renewal, while a damaged card may need replacement before its expiry date. Check the expiry month, delivery status and registered contact details through a secure channel; the old card may not remain usable after replacement.",
+  "customer_content": "An expiring card may need renewal, while a damaged card may need replacement before its expiry date. Check the expiry month, delivery status and registered contact details through a secure channel; the old card may not remain usable after replacement.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_renewal_concept.json"
+}

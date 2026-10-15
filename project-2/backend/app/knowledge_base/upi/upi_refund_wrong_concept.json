@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_refund_wrong-concept",
+  "title": "UPI refunds and wrong-recipient transfers - explained",
+  "category": "upi",
+  "subcategory": "upi_refund_wrong",
+  "supported_intents": [
+    "upi_refund_wrong"
+  ],
+  "intent": "upi_refund_wrong",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "UPI refund",
+    "wrong UPI transfer",
+    "UPI sent wrong person",
+    "UPI dispute"
+  ],
+  "aliases": [
+    "UPI refund",
+    "wrong UPI transfer",
+    "UPI sent wrong person",
+    "UPI dispute"
+  ],
+  "content": "A refund is a separate credit and may have its own reference. A payment to an unintended recipient is not automatically reversible; recovery depends on the appropriate banking review and the circumstances of the transfer.",
+  "customer_content": "A refund is a separate credit and may have its own reference. A payment to an unintended recipient is not automatically reversible; recovery depends on the appropriate banking review and the circumstances of the transfer.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_refund_wrong_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_eligibility-procedure",
+  "title": "Account eligibility and opening documents - support procedure",
+  "category": "accounts",
+  "subcategory": "account_eligibility",
+  "supported_intents": [
+    "account_eligibility"
+  ],
+  "intent": "account_eligibility",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "account eligibility",
+    "opening documents",
+    "student eligibility",
+    "senior citizen account"
+  ],
+  "aliases": [
+    "account eligibility",
+    "opening documents",
+    "student eligibility",
+    "senior citizen account"
+  ],
+  "content": "The fictional bank asks applicants to select an individual or business product and obtain its configured document checklist from the demo branch. Do not upload real identity documents to this prototype; unresolved eligibility questions go to a reviewer.",
+  "customer_content": "The fictional bank asks applicants to select an individual or business product and obtain its configured document checklist from the demo branch. Do not upload real identity documents to this prototype; unresolved eligibility questions go to a reviewer.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_eligibility_procedure.json"
+}

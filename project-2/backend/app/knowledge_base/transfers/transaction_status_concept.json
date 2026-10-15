@@ -1,0 +1,36 @@
+{
+  "id": "KB-transaction_status-concept",
+  "title": "Delayed transfers, reversals and UTR references - explained",
+  "category": "transfers",
+  "subcategory": "transaction_status",
+  "supported_intents": [
+    "transaction_status"
+  ],
+  "intent": "transaction_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "transfer pending",
+    "transfer status",
+    "receiver not received",
+    "sent money not arrived",
+    "transfer reversed",
+    "UTR"
+  ],
+  "aliases": [
+    "transfer pending",
+    "transfer status",
+    "receiver not received",
+    "sent money not arrived",
+    "transfer reversed",
+    "UTR"
+  ],
+  "content": "If money left the sender but has not reached the receiver, first identify the payment channel and its displayed status. UPI, IMPS, NEFT and RTGS can expose different reference and reconciliation details; a reference is not a guarantee of receipt.",
+  "customer_content": "If money left the sender but has not reached the receiver, first identify the payment channel and its displayed status. UPI, IMPS, NEFT and RTGS can expose different reference and reconciliation details; a reference is not a guarantee of receipt.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/transaction_status_concept.json"
+}

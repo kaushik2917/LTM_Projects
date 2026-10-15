@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_prepayment-procedure",
+  "title": "Part-payment, prepayment and foreclosure - support procedure",
+  "category": "loans",
+  "subcategory": "loan_prepayment",
+  "supported_intents": [
+    "loan_prepayment"
+  ],
+  "intent": "loan_prepayment",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "loan prepayment",
+    "part payment",
+    "foreclosure",
+    "early loan repayment"
+  ],
+  "aliases": [
+    "loan prepayment",
+    "part payment",
+    "foreclosure",
+    "early loan repayment"
+  ],
+  "content": "For the fictional bank, a verified demo agent reviews the configured outstanding amount and applicable early-settlement policy. Obtain the authorized settlement quote before acting; the assistant does not promise that an extra payment automatically closes a real loan.",
+  "customer_content": "For the fictional bank, a verified demo agent reviews the configured outstanding amount and applicable early-settlement policy. Obtain the authorized settlement quote before acting; the assistant does not promise that an extra payment automatically closes a real loan.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_prepayment_procedure.json"
+}

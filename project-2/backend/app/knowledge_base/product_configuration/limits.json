@@ -1,0 +1,29 @@
+{
+  "id": "KB-PRODUCT-limits",
+  "title": "Configured synthetic transaction limits",
+  "category": "product_configuration",
+  "subcategory": "limits",
+  "supported_intents": [
+    "card_controls",
+    "atm_limits_charges",
+    "transfer_limits_reference",
+    "upi_mandates"
+  ],
+  "intent": "card_controls,atm_limits_charges,transfer_limits_reference,upi_mandates",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "limits",
+    "rate",
+    "fee",
+    "limit"
+  ],
+  "aliases": [],
+  "content": "The demo debit card has a daily ATM limit of INR 20000 and a daily online spending limit of INR 50000. The fictional bank-transfer limit is INR 100000 per day. These are simulation settings, not regulatory limits. A UPI-specific limit is not configured and must not be inferred from the transfer limit.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "product_configuration/limits.json"
+}

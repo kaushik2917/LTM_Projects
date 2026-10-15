@@ -1,0 +1,32 @@
+{
+  "id": "KB-notification_settings-concept",
+  "title": "SMS, email and push notifications - explained",
+  "category": "digital_banking",
+  "subcategory": "notification_settings",
+  "supported_intents": [
+    "notification_settings"
+  ],
+  "intent": "notification_settings",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "SMS alerts",
+    "email alerts",
+    "push notifications",
+    "notification settings"
+  ],
+  "aliases": [
+    "SMS alerts",
+    "email alerts",
+    "push notifications",
+    "notification settings"
+  ],
+  "content": "Transaction and service notifications can arrive through different channels and may have separate preferences. Disabling a notification does not stop the underlying transaction or change a payment mandate; delayed alerts do not prove a failed transaction.",
+  "customer_content": "Transaction and service notifications can arrive through different channels and may have separate preferences. Disabling a notification does not stop the underlying transaction or change a payment mandate; delayed alerts do not prove a failed transaction.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/notification_settings_concept.json"
+}

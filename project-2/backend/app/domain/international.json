@@ -1,0 +1,31 @@
+﻿[
+  {
+    "id": "nri_accounts",
+    "title": "NRE, NRO and FCNR concepts",
+    "category": "international",
+    "aliases": [
+      "NRE",
+      "NRO",
+      "FCNR",
+      "NRI account"
+    ],
+    "overview": "NRE, NRO and FCNR are account or deposit categories used in Indian non-resident banking, with different purposes and currency features. Eligibility, permitted credits, taxation and repatriation depend on applicable rules and circumstances.",
+    "procedure": "The fictional bank provides a product-comparison review through a demo agent. This assistant explains the categories at a high level but does not determine residency, invent regulatory limits or give personalized tax or remittance advice.",
+    "risk": "LOW"
+  },
+  {
+    "id": "international_remittance",
+    "title": "International transfers and SWIFT",
+    "category": "international",
+    "aliases": [
+      "international transfer",
+      "SWIFT",
+      "remittance",
+      "foreign currency",
+      "SWIFT code"
+    ],
+    "overview": "Cross-border transfers can involve sending, intermediary and receiving institutions, exchange conversion and compliance checks. A SWIFT identifier helps identify an institution; it does not itself establish the correct beneficiary account or guarantee final credit.",
+    "procedure": "For a synthetic enquiry, specify the intended currency and general destination without real account details. A demo agent explains the required review; rates, fees, documentation and restrictions must come from current configured or authoritative terms, never an invented quote.",
+    "risk": "LOW"
+  }
+]

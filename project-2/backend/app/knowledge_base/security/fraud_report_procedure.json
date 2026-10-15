@@ -1,0 +1,38 @@
+{
+  "id": "KB-fraud_report-procedure",
+  "title": "Fraud reports and suspicious banking contact - support procedure",
+  "category": "security",
+  "subcategory": "fraud_report",
+  "supported_intents": [
+    "fraud_report"
+  ],
+  "intent": "fraud_report",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "fraud",
+    "scam",
+    "phishing",
+    "smishing",
+    "vishing",
+    "fake banking call",
+    "malicious link"
+  ],
+  "aliases": [
+    "fraud",
+    "scam",
+    "phishing",
+    "smishing",
+    "vishing",
+    "fake banking call",
+    "malicious link"
+  ],
+  "content": "The synthetic security workflow records the masked report and escalates to an agent with high priority. If a real credential or payment may be compromised, act through the institution's verified fraud process; this assistant cannot recover funds or investigate actual accounts.",
+  "customer_content": "The synthetic security workflow records the masked report and escalates to an agent with high priority. If a real credential or payment may be compromised, act through the institution's verified fraud process; this assistant cannot recover funds or investigate actual accounts.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/fraud_report_procedure.json"
+}

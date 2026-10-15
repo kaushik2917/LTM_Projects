@@ -1,0 +1,32 @@
+{
+  "id": "KB-dormant_account-procedure",
+  "title": "Dormant and inactive accounts - support procedure",
+  "category": "accounts",
+  "subcategory": "dormant_account",
+  "supported_intents": [
+    "dormant_account"
+  ],
+  "intent": "dormant_account",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "dormant account",
+    "inactive account",
+    "reactivate account",
+    "unused account"
+  ],
+  "aliases": [
+    "dormant account",
+    "inactive account",
+    "reactivate account",
+    "unused account"
+  ],
+  "content": "The synthetic reactivation workflow checks the demo account status, updates KYC where needed, and sends the case to an authorized reviewer. Obtain a review reference before attempting another transaction; no automatic reactivation is promised.",
+  "customer_content": "The synthetic reactivation workflow checks the demo account status, updates KYC where needed, and sends the case to an authorized reviewer. Obtain a review reference before attempting another transaction; no automatic reactivation is promised.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/dormant_account_procedure.json"
+}

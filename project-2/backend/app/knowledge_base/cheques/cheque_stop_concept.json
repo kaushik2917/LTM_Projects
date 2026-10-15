@@ -1,0 +1,30 @@
+{
+  "id": "KB-cheque_stop-concept",
+  "title": "Stop-payment and cancellation requests - explained",
+  "category": "cheques",
+  "subcategory": "cheque_stop",
+  "supported_intents": [
+    "cheque_stop"
+  ],
+  "intent": "cheque_stop",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "stop cheque",
+    "cancel cheque",
+    "cheque stop payment"
+  ],
+  "aliases": [
+    "stop cheque",
+    "cancel cheque",
+    "cheque stop payment"
+  ],
+  "content": "A stop-payment request asks the bank to prevent payment of a specified cheque where possible. It may not undo a payment already completed and does not necessarily remove the underlying obligation to the payee.",
+  "customer_content": "A stop-payment request asks the bank to prevent payment of a specified cheque where possible. It may not undo a payment already completed and does not necessarily remove the underlying obligation to the payee.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_stop_concept.json"
+}

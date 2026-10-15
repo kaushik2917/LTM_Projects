@@ -1,0 +1,32 @@
+{
+  "id": "KB-card_status-concept",
+  "title": "Checking a card status - explained",
+  "category": "debit_cards",
+  "subcategory": "card_status",
+  "supported_intents": [
+    "card_status"
+  ],
+  "intent": "card_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "card status",
+    "is my card active",
+    "is card blocked",
+    "my debit card status"
+  ],
+  "aliases": [
+    "card status",
+    "is my card active",
+    "is card blocked",
+    "my debit card status"
+  ],
+  "content": "A card status indicates whether the issuer's record permits use, but an active status alone does not ensure a particular transaction will succeed. Channel limits, available balance and merchant support can still affect acceptance.",
+  "customer_content": "A card status indicates whether the issuer's record permits use, but an active status alone does not ensure a particular transaction will succeed. Channel limits, available balance and merchant support can still affect acceptance.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_status_concept.json"
+}

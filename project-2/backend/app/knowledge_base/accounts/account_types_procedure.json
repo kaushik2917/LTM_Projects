@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_types-procedure",
+  "title": "Savings, current and salary accounts - support procedure",
+  "category": "accounts",
+  "subcategory": "account_types",
+  "supported_intents": [
+    "account_types"
+  ],
+  "intent": "account_types",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "account types",
+    "savings account",
+    "current account",
+    "salary account"
+  ],
+  "aliases": [
+    "account types",
+    "savings account",
+    "current account",
+    "salary account"
+  ],
+  "content": "Compare the synthetic product schedule before choosing an account. Tell the assistant whether the purpose is personal saving, business receipts or salary credit; a demo agent can explain the matching category without giving a personalized recommendation.",
+  "customer_content": "Compare the synthetic product schedule before choosing an account. Tell the assistant whether the purpose is personal saving, business receipts or salary credit; a demo agent can explain the matching category without giving a personalized recommendation.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_types_procedure.json"
+}

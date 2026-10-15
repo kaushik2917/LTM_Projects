@@ -1,0 +1,32 @@
+{
+  "id": "KB-cheque_validity_positive_pay-concept",
+  "title": "Cheque dates and positive-pay checks - explained",
+  "category": "cheques",
+  "subcategory": "cheque_validity_positive_pay",
+  "supported_intents": [
+    "cheque_validity_positive_pay"
+  ],
+  "intent": "cheque_validity_positive_pay",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "post dated cheque",
+    "stale cheque",
+    "positive pay",
+    "cheque validity"
+  ],
+  "aliases": [
+    "post dated cheque",
+    "stale cheque",
+    "positive pay",
+    "cheque validity"
+  ],
+  "content": "Post-dated and stale cheques relate to the date on the instrument and its permitted presentment period. Positive pay is a verification process comparing supplied cheque details with the presented instrument; coverage depends on the bank's rules.",
+  "customer_content": "Post-dated and stale cheques relate to the date on the instrument and its permitted presentment period. Positive pay is a verification process comparing supplied cheque details with the presented instrument; coverage depends on the bank's rules.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "cheques/cheque_validity_positive_pay_concept.json"
+}

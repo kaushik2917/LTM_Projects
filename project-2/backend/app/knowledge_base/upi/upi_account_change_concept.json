@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_account_change-concept",
+  "title": "Changing the primary UPI bank account - explained",
+  "category": "upi",
+  "subcategory": "upi_account_change",
+  "supported_intents": [
+    "upi_account_change"
+  ],
+  "intent": "upi_account_change",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "primary UPI account",
+    "default UPI bank",
+    "change UPI account",
+    "remove linked UPI account"
+  ],
+  "aliases": [
+    "primary UPI account",
+    "default UPI bank",
+    "change UPI account",
+    "remove linked UPI account"
+  ],
+  "content": "A UPI app may have several linked accounts and a selected default account. Changing the default can affect future payment or receipt selection, while existing mandates or pending transactions may remain associated with another account.",
+  "customer_content": "A UPI app may have several linked accounts and a selected default account. Changing the default can affect future payment or receipt selection, while existing mandates or pending transactions may remain associated with another account.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_account_change_concept.json"
+}

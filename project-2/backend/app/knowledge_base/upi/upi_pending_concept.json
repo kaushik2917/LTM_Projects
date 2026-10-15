@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_pending-concept",
+  "title": "Pending UPI or successful-but-unreceived payments - explained",
+  "category": "upi",
+  "subcategory": "upi_pending",
+  "supported_intents": [
+    "upi_pending"
+  ],
+  "intent": "upi_pending",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "UPI pending",
+    "UPI stuck",
+    "UPI successful not received",
+    "UPI receiver not credited"
+  ],
+  "aliases": [
+    "UPI pending",
+    "UPI stuck",
+    "UPI successful not received",
+    "UPI receiver not credited"
+  ],
+  "content": "A pending UPI status means the final outcome is not yet confirmed in the displayed record. A successful status with a receiver reporting no credit can also require reference-based reconciliation; repeated payment attempts can create duplicate payments.",
+  "customer_content": "A pending UPI status means the final outcome is not yet confirmed in the displayed record. A successful status with a receiver reporting no credit can also require reference-based reconciliation; repeated payment attempts can create duplicate payments.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_pending_concept.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "KB-wrong_bank_transfer-procedure",
+  "title": "Transfers to an unintended bank account - support procedure",
+  "category": "transfers",
+  "subcategory": "wrong_bank_transfer",
+  "supported_intents": [
+    "wrong_bank_transfer"
+  ],
+  "intent": "wrong_bank_transfer",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "wrong bank transfer",
+    "wrong beneficiary",
+    "sent to wrong account",
+    "mistaken transfer"
+  ],
+  "aliases": [
+    "wrong bank transfer",
+    "wrong beneficiary",
+    "sent to wrong account",
+    "mistaken transfer"
+  ],
+  "content": "The synthetic agent records the channel, date and approximate amount and checks the fictional transfer reference after verification. A recovery review can be simulated, but the assistant never promises recovery, reverses a real payment or invents a recipient identity.",
+  "customer_content": "The synthetic agent records the channel, date and approximate amount and checks the fictional transfer reference after verification. A recovery review can be simulated, but the assistant never promises recovery, reverses a real payment or invents a recipient identity.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/wrong_bank_transfer_procedure.json"
+}

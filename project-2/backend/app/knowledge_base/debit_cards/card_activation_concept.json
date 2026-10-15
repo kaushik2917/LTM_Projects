@@ -1,0 +1,32 @@
+{
+  "id": "KB-card_activation-concept",
+  "title": "Debit card activation and deactivation - explained",
+  "category": "debit_cards",
+  "subcategory": "card_activation",
+  "supported_intents": [
+    "card_activation"
+  ],
+  "intent": "card_activation",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "activate card",
+    "card activation",
+    "deactivate card",
+    "card deactivation"
+  ],
+  "aliases": [
+    "activate card",
+    "card activation",
+    "deactivate card",
+    "card deactivation"
+  ],
+  "content": "Activation enables a delivered card under the bank's controls. Deactivation or a temporary freeze can disable use without necessarily closing the underlying account. Activation procedures should be followed only through the bank's trusted channel.",
+  "customer_content": "Activation enables a delivered card under the bank's controls. Deactivation or a temporary freeze can disable use without necessarily closing the underlying account. Activation procedures should be followed only through the bank's trusted channel.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/card_activation_concept.json"
+}

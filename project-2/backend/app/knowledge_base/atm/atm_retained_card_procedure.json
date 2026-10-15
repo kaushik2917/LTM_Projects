@@ -1,0 +1,30 @@
+{
+  "id": "KB-atm_retained_card-procedure",
+  "title": "Cards retained by an ATM - support procedure",
+  "category": "atm",
+  "subcategory": "atm_retained_card",
+  "supported_intents": [
+    "atm_retained_card"
+  ],
+  "intent": "atm_retained_card",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "ATM retained card",
+    "machine swallowed card",
+    "card stuck in ATM"
+  ],
+  "aliases": [
+    "ATM retained card",
+    "machine swallowed card",
+    "card stuck in ATM"
+  ],
+  "content": "The synthetic workflow records the ATM location, time and whether the card is recoverable through authorized support. A demo agent may recommend a simulated block and replacement; a real retained card requires the responsible institution's procedure.",
+  "customer_content": "The synthetic workflow records the ATM location, time and whether the card is recoverable through authorized support. A demo agent may recommend a simulated block and replacement; a real retained card requires the responsible institution's procedure.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "atm/atm_retained_card_procedure.json"
+}

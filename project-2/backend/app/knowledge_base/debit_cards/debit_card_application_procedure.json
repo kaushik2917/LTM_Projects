@@ -1,0 +1,32 @@
+{
+  "id": "KB-debit_card_application-procedure",
+  "title": "New debit cards, delivery and tracking - support procedure",
+  "category": "debit_cards",
+  "subcategory": "debit_card_application",
+  "supported_intents": [
+    "debit_card_application"
+  ],
+  "intent": "debit_card_application",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "new debit card",
+    "card delivery",
+    "card tracking",
+    "debit card application"
+  ],
+  "aliases": [
+    "new debit card",
+    "card delivery",
+    "card tracking",
+    "debit card application"
+  ],
+  "content": "In the fictional workflow, verify the demo profile and ask an agent for the configured dispatch stage. Confirm the delivery process through the secure channel; do not provide a full address or card number in the research transcript.",
+  "customer_content": "In the fictional workflow, verify the demo profile and ask an agent for the configured dispatch stage. Confirm the delivery process through the secure channel; do not provide a full address or card number in the research transcript.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "debit_cards/debit_card_application_procedure.json"
+}

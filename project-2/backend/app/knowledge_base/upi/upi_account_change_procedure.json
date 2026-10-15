@@ -1,0 +1,32 @@
+{
+  "id": "KB-upi_account_change-procedure",
+  "title": "Changing the primary UPI bank account - support procedure",
+  "category": "upi",
+  "subcategory": "upi_account_change",
+  "supported_intents": [
+    "upi_account_change"
+  ],
+  "intent": "upi_account_change",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "primary UPI account",
+    "default UPI bank",
+    "change UPI account",
+    "remove linked UPI account"
+  ],
+  "aliases": [
+    "primary UPI account",
+    "default UPI bank",
+    "change UPI account",
+    "remove linked UPI account"
+  ],
+  "content": "Use the trusted app's bank-account settings to inspect the current selection and mandate links before changing it. The synthetic assistant explains the workflow only; it does not unlink real accounts or request bank credentials.",
+  "customer_content": "Use the trusted app's bank-account settings to inspect the current selection and mandate links before changing it. The synthetic assistant explains the workflow only; it does not unlink real accounts or request bank credentials.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "upi/upi_account_change_procedure.json"
+}

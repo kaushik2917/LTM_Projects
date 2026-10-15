@@ -1,0 +1,29 @@
+{
+  "id": "KB-PRODUCT-fees",
+  "title": "Configured synthetic service fees",
+  "category": "product_configuration",
+  "subcategory": "fees",
+  "supported_intents": [
+    "account_fees",
+    "card_fees",
+    "service_fee_schedule",
+    "transfer_limits_reference"
+  ],
+  "intent": "account_fees,card_fees,service_fee_schedule,transfer_limits_reference",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "fees",
+    "rate",
+    "fee",
+    "limit"
+  ],
+  "aliases": [],
+  "content": "The fictional fee schedule lists INR 0 for monthly demo savings service, INR 150 for annual debit-card service, INR 100 for debit-card replacement, INR 0 for online NEFT, INR 50 for a 25-leaf cheque book, and INR 100 for the example loan late-installment charge. No other fee or tax is implied.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "product_configuration/fees.json"
+}

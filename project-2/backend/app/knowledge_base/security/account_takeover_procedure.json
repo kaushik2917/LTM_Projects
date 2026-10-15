@@ -1,0 +1,36 @@
+{
+  "id": "KB-account_takeover-procedure",
+  "title": "Compromised access, SIM swaps and lost phones - support procedure",
+  "category": "security",
+  "subcategory": "account_takeover",
+  "supported_intents": [
+    "account_takeover"
+  ],
+  "intent": "account_takeover",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "account takeover",
+    "suspicious login",
+    "SIM swap",
+    "lost phone",
+    "credential compromise",
+    "hacked"
+  ],
+  "aliases": [
+    "account takeover",
+    "suspicious login",
+    "SIM swap",
+    "lost phone",
+    "credential compromise",
+    "hacked"
+  ],
+  "content": "The demo agent receives a high-priority access-security case and can explain simulated channel protection. Follow the real institution's recovery steps independently; do not disclose a password, OTP or remote-access code to this assistant.",
+  "customer_content": "The demo agent receives a high-priority access-security case and can explain simulated channel protection. Follow the real institution's recovery steps independently; do not disclose a password, OTP or remote-access code to this assistant.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/account_takeover_procedure.json"
+}

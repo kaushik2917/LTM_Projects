@@ -1,0 +1,34 @@
+{
+  "id": "KB-transaction_history-procedure",
+  "title": "Recent transactions and transaction search - support procedure",
+  "category": "balances",
+  "subcategory": "transaction_history",
+  "supported_intents": [
+    "transaction_history"
+  ],
+  "intent": "transaction_history",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "latest five transactions",
+    "recent transactions",
+    "transaction history",
+    "transaction search",
+    "last transactions"
+  ],
+  "aliases": [
+    "latest five transactions",
+    "recent transactions",
+    "transaction history",
+    "transaction search",
+    "last transactions"
+  ],
+  "content": "After demo verification, the assistant can read the latest five configured synthetic transactions or explain their status. Search by non-sensitive date, amount or merchant description; a real dispute must use a verified banking channel.",
+  "customer_content": "After demo verification, the assistant can read the latest five configured synthetic transactions or explain their status. Search by non-sensitive date, amount or merchant description; a real dispute must use a verified banking channel.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "balances/transaction_history_procedure.json"
+}

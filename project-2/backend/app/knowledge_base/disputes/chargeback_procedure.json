@@ -1,0 +1,32 @@
+{
+  "id": "KB-chargeback-procedure",
+  "title": "Chargebacks and card disputes - support procedure",
+  "category": "disputes",
+  "subcategory": "chargeback",
+  "supported_intents": [
+    "chargeback"
+  ],
+  "intent": "chargeback",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "chargeback",
+    "card dispute",
+    "transaction dispute",
+    "what is chargeback"
+  ],
+  "aliases": [
+    "chargeback",
+    "card dispute",
+    "transaction dispute",
+    "what is chargeback"
+  ],
+  "content": "The demo agent asks for a non-sensitive description, relevant dates and steps already taken with the merchant. Actual eligibility, evidence and deadlines must come from the issuer's rules; the assistant does not provide legal advice or file a real dispute.",
+  "customer_content": "The demo agent asks for a non-sensitive description, relevant dates and steps already taken with the merchant. Actual eligibility, evidence and deadlines must come from the issuer's rules; the assistant does not provide legal advice or file a real dispute.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/chargeback_procedure.json"
+}

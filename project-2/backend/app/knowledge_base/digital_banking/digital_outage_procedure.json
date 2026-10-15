@@ -1,0 +1,32 @@
+{
+  "id": "KB-digital_outage-procedure",
+  "title": "Service outages and app maintenance - support procedure",
+  "category": "digital_banking",
+  "subcategory": "digital_outage",
+  "supported_intents": [
+    "digital_outage"
+  ],
+  "intent": "digital_outage",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "app not loading",
+    "banking outage",
+    "service unavailable",
+    "app crashing"
+  ],
+  "aliases": [
+    "app not loading",
+    "banking outage",
+    "service unavailable",
+    "app crashing"
+  ],
+  "content": "Use a trusted connection and the official app, then check the institution's verified service notice before retrying a payment. The synthetic demo does not have live outage telemetry, so the assistant does not invent a restoration estimate.",
+  "customer_content": "Use a trusted connection and the official app, then check the institution's verified service notice before retrying a payment. The synthetic demo does not have live outage telemetry, so the assistant does not invent a restoration estimate.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "digital_banking/digital_outage_procedure.json"
+}

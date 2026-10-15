@@ -1,0 +1,32 @@
+{
+  "id": "KB-wrong_bank_transfer-concept",
+  "title": "Transfers to an unintended bank account - explained",
+  "category": "transfers",
+  "subcategory": "wrong_bank_transfer",
+  "supported_intents": [
+    "wrong_bank_transfer"
+  ],
+  "intent": "wrong_bank_transfer",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "wrong bank transfer",
+    "wrong beneficiary",
+    "sent to wrong account",
+    "mistaken transfer"
+  ],
+  "aliases": [
+    "wrong bank transfer",
+    "wrong beneficiary",
+    "sent to wrong account",
+    "mistaken transfer"
+  ],
+  "content": "A payment to the wrong beneficiary should be reported promptly. Completed transfers are not necessarily reversible on demand, and the receiving institution may need to participate in review; contacting a recipient outside verified channels can create further risk.",
+  "customer_content": "A payment to the wrong beneficiary should be reported promptly. Completed transfers are not necessarily reversible on demand, and the receiving institution may need to participate in review; contacting a recipient outside verified channels can create further risk.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "transfers/wrong_bank_transfer_concept.json"
+}

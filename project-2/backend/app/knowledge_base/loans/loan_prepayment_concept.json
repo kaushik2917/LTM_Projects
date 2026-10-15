@@ -1,0 +1,32 @@
+{
+  "id": "KB-loan_prepayment-concept",
+  "title": "Part-payment, prepayment and foreclosure - explained",
+  "category": "loans",
+  "subcategory": "loan_prepayment",
+  "supported_intents": [
+    "loan_prepayment"
+  ],
+  "intent": "loan_prepayment",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "loan prepayment",
+    "part payment",
+    "foreclosure",
+    "early loan repayment"
+  ],
+  "aliases": [
+    "loan prepayment",
+    "part payment",
+    "foreclosure",
+    "early loan repayment"
+  ],
+  "content": "A part-payment reduces some outstanding principal, while foreclosure or full prepayment seeks to settle the loan before its scheduled end. Charges, notice requirements and how remaining installments change depend on the agreement.",
+  "customer_content": "A part-payment reduces some outstanding principal, while foreclosure or full prepayment seeks to settle the loan before its scheduled end. Charges, notice requirements and how remaining installments change depend on the agreement.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_prepayment_concept.json"
+}

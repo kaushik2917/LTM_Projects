@@ -1,0 +1,32 @@
+{
+  "id": "KB-account_opening-procedure",
+  "title": "Opening a bank account - support procedure",
+  "category": "accounts",
+  "subcategory": "account_opening",
+  "supported_intents": [
+    "account_opening"
+  ],
+  "intent": "account_opening",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "open account",
+    "account opening",
+    "start savings",
+    "new bank account"
+  ],
+  "aliases": [
+    "open account",
+    "account opening",
+    "start savings",
+    "new bank account"
+  ],
+  "content": "In the Call Sense Bank demo, select a product, prepare identity and address proof, and submit a fictional application at the demo branch. A reviewer checks eligibility and records consent before activation; this assistant does not open a real account.",
+  "customer_content": "In the Call Sense Bank demo, select a product, prepare identity and address proof, and submit a fictional application at the demo branch. A reviewer checks eligibility and records consent before activation; this assistant does not open a real account.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "accounts/account_opening_procedure.json"
+}

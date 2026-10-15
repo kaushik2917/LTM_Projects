@@ -1,0 +1,32 @@
+{
+  "id": "KB-refund_status-concept",
+  "title": "Refunds not received and merchant disputes - explained",
+  "category": "disputes",
+  "subcategory": "refund_status",
+  "supported_intents": [
+    "refund_status"
+  ],
+  "intent": "refund_status",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "refund not received",
+    "refund pending",
+    "merchant refund",
+    "merchant dispute"
+  ],
+  "aliases": [
+    "refund not received",
+    "refund pending",
+    "merchant refund",
+    "merchant dispute"
+  ],
+  "content": "A merchant refund is separate from the original purchase and can have its own processing reference. A cancellation notice alone may not show that a refund has reached the account; the merchant and bank records may need to be compared.",
+  "customer_content": "A merchant refund is separate from the original purchase and can have its own processing reference. A cancellation notice alone may not show that a refund has reached the account; the merchant and bank records may need to be compared.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "disputes/refund_status_concept.json"
+}

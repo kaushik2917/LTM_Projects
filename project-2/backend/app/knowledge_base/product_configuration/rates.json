@@ -1,0 +1,30 @@
+{
+  "id": "KB-PRODUCT-rates",
+  "title": "Configured synthetic deposit and loan rates",
+  "category": "product_configuration",
+  "subcategory": "rates",
+  "supported_intents": [
+    "interest_rate_information",
+    "fixed_deposit",
+    "fd_maturity",
+    "recurring_deposit",
+    "loan_interest"
+  ],
+  "intent": "interest_rate_information,fixed_deposit,fd_maturity,recurring_deposit,loan_interest",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "BANK_POLICY",
+  "keywords": [
+    "rates",
+    "rate",
+    "fee",
+    "limit"
+  ],
+  "aliases": [],
+  "content": "Call Sense Bank's fictional annual rates are 3 percent for demo savings, 6 percent for a 12-month demo fixed deposit, 5.5 percent for a 12-month demo recurring deposit, and 12 percent for the example personal loan. These are synthetic configuration values, not market offers. A different tenure or product needs its own configured quote.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "product_configuration/rates.json"
+}

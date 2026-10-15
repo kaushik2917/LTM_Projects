@@ -1,0 +1,36 @@
+{
+  "id": "KB-loan_information-concept",
+  "title": "Loan products and application basics - explained",
+  "category": "loans",
+  "subcategory": "loan_information",
+  "supported_intents": [
+    "loan_information"
+  ],
+  "intent": "loan_information",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "personal loan",
+    "home loan",
+    "vehicle loan",
+    "education loan",
+    "gold loan",
+    "business loan"
+  ],
+  "aliases": [
+    "personal loan",
+    "home loan",
+    "vehicle loan",
+    "education loan",
+    "gold loan",
+    "business loan"
+  ],
+  "content": "Loans can fund personal needs, homes, vehicles, education or business purposes, with product-specific assessment and security requirements. A general product explanation cannot establish a person's eligibility, approval amount or suitability.",
+  "customer_content": "Loans can fund personal needs, homes, vehicles, education or business purposes, with product-specific assessment and security requirements. A general product explanation cannot establish a person's eligibility, approval amount or suitability.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "loans/loan_information_concept.json"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "KB-account_takeover-concept",
+  "title": "Compromised access, SIM swaps and lost phones - explained",
+  "category": "security",
+  "subcategory": "account_takeover",
+  "supported_intents": [
+    "account_takeover"
+  ],
+  "intent": "account_takeover",
+  "risk_level": "HIGH",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "account takeover",
+    "suspicious login",
+    "SIM swap",
+    "lost phone",
+    "credential compromise",
+    "hacked"
+  ],
+  "aliases": [
+    "account takeover",
+    "suspicious login",
+    "SIM swap",
+    "lost phone",
+    "credential compromise",
+    "hacked"
+  ],
+  "content": "Unexpected login activity, loss of a banking device or a suspected SIM swap can compromise access. Use another trusted route to reach the institution and mobile operator where relevant; avoid approving unexpected login or payment requests.",
+  "customer_content": "Unexpected login activity, loss of a banking device or a suspected SIM swap can compromise access. Use another trusted route to reach the institution and mobile operator where relevant; avoid approving unexpected login or payment requests.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "security/account_takeover_concept.json"
+}

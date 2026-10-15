@@ -1,0 +1,32 @@
+{
+  "id": "KB-credit_limit-concept",
+  "title": "Credit limits and available credit - explained",
+  "category": "credit_cards",
+  "subcategory": "credit_limit",
+  "supported_intents": [
+    "credit_limit"
+  ],
+  "intent": "credit_limit",
+  "risk_level": "LOW",
+  "authentication_required": false,
+  "last_reviewed": "2026-09-24",
+  "source_type": "GENERAL_BANKING_INFORMATION",
+  "keywords": [
+    "credit limit",
+    "available credit",
+    "available limit",
+    "increase credit limit"
+  ],
+  "aliases": [
+    "credit limit",
+    "available credit",
+    "available limit",
+    "increase credit limit"
+  ],
+  "content": "Available credit can differ from the total credit limit because of posted balances, pending authorizations, fees or repayments awaiting posting. A limit increase involves issuer assessment and is not guaranteed by a payment history alone.",
+  "customer_content": "Available credit can differ from the total credit limit because of posted balances, pending authorizations, fees or repayments awaiting posting. A limit increase involves issuer assessment and is not guaranteed by a payment history alone.",
+  "enabled": true,
+  "approved": true,
+  "seed_version": 2,
+  "filename": "credit_cards/credit_limit_concept.json"
+}
